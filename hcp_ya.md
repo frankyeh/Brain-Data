@@ -29,7 +29,17 @@ Please acknowledge the source to the WU-Minn HCP.
   **Methods**
   > A group average template was constructed from a total of 930 subjects. A multishell diffusion scheme was used, and the b-values were 1000, 2000, and 3000 s/mm2. The number of diffusion sampling directions were 90, 90, and 90, respectively. The in-plane resolution was 1.25 mm. The slice thickness was 1.25 mm. The diffusion data were reconstructed in the MNI space using q-space diffeomorphic reconstruction (Yeh et al., Neuroimage, 58(1):91-9, 2011) to obtain the spin distribution function (Yeh et al., IEEE TMI, ;29(9):1626-35, 2010). A diffusion sampling length ratio of 2.5 was used, and the output resolution was 1 mm. The analysis was conducted using DSI Studio (http://dsi-studio.labsolver.org).
 
+  [1] Yeh F-C, Vettel JM, Singh A, Poczos B, Grafton ST, Erickson KI, et al. (2016) Quantifying Differences and Similarities in Whole-Brain White Matter Architecture Using Local Connectome Fingerprints. PLoS Comput Biol 12(11): e1005203. https://doi.org/[10.1371/journal.pcbi.1005203](http://dx.doi.org/10.1371/journal.pcbi.1005203)
 
-## Reference
 
-[1] Yeh F-C, Vettel JM, Singh A, Poczos B, Grafton ST, Erickson KI, et al. (2016) Quantifying Differences and Similarities in Whole-Brain White Matter Architecture Using Local Connectome Fingerprints. PLoS Comput Biol 12(11): e1005203. https://doi.org/[10.1371/journal.pcbi.1005203](http://dx.doi.org/10.1371/journal.pcbi.1005203)\
+## MGH-USC 
+
+This data set was originally from the connectome db website (https://db.humanconnectome.org/). The MGH HCP team has released diffusion imaging and structural imaging data acquired from 35 young adults using the customized MGH Siemens 3T Connectome scanner, which has 300 mT/m maximum gradient strength for diffusion imaging.
+
+- [NIFTI files for DWI and T1W](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/El5HHIaNyD1Hreo5hvZaCjcBjrbfyfiEUG22lvcPHYC_pA?e=wKkjEc)
+- [SRC files](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EiyOUXXxs01FljIc7J1AypABeY3imX_CLfkpPUbBVM0hGg?e=XqhbBt)
+
+  **Methods**
+  > A multishell diffusion scheme was used, and the b-values were 1000 ,3000 ,5000 and 10000 s/mm2. The number of diffusion sampling directions were 64, 64, 128, and 256. The in-plane resolution was 1.5 mm. The slice thickness was 1.5 mm.
+
+
