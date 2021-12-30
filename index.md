@@ -1,37 +1,23 @@
-## Welcome to GitHub Pages
+# Human Connectome
 
-You can use the [editor on GitHub](https://github.com/frankyeh/Brain-Data/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+![connectivity](/images/connectivity.png)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The specific cognitive and personality characteristics that define an individual are encoded by the unique pattern of connections between the billions of neurons in the brain. This complex wiring system, termed the connectome, reflects the necessary connective architecture for the neural dynamics that give rise to nearly all cognitive functions. The diffusion MRI can be used to reveal the local organization of white matter pathways that are highly specific to individuals. This approach opens a new door for probing the influence of pathological, genetic, social, or environmental factors on the unique configuration of the human connectome	
 
-### Markdown
+# What is diffusion MRI?
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+![diffusion mri](/images/pone.0075747.g004.jpg)
 
-```markdown
-Syntax highlighted code block
+Recently diffusion MRI has arisen as the only non-invasive way to map white matter bundles and assess their structural integrity in the human brain. With fast imaging sequences, diffusion MRI, particular its high angular resolution variants, can be acquired on standard clinical scanners. This advancement has gained considerable interest because of its roles in mapping human connectome and potential for accessing neuropsychological disorders. A large-scale analysis of diffusion MRI can explore its promising applications in biomedical research as an imaging biomarker of neuropathology. Principled approaches are to be adapted to understanding structural characteristics of white matter bundles, resolving their associations with measures of cognition, and developing accurate diagnostic/prognostic models that predict neuropsychological disorders.
 
-# Header 1
-## Header 2
-### Header 3
+# What is diffusion MRI fiber tracking?
 
-- Bulleted
-- List
+![connectivity](/images/pone.0080713.g014.png)
 
-1. Numbered
-2. List
+Diffusion MRI fiber tracking is a simulated approach that follows the fiber orientation at each imaging voxel to delineate the entire fiber trajectory in the brain tissue. It starts with a "seed" point and propagates along with local fiber directions in a recursive, step-by-step process until the termination criteria are met. The criteria may include an angular threshold, an anisotropy threshold, or anatomical prior. Fiber tracking using data from the Human Connectome Project has been conducted to elucidate the complex anatomy of the brain pathways. Doctors and scientists investigated the intrinsic structure of the brain with unprecedented detail, which will invariably facilitate a better understanding of brain functioning. Studies using this technique have contributed to elucidate the structure, connectivity, and potential functional role of the major fiber pathways
 
-**Bold** and _Italic_ and `Code` text
+# What tool can I use to do fiber tracking?
 
-[Link](url) and ![Image](src)
-```
+![connectivity](/images/dsistudio.jpg)
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/frankyeh/Brain-Data/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+All data shared on this website can be analyzed by [DSI Studio](http://dsi-studio.labsolver.org). DSI Studio is a tractography software tool that maps brain connections and correlates findings with neuropsychological disorders. It is a collective implementation of several diffusion MRI methods, including diffusion tensor imaging (DTI), generalized q-sampling imaging (GQI), q-space diffeomorphic reconstruction (QSDR), diffusion MRI connectometry, and generalized deterministic fiber tracking.
