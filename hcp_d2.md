@@ -6,7 +6,7 @@ The [Lifespan Developing Human Connectome Project (dHCP) Study](https://www.huma
 
 The derived files below are shared under the [dHCP data sharing agreement](http://www.developingconnectome.org/open-access-dhcp-data-terms-of-use-version-4-0_2019-05-23/). The source of the data are from the [3rd release](https://biomedia.github.io/dHCP-release-notes/index.html).
 
-Users using the files should also follow agreement and [cite/acknowledge the source](https://biomedia.github.io/dHCP-release-notes/cite.html).
+Users using the files should follow agreement and [cite/acknowledge the source](https://biomedia.github.io/dHCP-release-notes/cite.html).
 
 # Download
 
