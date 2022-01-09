@@ -25,7 +25,7 @@ Yeh (2021) applied automatic fiber tracking on each of the HCP 1065 subjects to 
 
 - [Tractography database of 1065 subjects (NIFTI)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EhEovDmdDhpEl1s6OhK69ckBBBE7FoXH1psecjDWkqxloA?e=ngchRU)
 
-- Tract-to-region connectome (EXCEL)
+- Tract-to-region connectome (EXCEL): [HCP-MMP parcellation](https://pitt-my.sharepoint.com/:x:/g/personal/yehfc_pitt_edu/Eb-yhDcnGBJHlhED2xAI8YwBJvQu8IqyRQ1L9v-dZkM7wQ?e=aitB08) [BM/KL parcellation](https://pitt-my.sharepoint.com/:x:/g/personal/yehfc_pitt_edu/EVG6NflPIbtIpc3jvruyf7cB2ZegmiAWPgQkHDJKakfQZg?e=awH0LB)
 
 
 ## HCP1065 tractography atlas 
@@ -50,8 +50,12 @@ To view these tract files, please download the HCP-1065 template fib file and o
  HCP842 tractography atlas uses FSL's FA map as its reference space (<https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/Atlases>), which averages from 58 FA images in the MNI152 coordinate. 
 
 - [Population-averaged tractography (NIFTI)](https://zenodo.org/record/3627772#.Xi0q02hKiUk) 
+
 - [Population-averaged tractography (TRK)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EvV49cgSEWpFmJOwtRO28moB7b_yXTDUIx5lnP0opd-waA?e=6w2v4J)
+
 - [Population-averaged tractography (JPG)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/ErvN3WnoP7FHlJjinNVNq3IB753wSm4QGvHgzMACOURP8Q?e=VmySKx)
+
 - [Connectivity matrix (EXCEL) and connectograms in (PNG)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EmzLbtr_IA9LrKMCfC1aC6cB_ag6Ivwj8DJA5o71_kHm9w?e=QYnZVK)
+
 - [Abbreviation list](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6921501/bin/NIHMS1062874-supplement-1.pdf)
 
