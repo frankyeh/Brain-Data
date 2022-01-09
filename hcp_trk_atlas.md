@@ -22,7 +22,7 @@ The HCP842 tractography atlas and the most recent HCP1065 atlas are derived from
 Yeh (2021) applied automatic fiber tracking on each of the HCP 1065 subjects to map white matter pathways. Probabilistic tractography of 52 white matter pathways aggregated from 1065 subjects(Yeh 2021). These NIFTI volumes record the population probability of each white matter tract aggregated from the tractography of 1065 subjects.
 
 - [Probabilistic tractography atlas of white matter pathways (NIFTI)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EvhbI5gALiZGvZATK1D8cyUBsH4J_CeRjHw-nJq4fIzoCg?e=dK0y5U)
-- Tractography database of 1065 subjects (NIFTI)
+- [Tractography database of 1065 subjects (NIFTI)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EhEovDmdDhpEl1s6OhK69ckBBBE7FoXH1psecjDWkqxloA?e=ngchRU)
 - Tract-to-region connectome (EXCEL)
 
 
