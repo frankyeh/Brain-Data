@@ -21,7 +21,7 @@ The HCP842 tractography atlas and the most recent HCP1065 atlas are derived from
 
 - [Probabilistic tractography atlas of white matter pathways (64 NIFTI files)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EvhbI5gALiZGvZATK1D8cyUBsH4J_CeRjHw-nJq4fIzoCg?e=dK0y5U)
 
-  Automatic fiber tracking augmented fiber tracking (Yeh 2020) were used to map white matter pathways in HCP young adult subjects. These NIFTI volumes record the population probability of each white matter tract aggregated from the tractography of 1065 subjects.
+  Automatic fiber tracking and augmented fiber tracking (Yeh 2020) were used to map white matter pathways in HCP young adult subjects. These NIFTI volumes record the population probability of each white matter tract aggregated from the tractography of 1065 subjects.
 
  
 - [Tractography of 1065 subjects in ICBM152 space (~1065x64 NIFTI files)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EhEovDmdDhpEl1s6OhK69ckBBBE7FoXH1psecjDWkqxloA?e=ngchRU)
