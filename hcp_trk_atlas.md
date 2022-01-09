@@ -19,15 +19,20 @@ The HCP842 tractography atlas and the most recent HCP1065 atlas are derived from
 ## HCP1065 tractography database, probabilistic atlas, and tract-to-region connectome
 >  Yeh, F. C. (2021) Population-Based Tract-To-Region Connectome of the Human Brain and Its Hierarchical Topology, preprint DOI: 10.21203/rs.3.rs-1083262/v1 
 
-Yeh (2021) applied automatic fiber tracking on each of the HCP 1065 subjects to map white matter pathways. Probabilistic tractography of 52 white matter pathways aggregated from 1065 subjects(Yeh 2021). These NIFTI volumes record the population probability of each white matter tract aggregated from the tractography of 1065 subjects.
-
 - [Probabilistic tractography atlas of white matter pathways (64 NIFTI files)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EvhbI5gALiZGvZATK1D8cyUBsH4J_CeRjHw-nJq4fIzoCg?e=dK0y5U)
+
+  Automatic fiber tracking augmented fiber tracking (Yeh 2020) were used to map white matter pathways in HCP young adult subjects. These NIFTI volumes record the population probability of each white matter tract aggregated from the tractography of 1065 subjects.
+
  
 - [Tractography of 1065 subjects in ICBM152 space (~1065x64 NIFTI files)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EhEovDmdDhpEl1s6OhK69ckBBBE7FoXH1psecjDWkqxloA?e=ngchRU)
 
+  Automatic fiber tracking and augmented fiber tracking (Yeh 2020) was applied to each of the HCP 1065 subjects data to map 64 white matter pathways.
+   
   'all_files.zip' contains all NIFTI files.
 
 - Tract-to-region connectome (EXCEL files): 
+
+  Tract-to-region connectome was derived using HCP-MMP, Brodmann, and Kleist atlas.
 
   - [HCP-MMP parcellation](https://pitt-my.sharepoint.com/:x:/g/personal/yehfc_pitt_edu/Eb-yhDcnGBJHlhED2xAI8YwBJvQu8IqyRQ1L9v-dZkM7wQ?e=aitB08)
 
