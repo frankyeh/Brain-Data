@@ -22,7 +22,9 @@ The HCP842 tractography atlas and the most recent HCP1065 atlas are derived from
 Yeh (2021) applied automatic fiber tracking on each of the HCP 1065 subjects to map white matter pathways. Probabilistic tractography of 52 white matter pathways aggregated from 1065 subjects(Yeh 2021). These NIFTI volumes record the population probability of each white matter tract aggregated from the tractography of 1065 subjects.
 
 - [Probabilistic tractography atlas of white matter pathways (NIFTI)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EvhbI5gALiZGvZATK1D8cyUBsH4J_CeRjHw-nJq4fIzoCg?e=dK0y5U)
+
 - [Tractography database of 1065 subjects (NIFTI)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EhEovDmdDhpEl1s6OhK69ckBBBE7FoXH1psecjDWkqxloA?e=ngchRU)
+
 - Tract-to-region connectome (EXCEL)
 
 
@@ -35,8 +37,11 @@ HCP1065 atlas is an updated atlas from HCP842 atlas. The new atlas is baes on "
 To view these tract files, please download the HCP-1065 template fib file and open it in DSI Studio at [Step T3 Fiber Tracking]. The *.tt.gz files can be loaded using [Tracts][Open Tracts]. The ICBM152 images can be loaded using [Edit][Insert T1W/T2W].
 
 - [Population-averaged tractography atlas (TT)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EjD1HZDMSnVGuuXm_B5vczQBuvY8WFjtHQR-AnXQc6izvQ?e=BERWvg)
+
 - [Population-averaged tractography atlas (TRK)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/Ek0DdO67iQ9NvkJUci91lzMBXCVBq926QXTTY7JK6LIjgw?e=7rCUDD)
-- [Population-averaged tractography atlas (NIFTI)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EvAcb1QyogFPg206v-FRl2gB6EcDf3TIPG37JyugoL3hdA?e=DucFpI)
+
+- [Population-averaged tractography atlas (NIFTI)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EvAcb1QyogFPg206v-FRl2gB6EcDf3TIPG37JyugoL3hdA?e=DucFpI): The 'all_files.zip' in the folder contains all NIFTI files.
+
 - [Abbreviation list](https://pitt-my.sharepoint.com/:x:/g/personal/yehfc_pitt_edu/EQcjg3Ignv5CpOlwRu-dc-sBFy790zDaA2zW0qtR19VbJA?e=3iA6Ey) 
 
 ## HCP842 tractography atlas
