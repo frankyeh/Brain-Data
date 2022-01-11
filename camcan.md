@@ -6,7 +6,7 @@ The Cambridge Centre for Ageing and Neuroscience (Cam-CAN) is a large-scale coll
 
 The derived files (SRC, FIB) are shared under the [original CamCAN agreement](https://camcan-archive.mrc-cbu.cam.ac.uk/dataaccess/datarequest-nobutton.php)
 
-Users should follow the original agreement that requires (1) non-comercial usage (2) open-access publication, and (3) acknowledgement of [CamCAN repository(Taylor et al., 2016, Shafto et al., 2015)](http://www.mrc-cbu.cam.ac.uk/datasets/camcan/).
+Users should follow the original agreement that requires (1) non-comercial usage, (2) open-access publication, and (3) acknowledgement of [CamCAN repository (Taylor et al., 2016, Shafto et al., 2015)](http://www.mrc-cbu.cam.ac.uk/datasets/camcan/).
 
 # Download
 
