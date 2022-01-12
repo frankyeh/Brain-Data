@@ -30,9 +30,9 @@ The FIB files and tractography files are shared using [Creative Commons Attribu
 
 # Processing Scripts
 
-**generate SRC files from NIFTI files**
+**1. generate SRC files from NIFTI files**
 
-copy all NIFTI, bval, bvec files in the same folder and run this script to generate SRC files (one for AP, one for PA)
+First, copy all NIFTI, bval, bvec files in the same folder and run this script to generate SRC files (one for AP, one for PA)
 
 ```
 #!/bin/bash
@@ -43,7 +43,7 @@ do
 done
 ```
 
-**TOPUP/EDDY and save corrected SRC files**
+**2. TOPUP/EDDY and save corrected SRC files**
 
 Correct artifacts using AP and PA SRC files and generate corrected AP-PA combined SRC files.
 The script needs a number input that allows for running the task using clusters job arrary
@@ -61,8 +61,7 @@ else
 fi
 ```
 
-
-The following is the script to submit job arrary. The script needs an the file name of the script to run the job array.
+The following is the job array to run the above script using sbatch. The script needs an the file name of the script to run the job array.
 
 ```
 #!/bin/bash
@@ -76,8 +75,7 @@ set -x
 sh $1 $SLURM_ARRAY_TASK_ID
 ```
 
-
-**Reconstruction**
+**3. Reconstruction**
 
 This was done using a simple command
 
@@ -85,7 +83,7 @@ This was done using a simple command
 singularity exec dsistudio_latest.sif dsi_studio --action=rec --source=*.src.gz
 ```
 
-**Fiber Tracking**
+**4. Fiber Tracking**
 
 The following script for a job arrary to runs fiber tracking on all FIB file. 
 
