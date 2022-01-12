@@ -28,7 +28,7 @@ Users using the files should follow agreement and [cite/acknowledge the source](
 
 Copy all NIFTI (DWI and mask), bval, bvec files to the same folder and use DSI Studio's GUI Batch function [Batch Processing[Step B2b: NIFTI to SRC (Single Folder)]
 
-**2. Reconstruction**
+**2. reconstruction**
 
 This was done using DSI Studio GUI. Click on [Step T2 Reconstruction] and select all SRC files.
 1. [Step T2a][Edit][Open] to load mask 
@@ -36,7 +36,7 @@ This was done using DSI Studio GUI. Click on [Step T2 Reconstruction] and select
 3. [Run Reconstruction]
 
 
-**3. Fiber Tracking**
+**3. fiber Tracking**
 
 The following script for a job arrary to runs fiber tracking on all FIB file. 
 
