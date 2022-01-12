@@ -26,3 +26,73 @@ The FIB files and tractography files are shared using [Creative Commons Attribu
 - [Behavioral data "Crosswalk" Data Dictionary](https://www.humanconnectome.org/storage/app/media/documentation/LS2.0/LS2.0_Crosswalk_Behavioral_Data_Dictionary.xlsx "https://www.humanconnectome.org/storage/app/media/documentation/LS2.0/LS2.0_Crosswalk_Behavioral_Data_Dictionary.xlsx") Excel spreadsheet to translate NDA data structures/elements to HCP behavioral variables and instruments
 
 - [Behavioral & Clinical Instrument Details](https://www.humanconnectome.org/storage/app/media/documentation/LS2.0/LS_2.0_Release_Appendix_2.pdf "https://www.humanconnectome.org/storage/app/media/documentation/LS2.0/LS_2.0_Release_Appendix_2.pdf") and references appendix
+
+
+# Processing Scripts
+
+**generate SRC files from NIFTI files**
+
+copy all NIFTI, bval, bvec files in the same folder and run this script to generate SRC files (one for AP, one for PA)
+
+```
+#!/bin/bash
+for sub in $(ls HCA8*98_AP.nii.gz)
+do    
+    singularity exec dsi_studio --action=src --source=${sub},${sub:0:25}99_AP.nii.gz
+    singularity exec dsi_studio --action=src --source=${sub:0:25}98_PA.nii.gz,${sub:0:25}99_PA.nii.gz
+done
+```
+
+**TOPUP/EDDY and save corrected SRC files**
+
+Correct artifacts using AP and PA SRC files and generate corrected AP-PA combined SRC files.
+The script needs a number input that allows for running the task using clusters job arrary
+
+```bash
+#!/bin/bash
+subs_ap=$(ls -Lr *AP.nii.gz.src.gz)
+subs_ap=(${subs_ap// /})
+subs_pa="${subs_ap[$1]:0:28}PA.nii.gz.src.gz"
+if [ ! -e $sub_pa ]; then
+     echo "." > ${sub_pa}_not_found.txt
+else    
+     echo "processing ${subs_ap[$1]}"
+     singularity exec dsistudio_latest.sif dsi_studio --action=rec --source=${subs_ap[$1]} --rev_pe=${subs_pa} --cmd="[Step T2][File][Save Src File]=${subs_pa:0:10}.src.gz"
+fi
+```
+
+
+The following is the script to submit job arrary. The script needs an the file name of the script to run the job array.
+
+```
+#!/bin/bash
+#SBATCH -t 24:00:00
+#SBATCH -p RM-shared
+#SBATCH -N 1
+#SBATCH --ntasks-per-node 8
+#SBATCH --mem=15GB
+#SBATCH --array=0-722
+set -x
+sh $1 $SLURM_ARRAY_TASK_ID
+```
+
+
+**Reconstruction**
+
+This was done using a simple command
+
+```
+singularity exec dsistudio_latest.sif dsi_studio --action=rec --source=*.src.gz
+```
+
+**Fiber Tracking**
+
+The following script for a job arrary to runs fiber tracking on all FIB file. 
+
+```
+#!/bin/bash
+subs=$(ls -L *.fib.gz)
+subs=(${subs// /})
+echo "processing ${subs[$1]}"
+singularity exec dsistudio_latest.sif dsi_studio --action=atk --export_template_trk=1 --source=${subs[$1]}
+```
