@@ -15,6 +15,10 @@ The FIB files and tractography files are shared using [Creative Commons Attribu
   **Methods**
   > A multishell diffusion scheme was used, and the b-values were 1500 and 3000 s/mm². The number of diffusion sampling directions was 93 and 92, respectively. The in-plane resolution was 1.5 mm. The slice thickness was 1.5 mm. The susceptibility artifact was estimated using reversed phase-encoding b0 by TOPUP from the Tiny FSL package (http://github.com/frankyeh/TinyFSL), a re-compilied version of FSL TOPUP (FMRIB, Oxford) with multi-thread support. The correction was conducted through the integrated interface in DSI Studio's ("Chen" release). The diffusion MRI data were rotated to align with the AC-PC line. The accuracy of b-table orientation was examined by comparing fiber orientations with those of a population-averaged template (Yeh et al. Neuroimage, 2018). The restricted diffusion was quantified using restricted diffusion imaging (Yeh et al., MRM, 77:603--612 (2017)). The diffusion data were reconstructed using generalized q-sampling imaging (Yeh et al., IEEE TMI, ;29(9):1626-35, 2010) with a diffusion sampling length ratio of 1.25. The tensor metrics were calculated. The analysis was conducted using the resource allocation (TG-CIS200026) at Extreme Science and Engineering Discovery Environment (XSEDE) resources (Towns, J. et al. Computing in science & engineering 16, 62-74  2014).
 
+- EDDY/TOPUP-processed SRC files
+
+  I can only share SRC files to those who also have NDA access to HCP-D repository. Once you email me your NDA agreement, I will send the private link to you.
+
 - [Demographics](https://www.humanconnectome.org/storage/app/media/documentation/LS2.0/HCD_LS_2.0_subject_completeness.csv)
 
 
