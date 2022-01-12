@@ -68,12 +68,12 @@ The following is the job array to run the above script using sbatch. The script 
 #SBATCH -N 1
 #SBATCH --ntasks-per-node 8
 #SBATCH --mem=15GB
-#SBATCH --array=0-722
+#SBATCH --array=0-999
 set -x
 sh $1 $SLURM_ARRAY_TASK_ID
 ```
 
-**3. Reconstruction**
+**3. reconstruction**
 
 This was done using a simple command
 
@@ -81,7 +81,7 @@ This was done using a simple command
 singularity exec dsistudio_latest.sif dsi_studio --action=rec --source=*.src.gz
 ```
 
-**4. Fiber Tracking**
+**4. fiber Tracking**
 
 The following script for a job arrary to runs fiber tracking on all FIB file. 
 
