@@ -10,7 +10,6 @@ The FIB files and tractography files are shared using [Creative Commons Attribu
 
 # Download
 
-
 - [FIB files](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/ErwU3whz_sFOkBhhSzz0pH0B40RP0nxp004d0ViISrz_Kw?e=D0TKee) (Ready-to-track using [DSI Studio](https://dsi-studio.labsolver.org))
 
   **Methods**
