@@ -21,3 +21,43 @@ Users using the files should follow agreement and [cite/acknowledge the source](
 
 - [Demographics](https://biomedia.github.io/dHCP-release-notes/supplementary_files/combined.tsv)
 
+
+# Processing Steps
+
+**1. generate SRC files from NIFTI files**
+
+Copy all NIFTI (DWI and mask), bval, bvec files to the same folder and use DSI Studio's GUI Batch function [Batch Processing[Step B2b: NIFTI to SRC (Single Folder)]
+
+**2. Reconstruction**
+
+This was done using DSI Studio GUI. Click on [Step T2 Reconstruction] and select all SRC files.
+1. [Step T2a][Edit][Open] to load mask 
+2. [Edit][Crop Background]
+3. [Run Reconstruction]
+
+
+**3. Fiber Tracking**
+
+The following script for a job arrary to runs fiber tracking on all FIB file. 
+
+```
+#!/bin/bash
+subs=$(ls -L *.fib.gz)
+subs=(${subs// /})
+echo "processing ${subs[$1]}"
+singularity exec dsistudio_latest.sif dsi_studio --action=atk --export_template_trk=1 --source=${subs[$1]}
+```
+
+The following is the job array to run the above script using sbatch. The script needs an the file name of the script to run the job array.
+
+```
+#!/bin/bash
+#SBATCH -t 24:00:00
+#SBATCH -p RM-shared
+#SBATCH -N 1
+#SBATCH --ntasks-per-node 8
+#SBATCH --mem=15GB
+#SBATCH --array=0-999
+set -x
+sh $1 $SLURM_ARRAY_TASK_ID
+```
