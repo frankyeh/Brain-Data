@@ -48,7 +48,7 @@ done
 Correct artifacts using AP and PA SRC files and generate corrected AP-PA combined SRC files.
 The script needs a number input that allows for running the task using clusters job arrary
 
-```bash
+```
 #!/bin/bash
 subs_ap=$(ls -Lr *AP.nii.gz.src.gz)
 subs_ap=(${subs_ap// /})
