@@ -17,6 +17,9 @@ The HCP842 tractography atlas and the most recent HCP1065 atlas are derived from
 # Download
 
 ## HCP1065 tractography database, probabilistic atlas, and tract-to-region connectome
+
+![image](https://user-images.githubusercontent.com/275569/149355373-399832bb-7a83-486d-ba89-71910a0af9df.png)
+
 >  Yeh, F. C. (2021) Population-Based Tract-To-Region Connectome of the Human Brain and Its Hierarchical Topology, preprint DOI: 10.21203/rs.3.rs-1083262/v1 
 
 - [Probabilistic tractography atlas of white matter pathways (64 NIFTI files)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EvhbI5gALiZGvZATK1D8cyUBsH4J_CeRjHw-nJq4fIzoCg?e=dK0y5U)
@@ -40,6 +43,7 @@ The HCP842 tractography atlas and the most recent HCP1065 atlas are derived from
 
 
 ## HCP1065 tractography atlas 
+
 > Yeh FC, Panesar S, Fernandes D, Meola A, Yoshino M, Fernandez-Miranda JC, Vettel JM, Verstynen T. Population-averaged atlas of the macroscale human structural connectome and its network topology. Neuroimage. 2018 Sep 1;178:57-68. (2021 update)
 
 HCP1065 atlas is an updated atlas from HCP842 atlas. The new atlas is baes on "ICBM 2009a Nonlinear Asymmetric" (<https://www.bic.mni.mcgill.ca/ServicesAtlases/ICBM152NLin2009>) space, whereas HCP842 is based on FSL's FA map ( 58 FA images averaged to old MNI152). The new atlas further provides subcomponents for cingulum, SLF, corticopontine track, corticostriatal track, corticothalamic track (renamed as thalamic radiation). Since the atlas is transformed or derived from HCP842, please cite the original HCP842 atlas paper (Yeh, 2018), and mentioned an updated version is used to get tracks in the ICBM152 nonlinear space.
@@ -56,6 +60,10 @@ To view these tract files, please download the HCP-1065 template fib file and o
 - [Abbreviation list](https://pitt-my.sharepoint.com/:x:/g/personal/yehfc_pitt_edu/EQcjg3Ignv5CpOlwRu-dc-sBFy790zDaA2zW0qtR19VbJA?e=3iA6Ey) 
 
 ## HCP842 tractography atlas
+
+![image](https://user-images.githubusercontent.com/275569/149355618-5299fdf9-3d6e-4cfc-a434-96794f838052.png)
+
+
 > Yeh FC, Panesar S, Fernandes D, Meola A, Yoshino M, Fernandez-Miranda JC, Vettel JM, Verstynen T. Population-averaged atlas of the macroscale human structural connectome and its network topology. Neuroimage. 2018 Sep 1;178:57-68. (original data)
 
  HCP842 tractography atlas uses FSL's FA map as its reference space (<https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/Atlases>), which averages from 58 FA images in the MNI152 coordinate. 
