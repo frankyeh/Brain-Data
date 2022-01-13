@@ -22,12 +22,12 @@ The HCP842 tractography atlas and the most recent HCP1065 atlas are derived from
 
 >  Yeh, F. C. (2021) Population-Based Tract-To-Region Connectome of the Human Brain and Its Hierarchical Topology, preprint DOI: 10.21203/rs.3.rs-1083262/v1 
 
-- [Probabilistic tractography atlas of white matter pathways (64 NIFTI files)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EvhbI5gALiZGvZATK1D8cyUBsH4J_CeRjHw-nJq4fIzoCg?e=dK0y5U)
+- Probabilistic tractography atlas of white matter pathways [(64 NIFTI files)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EvhbI5gALiZGvZATK1D8cyUBsH4J_CeRjHw-nJq4fIzoCg?e=dK0y5U) [TIF pictures](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/El7FAwrE-9dMj4MGXVmcL5cBpCB5VpvuzoAc7DYyE8AzKg?e=GTGG6F)
 
   Automatic fiber tracking and augmented fiber tracking (Yeh 2020) were used to map white matter pathways in HCP young adult subjects. These NIFTI volumes record the population probability of each white matter tract aggregated from the tractography of 1065 subjects.
 
  
-- [Tractography of 1065 subjects in ICBM152 space (~1065x64 NIFTI files)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EhEovDmdDhpEl1s6OhK69ckBBBE7FoXH1psecjDWkqxloA?e=ngchRU)
+- Tractography of 1065 subjects in ICBM152 space [(~1065x64 NIFTI files)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EhEovDmdDhpEl1s6OhK69ckBBBE7FoXH1psecjDWkqxloA?e=ngchRU) [(TT files)]
 
   Automatic fiber tracking and augmented fiber tracking (Yeh 2020) was applied to each of the HCP 1065 subjects data to map 64 white matter pathways.
    
@@ -41,6 +41,8 @@ The HCP842 tractography atlas and the most recent HCP1065 atlas are derived from
 
   - [BM/KL parcellation](https://pitt-my.sharepoint.com/:x:/g/personal/yehfc_pitt_edu/EVG6NflPIbtIpc3jvruyf7cB2ZegmiAWPgQkHDJKakfQZg?e=awH0LB)
 
+- [Abbreviations](https://pitt-my.sharepoint.com/:x:/g/personal/yehfc_pitt_edu/ETZFzeNe8D5Dul7OYZHj_W4B5xBKgihpgz4C70Knv7YpKQ?e=7j4pwO)
+
 
 ## HCP1065 tractography atlas 
 
@@ -51,11 +53,11 @@ HCP1065 atlas is an updated atlas from HCP842 atlas. The new atlas is baes on "
 
 To view these tract files, please download the HCP-1065 template fib file and open it in DSI Studio at [Step T3 Fiber Tracking]. The *.tt.gz files can be loaded using [Tracts][Open Tracts]. The ICBM152 images can be loaded using [Edit][Insert T1W/T2W].
 
-- [Population-averaged tractography atlas (TT)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EjD1HZDMSnVGuuXm_B5vczQBuvY8WFjtHQR-AnXQc6izvQ?e=BERWvg)
+- [Population-averaged tractography atlas (TT)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EjD1HZDMSnVGuuXm_B5vczQBuvY8WFjtHQR-AnXQc6izvQ?e=JIOLDz)
 
-- [Population-averaged tractography atlas (TRK)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/Ek0DdO67iQ9NvkJUci91lzMBXCVBq926QXTTY7JK6LIjgw?e=7rCUDD)
+- [Population-averaged tractography atlas (TRK)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/Ek0DdO67iQ9NvkJUci91lzMBXCVBq926QXTTY7JK6LIjgw?e=jvydcC)
 
-- [Population-averaged tractography atlas (NIFTI)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EvAcb1QyogFPg206v-FRl2gB6EcDf3TIPG37JyugoL3hdA?e=DucFpI)
+- [Population-averaged tractography atlas (NIFTI)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EvAcb1QyogFPg206v-FRl2gB6EcDf3TIPG37JyugoL3hdA?e=SuGBZ4)
 
 - [Abbreviation list](https://pitt-my.sharepoint.com/:x:/g/personal/yehfc_pitt_edu/EQcjg3Ignv5CpOlwRu-dc-sBFy790zDaA2zW0qtR19VbJA?e=3iA6Ey) 
 
