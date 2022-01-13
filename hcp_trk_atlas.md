@@ -18,7 +18,7 @@ The HCP842 tractography atlas and the most recent HCP1065 atlas are derived from
 
 ## HCP1065 tractography database, probabilistic atlas, and tract-to-region connectome
 
-![image](https://user-images.githubusercontent.com/275569/149355373-399832bb-7a83-486d-ba89-71910a0af9df.png)
+<img src="https://user-images.githubusercontent.com/275569/149355373-399832bb-7a83-486d-ba89-71910a0af9df.png" width="400">
 
 >  Yeh, F. C. (2021) Population-Based Tract-To-Region Connectome of the Human Brain and Its Hierarchical Topology, preprint DOI: 10.21203/rs.3.rs-1083262/v1 
 
@@ -63,8 +63,7 @@ To view these tract files, please download the HCP-1065 template fib file and o
 
 ## HCP842 tractography atlas
 
-![image](https://user-images.githubusercontent.com/275569/149355618-5299fdf9-3d6e-4cfc-a434-96794f838052.png)
-
+<img src="https://user-images.githubusercontent.com/275569/149355618-5299fdf9-3d6e-4cfc-a434-96794f838052.png" width="400">
 
 > Yeh FC, Panesar S, Fernandes D, Meola A, Yoshino M, Fernandez-Miranda JC, Vettel JM, Verstynen T. Population-averaged atlas of the macroscale human structural connectome and its network topology. Neuroimage. 2018 Sep 1;178:57-68. (original data)
 
