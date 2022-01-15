@@ -37,8 +37,8 @@ First, copy all NIFTI, bval, bvec files in the same folder and run this script t
 #!/bin/bash
 for sub in $(ls HCA8*98_AP.nii.gz)
 do    
-    singularity exec dsi_studio --action=src --source=${sub},${sub:0:25}99_AP.nii.gz
-    singularity exec dsi_studio --action=src --source=${sub:0:25}98_PA.nii.gz,${sub:0:25}99_PA.nii.gz
+    dsi_studio --action=src --source=${sub},${sub:0:25}99_AP.nii.gz
+    dsi_studio --action=src --source=${sub:0:25}98_PA.nii.gz,${sub:0:25}99_PA.nii.gz
 done
 ```
 
@@ -56,7 +56,7 @@ if [ ! -e $sub_pa ]; then
      echo "." > ${sub_pa}_not_found.txt
 else    
      echo "processing ${subs_ap[$1]}"
-     singularity exec dsistudio_latest.sif dsi_studio --action=rec --source=${subs_ap[$1]} --rev_pe=${subs_pa} --cmd="[Step T2][File][Save Src File]=${subs_pa:0:10}.src.gz"
+     dsi_studio --action=rec --source=${subs_ap[$1]} --rev_pe=${subs_pa} --cmd="[Step T2][File][Save Src File]=${subs_pa:0:10}.src.gz"
 fi
 ```
 
@@ -76,20 +76,33 @@ sh $1 $SLURM_ARRAY_TASK_ID
 
 **3. reconstruction**
 
-This was done using a simple command
-
+The following command generate native space FIB files for automatic fiber tracking
 ```
-singularity exec dsistudio_latest.sif dsi_studio --action=rec --source=*.src.gz
+dsi_studio --action=rec --source=*.src.gz
 ```
 
-**4. fiber Tracking**
+The following command generate template space FIB files for correlational tractography
+```
+dsi_studio --action=rec --source=*.src.gz --method=7 --template=0 --record_odf=1 --dti_no_high_b=1
+```
 
-The following script for a job arrary to runs fiber tracking on all FIB file. 
+
+**4. automatic fiber tracking**
+
+The following script for a job arrary to runs fiber tracking on all native-space FIB file. 
 
 ```
 #!/bin/bash
 subs=$(ls -L *.fib.gz)
 subs=(${subs// /})
 echo "processing ${subs[$1]}"
-singularity exec dsistudio_latest.sif dsi_studio --action=atk --export_template_trk=1 --source=${subs[$1]}
+dsi_studio --action=atk --export_template_trk=1 --source=${subs[$1]}
+```
+
+**5. create connectometry database for correlation tractography**
+
+The following command create connectometry databases from template-space FIB file
+
+```
+dsi_studio --action=atl --source=. --cmd=db --template=../../HCP1065.1mm.fib.gz 
 ```
