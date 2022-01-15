@@ -24,6 +24,9 @@ Yeh, F. C., Panesar, S., Fernandes, D., Meola, A., Yoshino, M., Fernandez-Mirand
 # Download
 
 ## HCP-1065 GQI/QSDR template
+
+<img src="https://user-images.githubusercontent.com/275569/149358303-47fbd938-a403-4b8d-ad1c-29993ed89c28.png" width="400">
+
 > Yeh, F. C. (2021) Population-Based Tract-To-Region Connectome of the Human Brain and Its Hierarchical Topology, preprint DOI: 10.21203/rs.3.rs-1083262/v1
 
 - [HCP1065 1-mm FIB file](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EenyiepzWeFEj8bavPNkz84ByQeJAHGW6Hka410uyeUqxA?e=rcS3Lg) (for fiber tracking)
@@ -40,6 +43,9 @@ The HCP1065 registration is based on the nonlinear ICBM152 2009a space. The temp
 The HCP 1065 template was constructed from a total of 1065 subjects' diffusion MRI data from the Human Connectome Project (2017 Q4, 1200-subject release). There were 575 female (others male). Age ranges from 22 to 37 with a mean of 28.74, Q1=26, median=29, Q4=32. A multishell diffusion scheme was used, and the b-values were 1000, 2000, 3000 s/mm2. The number of diffusion sampling directions were 90, 90, and 90, respectively. The in-plane resolution was 1.25 mm. The slice thickness was 1.25 mm. The diffusion data were reconstructed in the MNI space using q-space diffeomorphic reconstruction (Yeh et al., Neuroimage, 58(1):91-9, 2011) to obtain the spin distribution function (Yeh et al., IEEE TMI, ;29(9):1626-35, 2010). A diffusion sampling length ratio of 1.7 was used, and the output resolution was 1 mm. The analysis was conducted using DSI Studio (http://dsi-studio.labsolver.org).
 
 ## HCP-1065 DTI template
+
+<img src="https://user-images.githubusercontent.com/275569/149358788-f195df02-a47e-4f7b-a580-cde7bbd505a4.png" width="400">
+
 > (FSL version)
 
 - [FSL-HCP1065-FA NIFTI file](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EV3F_eZvN6NDv-PN4I05dzwBu1kLrqnK_N6VplznsVQv0Q?e=wXGOo7) 
@@ -56,6 +62,9 @@ The HCP 1065 template was constructed from a total of 1065 subjects' diffusion M
 The HCP1065 DTI template is redistributed from FSL (<https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/Atlases>) under [FSL main license](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/Licence). These templates were derived from 1065 HCP subjects. Diffusion tensors were fitted using the b=1000 s/mm2 data after gradient non-linearities correction. Each tensor was transformed into MNI space using the HCP subject-specific volumetric transformations, after appropriate re-orientation (Alexander et al, IEEE TMI, 2001). The FA of the arithmetic mean of all MNI-transformed tensors was obtained. The work was carried out by S. Warrington, S. Jbabdi, S. Smith, S. Sotiropoulos. Data were provided by the Human Connectome Project, WU-Minn Consortium (Principal Investigators: David Van Essen and Kamil Ugurbil; 1U54MH091657) funded by the 16 NIH Institutes and Centers that support the NIH Blueprint for Neuroscience Research; and by the McDonnell Center for Systems Neuroscience at Washington University.
 
 ## HCP-842
+
+<img src="https://user-images.githubusercontent.com/275569/149359512-1fba65b7-f3b9-49aa-a5f3-628ca3a14ed9.png" width="400">
+
 > Yeh FC, Panesar S, Fernandes D, Meola A, Yoshino M, Fernandez-Miranda JC, Vettel JM, Verstynen T. Population-averaged atlas of the macroscale human structural connectome and its network topology. Neuroimage. 2018 Sep 1;178:57-68.
 
 - [HCP842 1-mm FIB file](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EZLF09z_q3hErTHE_-13XjEBqFRvU7rFv0Uy24ulvLPLXQ?e=OUgZIH)
