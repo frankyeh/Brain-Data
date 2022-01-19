@@ -10,6 +10,9 @@ Users should follow the original agreement that requires (1) non-comercial usage
 
 # Download
 
+<img src="https://user-images.githubusercontent.com/275569/150191699-5a419e63-4c03-4e7c-b5c5-d311e50020db.png" width="400">
+
+**Figure: the left arcuate fasciculus of the first CamCAN subject mapped using DSI Studio's automatic fiber tracking**
 
 - [FIB files](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/ErvyHCvVq8tCmHV29USJUnsBeeONdEqF36nuOubHU96AVA?e=7hR2At) (Ready-to-track using [DSI Studio](https://dsi-studio.labsolver.org))
 
