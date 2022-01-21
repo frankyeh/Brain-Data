@@ -1,6 +1,6 @@
-# Introduction
+# HCP Population-Averaged Diffusion MRI Template
 
-The HCP842 template and HCP1065 template are averaged from HCP data of the WU-Minn HCP Consortium (Q1-Q3, 2014) and distributed under the WU-Minn HCP open access data use term.\
+The HCP842 and HCP1065 templates are averaged from HCP data of the WU-Minn HCP Consortium (Q1-Q3, 2014) and distributed under the WU-Minn HCP open access data use term.\
 To view this template or perform fiber tracking, please download [DSI Studio](http://dsi-studio.labsolver.org/dsi-studio-download) and open it in STEP3 Fiber Tracking.
 
 # License
