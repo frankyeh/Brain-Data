@@ -1,6 +1,6 @@
-# Introduction
+# Lifespan Developing Human Connectome Project (dHCP) Study
 
-The [Lifespan Developing Human Connectome Project (dHCP) Study](https://www.humanconnectome.org/study/lifespan-developing-human-connectome-project) planned to enroll 1500 Subjects at age 20-44 weeks post-conception. The purpose is to link together imaging, clinical, behavioural, and genetic information..
+The [dHCP study](https://www.humanconnectome.org/study/lifespan-developing-human-connectome-project) planned to enroll 1500 Subjects at age 20-44 weeks post-conception. The purpose is to link together imaging, clinical, behavioural, and genetic information..
 
 # License
 
