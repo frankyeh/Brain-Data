@@ -1,6 +1,6 @@
-# Introduction
+# Lifespan Human Connectome Project Development (HCP-D) Study
 
-The[ Lifespan Human Connectome Project Development (HCP-D) Study](https://www.humanconnectome.org/study/hcp-lifespan-development) planned to enroll 1,300+ healthy children, adolescents, and young adults (ages 5-21). The purpose is to discover how different parts of a child's brain are connected and how these connections (the "connectome") change as the brain develops.
+The [HCP-D Study](https://www.humanconnectome.org/study/hcp-lifespan-development) planned to enroll 1,300+ healthy children, adolescents, and young adults (ages 5-21). The purpose is to discover how different parts of a child's brain are connected and how these connections (the "connectome") change as the brain develops.
 
 # License
 
