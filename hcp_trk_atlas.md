@@ -1,5 +1,5 @@
 
-# Population-Based Tractography Atlases
+# HCP Population-Based Tractography Atlases
 
 ![image](https://user-images.githubusercontent.com/275569/150540941-9e69f578-29a8-480f-939e-080d6701c0e2.png)
 
