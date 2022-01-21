@@ -1,4 +1,9 @@
-# Reference
+
+# Population-Based Tractography Atlases
+
+![image](https://user-images.githubusercontent.com/275569/150540941-9e69f578-29a8-480f-939e-080d6701c0e2.png)
+
+The population-based tractography atlases were constructed using [HCP-YA](/hcp-ya.html) data. The first version was a population-averaged atlas [(Yeh, 2018)](https://www.ncbi.nlm.nih.gov/pubmed/29758339), whereas the more recent version was a population-based atlas [(Yeh 2021)](https://www.researchsquare.com/article/rs-1083262/v1) using [DSI Studio's automatic fiber tracking](https://dsi-studio.labsolver.org/doc/gui_t3_atk.html)
 
 ***Population-based atlas***
 
@@ -10,9 +15,9 @@ Yeh FC, Panesar S, Fernandes D, Meola A, Yoshino M, Fernandez-Miranda JC, Vettel
 
 # License
 
-This atlas is shared under the [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). It is free for all purposes provided its citation (2018 Neuroimage Paper, see below) is attributed as the source.
+This atlas is shared under the [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
 
-The HCP842 tractography atlas and the most recent HCP1065 atlas are derived from data acquired by the Human Connectome Project and may require additional [acknowledgment](https://www.humanconnectome.org/study/hcp-young-adult/document/wu-minn-hcp-consortium-open-access-data-use-terms).
+The atlases are derived data from the Human Connectome Project. Using them requires additional [acknowledgment](https://www.humanconnectome.org/study/hcp-young-adult/document/wu-minn-hcp-consortium-open-access-data-use-terms).
 
 # Download
 
