@@ -10,7 +10,7 @@ Please acknowledge the source to the WU-Minn HCP.
 
 # Download
 
-- Diffusion MRI FIB Files: [1mm](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EhAofmkwtjlMlSku3_vniFEBkStumkY2i5y2YtoqIAOMBQ?e=US4888), [2mm](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EvFAkXbKPjVCjuTuWcuyGyYBZRAUi4ytmwi9jDI1kFtguA?e=8p3AdS)
+- Diffusion MRI FIB Files: [1mm](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EhAofmkwtjlMlSku3_vniFEBkStumkY2i5y2YtoqIAOMBQ?e=US4888), [2mm (OneDrive)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EvFAkXbKPjVCjuTuWcuyGyYBZRAUi4ytmwi9jDI1kFtguA?e=8p3AdS), [2mm (Zenodo)](https://zenodo.org/record/6307812)
 
   FIB files are read-to-track and can be opened in [DSI Studio](http://dsi-studio.labsolver.org) to perform fiber tracking.
   
