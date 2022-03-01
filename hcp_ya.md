@@ -41,7 +41,7 @@ Please acknowledge the source to the WU-Minn HCP.
 This data set was originally from the connectome db website (https://db.humanconnectome.org/). The MGH HCP team has released diffusion imaging and structural imaging data acquired from 35 young adults using the customized MGH Siemens 3T Connectome scanner, which has 300 mT/m maximum gradient strength for diffusion imaging.
 
 - [NIFTI files for DWI and T1W](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/El5HHIaNyD1Hreo5hvZaCjcBjrbfyfiEUG22lvcPHYC_pA?e=wKkjEc)
-- [SRC files](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EiyOUXXxs01FljIc7J1AypABeY3imX_CLfkpPUbBVM0hGg?e=XqhbBt)
+- SRC files [(OneDrive)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EiyOUXXxs01FljIc7J1AypABeY3imX_CLfkpPUbBVM0hGg?e=XqhbBt) [(Zenodo)](https://zenodo.org/record/6315871)
 
   **Methods**
   > A multishell diffusion scheme was used, and the b-values were 1000 ,3000 ,5000 and 10000 s/mm2. The number of diffusion sampling directions were 64, 64, 128, and 256. The in-plane resolution was 1.5 mm. The slice thickness was 1.5 mm.
