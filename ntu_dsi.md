@@ -21,7 +21,7 @@ The diffusion images were acquired on a SIEMENS Trio scanner using a 2D EPI diff
 
 The diffusion images were acquired on a SIEMENS Trio scanner using a 2D EPI diffusion sequence. TE=131 ms, and TR=11500 ms. A diffusion spectrum imaging scheme was used, and a total of 203 diffusion sampling were acquired. The maximum b-value was 4000 s/mm2. The in-plane resolution was 1.9 mm. The slice thickness was 1.9 mm.
 
-- [2.5-mm DTI, HARDI, and DSI data of the same subject (n=1)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/Et9rFKQiG6hOuEIdmnevB50BAztbi8AbpM2NNPQAvYyQPg?e=yCbdaj)
+- 2.5-mm DTI, HARDI, and DSI data of the same subject (n=1)[(OneDrive)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/Et9rFKQiG6hOuEIdmnevB50BAztbi8AbpM2NNPQAvYyQPg?e=yCbdaj) [(Zenodo)](https://zenodo.org/record/6320992) 
 
 # Reference
 
