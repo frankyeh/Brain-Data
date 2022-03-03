@@ -17,13 +17,13 @@ The HCP-1065 data are shared under the WU-Minn HCP open access data use term (4)
 
 ## Download
 
-- [HCP1065 1-mm FIB file](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EenyiepzWeFEj8bavPNkz84ByQeJAHGW6Hka410uyeUqxA?e=rcS3Lg) (for fiber tracking)
-- [HCP1065 2-mm FIB file](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EYbDjxK3HEpNqIo6sYtkY4MBhRkWjJLawmgyTbLrcbho8A?e=Ooy3Ix) (for fiber tracking)
-- [HCP1065 2-mm connectometry db](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EbQV0IwTavhOhx_SggUThLkB267eZkJ1eCGzclwk8llKYQ?e=QJl5po) (for connectometry analysis)
-- [HCP1065 QA NIFTI file](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EQr_xqaHi-1Cpdk62rKKCuoBIAD6NOTPQ0IX6-s2zNzNSg?e=hAk3UA)
-- [HCP1065 nQA NIFTI file](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EXSuHdkM05tPtn1Jf1o3LuQBMiqJjVjmaydX5xHrRqifzQ?e=4z1yz7)
-- [HCP1065 GFA NIFTI file](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EdOmAK3VdwJKrRU1OTJwQEIBId7eVO2rRjTS_omTjFHf2Q?e=hMZkuY)
-- [HCP1065 ISO NIFTI file](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/Ea6MZybx-gVHsjEmKxMIqb4B7fYJKg1snk37BKM4YRXPbw?e=O8nD0M)
+- [HCP1065 1-mm FIB file](https://zenodo.org/record/6324701/files/HCP1065.1mm.fib.gz?download=1) (for fiber tracking)
+- [HCP1065 2-mm FIB file](https://zenodo.org/record/6324701/files/HCP1065.2mm.fib.gz?download=1) (for fiber tracking)
+- [HCP1065 2-mm Connectometry DB](https://zenodo.org/record/6324701/files/HCP1065.2mm.db.fib.gz?download=1) (for connectometry analysis)
+- [HCP1065 QA NIFTI file](https://zenodo.org/record/6324701/files/HCP1065_qa.nii.gz?download=1)
+- [HCP1065 nQA NIFTI file](https://zenodo.org/record/6324701/files/HCP1065_nqa.nii.gz?download=1)
+- [HCP1065 GFA NIFTI file](https://zenodo.org/record/6324701/files/HCP1065_gfa.nii.gz?download=1)
+- [HCP1065 ISO NIFTI file](https://zenodo.org/record/6324701/files/HCP1065_iso.nii.gz?download=1)
 
 The HCP1065 registration is based on the nonlinear ICBM152 2009a space. The template can be used with the T1W images from Montreal Neurological Institute: <http://www.bic.mni.mcgill.ca/~vfonov/icbm/2009/> or histology images from the Big Brain data: <https://bigbrain.loris.ca/main.php?test_name=brainvolumes>\
 The HCP 1065 template was constructed from a total of 1065 subjects' diffusion MRI data from the Human Connectome Project (2017 Q4, 1200-subject release). There were 575 female (others male). Age ranges from 22 to 37 with a mean of 28.74, Q1=26, median=29, Q4=32. A multishell diffusion scheme was used, and the b-values were 1000, 2000, 3000 s/mm2. The number of diffusion sampling directions were 90, 90, and 90, respectively. The in-plane resolution was 1.25 mm. The slice thickness was 1.25 mm. The diffusion data were reconstructed in the MNI space using q-space diffeomorphic reconstruction (QSDR)(Yeh et al., Neuroimage, 58(1):91-9, 2011) to obtain the spin distribution function (Yeh et al., IEEE TMI, ;29(9):1626-35, 2010). A diffusion sampling length ratio of 1.7 was used, and the output resolution was 1 mm. The analysis was conducted using DSI Studio (http://dsi-studio.labsolver.org).
@@ -68,8 +68,8 @@ The HCP-842 data are shared under the WU-Minn HCP open access data use term (4) 
 The hcp842 templates are averaged from HCP data of the WU-Minn HCP Consortium (Q1-Q3, 2014) and distributed under the WU-Minn HCP open access data use term.\
 To view this template or perform fiber tracking, please download [DSI Studio](http://dsi-studio.labsolver.org/dsi-studio-download) and open it in STEP3 Fiber Tracking.
 
-- [HCP842 1-mm FIB file](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EZLF09z_q3hErTHE_-13XjEBqFRvU7rFv0Uy24ulvLPLXQ?e=OUgZIH)
-- [HCP842 2-mm FIB file](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/Eflb1dpQfJhLum2Vls4DI20BDLhT2ilZZpu-gjc-MIGLwA?e=kBAAqj)
+- [HCP842 1-mm FIB file](https://zenodo.org/record/6324701/files/HCP842.1mm.fib.gz?download=1)
+- [HCP842 2-mm FIB file](https://zenodo.org/record/6324701/files/HCP842.2mm.fib.gz?download=1)
 
 M: 372 F:470 ages: 20~40 (2015 Q4, 900-subject release)
 
@@ -78,12 +78,43 @@ The HCP842 registration used FSL's FA template as the template space. It is the 
 The HCP-842 template was constructed using a total of 842 subjects' diffusion MRI data from the Human Connectome Project (2015 Q3, 900-subject release). The diffusion images were acquired using a multishell diffusion scheme. The b-values were 1000, 2000, and 3000 s/mm2. The number of diffusion sampling directions were 90, 90, and 90. The in-plane resolution was 1.25 mm. The slice thickness was 1.25 mm. The diffusion data were reconstructed in the MNI space using q-space diffeomorphic reconstruction (Yeh et al., Neuroimage, 58(1):91-9, 2011) to obtain the spin distribution function (Yeh et al., IEEE TMI, ;29(9):1626-35, 2010). A diffusion sampling length ratio of 1.25 was used, and the output resolution was 1 mm. The atlas was constructed by averaging the SDFs of the 842 individual subjects.
 
 
-## DSI Template
+# QSDR-GRID Template
 
-The following data were group average of normal subjects scanned by DSI 258-direction acquisition.
+## Download
 
-- [DSI NQA template](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EbudZudVFRpAqUqFQtPm6nsBjvKp475iWSZiEnV-6leOzQ?e=COXfT9)
-- [DSI FA template](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EUefwzz5GBpEhClrNStz7kEBRB9h4aHboTQuWt02nB-EQg?e=uXysjx)
+The following data were group average of normal subjects scanned by Grid 258-direction acquisition.
+- [GRID 2-mm FIB file](https://zenodo.org/record/6324701/files/Grid258.2mm.fib.gz?download=1)
+- 
+- [GRID QA template](https://zenodo.org/record/6324701/files/Grid258_qa.nii.gz?download=1)
+- [GRID NQA template](https://zenodo.org/record/6324701/files/Grid258_nqa.nii.gz?download=1)
+- [GRID RDI template](https://zenodo.org/record/6324701/files/Grid258_rdi.nii.gz?download=1)
+- [GRID ISO template](https://zenodo.org/record/6324701/files/Grid258_iso.nii.gz?download=1)
+
+- [GRID GFA template](https://zenodo.org/record/6324701/files/Grid258_gfa.nii.gz?download=1)
+- [GRID FA template](https://zenodo.org/record/6324701/files/Grid258_dti_fa.nii.gz?download=1)
+- [GRID AD template](https://zenodo.org/record/6324701/files/Grid258_ad.nii.gz?download=1)
+- [GRID MD template](https://zenodo.org/record/6324701/files/Grid258_md.nii.gz?download=1)
+- [GRID RD template](https://zenodo.org/record/6324701/files/Grid258_rd.nii.gz?download=1)
 
 
 A group average template was constructed from a total of 32 subjects. The diffusion images were acquired on a SIEMENS Prisma_fit scanner using a diffusion sequence (dMRI_dir258_1 ). TE=99.2 ms, and TR=2490 ms. A diffusion spectrum imaging scheme was used, and a total of 257 diffusion sampling were acquired. The maximum b-value was 4010 s/mm². The in-plane resolution was 2 mm. The slice thickness was 2 mm. The accuracy of b-table orientation was examined by comparing fiber orientations with those of a population-averaged template (Yeh et al. Neuroimage, 2018). The diffusion data were reconstructed in the MNI space using q-space diffeomorphic reconstruction (Yeh et al., Neuroimage, 58(1):91-9, 2011) to obtain the spin distribution function (Yeh et al., IEEE TMI, ;29(9):1626-35, 2010).  A diffusion sampling length ratio of 1.25 was used. The output resolution in diffeomorphic reconstruction was 2 mm isotorpic. The restricted diffusion was quantified using restricted diffusion imaging (Yeh et al., MRM, 77:603–612 (2017)). The tensor metrics were calculated.
+
+# CMU 60 Template
+
+The CMU-60 template is an averaged map of reconstructed fiber orientations from a 257-direction diffusion spectrum imaging (DSI) sequence from 60 neurologically healthy volunteers. The files are in DSI Studio format, which is free to download here. This dataset includes the original 30 subjects from the CMU-30 template (found here).
+These data sets are free to use for research and education purposes. Please notify Dr. Verstynen should they be used in a conference abstract or publication.
+
+## Download
+
+- [CMU60 2-mm FIB file](https://zenodo.org/record/6324701/files/CMU60.2mm.fib.gz?download=1)
+- [CMU60 2-mm Connectometry DB](https://zenodo.org/record/6324701/files/CMU60.db.fib.gz?download=1)
+- [CMU60 Demographics CSV](https://zenodo.org/record/6324701/files/CMU60.demo.csv?download=1)
+
+
+## Participants
+> Twenty nine male and thirty one female subjects were recruited from the local Pittsburgh community and the Army Research Laboratory in Aberdeen Maryland. All subjects were neurologically healthy, with no history of either head trauma or neurological or psychiatric illness. Subject ages ranged from 18 to 45 years of age at the time of scanning, with a mean age of 26 years (+/- 6 standard deviation). Six subjects were left handed (3 males, 3 females).
+
+## Methods
+> All participants were scanned on a Siemen’s Verio 3T system in the Scientific Imaging & Brain Research (SIBR) Centerat Carnegie Mellon University using a 32-channel head coil. We collected a 50 min, 257-direction DSI scan using a twice-refocused spin-echo EPI sequence and multiple q values (TR = 9,916 ms, TE = 157 ms, voxel size = 2.4 x 2.4 x 2.4 mm, FoV = 231 x 231 mm, b-max = 5,000 s/mm2, 51 slices). Head-movement was minimized during the image acquisition through padding supports and all subjects were confirmed to have minimal head movement during the can prior to inclusion in the template.
+
+> All images were processed using a q-space diffeomorphic reconstruction method described previously (Yeh & Tseng, 2011). Briefly, this approach uses a non-linear coregistration approach (ICBM-152 space template regularization, 16 non-linear iterations) that registers the voxel-coordinate into MNI space while also maintaining distortion of the q-space vector during the normalization process. From here diffusion orientation distribution functions (dODFs) are reconstructed to spatial resolution of 2x2x2 mm. The final template image was created by averaging the ODF maps across all 60 subjects, and the resulting template can be used to obtain the representative tractography of the. The white matter surface is rendered independently from an externally supplied 1×1×1 mm resolution white matter image.
