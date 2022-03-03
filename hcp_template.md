@@ -84,12 +84,10 @@ The HCP-842 template was constructed using a total of 842 subjects' diffusion MR
 
 The following data were group average of normal subjects scanned by Grid 258-direction acquisition.
 - [GRID 2-mm FIB file](https://zenodo.org/record/6324701/files/Grid258.2mm.fib.gz?download=1)
-- 
 - [GRID QA template](https://zenodo.org/record/6324701/files/Grid258_qa.nii.gz?download=1)
 - [GRID NQA template](https://zenodo.org/record/6324701/files/Grid258_nqa.nii.gz?download=1)
 - [GRID RDI template](https://zenodo.org/record/6324701/files/Grid258_rdi.nii.gz?download=1)
 - [GRID ISO template](https://zenodo.org/record/6324701/files/Grid258_iso.nii.gz?download=1)
-
 - [GRID GFA template](https://zenodo.org/record/6324701/files/Grid258_gfa.nii.gz?download=1)
 - [GRID FA template](https://zenodo.org/record/6324701/files/Grid258_dti_fa.nii.gz?download=1)
 - [GRID AD template](https://zenodo.org/record/6324701/files/Grid258_ad.nii.gz?download=1)
