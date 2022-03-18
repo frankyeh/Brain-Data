@@ -15,7 +15,7 @@ Users using the files should follow agreement and [cite/acknowledge the source](
 
 - [642 FIB files](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EjTFYS254-ZJpHOiyb3dQnYBYKSIrsSp2WaymT9ZGAstGA?e=hHWVWT) (Ready-to-track using [DSI Studio](https://dsi-studio.labsolver.org))
 - [642 SRC files](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EpU-Q0UfT41Koq0hQSAAJDMBvSVaWp8DjRqVagvjOcqWUA?e=fmDWQE) (none repeated scans, including twins)
-- [164 Scan-Rescan SRC files (n=82)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EpU-Q0UfT41Koq0hQSAAJDMBvSVaWp8DjRqVagvjOcqWUA?e=fmDWQE) Repeated scan of the same subjects. All subjects are also included in the 642 SRC files above.
+- [164 Scan-Rescan SRC files (n=82)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EoIm-xClb-RFvdkozLRwr1wBgmbpzga-fdqt7-AlMzSArQ?e=NRROav) Repeated scan of the same subjects. All subjects are also included in the 642 SRC files above.
 
   These SRC files are preprocessed results from [the diffusion SHARD pipeline](https://biomedia.github.io/dHCP-release-notes/dwi-shard.html). The background signals are zeroed and image dimension cropped. The data are largely reduced and CANNOT be reversed back to the original data distribution.
 
