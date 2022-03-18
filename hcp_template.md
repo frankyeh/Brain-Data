@@ -94,6 +94,8 @@ The following data were group average of normal subjects scanned by Grid 258-dir
 - [GRID MD template](https://zenodo.org/record/6324701/files/Grid258_md.nii.gz?download=1)
 - [GRID RD template](https://zenodo.org/record/6324701/files/Grid258_rd.nii.gz?download=1)
 
+- [GRID NQA connectometry database](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EeNCSd5Aql9Nv3m_0yhkRhYB4sOy1YpM4JeOS1hYim7lCQ?e=ntESpg)
+
 
 A group average template was constructed from a total of 32 subjects. The diffusion images were acquired on a SIEMENS Prisma_fit scanner using a diffusion sequence (dMRI_dir258_1 ). TE=99.2 ms, and TR=2490 ms. A diffusion spectrum imaging scheme was used, and a total of 257 diffusion sampling were acquired. The maximum b-value was 4010 s/mm². The in-plane resolution was 2 mm. The slice thickness was 2 mm. The accuracy of b-table orientation was examined by comparing fiber orientations with those of a population-averaged template (Yeh et al. Neuroimage, 2018). The diffusion data were reconstructed in the MNI space using q-space diffeomorphic reconstruction (Yeh et al., Neuroimage, 58(1):91-9, 2011) to obtain the spin distribution function (Yeh et al., IEEE TMI, ;29(9):1626-35, 2010).  A diffusion sampling length ratio of 1.25 was used. The output resolution in diffeomorphic reconstruction was 2 mm isotorpic. The restricted diffusion was quantified using restricted diffusion imaging (Yeh et al., MRM, 77:603–612 (2017)). The tensor metrics were calculated.
 
