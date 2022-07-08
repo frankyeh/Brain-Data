@@ -3,6 +3,7 @@
 ![image](https://user-images.githubusercontent.com/275569/178081487-f53cb1d9-9843-4b27-a63a-f9e4f7cea2ba.png)
 
 > Citation: Yeh, F. C. (2022) Population-Based Tract-To-Region Connectome of the Human Brain and Its Hierarchical Topology, preprint DOI: 10.21203/rs.3.rs-1083262/v1 
+
 > License: [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
 
 The population-based tractography atlases and associated tract-to-region connectome were constructed using [HCP young adult](/hcp-ya.html) data. 
@@ -31,6 +32,7 @@ The population-based tractography atlases and associated tract-to-region connect
 <img src="https://user-images.githubusercontent.com/275569/149355373-399832bb-7a83-486d-ba89-71910a0af9df.png" width="400">
 
 > Citation: Yeh, F. C. (2022) Population-Based Tract-To-Region Connectome of the Human Brain and Its Hierarchical Topology, preprint DOI: 10.21203/rs.3.rs-1083262/v1 
+
 > License: [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
 
 The HCP1065 tractography atlas is an updated version of previous HCP842 (Yeh 2018) to the [ICBM 2009a Nonlinear Asymmetric space](https://www.bic.mni.mcgill.ca/ServicesAtlases/ICBM152NLin2009). 
@@ -57,6 +59,7 @@ The data are derived imaging data of the Human Connectome Project. Using them re
 <img src="https://user-images.githubusercontent.com/275569/149355618-5299fdf9-3d6e-4cfc-a434-96794f838052.png" width="400">
 
 > Citation: Yeh FC, Panesar S, Fernandes D, Meola A, Yoshino M, Fernandez-Miranda JC, Vettel JM, Verstynen T. Population-averaged atlas of the macroscale human structural connectome and its network topology. Neuroimage. 2018 Sep 1;178:57-68. (original data)
+
 > License: [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
 
 The HCP842 tractography atlas uses [FSL's FA map](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/Atlases), which averaged from 58 FA images in the MNI152 coordinate. 
