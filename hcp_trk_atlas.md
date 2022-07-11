@@ -1,4 +1,4 @@
-## Population-Probability Atlas and Tract-to-Region Connectome (Yeh, 2022)
+# Population-Probability Atlas and Tract-to-Region Connectome (Yeh, 2022)
 
 ![image](https://user-images.githubusercontent.com/275569/178081487-f53cb1d9-9843-4b27-a63a-f9e4f7cea2ba.png)
 
