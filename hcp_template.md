@@ -121,3 +121,25 @@ These data sets are free to use for research and education purposes. Please noti
 - [CMU60 Demographics CSV](https://zenodo.org/record/6324701/files/CMU60.demo.csv?download=1)
 
 
+# dHCP Neonate Template
+
+The [dHCP study](https://www.humanconnectome.org/study/lifespan-developing-human-connectome-project) planned to enroll 1500 Subjects at age 20-44 weeks post-conception. The purpose is to link together imaging, clinical, behavioural, and genetic information.
+
+The neonate template was constructed by averaging 584 neonate's dMRI data into a common space.
+
+## License
+
+The template is shared under the [dHCP data sharing agreement](http://www.developingconnectome.org/open-access-dhcp-data-terms-of-use-version-4-0_2019-05-23/). The source of the data are from the [3rd release](https://biomedia.github.io/dHCP-release-notes/index.html).
+
+Users using the files should follow agreement and [cite/acknowledge the source](https://biomedia.github.io/dHCP-release-notes/cite.html).
+
+## Methods
+
+> A multishell diffusion scheme was used, and the b-values were 400 ,1000 and 2600 s/mm². The number of diffusion sampling directions were 64, 88, and 128, respectively. The in-plane resolution was 1.5 mm. The slice thickness was 1.5 mm. The images were denoised and corrected for Gibbs ringing, motion, eddy current, and susceptibility artifact using [the diffusion SHARD pipeline](https://biomedia.github.io/dHCP-release-notes/dwi-shard.html). A quality check was conducted using neighboring DWI correcltion (NDC) (Yeh, Neuroimage. 2019 Nov 15;202:116131). 34 out of 758 scans (including repeated scans) were excluded due to their low NDC values identified by a median value based outlier detector. 
+
+> The dHCP group average template was constructed from a total of 584 subjects. The data were acquired with in-plane resolution of 1.5 mm and  slice thickness of 1.5 mm. The images were resampled to 1 mm isotropic resolution. The diffusion data were reconstructed in the MNI space using q-space diffeomorphic reconstruction (Yeh et al., Neuroimage, 58(1):91-9, 2011) to obtain the spin distribution function (Yeh et al., IEEE TMI, ;29(9):1626-35, 2010). A diffusion sampling length ratio of 1.25 was used. The output resolution in diffeomorphic reconstruction was 1 mm isotorpic. The restricted diffusion was quantified using restricted diffusion imaging (Yeh et al., MRM, 77:603–612 (2017)). The tensor metrics were calculated using DWI with b-value lower than 1750 s/mm².
+
+## Download
+
+- [dHCP population-average 1-mm FIB file](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EQ5vRB18kXNJoVitzZybM0MBCcOT70ZFS1qZzMvwNphm3g?e=3y8cqP)
+
