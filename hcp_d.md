@@ -30,8 +30,8 @@ First, copy all NIFTI, bval, bvec files in the same folder and run this script t
 #!/bin/bash
 for sub in $(ls HCD8*98_AP.nii.gz)
 do    
-    dsi_studio --action=src --source=${sub},${sub:0:25}99_AP.nii.gz
-    dsi_studio --action=src --source=${sub:0:25}98_PA.nii.gz,${sub:0:25}99_PA.nii.gz
+    dsi_studio --action=src --source=${sub}--other_source=${sub:0:25}99_AP.nii.gz
+    dsi_studio --action=src --source=${sub:0:25}98_PA.nii.gz --other_source=${sub:0:25}99_PA.nii.gz
 done
 ```
 
