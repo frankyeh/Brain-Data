@@ -9,12 +9,9 @@
 The population-based tractography atlases and associated tract-to-region connectome were constructed using [HCP young adult](/hcp-ya.html) data. 
 
 - Tract-to-region connectome (EXCEL files): Tract-to-region connectome was derived using HCP-MMP, Brodmann, and Kleist parcellations.
-
   - [HCP-MMP parcellation](https://pitt-my.sharepoint.com/:x:/g/personal/yehfc_pitt_edu/Eb-yhDcnGBJHlhED2xAI8YwBJvQu8IqyRQ1L9v-dZkM7wQ?e=aitB08)
-
   - [BM/KL parcellation](https://pitt-my.sharepoint.com/:x:/g/personal/yehfc_pitt_edu/EVG6NflPIbtIpc3jvruyf7cB2ZegmiAWPgQkHDJKakfQZg?e=awH0LB)
-
-- [Scripts to generate figures in the original paper](https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-022-32595-4/MediaObjects/41467_2022_32595_MOESM4_ESM.zip)
+- [Scripts to generate figures in the Yeh 2022 paper](https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-022-32595-4/MediaObjects/41467_2022_32595_MOESM4_ESM.zip)
 - Population-based probabilistic tractography atlas:
   - [NIFTI files](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EvhbI5gALiZGvZATK1D8cyUBsH4J_CeRjHw-nJq4fIzoCg?e=dK0y5U)
   - [TIF pictures](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/El7FAwrE-9dMj4MGXVmcL5cBpCB5VpvuzoAc7DYyE8AzKg?e=GTGG6F)
