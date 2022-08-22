@@ -2,7 +2,7 @@
 
 ![image](https://user-images.githubusercontent.com/275569/178081487-f53cb1d9-9843-4b27-a63a-f9e4f7cea2ba.png)
 
-> Citation: [Yeh, F. C. (2022) Population-Based Tract-To-Region Connectome of the Human Brain and Its Hierarchical Topology, preprint DOI: 10.21203/rs.3.rs-1083262/v1](https://www.researchsquare.com/article/rs-1083262/)
+> Citation: Yeh, FC. Population-based tract-to-region connectome of the human brain and its hierarchical topology. Nat Commun 13, 4933 (2022). https://doi.org/10.1038/s41467-022-32595-4
 
 > License: [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
 
@@ -31,7 +31,7 @@ The population-based tractography atlases and associated tract-to-region connect
 
 <img src="https://user-images.githubusercontent.com/275569/149355373-399832bb-7a83-486d-ba89-71910a0af9df.png" width="400">
 
-> Citation: [Yeh, F. C. (2022) Population-Based Tract-To-Region Connectome of the Human Brain and Its Hierarchical Topology, preprint DOI: 10.21203/rs.3.rs-1083262/v1](https://www.researchsquare.com/article/rs-1083262/)
+> Citation: Yeh, FC. Population-based tract-to-region connectome of the human brain and its hierarchical topology. Nat Commun 13, 4933 (2022). https://doi.org/10.1038/s41467-022-32595-4
 
 > License: [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
 
