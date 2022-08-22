@@ -8,7 +8,7 @@ The population averaged templates are averaged from a group of subjects. The vox
 
 <img src="https://user-images.githubusercontent.com/275569/149358303-47fbd938-a403-4b8d-ad1c-29993ed89c28.png" width="400">
 
-> Yeh, F. C. (2021) Population-Based Tract-To-Region Connectome of the Human Brain and Its Hierarchical Topology, preprint DOI: 10.21203/rs.3.rs-1083262/v1
+> Yeh, FC. Population-based tract-to-region connectome of the human brain and its hierarchical topology. Nat Commun 13, 4933 (2022). https://doi.org/10.1038/s41467-022-32595-4
 
 The HCP1065 registration is based on the nonlinear ICBM152 2009a space. The template can be used with the T1W images from Montreal Neurological Institute: <http://www.bic.mni.mcgill.ca/~vfonov/icbm/2009/> or histology images from the Big Brain data: <https://bigbrain.loris.ca/main.php?test_name=brainvolumes>\
 The HCP 1065 template was constructed from a total of 1065 subjects' diffusion MRI data from the Human Connectome Project (2017 Q4, 1200-subject release). There were 575 female (others male). Age ranges from 22 to 37 with a mean of 28.74, Q1=26, median=29, Q4=32. A multishell diffusion scheme was used, and the b-values were 1000, 2000, 3000 s/mm2. The number of diffusion sampling directions were 90, 90, and 90, respectively. The in-plane resolution was 1.25 mm. The slice thickness was 1.25 mm. The diffusion data were reconstructed in the MNI space using q-space diffeomorphic reconstruction (QSDR)(Yeh et al., Neuroimage, 58(1):91-9, 2011) to obtain the spin distribution function (Yeh et al., IEEE TMI, ;29(9):1626-35, 2010). A diffusion sampling length ratio of 1.7 was used, and the output resolution was 1 mm. The analysis was conducted using DSI Studio (http://dsi-studio.labsolver.org).
