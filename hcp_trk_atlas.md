@@ -8,23 +8,23 @@
 
 The population-based tractography atlases and associated tract-to-region connectome were constructed using [HCP young adult](/hcp-ya.html) data. 
 
-- [Raw connectome matrix and script to generate figures in the original paper](https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-022-32595-4/MediaObjects/41467_2022_32595_MOESM4_ESM.zip)
-- Probabilistic tractography atlas:
-  - [64 NIFTI files](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EvhbI5gALiZGvZATK1D8cyUBsH4J_CeRjHw-nJq4fIzoCg?e=dK0y5U)
-  - [TIF pictures](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/El7FAwrE-9dMj4MGXVmcL5cBpCB5VpvuzoAc7DYyE8AzKg?e=GTGG6F)
-
-  This new probabilistic tractography atlas was aggregated from 1065 subject's tractoggram in the ICBM 2009a Nonlinear Asymmetric space. Automatic fiber tracking and augmented fiber tracking (Yeh 2020) were used to map white matter pathways in HCP young adult subjects. These NIFTI volumes record the population probability of each white matter tract aggregated from the tractography of 1065 subjects.
- 
-- Fiber bundles of 1065 subjects in the ICBM152 space:
-  - [~1065x64 NIFTI files](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EhEovDmdDhpEl1s6OhK69ckBBBE7FoXH1psecjDWkqxloA?e=ngchRU) 'all_files.zip' contains all NIFTI files.
-
-  Automatic fiber tracking and augmented fiber tracking (Yeh 2020) was applied to each of the HCP 1065 subjects data to map 64 white matter pathways.
-
 - Tract-to-region connectome (EXCEL files): Tract-to-region connectome was derived using HCP-MMP, Brodmann, and Kleist parcellations.
 
   - [HCP-MMP parcellation](https://pitt-my.sharepoint.com/:x:/g/personal/yehfc_pitt_edu/Eb-yhDcnGBJHlhED2xAI8YwBJvQu8IqyRQ1L9v-dZkM7wQ?e=aitB08)
 
   - [BM/KL parcellation](https://pitt-my.sharepoint.com/:x:/g/personal/yehfc_pitt_edu/EVG6NflPIbtIpc3jvruyf7cB2ZegmiAWPgQkHDJKakfQZg?e=awH0LB)
+
+- [Scripts to generate figures in the original paper](https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-022-32595-4/MediaObjects/41467_2022_32595_MOESM4_ESM.zip)
+- Population-based probabilistic tractography atlas:
+  - [NIFTI files](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EvhbI5gALiZGvZATK1D8cyUBsH4J_CeRjHw-nJq4fIzoCg?e=dK0y5U)
+  - [TIF pictures](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/El7FAwrE-9dMj4MGXVmcL5cBpCB5VpvuzoAc7DYyE8AzKg?e=GTGG6F)
+
+  This probabilistic tractography atlas was aggregated from 1065 subject's tractoggram in the ICBM 2009a Nonlinear Asymmetric space. Automatic fiber tracking and augmented fiber tracking (Yeh 2020) were used to map white matter pathways in HCP young adult subjects. These NIFTI volumes record the population probability of each white matter tract aggregated from the tractography of 1065 subjects.
+ 
+- 52 fiber bundles of 1065 subjects in the ICBM152 space:
+  - [NIFTI files of 1065 subjects x 52 tracts in ICBM-152 space](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EboniFdz7ehBhpn46_EhA-0BllH97qwV7RDUVA_m772djQ?e=BHP5rA)
+
+  Automatic fiber tracking and augmented fiber tracking (Yeh 2020) was applied to each of the HCP 1065 subjects data to map 64 white matter pathways.
 
 - [Abbreviations](https://pitt-my.sharepoint.com/:x:/g/personal/yehfc_pitt_edu/ETZFzeNe8D5Dul7OYZHj_W4B5xBKgihpgz4C70Knv7YpKQ?e=7j4pwO)
 
