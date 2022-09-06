@@ -15,7 +15,7 @@ Strike, Lachlan T. and Hansell, Narelle K. and Miller, Jessica L. and Chuang, Ka
 # Download
 
 - [SRC Files (topup/eddy corrected DWI signals)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EuXbJayHWkBBsjR7ndjGKlUBLFo54qBOPvcSU6e8B1yJXw?e=heNzR9)
-- FIB Files (ready-to-track files)(pending)
+- [FIB Files (ready-to-track files)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EsmXfM8VtvZMhSCrmMTI4q4Ba0qB5k37fPCkBnl4wOouTA?e=HlNjkP)
 - Tractography results (pending)
 - [Basic demographic data](https://openneuro.org/crn/datasets/ds004146/snapshots/1.0.0/files/participants.tsv)
 - Restricted demographic data: (i.e., age in months, zygosity, multiple birth status, birth order), as well as non-imaging phenotypic data is stored at The University of Queensland's institutional repository, UQ eSpace (https://doi.org/10.48610/e891597). Access to the dataset can be requested via the "Request access to the dataset link" in the UQ eSpace record.
