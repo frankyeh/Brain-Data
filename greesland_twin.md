@@ -31,6 +31,8 @@ Strike, Lachlan T. and Hansell, Narelle K. and Miller, Jessica L. and Chuang, Ka
 aws s3 sync --no-sign-request --region eu-west-1 --exclude "*" --include "*dwi.*" s3://openneuro.org/ds004146 ds004146 
 ```
 
+After download the files, all nifti, bval, and bvec files were moved to the same directory before running the following script:
+
 ```
 #!/bin/bash
 for sub in $(ls *_ses-01_dir-AP_run-01_dwi.nii.gz)
