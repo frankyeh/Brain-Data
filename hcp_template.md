@@ -26,10 +26,9 @@ To view this template or perform fiber tracking, please download [DSI Studio](h
 - [HCP1065 1-mm FIB file](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EfOJxSVJm71IppKBAzlEksoBjL7cFsjtZvAVkiCsgFWQGg?e=lWUyzn) (for fiber tracking)
 - [HCP1065 2-mm FIB file](https://github.com/frankyeh/DSI-Studio-atlas/raw/main/ICBM152_adult/ICBM152_adult.fib.gz) (for fiber tracking)
 - [HCP1065 2-mm Connectometry DB](https://zenodo.org/record/6324701/files/HCP1065.2mm.db.fib.gz?download=1) (for connectometry analysis)
-- [HCP1065 QA NIFTI file](https://zenodo.org/record/6324701/files/HCP1065_qa.nii.gz?download=1)
-- [HCP1065 nQA NIFTI file](https://zenodo.org/record/6324701/files/HCP1065_nqa.nii.gz?download=1)
+- [HCP1065 QA NIFTI file](https://github.com/frankyeh/DSI-Studio-atlas/raw/main/ICBM152_adult/ICBM152_adult.QA.nii.gz)
 - [HCP1065 GFA NIFTI file](https://zenodo.org/record/6324701/files/HCP1065_gfa.nii.gz?download=1)
-- [HCP1065 ISO NIFTI file](https://zenodo.org/record/6324701/files/HCP1065_iso.nii.gz?download=1)
+- [HCP1065 ISO NIFTI file](https://github.com/frankyeh/DSI-Studio-atlas/raw/main/ICBM152_adult/ICBM152_adult.ISO.nii.gz)
 
 ## DTI-based template
 
