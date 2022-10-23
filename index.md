@@ -1,7 +1,7 @@
 # Human Connectome
 
 ![connectivity](/images/connectivity.png)
-
+source: https://www.nature.com/articles/s41467-022-32595-4
 The specific cognitive and personality characteristics that define an individual are encoded by the unique pattern of connections between the billions of neurons in the brain. This complex wiring system, termed the connectome, reflects the necessary connective architecture for the neural dynamics that give rise to nearly all cognitive functions. The diffusion MRI can be used to reveal the local organization of white matter pathways that are highly specific to individuals. This approach opens a new door for probing the influence of pathological, genetic, social, or environmental factors on the unique configuration of the human connectome	
 
 # What is diffusion MRI?
@@ -16,7 +16,7 @@ Recently diffusion MRI has arisen as the only non-invasive way to map white matt
 
 Diffusion MRI fiber tracking is a simulated approach that follows the fiber orientation at each imaging voxel to delineate the entire fiber trajectory in the brain tissue. It starts with a "seed" point and propagates along with local fiber directions in a recursive, step-by-step process until the termination criteria are met. The criteria may include an angular threshold, an anisotropy threshold, or anatomical prior. Fiber tracking using data from the Human Connectome Project has been conducted to elucidate the complex anatomy of the brain pathways. Doctors and scientists investigated the intrinsic structure of the brain with unprecedented detail, which will invariably facilitate a better understanding of brain functioning. Studies using this technique have contributed to elucidate the structure, connectivity, and potential functional role of the major fiber pathways
 
-# What tool can I use to do fiber tracking?
+# What tool can I use for fiber tracking?
 
 ![connectivity](/images/dsistudio.jpg)
 
