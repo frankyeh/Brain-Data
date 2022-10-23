@@ -1,7 +1,9 @@
 # Human Connectome
 
 ![connectivity](/images/connectivity.png)
+
 source: https://www.nature.com/articles/s41467-022-32595-4
+
 The specific cognitive and personality characteristics that define an individual are encoded by the unique pattern of connections between the billions of neurons in the brain. This complex wiring system, termed the connectome, reflects the necessary connective architecture for the neural dynamics that give rise to nearly all cognitive functions. The diffusion MRI can be used to reveal the local organization of white matter pathways that are highly specific to individuals. This approach opens a new door for probing the influence of pathological, genetic, social, or environmental factors on the unique configuration of the human connectome	
 
 # What is diffusion MRI?
