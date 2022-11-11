@@ -10,7 +10,8 @@ The FIB files and tractography files are shared using [Creative Commons Attribu
 
 # Download
 
-- [FIB files](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/ErwU3whz_sFOkBhhSzz0pH0B40RP0nxp004d0ViISrz_Kw?e=D0TKee) (Ready-to-track using [DSI Studio](https://dsi-studio.labsolver.org))
+- [native-space FIB files (GQI)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/ErwU3whz_sFOkBhhSzz0pH0B40RP0nxp004d0ViISrz_Kw?e=D0TKee)(Ready-to-track using [DSI Studio](https://dsi-studio.labsolver.org))
+- [MNI-space FIB files (QSDR)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/ErFgwQYdu0xBuUy1y9y4LPsB0eycXzIhSAAiUL0SwRH3qQ?e=TdoFQK)(Ready-to-track using [DSI Studio](https://dsi-studio.labsolver.org))
 - EDDY/TOPUP-processed SRC files: ***NDA requires me to share SRC files only to those who also have NDA access to HCP-A repository. Once you email me your NDA agreement, I will send the private link to you.***
 - [Connectometry DB](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EvdTx_lhJJBCmek2G0IfNhkBmr7CkGKU79H6JC1OH2aWmA?e=xtSbtb) for correlational or differential tractography 
 - [Demographics](https://www.humanconnectome.org/storage/app/media/documentation/LS2.0/HCA_LS_2.0_subject_completeness.csv)
