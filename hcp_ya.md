@@ -10,7 +10,7 @@ Please acknowledge the source to the WU-Minn HCP.
 
 # Download
 
-- Diffusion MRI FIB Files: [1mm](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EhAofmkwtjlMlSku3_vniFEBkStumkY2i5y2YtoqIAOMBQ?e=US4888), [2mm (OneDrive)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EvFAkXbKPjVCjuTuWcuyGyYBZRAUi4ytmwi9jDI1kFtguA?e=8p3AdS), [2mm (Zenodo)](https://zenodo.org/record/6307812)
+- Diffusion MRI FIB Files: [native-space 1mm](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EhAofmkwtjlMlSku3_vniFEBkStumkY2i5y2YtoqIAOMBQ?e=US4888), [native-space 2mm (OneDrive)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EvFAkXbKPjVCjuTuWcuyGyYBZRAUi4ytmwi9jDI1kFtguA?e=8p3AdS), [native-space 2mm (Zenodo)](https://zenodo.org/record/6307812), [MNI-space 1.25 mm](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EqdBttDkWOREjqlB3Ql1KVkBgAueXUbqIdJWi1RpHSEiyg?e=bDcFTe)
 
   FIB files are read-to-track and can be opened in [DSI Studio](http://dsi-studio.labsolver.org) to perform fiber tracking.
   
@@ -18,10 +18,10 @@ Please acknowledge the source to the WU-Minn HCP.
   > The minimally-preprocessed data (Glasser et al., 2013) from Human Connectome Projects (Q1-Q4 release, 2015) were acquired by Washington University in Saint Louis and University of Minnesota (Van Essen et al., 2012). The diffusion MRI scan was conducted on a Siemens 3T Skyra scanner using a 2D spin-echo single-shot multiband EPI sequence with a multi-band factor of 3 and monopolar gradient pulse. The spatial resolution was 1.25 mm isotropic. TR = 5500 ms, TE = 89.50 ms. The b-values were 1000, 2000, and 3000 s/mm2. The total number of diffusion sampling directions was 90, 90, and 90 for each of the shells in addition to 6 b0 images. The preprocessed data were corrected for eddy current and susceptibility artifact. The accuracy of b-table orientation was examined by comparing fiber orientations with those of a population-averaged template (Yeh et al. Neuroimage, 2018). The restricted diffusion was quantified using restricted diffusion imaging (Yeh et al., MRM, 77:603–612 (2017)). The diffusion data were reconstructed using generalized q-sampling imaging (Yeh et al., IEEE TMI, ;29(9):1626-35, 2010) with a diffusion sampling length ratio of 1.7.
 
 
-- [Diffusion MRI SRC Files](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EmL_WkIkt3pFilc6MeqRoX0Bwhvs0Lr7X9LAoIucajLUwQ?e=c0w9xQ)
+- [SRC Files](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EmL_WkIkt3pFilc6MeqRoX0Bwhvs0Lr7X9LAoIucajLUwQ?e=c0w9xQ)
 
   The SRC files contains raw dMRI signals for modeling. They can be reconstructed to generate FIB files. The original NIFTI files can be downloaded from the HCP's connectome db website.
-
+ 
 - [T1W](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EkPCanH2hTBEh47ZFHXIHuUBaYhGS5lcz3Hi1lAGoeqMcw?e=vCSidk)
 - Demographics at <https://db.humanconnectome.org/>
 - [Local connectome fingerprint](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/Esw0yxBQM4pCtnjoRLm41kQBejzvhTd6p-XYcDCWMMIhyg?e=X1EKBL) [1]
