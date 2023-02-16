@@ -23,7 +23,8 @@ The HCP-1065 data are shared under the WU-Minn HCP open access data use term (4)
 The templates are averaged from HCP data of the WU-Minn HCP Consortium and distributed under the WU-Minn HCP open access data use term.\
 To view this template or perform fiber tracking, please download [DSI Studio](http://dsi-studio.labsolver.org/dsi-studio-download) and open it in STEP3 Fiber Tracking.
 
-- [HCP1065 1-mm FIB file](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EfOJxSVJm71IppKBAzlEksoBjL7cFsjtZvAVkiCsgFWQGg?e=lWUyzn) (for fiber tracking)
+- [HCP1065 1-mm FIB file](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EVqdp-lm0_NCgsFkSNDZeP0Bb3PpiSJRGpOKFhvVgZihVQ?e=GhUuOc) (for fiber tracking)
+- [HCP1065 1.25-mm FIB file](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EfOJxSVJm71IppKBAzlEksoBjL7cFsjtZvAVkiCsgFWQGg?e=q3zoTd) (for fiber tracking)
 - [HCP1065 2-mm FIB file](https://github.com/frankyeh/DSI-Studio-atlas/raw/main/ICBM152_adult/ICBM152_adult.fib.gz) (for fiber tracking)
 - [HCP1065 2-mm Connectometry DB](https://zenodo.org/record/6324701/files/HCP1065.2mm.db.fib.gz?download=1) (for connectometry analysis)
 - [HCP1065 QA NIFTI file](https://github.com/frankyeh/DSI-Studio-atlas/raw/main/ICBM152_adult/ICBM152_adult.QA.nii.gz)
