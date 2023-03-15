@@ -16,7 +16,7 @@ Please acknowledge the source to the WU-Minn HCP.
   - [native-space 2-mm (GQI FIB)(Zenodo)](https://zenodo.org/record/6307812)
   - [MNI-space 1.25-mm (QSDR FIB)(OneDrive)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EqdBttDkWOREjqlB3Ql1KVkBgAueXUbqIdJWi1RpHSEiyg?e=bDcFTe)
 
-<iframe src="https://drive.google.com/drive/folders/1UoJiTX24xJNxFM6AwnJtIda6MdlWeQyv?template=minimal" frameborder="0" width="100%" height="480" marginheight="0" marginwidth="0"></iframe>
+<div style="left: 0; width: 100%; height: 400px; position: relative;"><iframe src="https://drive.google.com/embeddedfolderview?id=1UoJiTX24xJNxFM6AwnJtIda6MdlWeQyv#list" style="top: 0; left: 0; width: 100%; height: 100%; position: absolute; border: 0;" allowfullscreen></iframe></div>
 
 - [SRC Files](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EmL_WkIkt3pFilc6MeqRoX0Bwhvs0Lr7X9LAoIucajLUwQ?e=c0w9xQ)
 
