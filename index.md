@@ -1,7 +1,5 @@
 # Human Connectome
 
-<iframe src="https://www.chatbase.co/chatbot-iframe/brain-labsolver-org-qoqmmho3j" width="100%" height="400" frameborder="0"></iframe>
-
 ![connectivity](/images/connectivity.png)
 
 source: https://www.nature.com/articles/s41467-022-32595-4
