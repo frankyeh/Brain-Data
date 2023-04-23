@@ -23,13 +23,18 @@ The HCP-1065 data are shared under the WU-Minn HCP open access data use term (4)
 The templates are averaged from HCP data of the WU-Minn HCP Consortium and distributed under the WU-Minn HCP open access data use term.\
 To view this template or perform fiber tracking, please download [DSI Studio](http://dsi-studio.labsolver.org/dsi-studio-download) and open it in STEP3 Fiber Tracking.
 
-- [HCP1065 1-mm FIB file](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EVqdp-lm0_NCgsFkSNDZeP0Bb3PpiSJRGpOKFhvVgZihVQ?e=GhUuOc) (for fiber tracking)
-- [HCP1065 1.25-mm FIB file](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EfOJxSVJm71IppKBAzlEksoBjL7cFsjtZvAVkiCsgFWQGg?e=q3zoTd) (for fiber tracking)
-- [HCP1065 2-mm FIB file](https://github.com/frankyeh/DSI-Studio-atlas/raw/main/ICBM152_adult/ICBM152_adult.fib.gz) (for fiber tracking)
-- [HCP1065 2-mm Connectometry DB](https://zenodo.org/record/6324701/files/HCP1065.2mm.db.fib.gz?download=1) (for connectometry analysis)
-- [HCP1065 QA NIFTI file](https://github.com/frankyeh/DSI-Studio-atlas/raw/main/ICBM152_adult/ICBM152_adult.QA.nii.gz)
-- [HCP1065 GFA NIFTI file](https://zenodo.org/record/6324701/files/HCP1065_gfa.nii.gz?download=1)
-- [HCP1065 ISO NIFTI file](https://github.com/frankyeh/DSI-Studio-atlas/raw/main/ICBM152_adult/ICBM152_adult.ISO.nii.gz)
+HCP Templates from 1065 subjects:
+
+| File Format | Resolution | Modality/Content | Link | Details |
+|-------------|---|---|---------|----|
+| FIB | 1-mm | fiber orientation maps| [OneDrive](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EVqdp-lm0_NCgsFkSNDZeP0Bb3PpiSJRGpOKFhvVgZihVQ?e=GhUuOc) | 1-mm population=averaged FIB file in the ICBM152 space. The FIB file is ready for DSI Studio to run fiber tracking. |
+| FIB | 1.25-mm | fiber orientation maps| [OneDrive](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EfOJxSVJm71IppKBAzlEksoBjL7cFsjtZvAVkiCsgFWQGg?e=q3zoTd) | 1.25-mm population-averaged FIB file in the ICBM152 space. |
+| FIB | 1.25-mm with ODF| fiber orientation maps and ODFs | [OneDrive](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EdUKF-NSIWdKhDFrhFcjk_IB83K86YStjg8csgxAKaiLVg?e=ogZokU) | 1.25-mm population-averaged ODFs |
+| FIB | 2-mm | fiber orientation maps | [Github](https://github.com/frankyeh/DSI-Studio-atlas/raw/main/ICBM152_adult/ICBM152_adult.fib.gz) | 2-mm population-averaged FIB file in the ICBM152 space. |
+| Connectometry DB | 2-mm | anisotropy of 1065 subjects | [Zenodo](https://zenodo.org/record/6324701/files/HCP1065.2mm.db.fib.gz?download=1) | 2-mm anisotropy of 1065 subjects in the ICBM152 space |
+| NIFTI | 1-mm | Quantitative anisotropy (QA) | [Github](https://github.com/frankyeh/DSI-Studio-atlas/raw/main/ICBM152_adult/ICBM152_adult.QA.nii.gz) | 1-mm QA map derived from population-averaged ODF |
+| NIFTI | 1-mm | generalized fractional anisotropy (GFA) | [Zenodo](https://zenodo.org/record/6324701/files/HCP1065_gfa.nii.gz?download=1) |  1-mm GFA map derived from population-averaged ODF |
+| NIFTI | 1-mm | isotropic diffusion (ISO) | [Github](https://github.com/frankyeh/DSI-Studio-atlas/raw/main/ICBM152_adult/ICBM152_adult.ISO.nii.gz) | 1-mm ISO map derived from population-averaged ODF |
 
 ## DTI-based template
 
@@ -43,16 +48,20 @@ The FSL version of the HCP-1065 DTI templates are shared under the FSL license:�
 
 ### Download
 
-- [FSL-HCP1065-FA NIFTI file](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EV3F_eZvN6NDv-PN4I05dzwBu1kLrqnK_N6VplznsVQv0Q?e=wXGOo7) 
-- [FSL-HCP1065-L1 NIFTI file](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EbAIqQWpo0tMmel0FVtjeacBjF9KLRf-_vKaRnWOK_Ef8w?e=PIShEa)
-- [FSL-HCP1065-L2 NIFTI file](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EbbouNOBp5dPsZJAuxU3tZoBkt-FSYgdw2Q5ZTweIe0_KA?e=YGXl1V) 
-- [FSL-HCP1065-L3 NIFTI file](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EYx7wMxbv_RHh7rNwl8dUzABOzpn0QWLu92VyEUzL-OPjQ?e=XyaUtb) 
-- [FSL-HCP1065-MD NIFTI file](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/ET4LVhH8yKBEof3pMAio56QBEhSaDTCYR_s84ieukNVyiA?e=cnkgsR) 
-- [FSL-HCP1065-MO NIFTI file](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EcPg8Rq-_uJHiiIxgSbUE1gB-TwVY7JBEwpFVap5Y_zckQ?e=g4yj8W) 
-- [FSL-HCP1065-tensor NIFTI file](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/ERC8xjhG46VKiYd5cGFSJPIBQ04_a10Q9WcgYS4fLyfyDw?e=gbxKov) 
-- [FSL-HCP1065-V1 NIFTI file](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EaV0OpFqYDVFtOTp8KHFNTgBh9xMLBe_opFtoK9X-KZ2HA?e=f5CpEO)
-- [FSL-HCP1065-V2 NIFTI file](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/ERKhajyiyRlOkli5ww9BUX4Bn52Sk1femjFYuS8zyMx-nA?e=dANhRT)
-- [FSL-HCP1065-V3 NIFTI file](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EdS1toEEnntIkGwyytqGoB4Bwxht2Slfo1HGV9Sv4AvxgA?e=SgTIKQ)
+| File Format | Modality/Content | Link |
+| --- | --- | --- |
+| NIFTI | FSL-HCP1065-FA | <https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EV3F_eZvN6NDv-PN4I05dzwBu1kLrqnK_N6VplznsVQv0Q?e=wXGOo7> |
+| NIFTI | FSL-HCP1065-L1 | <https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EbAIqQWpo0tMmel0FVtjeacBjF9KLRf-_vKaRnWOK_Ef8w?e=PIShEa> |
+| NIFTI | FSL-HCP1065-L2 | <https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EbbouNOBp5dPsZJAuxU3tZoBkt-FSYgdw2Q5ZTweIe0_KA?e=YGXl1V> |
+| NIFTI | FSL-HCP1065-L3 | <https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EYx7wMxbv_RHh7rNwl8dUzABOzpn0QWLu92VyEUzL-OPjQ?e=XyaUtb> |
+| NIFTI | FSL-HCP1065-MD | <https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/ET4LVhH8yKBEof3pMAio56QBEhSaDTCYR_s84ieukNVyiA?e=cnkgsR> |
+| NIFTI | FSL-HCP1065-MO | <https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EcPg8Rq-_uJHiiIxgSbUE1gB-TwVY7JBEwpFVap5Y_zckQ?e=g4yj8W> |
+| NIFTI | FSL-HCP1065-tensor | <https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/ERC8xjhG46VKiYd5cGFSJPIBQ04_a10Q9WcgYS4fLyfyDw?e=gbxKov> |
+| NIFTI | FSL-HCP1065-V1 | <https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EaV0OpFqYDVFtOTp8KHFNTgBh9xMLBe_opFtoK9X-KZ2HA?e=f5CpEO> |
+| NIFTI | FSL-HCP1065-V2 | <https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/ERKhajyiyRlOkli5ww9BUX4Bn52Sk1femjFYuS8zyMx-nA?e=dANhRT> |
+| NIFTI | FSL-HCP1065-V3 | <https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EdS1toEEnntIkGwyytqGoB4Bwxht> |
+
+
 
 The HCP1065 DTI template is redistributed from FSL (<https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/Atlases>) under [FSL main license](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/Licence). These templates were derived from 1065 HCP subjects. Diffusion tensors were fitted using the b=1000 s/mm2 data after gradient non-linearities correction. Each tensor was transformed into MNI space using the HCP subject-specific volumetric transformations, after appropriate re-orientation (Alexander et al, IEEE TMI, 2001). The FA of the arithmetic mean of all MNI-transformed tensors was obtained. The work was carried out by S. Warrington, S. Jbabdi, S. Smith, S. Sotiropoulos. Data were provided by the Human Connectome Project, WU-Minn Consortium (Principal Investigators: David Van Essen and Kamil Ugurbil; 1U54MH091657) funded by the 16 NIH Institutes and Centers that support the NIH Blueprint for Neuroscience Research; and by the McDonnell Center for Systems Neuroscience at Washington University.
 
@@ -75,8 +84,11 @@ The HCP-842 data are shared under the WU-Minn HCP open access data use term (4) 
 The hcp842 templates are averaged from HCP data of the WU-Minn HCP Consortium (Q1-Q3, 2014) and distributed under the WU-Minn HCP open access data use term.\
 To view this template or perform fiber tracking, please download [DSI Studio](http://dsi-studio.labsolver.org/dsi-studio-download) and open it in STEP3 Fiber Tracking.
 
-- [HCP842 1-mm FIB file](https://zenodo.org/record/6324701/files/HCP842.1mm.fib.gz?download=1)
-- [HCP842 2-mm FIB file](https://zenodo.org/record/6324701/files/HCP842.2mm.fib.gz?download=1)
+| File Format | Resolution | Modality/Content | Link | Details |
+| --- | --- | --- | --- | --- |
+| FIB | 1-mm | fiber orientation maps | [Zenodo](https://zenodo.org/record/6324701/files/HCP842.1mm.fib.gz?download=1) | 1-mm population-averaged FIB file in the ICBM152 space. The FIB file is ready for DSI Studio to run fiber tracking. |
+| FIB | 2-mm | fiber orientation maps | [Zenodo](https://zenodo.org/record/6324701/files/HCP842.2mm.fib.gz?download=1) | 2-mm population-averaged FIB file in the ICBM152 space. |
+
 
 M: 372 F:470 ages: 20~40 (2015 Q4, 900-subject release)
 
@@ -87,18 +99,21 @@ A group average template was constructed from a total of 32 subjects. The diffus
 ## Download
 
 The following data were group average of normal subjects scanned by Grid 258-direction acquisition.
-- [GRID 2-mm FIB file](https://zenodo.org/record/6324701/files/Grid258.2mm.fib.gz?download=1)
-- [GRID QA template](https://zenodo.org/record/6324701/files/Grid258_qa.nii.gz?download=1)
-- [GRID NQA template](https://zenodo.org/record/6324701/files/Grid258_nqa.nii.gz?download=1)
-- [GRID RDI template](https://zenodo.org/record/6324701/files/Grid258_rdi.nii.gz?download=1)
-- [GRID ISO template](https://zenodo.org/record/6324701/files/Grid258_iso.nii.gz?download=1)
-- [GRID GFA template](https://zenodo.org/record/6324701/files/Grid258_gfa.nii.gz?download=1)
-- [GRID FA template](https://zenodo.org/record/6324701/files/Grid258_dti_fa.nii.gz?download=1)
-- [GRID AD template](https://zenodo.org/record/6324701/files/Grid258_ad.nii.gz?download=1)
-- [GRID MD template](https://zenodo.org/record/6324701/files/Grid258_md.nii.gz?download=1)
-- [GRID RD template](https://zenodo.org/record/6324701/files/Grid258_rd.nii.gz?download=1)
 
-- [GRID NQA connectometry database](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EeNCSd5Aql9Nv3m_0yhkRhYB4sOy1YpM4JeOS1hYim7lCQ?e=ntESpg)
+| File Format | Resolution | Modality/Content | Link | Details |
+| --- | --- | --- | --- | --- |
+| FIB | 2-mm | Fiber Orientation Maps | [GRID 2-mm FIB file](https://zenodo.org/record/6324701/files/Grid258.2mm.fib.gz?download=1) | Population-averaged FIB file in the ICBM152 space ready for fiber tracking using DSI Studio. |
+| NII.gz | - | QA Template | [GRID QA template](https://zenodo.org/record/6324701/files/Grid258_qa.nii.gz?download=1) | Quality assurance (QA) template in the NIfTI format. |
+| NII.gz | - | NQA Template | [GRID NQA template](https://zenodo.org/record/6324701/files/Grid258_nqa.nii.gz?download=1) | Non-Quality assurance (NQA) template in the NIfTI format. |
+| NII.gz | - | RDI Template | [GRID RDI template](https://zenodo.org/record/6324701/files/Grid258_rdi.nii.gz?download=1) | Restricted Diffusion Imaging (RDI) template in the NIfTI format. |
+| NII.gz | - | ISO Template | [GRID ISO template](https://zenodo.org/record/6324701/files/Grid258_iso.nii.gz?download=1) | Isotropic template in the NIfTI format. |
+| NII.gz | - | GFA Template | [GRID GFA template](https://zenodo.org/record/6324701/files/Grid258_gfa.nii.gz?download=1) | Generalized Fractional Anisotropy (GFA) template in the NIfTI format. |
+| NII.gz | - | FA Template | [GRID FA template](https://zenodo.org/record/6324701/files/Grid258_dti_fa.nii.gz?download=1) | Fractional Anisotropy (FA) template in the NIfTI format. |
+| NII.gz | - | AD Template | [GRID AD template](https://zenodo.org/record/6324701/files/Grid258_ad.nii.gz?download=1) | Axial Diffusivity (AD) template in the NIfTI format. |
+| NII.gz | - | MD Template | [GRID MD template](https://zenodo.org/record/6324701/files/Grid258_md.nii.gz?download=1) | Mean Diffusivity (MD) template in the NIfTI format. |
+| NII.gz | - | RD Template | [GRID RD template](https://zenodo.org/record/6324701/files/Grid258_rd.nii.gz?download=1) | Radial Diffusivity (RD) template in the NIfTI format. |
+| DB.FIB | - | Connectometry DB  | [QA Connectometry DB](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EeNCSd5Aql9Nv3m_0yhkRhYB4sOy1YpM4JeOS1hYim7lCQ?e=ntESpg) | Anisotropy of the subjects |
+
 
 # CMU-60 Young Adult Template
 
