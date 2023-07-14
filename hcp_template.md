@@ -1,6 +1,6 @@
 # Human Population-Averaged Diffusion MRI Template
 
-The population averaged templates are averaged from a group of subjects. The voxel-wise metrics are stored in NIFTI files, whereas the ready-to-track data are stored in FIB files, which can be opened in DSI Studio to perform fiber tracking.
+The population-averaged templates are averaged from a group of subjects. The voxel-wise metrics are stored in NIFTI files, whereas the ready-to-track data are stored in FIB files, which can be opened in DSI Studio to perform fiber tracking.
 
 # HCP-1065 Young Adult Templates
 
@@ -98,7 +98,7 @@ A group average template was constructed from a total of 32 subjects. The diffus
 
 ## Download
 
-The following data were group average of normal subjects scanned by Grid 258-direction acquisition.
+The following data were group averages of normal subjects scanned by Grid 258-direction acquisition.
 
 | File Format | Resolution | Modality/Content | Link | Details |
 | --- | --- | --- | --- | --- |
@@ -112,7 +112,8 @@ The following data were group average of normal subjects scanned by Grid 258-dir
 | NII.gz | - | AD Template | [GRID AD template](https://zenodo.org/record/6324701/files/Grid258_ad.nii.gz?download=1) | Axial Diffusivity (AD) template in the NIfTI format. |
 | NII.gz | - | MD Template | [GRID MD template](https://zenodo.org/record/6324701/files/Grid258_md.nii.gz?download=1) | Mean Diffusivity (MD) template in the NIfTI format. |
 | NII.gz | - | RD Template | [GRID RD template](https://zenodo.org/record/6324701/files/Grid258_rd.nii.gz?download=1) | Radial Diffusivity (RD) template in the NIfTI format. |
-| DB.FIB | - | Connectometry DB  | [QA Connectometry DB](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EeNCSd5Aql9Nv3m_0yhkRhYB4sOy1YpM4JeOS1hYim7lCQ?e=ntESpg) | Anisotropy of the subjects |
+| DB.FIB | - | Connectometry DB  | [QA Connectometry DB](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EeNCSd5Aql9Nv3m_0yhkRhYB4sOy1YpM4JeOS1hYim7lCQ?e=ntESpg) | Quantitative anisotropy of the subjects |
+| DB.FIB | - | Connectometry DB  | [FA Connectometry DB](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EU5pNgbm1iJEiC4zLUIO8RMB17JLvWsJ0mFma45TsoalXw?e=v7QGcj) | Fractional anisotropy of the subjects |
 
 
 # CMU-60 Young Adult Template
