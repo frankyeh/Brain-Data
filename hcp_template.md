@@ -157,5 +157,5 @@ Users using the files should follow agreement and [cite/acknowledge the source](
 
 ## Download
 
-- [dHCP population-average 1-mm FIB file](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EQ5vRB18kXNJoVitzZybM0MBCcOT70ZFS1qZzMvwNphm3g?e=3y8cqP)
+- [dHCP population-average 0.5-mm FIB file](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EQ5vRB18kXNJoVitzZybM0MBCcOT70ZFS1qZzMvwNphm3g?e=3y8cqP)
 
