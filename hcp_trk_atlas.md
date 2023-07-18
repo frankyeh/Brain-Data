@@ -8,22 +8,15 @@
 
 The population-based tractography atlases and associated tract-to-region connectome were constructed using [HCP young adult](/hcp-ya.html) data. 
 
-- Tract-to-region connectome (EXCEL files): Tract-to-region connectome was derived using HCP-MMP, Brodmann, and Kleist parcellations.
-  - [HCP-MMP parcellation](https://pitt-my.sharepoint.com/:x:/g/personal/yehfc_pitt_edu/Eb-yhDcnGBJHlhED2xAI8YwBJvQu8IqyRQ1L9v-dZkM7wQ?e=aitB08)
-  - [BM/KL parcellation](https://pitt-my.sharepoint.com/:x:/g/personal/yehfc_pitt_edu/EVG6NflPIbtIpc3jvruyf7cB2ZegmiAWPgQkHDJKakfQZg?e=awH0LB)
-- [Scripts to generate figures in the Yeh 2022 paper](https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-022-32595-4/MediaObjects/41467_2022_32595_MOESM4_ESM.zip)
-- Population-based probabilistic tractography atlas:
-  - [NIFTI files](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EvhbI5gALiZGvZATK1D8cyUBsH4J_CeRjHw-nJq4fIzoCg?e=dK0y5U)
-  - [TIF pictures](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/El7FAwrE-9dMj4MGXVmcL5cBpCB5VpvuzoAc7DYyE8AzKg?e=GTGG6F)
-
-  This probabilistic tractography atlas was aggregated from 1065 subject's tractoggram in the ICBM 2009a Nonlinear Asymmetric space. Automatic fiber tracking and augmented fiber tracking (Yeh 2020) were used to map white matter pathways in HCP young adult subjects. These NIFTI volumes record the population probability of each white matter tract aggregated from the tractography of 1065 subjects.
- 
-- 52 fiber bundles of 1065 subjects in the ICBM152 space:
-  - [NIFTI files of 1065 subjects x 52 tracts in ICBM-152 space](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EboniFdz7ehBhpn46_EhA-0BllH97qwV7RDUVA_m772djQ?e=BHP5rA)
-
-  Automatic fiber tracking and augmented fiber tracking (Yeh 2020) was applied to each of the HCP 1065 subjects data to map 64 white matter pathways.
-
-- [Abbreviations](https://pitt-my.sharepoint.com/:x:/g/personal/yehfc_pitt_edu/ETZFzeNe8D5Dul7OYZHj_W4B5xBKgihpgz4C70Knv7YpKQ?e=7j4pwO)
+| Data | Format  | Note    |
+|----|-----|-----|
+| [HCP-1065 probabilistic tract atlas (volume)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EvhbI5gALiZGvZATK1D8cyUBsH4J_CeRjHw-nJq4fIzoCg?e=dK0y5U) | NIFTI | The voxel probability of tracts. This probabilistic tractography atlas was aggregated from 1065 subject's tractogram in the ICBM 2009a Nonlinear Asymmetric space. Automatic fiber tracking and augmented fiber tracking (Yeh 2020) were used to map white matter pathways in HCP young adult subjects. These NIFTI volumes record the population probability of each white matter tract aggregated from the tractography of 1065 subjects. |
+| [HCP-1065 probabilistic tract atlas figures](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/El7FAwrE-9dMj4MGXVmcL5cBpCB5VpvuzoAc7DYyE8AzKg?e=GTGG6F) | TIF | The voxel probability of tracts|
+| [1065 subjects' 52 tracts (volume) ](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EboniFdz7ehBhpn46_EhA-0BllH97qwV7RDUVA_m772djQ?e=BHP5rA) | NIFTI | NIFTI files of 1065 subjects x 52 tracts in ICBM-152 space. Automatic fiber tracking and augmented fiber tracking (Yeh 2020) was applied to each of the HCP 1065 subjects data to map white matter pathways. |
+| [Tract-to-region connectome (HCP-MMP parcellation)](https://pitt-my.sharepoint.com/:x:/g/personal/yehfc_pitt_edu/Eb-yhDcnGBJHlhED2xAI8YwBJvQu8IqyRQ1L9v-dZkM7wQ?e=aitB08) | Excel File | Tract-to-region connectome was derived using HCP-MMP parcellations.
+| [Tract-to-region connectome (Brodmann and Kleist parcellation)](https://pitt-my.sharepoint.com/:x:/g/personal/yehfc_pitt_edu/EVG6NflPIbtIpc3jvruyf7cB2ZegmiAWPgQkHDJKakfQZg?e=awH0LB) | Excel File | Tract-to-region connectome was derived using Brodmann and Kleist parcellations.
+| [Scripts](https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-022-32595-4/MediaObjects/41467_2022_32595_MOESM4_ESM.zip) |  |  Scripts to generate figures in the Yeh Nat. Comm. 2022 paper |
+| [Abbreviations](https://pitt-my.sharepoint.com/:x:/g/personal/yehfc_pitt_edu/ETZFzeNe8D5Dul7OYZHj_W4B5xBKgihpgz4C70Knv7YpKQ?e=7j4pwO) | EXCEL | |  
 
 # HCP1065 Population-Averaged Tractography Atlas (Yeh, 2022)
 
@@ -33,18 +26,16 @@ The population-based tractography atlases and associated tract-to-region connect
 
 > License: [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
 
-The HCP1065 tractography atlas is an updated version of previous HCP842 (Yeh 2018) to the [ICBM 2009a Nonlinear Asymmetric space](https://www.bic.mni.mcgill.ca/ServicesAtlases/ICBM152NLin2009). 
+The HCP1065 tractography atlas is an updated version of the previous HCP842 (Yeh 2018) to the [ICBM 2009a Nonlinear Asymmetric space](https://www.bic.mni.mcgill.ca/ServicesAtlases/ICBM152NLin2009). 
 
-The HCP1065 Yeh 2022 atlas further provides subcomponents for cingulum, SLF, corticopontine track, corticostriatal track, corticothalamic track (renamed as thalamic radiation). 
+The HCP1065 Yeh 2022 atlas further provides subcomponents for the cingulum, SLF, corticopontine track, corticostriatal track, and corticothalamic track (renamed as thalamic radiation). 
 
-To view these tract files, please download the HCP-1065 template fib file and open it in DSI Studio at [Step T3 Fiber Tracking]. The *.tt.gz files can be loaded using [Tracts][Open Tracts]. The ICBM152 images can be loaded using [Edit][Insert T1W/T2W].
-
-- HCP1065 Population-averaged tractography atlas:
-  - [Tractography files (.tt.gz)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EjD1HZDMSnVGuuXm_B5vczQBuvY8WFjtHQR-AnXQc6izvQ?e=JIOLDz)
-  - [Tractography files (.trk.gz)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/Ek0DdO67iQ9NvkJUci91lzMBXCVBq926QXTTY7JK6LIjgw?e=jvydcC)
-  - [NIFTI files (.nii.gz)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EvAcb1QyogFPg206v-FRl2gB6EcDf3TIPG37JyugoL3hdA?e=SuGBZ4)
-
-- [HCP1065 Abbreviation list](https://pitt-my.sharepoint.com/:x:/g/personal/yehfc_pitt_edu/EQcjg3Ignv5CpOlwRu-dc-sBFy790zDaA2zW0qtR19VbJA?e=3iA6Ey) 
+| Data | Format  | Note    |
+|----|-----|-----|
+| [HCP1065 Population-averaged tractography atlas (streamlines)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EjD1HZDMSnVGuuXm_B5vczQBuvY8WFjtHQR-AnXQc6izvQ?e=JIOLDz) | TT.GZ | To view these tract files, please download the HCP-1065 template fib file and open it in DSI Studio at [Step T3 Fiber Tracking]. The *.tt.gz files can be loaded using [Tracts][Open Tracts]. The ICBM152 images can be loaded using [Edit][Insert T1W/T2W].|
+| [HCP1065 Population-averaged tractography atlas (streamlines)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/Ek0DdO67iQ9NvkJUci91lzMBXCVBq926QXTTY7JK6LIjgw?e=jvydcC) | TRK.GZ | |
+| [HCP1065 Population-averaged tractography atlas (volume)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EvAcb1QyogFPg206v-FRl2gB6EcDf3TIPG37JyugoL3hdA?e=SuGBZ4) | NIFTI | |
+| [Tract Abbreviations](https://pitt-my.sharepoint.com/:x:/g/personal/yehfc_pitt_edu/EQcjg3Ignv5CpOlwRu-dc-sBFy790zDaA2zW0qtR19VbJA?e=3iA6Ey) | EXCEL | |
 
 ## License
 
