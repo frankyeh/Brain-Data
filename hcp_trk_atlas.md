@@ -8,6 +8,8 @@
 
 The population-based tractography atlases and associated tract-to-region connectome were constructed using [HCP young adult](/hcp-ya.html) data. 
 
+## Download
+
 | Data | Format  | Note    |
 |----|-----|-----|
 | [HCP-1065 probabilistic tract atlas (volume)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EvhbI5gALiZGvZATK1D8cyUBsH4J_CeRjHw-nJq4fIzoCg?e=dK0y5U) | NIFTI | The voxel probability of tracts. This probabilistic tractography atlas was aggregated from 1065 subject's tractogram in the ICBM 2009a Nonlinear Asymmetric space. Automatic fiber tracking and augmented fiber tracking (Yeh 2020) were used to map white matter pathways in HCP young adult subjects. These NIFTI volumes record the population probability of each white matter tract aggregated from the tractography of 1065 subjects. |
@@ -26,9 +28,13 @@ The population-based tractography atlases and associated tract-to-region connect
 
 > License: [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
 
+The data are derived from imaging data of the Human Connectome Project. Using them requires additional [acknowledgment](https://www.humanconnectome.org/study/hcp-young-adult/document/wu-minn-hcp-consortium-open-access-data-use-terms).
+
 The HCP1065 tractography atlas is an updated version of the previous HCP842 (Yeh 2018) to the [ICBM 2009a Nonlinear Asymmetric space](https://www.bic.mni.mcgill.ca/ServicesAtlases/ICBM152NLin2009). 
 
 The HCP1065 Yeh 2022 atlas further provides subcomponents for the cingulum, SLF, corticopontine track, corticostriatal track, and corticothalamic track (renamed as thalamic radiation). 
+
+## Download
 
 | Data | Format  | Note    |
 |----|-----|-----|
@@ -36,12 +42,6 @@ The HCP1065 Yeh 2022 atlas further provides subcomponents for the cingulum, SLF,
 | [HCP1065 Population-averaged tractography atlas (streamlines)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/Ek0DdO67iQ9NvkJUci91lzMBXCVBq926QXTTY7JK6LIjgw?e=jvydcC) | TRK | |
 | [HCP1065 Population-averaged tractography atlas (volume)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EvAcb1QyogFPg206v-FRl2gB6EcDf3TIPG37JyugoL3hdA?e=SuGBZ4) | NIFTI | |
 | [Tract Abbreviations](https://pitt-my.sharepoint.com/:x:/g/personal/yehfc_pitt_edu/EQcjg3Ignv5CpOlwRu-dc-sBFy790zDaA2zW0qtR19VbJA?e=3iA6Ey) | Excel | |
-
-## License
-
-The data listed above are shared under the [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
-
-The data are derived imaging data of the Human Connectome Project. Using them requires additional [acknowledgment](https://www.humanconnectome.org/study/hcp-young-adult/document/wu-minn-hcp-consortium-open-access-data-use-terms).
 
 # HCP842 Population-Averaged Tractography Atlas (Yeh, 2018) 
 
@@ -51,7 +51,11 @@ The data are derived imaging data of the Human Connectome Project. Using them re
 
 > License: [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
 
+The data are derived from imaging data of the Human Connectome Project. Using them requires additional [acknowledgment](https://www.humanconnectome.org/study/hcp-young-adult/document/wu-minn-hcp-consortium-open-access-data-use-terms).
+
 The HCP842 tractography atlas uses [FSL's FA map](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/Atlases), which averaged from 58 FA images in the MNI152 coordinate. 
+
+## Download
 
 | Data | Format  | Note    |
 |----|-----|-----|
