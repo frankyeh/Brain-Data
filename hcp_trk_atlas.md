@@ -13,10 +13,10 @@ The population-based tractography atlases and associated tract-to-region connect
 | [HCP-1065 probabilistic tract atlas (volume)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EvhbI5gALiZGvZATK1D8cyUBsH4J_CeRjHw-nJq4fIzoCg?e=dK0y5U) | NIFTI | The voxel probability of tracts. This probabilistic tractography atlas was aggregated from 1065 subject's tractogram in the ICBM 2009a Nonlinear Asymmetric space. Automatic fiber tracking and augmented fiber tracking (Yeh 2020) were used to map white matter pathways in HCP young adult subjects. These NIFTI volumes record the population probability of each white matter tract aggregated from the tractography of 1065 subjects. |
 | [HCP-1065 probabilistic tract atlas figures](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/El7FAwrE-9dMj4MGXVmcL5cBpCB5VpvuzoAc7DYyE8AzKg?e=GTGG6F) | TIF | The voxel probability of tracts|
 | [1065 subjects' 52 tracts (volume) ](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EboniFdz7ehBhpn46_EhA-0BllH97qwV7RDUVA_m772djQ?e=BHP5rA) | NIFTI | NIFTI files of 1065 subjects x 52 tracts in ICBM-152 space. Automatic fiber tracking and augmented fiber tracking (Yeh 2020) was applied to each of the HCP 1065 subjects data to map white matter pathways. |
-| [Tract-to-region connectome (HCP-MMP parcellation)](https://pitt-my.sharepoint.com/:x:/g/personal/yehfc_pitt_edu/Eb-yhDcnGBJHlhED2xAI8YwBJvQu8IqyRQ1L9v-dZkM7wQ?e=aitB08) | Excel File | Tract-to-region connectome was derived using HCP-MMP parcellations.
-| [Tract-to-region connectome (Brodmann and Kleist parcellation)](https://pitt-my.sharepoint.com/:x:/g/personal/yehfc_pitt_edu/EVG6NflPIbtIpc3jvruyf7cB2ZegmiAWPgQkHDJKakfQZg?e=awH0LB) | Excel File | Tract-to-region connectome was derived using Brodmann and Kleist parcellations.
+| [Tract-to-region connectome (HCP-MMP parcellation)](https://pitt-my.sharepoint.com/:x:/g/personal/yehfc_pitt_edu/Eb-yhDcnGBJHlhED2xAI8YwBJvQu8IqyRQ1L9v-dZkM7wQ?e=aitB08) | Excel | Tract-to-region connectome was derived using HCP-MMP parcellations.
+| [Tract-to-region connectome (Brodmann and Kleist parcellation)](https://pitt-my.sharepoint.com/:x:/g/personal/yehfc_pitt_edu/EVG6NflPIbtIpc3jvruyf7cB2ZegmiAWPgQkHDJKakfQZg?e=awH0LB) | Excel | Tract-to-region connectome was derived using Brodmann and Kleist parcellations.
 | [Scripts](https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-022-32595-4/MediaObjects/41467_2022_32595_MOESM4_ESM.zip) |  |  Scripts to generate figures in the Yeh Nat. Comm. 2022 paper |
-| [Abbreviations](https://pitt-my.sharepoint.com/:x:/g/personal/yehfc_pitt_edu/ETZFzeNe8D5Dul7OYZHj_W4B5xBKgihpgz4C70Knv7YpKQ?e=7j4pwO) | EXCEL | |  
+| [Abbreviations](https://pitt-my.sharepoint.com/:x:/g/personal/yehfc_pitt_edu/ETZFzeNe8D5Dul7OYZHj_W4B5xBKgihpgz4C70Knv7YpKQ?e=7j4pwO) | Excel | |  
 
 # HCP1065 Population-Averaged Tractography Atlas (Yeh, 2022)
 
@@ -32,10 +32,10 @@ The HCP1065 Yeh 2022 atlas further provides subcomponents for the cingulum, SLF,
 
 | Data | Format  | Note    |
 |----|-----|-----|
-| [HCP1065 Population-averaged tractography atlas (streamlines)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EjD1HZDMSnVGuuXm_B5vczQBuvY8WFjtHQR-AnXQc6izvQ?e=JIOLDz) | TT.GZ | To view these tract files, please download the HCP-1065 template fib file and open it in DSI Studio at [Step T3 Fiber Tracking]. The *.tt.gz files can be loaded using [Tracts][Open Tracts]. The ICBM152 images can be loaded using [Edit][Insert T1W/T2W].|
-| [HCP1065 Population-averaged tractography atlas (streamlines)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/Ek0DdO67iQ9NvkJUci91lzMBXCVBq926QXTTY7JK6LIjgw?e=jvydcC) | TRK.GZ | |
+| [HCP1065 Population-averaged tractography atlas (streamlines)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EjD1HZDMSnVGuuXm_B5vczQBuvY8WFjtHQR-AnXQc6izvQ?e=JIOLDz) | TT | To view these tract files, please download the HCP-1065 template fib file and open it in DSI Studio at [Step T3 Fiber Tracking]. The *.tt.gz files can be loaded using [Tracts][Open Tracts]. The ICBM152 images can be loaded using [Edit][Insert T1W/T2W].|
+| [HCP1065 Population-averaged tractography atlas (streamlines)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/Ek0DdO67iQ9NvkJUci91lzMBXCVBq926QXTTY7JK6LIjgw?e=jvydcC) | TRK | |
 | [HCP1065 Population-averaged tractography atlas (volume)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EvAcb1QyogFPg206v-FRl2gB6EcDf3TIPG37JyugoL3hdA?e=SuGBZ4) | NIFTI | |
-| [Tract Abbreviations](https://pitt-my.sharepoint.com/:x:/g/personal/yehfc_pitt_edu/EQcjg3Ignv5CpOlwRu-dc-sBFy790zDaA2zW0qtR19VbJA?e=3iA6Ey) | EXCEL | |
+| [Tract Abbreviations](https://pitt-my.sharepoint.com/:x:/g/personal/yehfc_pitt_edu/EQcjg3Ignv5CpOlwRu-dc-sBFy790zDaA2zW0qtR19VbJA?e=3iA6Ey) | Excel | |
 
 ## License
 
@@ -53,12 +53,11 @@ The data are derived imaging data of the Human Connectome Project. Using them re
 
 The HCP842 tractography atlas uses [FSL's FA map](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/Atlases), which averaged from 58 FA images in the MNI152 coordinate. 
 
-- HCP842 Population-averaged tractography atlas:
-  - [Tractography files (.trk.gz)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EvV49cgSEWpFmJOwtRO28moB7b_yXTDUIx5lnP0opd-waA?e=6w2v4J)
-  - [NIFTI files (.nii.gz)](https://zenodo.org/record/3627772#.Xi0q02hKiUk) 
-  - [JPG files (.jpg)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/ErvN3WnoP7FHlJjinNVNq3IB753wSm4QGvHgzMACOURP8Q?e=VmySKx)
-
-- [HCP842 Connectivity matrix (EXCEL) and connectograms in (PNG)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EmzLbtr_IA9LrKMCfC1aC6cB_ag6Ivwj8DJA5o71_kHm9w?e=QYnZVK)
-
-- [HCP842 Abbreviation list](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6921501/bin/NIHMS1062874-supplement-1.pdf)
+| Data | Format  | Note    |
+|----|-----|-----|
+| [HCP842 Population-averaged tractography atlas (streamline)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EvV49cgSEWpFmJOwtRO28moB7b_yXTDUIx5lnP0opd-waA?e=6w2v4J) | TRK | |
+| [HCP842 Population-averaged tractography atlas (volume)](https://zenodo.org/record/3627772#.Xi0q02hKiUk) | NIFTI | |
+| [HCP842 Population-averaged tractography atlas (figure)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/ErvN3WnoP7FHlJjinNVNq3IB753wSm4QGvHgzMACOURP8Q?e=VmySKx) | JPG | |
+| [HCP842 Connectivity matrix (EXCEL) and connectograms in (PNG)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EmzLbtr_IA9LrKMCfC1aC6cB_ag6Ivwj8DJA5o71_kHm9w?e=QYnZVK) | Excel PNG | |
+| [HCP842 Abbreviations](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6921501/bin/NIHMS1062874-supplement-1.pdf) | PDF | |
 
