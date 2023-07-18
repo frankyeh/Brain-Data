@@ -4,14 +4,12 @@
 
 > Reference: Yeh, FC. Population-based tract-to-region connectome of the human brain and its hierarchical topology. Nat Commun 13, 4933 (2022). https://doi.org/10.1038/s41467-022-32595-4
 
+> License: the WU-Minn HCP open access data use term (4) at <https://www.humanconnectome.org/study/hcp-young-adult/document/wu-minn-hcp-consortium-open-access-data-use-terms> Please acknowledge the source to the WU-Minn HCP.
+
 The population-averaged templates are averaged from a group of subjects. The voxel-wise metrics are stored in NIFTI files, whereas the ready-to-track data are stored in FIB files, which can be opened in DSI Studio to perform fiber tracking.
 
 The HCP1065 registration is based on the nonlinear ICBM152 2009a space. The template can be used with the T1W images from Montreal Neurological Institute: <http://www.bic.mni.mcgill.ca/~vfonov/icbm/2009/> or histology images from the Big Brain data: <https://bigbrain.loris.ca/main.php?test_name=brainvolumes>\
 The HCP 1065 template was constructed from a total of 1065 subjects' diffusion MRI data from the Human Connectome Project (2017 Q4, 1200-subject release). There were 575 female (others male). Age ranges from 22 to 37 with a mean of 28.74, Q1=26, median=29, Q4=32. A multishell diffusion scheme was used, and the b-values were 1000, 2000, and 3000 s/mm2. The number of diffusion sampling directions was 90, 90, and 90, respectively. The in-plane resolution was 1.25 mm. The slice thickness was 1.25 mm. The diffusion data were reconstructed in the MNI space using q-space diffeomorphic reconstruction (QSDR)(Yeh et al., Neuroimage, 58(1):91-9, 2011) to obtain the spin distribution function (Yeh et al., IEEE TMI, ;29(9):1626-35, 2010). A diffusion sampling length ratio of 1.7 was used, and the output resolution was 1 mm. The analysis was conducted using DSI Studio (http://dsi-studio.labsolver.org).
-
-## License
-
-The HCP-1065 data are shared under the WU-Minn HCP open access data use term (4) at <https://www.humanconnectome.org/study/hcp-young-adult/document/wu-minn-hcp-consortium-open-access-data-use-terms> Please acknowledge the source to the WU-Minn HCP.
 
 ## Download
 
@@ -38,15 +36,13 @@ HCP Templates from 1065 subjects:
 
 > Reference: Yeh FC, Panesar S, Fernandes D, Meola A, Yoshino M, Fernandez-Miranda JC, Vettel JM, Verstynen T. Population-averaged atlas of the macroscale human structural connectome and its network topology. Neuroimage. 2018 Sep 1;178:57-68.
 
+> License: the WU-Minn HCP open access data use term (4) at <https://www.humanconnectome.org/study/hcp-young-adult/document/wu-minn-hcp-consortium-open-access-data-use-terms> Please acknowledge the source to the WU-Minn HCP.
+
 The HCP842 registration used FSL's FA template as the template space. It is the old ICBM152 space.
 
 The HCP-842 template was constructed using a total of 842 subjects' diffusion MRI data from the Human Connectome Project (2015 Q3, 900-subject release). The diffusion images were acquired using a multishell diffusion scheme. The b-values were 1000, 2000, and 3000 s/mm2. The number of diffusion sampling directions were 90, 90, and 90. The in-plane resolution was 1.25 mm. The slice thickness was 1.25 mm. The diffusion data were reconstructed in the MNI space using q-space diffeomorphic reconstruction (Yeh et al., Neuroimage, 58(1):91-9, 2011) to obtain the spin distribution function (Yeh et al., IEEE TMI, ;29(9):1626-35, 2010). A diffusion sampling length ratio of 1.25 was used, and the output resolution was 1 mm. The atlas was constructed by averaging the SDFs of the 842 individual subjects.
 
 M: 372 F:470 ages: 20~40 (2015 Q4, 900-subject release)
-
-## License
-
-The HCP-842 data are shared under the WU-Minn HCP open access data use term (4) at <https://www.humanconnectome.org/study/hcp-young-adult/document/wu-minn-hcp-consortium-open-access-data-use-terms> Please acknowledge the source to the WU-Minn HCP.
 
 ## Download
 
@@ -129,6 +125,8 @@ All images were processed using a q-space diffeomorphic reconstruction method de
 
 # dHCP Neonate Fiber Template
 
+> License: [dHCP data sharing agreement](http://www.developingconnectome.org/open-access-dhcp-data-terms-of-use-version-4-0_2019-05-23/). The source of the data are from the [3rd release](https://biomedia.github.io/dHCP-release-notes/index.html). Users using the files should follow agreement and [cite/acknowledge the source](https://biomedia.github.io/dHCP-release-notes/cite.html).
+
 The [dHCP study](https://www.humanconnectome.org/study/lifespan-developing-human-connectome-project) planned to enroll 1500 Subjects at age 20-44 weeks post-conception. The purpose is to link together imaging, clinical, behavioral, and genetic information.
 
 The neonate template was constructed by averaging 584 neonates' dMRI data into a common space.
@@ -137,11 +135,6 @@ A multishell diffusion scheme was used, and the b-values were 400, 1000, and 260
 
 The dHCP group average template was constructed from a total of 584 subjects. The data were acquired with an in-plane resolution of 1.5 mm and a slice thickness of 1.5 mm. The images were resampled to 1 mm isotropic resolution. The diffusion data were reconstructed in the MNI space using q-space diffeomorphic reconstruction (Yeh et al., Neuroimage, 58(1):91-9, 2011) to obtain the spin distribution function (Yeh et al., IEEE TMI, ;29(9):1626-35, 2010). A diffusion sampling length ratio of 1.25 was used. The output resolution in diffeomorphic reconstruction was 1 mm isotropic. The restricted diffusion was quantified using restricted diffusion imaging (Yeh et al., MRM, 77:603–612 (2017)). The tensor metrics were calculated using DWI with b-value lower than 1750 s/mm².
 
-## License
-
-> License: [dHCP data sharing agreement](http://www.developingconnectome.org/open-access-dhcp-data-terms-of-use-version-4-0_2019-05-23/).
-
-The source of the data are from the [3rd release](https://biomedia.github.io/dHCP-release-notes/index.html). Users using the files should follow agreement and [cite/acknowledge the source](https://biomedia.github.io/dHCP-release-notes/cite.html).
 
 ## Download
 
