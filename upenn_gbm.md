@@ -17,9 +17,14 @@ Data source: (https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId
 
 - [FIB files (n=531)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/ErTB_g-GlCFAjehZac0LFOcBO6_4fzMADNK_rLhwb68UiA?e=J7pfEF) (Ready-to-track using [DSI Studio](https://dsi-studio.labsolver.org))
 - [T1w,T1w-GD, T2w, T2FLAIR (n=671)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EhWEXMOF06BGgOo2pTngdagBx4r8mVOMlZRJ3WFb5k_Igw?e=5lepMh)
-- [Tumor segmentation (n=147)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EhDguTTifyJDjhQHmm1zkjYBs5KvegY0aFvrXMFQcbHBKA?e=rxnFlY) 1: necrotic tissue, 2: peritumoral edema, 3: enhancing tumor
-- [Tumor and brain tissue segmentation (n=147)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/Eju3Ox1acX9MrqdoLbeNzM4BHAnTro5_VZL-uHS4YadlXg?e=N3lAuQ) 1: white matter 2: cerebral gray matter 3: cerebellar gray matter 4: thalamus and basal ganglion 5: ventricle 6: necrotic tissue, 7: peritumoral edema, 8: enhancing tumor
-The brain tissue segmentation was generated using [U-Net Studio](https://unet-studio.labsolver.org/)
+- [Tumor segmentation (n=147)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EhDguTTifyJDjhQHmm1zkjYBs5KvegY0aFvrXMFQcbHBKA?e=rxnFlY)
+  
+  1: necrotic tissue, 2: peritumoral edema, 3: enhancing tumor. The segmentation was the original expert segmentation provided by UPennGBM
+  
+- [Tumor and brain tissue segmentation (n=147)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/Eju3Ox1acX9MrqdoLbeNzM4BHAnTro5_VZL-uHS4YadlXg?e=N3lAuQ)
+  
+  1: white matter 2: cerebral gray matter 3: cerebellar gray matter 4: thalamus and basal ganglion 5: ventricle 6: necrotic tissue, 7: peritumoral edema, 8: enhancing tumor. The tumor segmentation was the same as above, whereas the brain tissue segmentation was generated using [U-Net Studio](https://unet-studio.labsolver.org/).
+  
 - Data quality control: [pre-eddy](https://pitt-my.sharepoint.com/:t:/g/personal/yehfc_pitt_edu/Ea60Z0sosudOnNYJ9wxeab0BGSmCjjrqA5lFGh8ntdq5Ug?e=lexYxD), [post-eddy](https://pitt-my.sharepoint.com/:t:/g/personal/yehfc_pitt_edu/EQDimHxxrK5Etgu3EhpXBxQB0-CM_7HckqYA9l7pXcVDjQ?e=sBOeIr)
 - [Demographics](https://pitt-my.sharepoint.com/:x:/g/personal/yehfc_pitt_edu/ET6yAsuDD6lOrkWzncWhmpYBpcXGiFhVxxNLGLBhUDO6vQ?e=xUc1qb)
 
