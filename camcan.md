@@ -16,6 +16,8 @@ Users should follow the original agreement that requires (1) non-comercial usage
 
 - [FIB files](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/ErvyHCvVq8tCmHV29USJUnsBeeONdEqF36nuOubHU96AVA?e=7hR2At) (Ready-to-track using [DSI Studio](https://dsi-studio.labsolver.org))
 
+Download OneDrive data using [OneDrive Linux GUI](https://github.com/bpozdena/OneDriveGUI)
+
   **Methods**
   >  A multishell diffusion scheme was used, and the b-values were 1,000 and 2,000 s/mm2. The number of diffusion sampling directions were 30 and 30, respectively. The in-plane resolution was 2 mm. The slice thickness was 2 mm. The b-table was checked by an automatic quality control routine to ensure its accuracy (Schilling et al. MRI, 2019) . The diffusion data were reconstructed using generalized q-sampling imaging (Yeh et al., IEEE TMI, ;29(9):1626-35, 2010) with a diffusion sampling length ratio of 1.25.
 
