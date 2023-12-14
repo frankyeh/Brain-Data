@@ -22,7 +22,7 @@ HCP Templates from 1065 subjects:
 |-------------|---|---|---------|----|
 | FIB | 1-mm | fiber orientation maps| [OneDrive](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EVqdp-lm0_NCgsFkSNDZeP0Bb3PpiSJRGpOKFhvVgZihVQ?e=GhUuOc) | 1-mm population=averaged FIB file in the ICBM152 space. The FIB file is ready for DSI Studio to run fiber tracking. |
 | FIB | 1.25-mm | fiber orientation maps| [OneDrive](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EfOJxSVJm71IppKBAzlEksoBjL7cFsjtZvAVkiCsgFWQGg?e=q3zoTd) | 1.25-mm population-averaged FIB file in the ICBM152 space. |
-| FIB | 1.25-mm with ODF| fiber orientation maps and ODFs | [OneDrive](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EdUKF-NSIWdKhDFrhFcjk_IB83K86YStjg8csgxAKaiLVg?e=ogZokU) | 1.25-mm population-averaged ODFs |
+| FIB | 1.25-mm with ODF| fiber orientation maps and ODFs | [OneDrive](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EaLgkttMzG1Ml_u2u27KkP4BmITleZTCusTCLHt6e58rpw?e=5bJZJu) | 1.25-mm population-averaged ODFs |
 | FIB | 2-mm | fiber orientation maps | [Github](https://github.com/frankyeh/DSI-Studio-atlas/raw/main/ICBM152_adult/ICBM152_adult.fib.gz) | 2-mm population-averaged FIB file in the ICBM152 space. |
 | Connectometry DB | 2-mm | anisotropy of 1065 subjects | [Zenodo](https://zenodo.org/record/6324701/files/HCP1065.2mm.db.fib.gz?download=1) | 2-mm anisotropy of 1065 subjects in the ICBM152 space |
 | NIFTI | 1-mm | Quantitative anisotropy (QA) | [Github](https://github.com/frankyeh/DSI-Studio-atlas/raw/main/ICBM152_adult/ICBM152_adult.QA.nii.gz) | 1-mm QA map derived from population-averaged ODF |
