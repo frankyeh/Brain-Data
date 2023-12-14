@@ -35,9 +35,9 @@ The NKI-Rockland phenotypic battery primarily focuses on dimensional mental heal
 
 - BAS1: BASELINE1
 - BAS2: BASELINE2
-- FLU1: FOLLOWUP1 (first year follow-up)
-- FLU2: FOLLOWUP2 (second year follow-up) 
-- TRT: RETEST BAS1 (usually acquired at the same time as the baseline)
+- FLU1: FOLLOWUP1 (mid-point follow-up)
+- FLU2: FOLLOWUP2 (final follow-up) 
+- TRT: RETEST BAS1 (usually acquired within 3 weeks of a baseline or a follow-up)
 
 # Methods
 > A total of 128 diffusion sampling directions were acquired. The b-value was 1500 s/mm². The in-plane resolution was 2 mm. The slice thickness was 2 mm. FSL eddy was used to correct for eddy current distortion. The correction was conducted through the integrated interface in DSI Studio ("Chen" release)(http://dsi-studio.labsolver.org). The diffusion MRI data were rotated to align with the AC-PC line. The restricted diffusion was quantified using restricted diffusion imaging (Yeh et al., MRM, 77:603–612 (2017)). The diffusion data were reconstructed using generalized q-sampling imaging (Yeh et al., IEEE TMI, ;29(9):1626-35, 2010) with a diffusion sampling length ratio of 1.25. 
