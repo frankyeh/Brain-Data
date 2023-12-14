@@ -33,6 +33,8 @@ The NKI-Rockland phenotypic battery primarily focuses on dimensional mental heal
 | NIFTI | T1W/T2W | [OneDrive](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EpS8KXagRYxBjw6AO4B6QFkBx9O5xqJiMcnwC-BlfsBzAw?e=5uQKUT) |  |
 | Text file | basic demographics (age sex) | [OneDrive](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/Ebt-DMl-V-xEt3IbMk_mPB8BMMCteOQIrqm1gu44jM1HBw?e=tibzFF) | |
 
+Download OneDrive data using [OneDrive Linux GUI](https://github.com/bpozdena/OneDriveGUI)
+
 - BAS1: BASELINE1
 - BAS2: BASELINE2
 - FLU1: FOLLOWUP1 (mid-point follow-up)
