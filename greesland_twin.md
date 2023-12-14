@@ -20,6 +20,7 @@ Strike, Lachlan T. and Hansell, Narelle K. and Miller, Jessica L. and Chuang, Ka
 - [Basic demographic data](https://openneuro.org/crn/datasets/ds004146/snapshots/1.0.0/files/participants.tsv)
 - Restricted demographic data: (i.e., age in months, zygosity, multiple birth status, birth order), as well as non-imaging phenotypic data is stored at The University of Queensland's institutional repository, UQ eSpace (https://doi.org/10.48610/e891597). Access to the dataset can be requested via the "Request access to the dataset link" in the UQ eSpace record.
 
+Download OneDrive data using [OneDrive Linux GUI](https://github.com/bpozdena/OneDriveGUI)
 
 # Methods
 
