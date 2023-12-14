@@ -12,7 +12,8 @@ NKI-Rockland Sample data are distributed using the [Creative Commons-Attribution
 
 Reference: [Tobe, R. H., MacKay-Brandt, A., Lim, R., Kramer, M., Breland, M. M., Tu, L., ... & Milham, M. P. (2022). A longitudinal resource for studying connectome development and its psychiatric associations during childhood. Scientific Data, 9(1), 300.](https://www.nature.com/articles/s41597-022-01329-y)
 
-[official website](https://www.nki.rfmh.org/) [fcon website](https://fcon_1000.projects.nitrc.org/indi/enhanced/index.html) [Original download](https://fcon_1000.projects.nitrc.org/indi/pro/nki.html)
+- [official website](https://www.nki.rfmh.org/)
+- [fcon website](https://fcon_1000.projects.nitrc.org/indi/pro/nki.html)
 
 # Participants and Experiments
 
