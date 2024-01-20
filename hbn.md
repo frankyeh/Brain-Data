@@ -33,7 +33,7 @@ Will use epidemiologic sampling to recruit an additional representative sample o
 
 | File Format | Modality/Content | Link | Details |
 |-------------|---|---|---------|
-| SRC | Eddy corrected DWI | [OneDrive](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EuQx-2egztZJpA0iIpzrTwgB_YR3HofgTpfhhH-thoQzCw?e=E8hGXP) | The SRC files contain raw dMRI signals for modeling. They can be reconstructed in DSI Studio to generate FIB files. The original NIFTI files can be downloaded from the HCP's connectome db website. |
+| SRC | TOPUP-Eddy corrected DWI | [OneDrive](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EuQx-2egztZJpA0iIpzrTwgB_YR3HofgTpfhhH-thoQzCw?e=E8hGXP) | The SRC files contain raw dMRI signals for modeling. They can be reconstructed in DSI Studio to generate FIB files. The original NIFTI files can be downloaded from the HCP's connectome db website. |
 | FIB | Fiber orientation maps in the native space| [OneDrive](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EhYy5-HBMx9OgA7uY_uQ6akBwx_3M4FInRd1VLUyxAlXAw?e=XFwDfE) | GQI reconstructed FIB file in the native space. The FIB files are track-ready files for DSI Studio to run fiber tracking. |
 | NIFTI | T1W/T2W | [OneDrive](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EiM5CMupP4xKjoeeezAMTOIBO-u0-j7TOnX2_u47aJRJiQ?e=5aNM3f) |  |
 | Text file | demographics | [OneDrive](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EqfsINe8hoJBhOGfuYeg56ABx1Lf3Grir8jMYWdt3ZEqnw?e=vkz2dK) | |
