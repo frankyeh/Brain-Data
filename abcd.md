@@ -11,11 +11,13 @@ The [NDA](https://nda.nih.gov/) agreement prohibits me from sharing raw MRI data
 
 # Download
 
+*Due to large size of the total files, please use https://github.com/abraunegg/onedrive to download the data*
+
 - [abcd baseline FIB files (n=9713)](https://pitt-my.sharepoint.com/:f:/g/personal/siv30_pitt_edu/En-dNTs5qpNOr5F7h3V2BGwBKImCWKs49bg7SpDwQ6Va0w?e=9YOqpD) 
 - [abcd 2yr FIB files (n=7199)](https://pitt-my.sharepoint.com/:f:/g/personal/siv30_pitt_edu/Ev1T-nCd3CRFnm4PRk0bIh8BcTG26pg__JMi_kpEjF2I7A?e=VrtQfB) 
 - [abcd 4yr FIB files (n=2736)](https://pitt-my.sharepoint.com/:f:/g/personal/siv30_pitt_edu/EoGZEMeKtRhFiplgX6WYg_EBNKcnby0ESGyUuvLT9aBf9A?e=6CaW0l)
+- EDDY/TOPUP-processed SRC files: *NDA requires us to share SRC files only to those who also have NDA access to HCP-A repository. Once you email me your NDA agreement, I will send the private link to you.*
 
-- Links for the DSI studio SRC files will be provided to NDA-authorized users upon request.
 
 # Methods
 > A multishell diffusion scheme was used, and the b-values were 500 ,1000 ,2000, and 3000 s/mm². The number of diffusion sampling directions were 6, 15, 15, and 60, respectively. The in-plane resolution was 1.7 mm. The slice thickness was 1.7 mm. The diffusion MRI data were rotated to align with the AC-PC line at an isotropic resolution of 1.7 (mm). The restricted diffusion was quantified using restricted diffusion imaging (Yeh et al., MRM, 77:603–612 (2017)). The diffusion data were reconstructed using generalized q-sampling imaging (Yeh et al., IEEE TMI, ;29(9):1626-35, 2010) with a diffusion sampling length ratio of 1.25. The tensor metrics were calculated using DWI with b-value lower than 1750 s/mm².
