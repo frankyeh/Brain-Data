@@ -125,7 +125,7 @@ All images were processed using a q-space diffeomorphic reconstruction method de
 
 # dHCP Neonate Fiber Template
 
-> License: [dHCP data sharing agreement](http://www.developingconnectome.org/open-access-dhcp-data-terms-of-use-version-4-0_2019-05-23/). The source of the data are from the [3rd release](https://biomedia.github.io/dHCP-release-notes/index.html). Users using the files should follow agreement and [cite/acknowledge the source](https://biomedia.github.io/dHCP-release-notes/cite.html).
+> License: [dHCP data sharing agreement](http://www.developingconnectome.org/open-access-dhcp-data-terms-of-use-version-4-0_2019-05-23/). The source of the data are from the [3rd release](https://biomedia.github.io/dHCP-release-notes/index.html). Users using the files should follow the agreement and [cite/acknowledge the source](https://biomedia.github.io/dHCP-release-notes/cite.html).
 
 The [dHCP study](https://www.humanconnectome.org/study/lifespan-developing-human-connectome-project) planned to enroll 1500 Subjects at age 20-44 weeks post-conception. The purpose is to link together imaging, clinical, behavioral, and genetic information.
 
@@ -133,10 +133,10 @@ The neonate template was constructed by averaging 584 neonates' dMRI data into a
 
 A multishell diffusion scheme was used, and the b-values were 400, 1000, and 2600 s/mm². The number of diffusion sampling directions was 64, 88, and 128, respectively. The in-plane resolution was 1.5 mm. The slice thickness was 1.5 mm. The images were denoised and corrected for Gibbs ringing, motion, eddy current, and susceptibility artifact using [the diffusion SHARD pipeline](https://biomedia.github.io/dHCP-release-notes/dwi-shard.html). A quality check was conducted using neighboring DWI correction (NDC) (Yeh, Neuroimage. 2019 Nov 15;202:116131). 34 out of 758 scans (including repeated scans) were excluded due to their low NDC values identified by a median value-based outlier detector. 
 
-The dHCP group average template was constructed from a total of 584 subjects. The data were acquired with an in-plane resolution of 1.5 mm and a slice thickness of 1.5 mm. The images were resampled to 1 mm isotropic resolution. The diffusion data were reconstructed in the MNI space using q-space diffeomorphic reconstruction (Yeh et al., Neuroimage, 58(1):91-9, 2011) to obtain the spin distribution function (Yeh et al., IEEE TMI, ;29(9):1626-35, 2010). A diffusion sampling length ratio of 1.25 was used. The output resolution in diffeomorphic reconstruction was 1 mm isotropic. The restricted diffusion was quantified using restricted diffusion imaging (Yeh et al., MRM, 77:603–612 (2017)). The tensor metrics were calculated using DWI with b-value lower than 1750 s/mm².
+The dHCP group average template was constructed from a total of 584 subjects. The data were acquired with an in-plane resolution of 1.5 mm and a slice thickness of 1.5 mm. The images were resampled to 1 mm isotropic resolution. The diffusion data were reconstructed in the MNI space using q-space diffeomorphic reconstruction (Yeh et al., Neuroimage, 58(1):91-9, 2011) to obtain the spin distribution function (Yeh et al., IEEE TMI,29(9):1626-35, 2010). A diffusion sampling length ratio of 1.25 was used. The output resolution in diffeomorphic reconstruction was 1 mm isotropic. The restricted diffusion was quantified using restricted diffusion imaging (Yeh et al., MRM, 77:603–612 (2017)). The tensor metrics were calculated using DWI with a b-value lower than 1750 s/mm².
 
 
 ## Download
 
-- [dHCP population-average 0.5-mm FIB file](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EQ5vRB18kXNJoVitzZybM0MBCcOT70ZFS1qZzMvwNphm3g?e=3y8cqP)
+- [dHCP population-average templates (QA/ISO/FIB) ](https://github.com/frankyeh/DSI-Studio-atlas/tree/main/dHCP_neonate)
 
