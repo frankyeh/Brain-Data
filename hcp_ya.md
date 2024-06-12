@@ -16,7 +16,9 @@ Please acknowledge the source to the WU-Minn HCP.
 | FIB 2-mm native space | Fiber orientation maps| [OneDrive](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EvFAkXbKPjVCjuTuWcuyGyYBZRAUi4ytmwi9jDI1kFtguA?e=8p3AdS) [Zenodo](https://zenodo.org/record/6307812) | 2-mm GQI reconstructed FIB file in the native space. The FIB files are track-ready files for DSI Studio to run fiber tracking. |
 | FIB 1.25-mm MNI space | Fiber orientation maps| [OneDrive](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EqdBttDkWOREjqlB3Ql1KVkBgAueXUbqIdJWi1RpHSEiyg?e=bDcFTe) | 1.25-mm QSDR reconstructed FIB file in the ICBM152 space. The FIB files are track-ready files for DSI Studio to run fiber tracking. |
 | SRC | DWI and b-table | [OneDrive](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EmL_WkIkt3pFilc6MeqRoX0Bwhvs0Lr7X9LAoIucajLUwQ?e=c0w9xQ) | The SRC files contains raw dMRI signals for modeling. They can be reconstructed in DSI Studio to generate FIB files. The original NIFTI files can be downloaded from the HCP's connectome db website. |
-| NIFTI file | T1W | [OneDrive](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EkPCanH2hTBEh47ZFHXIHuUBaYhGS5lcz3Hi1lAGoeqMcw?e=vCSidk) | |
+| NIFTI file | 0.7mm T1W | [OneDrive](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/Et_Ih4k8GyxLiEGi7j9XkQ8Bc3m93SdhGYZyZ8OCWda6cg?e=GnYO9e) | |
+| NIFTI file | 0.7mm T2W | [OneDrive](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EpwwFq_KM0NHmAAq5dv0QqYB_vV8DLqbSoeSH6k-uuSYxw?e=fZriUW) | |
+| NIFTI file | 1.0mm T1W | [OneDrive](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EkPCanH2hTBEh47ZFHXIHuUBaYhGS5lcz3Hi1lAGoeqMcw?e=vCSidk) | |
 | Text file | demographics | [ConnectomeDB](https://db.humanconnectome.org/) | |
 
   **Methods**
