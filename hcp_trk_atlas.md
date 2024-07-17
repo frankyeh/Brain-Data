@@ -38,10 +38,10 @@ The HCP1065 Yeh 2022 atlas further provides subcomponents for the cingulum, SLF,
 
 | Data | Format  | Note    |
 |----|-----|-----|
-| [HCP1065 Population-averaged tractography atlas (streamlines)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EjD1HZDMSnVGuuXm_B5vczQBuvY8WFjtHQR-AnXQc6izvQ?e=JIOLDz) | TT | To view these tract files, please download the HCP-1065 template fib file and open it in DSI Studio at [Step T3 Fiber Tracking]. The *.tt.gz files can be loaded using [Tracts][Open Tracts]. The ICBM152 images can be loaded using [Edit][Insert T1W/T2W].|
-| [HCP1065 Population-averaged tractography atlas (streamlines)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/Ek0DdO67iQ9NvkJUci91lzMBXCVBq926QXTTY7JK6LIjgw?e=jvydcC) | TRK | |
-| [HCP1065 Population-averaged tractography atlas (volume)](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EvAcb1QyogFPg206v-FRl2gB6EcDf3TIPG37JyugoL3hdA?e=SuGBZ4) | NIFTI | |
-| [Tract Abbreviations](https://pitt-my.sharepoint.com/:x:/g/personal/yehfc_pitt_edu/EQcjg3Ignv5CpOlwRu-dc-sBFy790zDaA2zW0qtR19VbJA?e=3iA6Ey) | Excel | |
+| [HCP1065 Population-averaged tractography atlas (streamlines)](https://github.com/frankyeh/data/releases/tag/hcp-ya_tract) | TT | To view these tract files, please download the HCP-1065 template fib file and open it in DSI Studio at [Step T3 Fiber Tracking]. The *.tt.gz files can be loaded using [Tracts][Open Tracts]. The ICBM152 images can be loaded using [Edit][Insert T1W/T2W].|
+| [HCP1065 Population-averaged tractography atlas (streamlines)](https://github.com/frankyeh/data/releases/tag/hcp-ya_tract_trk) | TRK | |
+| [HCP1065 Population-averaged tractography atlas (volume)](https://github.com/frankyeh/data/releases/tag/hcp-ya_tract_nii) | NIFTI | |
+| [Tract Abbreviations](https://github.com/frankyeh/data/releases/download/hcp-ya_tract/abbreviation.xlsx) | Excel | |
 
 # HCP842 Population-Averaged Tractography Atlas (Yeh, 2018) 
 
