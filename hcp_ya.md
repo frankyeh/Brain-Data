@@ -1,4 +1,4 @@
-# Introduction
+# Human Connectome Project Young Adult (HCP-YA) Study
 
 The data are originally from the minimally-preprocessed dMRI data from WU-Minn HCP Consortium and converted to DSI Studio SRC files format. The SRC file stores the minimum information needed for diffusion MRI processing, including the DWI data, image resolution, and the b-table. The SRC file can be converted back to 4D NIFTI in DSI Studio.
 
