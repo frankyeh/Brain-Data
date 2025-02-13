@@ -19,7 +19,7 @@ Users should follow the original agreement that requires (1) non-comercial usage
 Download OneDrive data using [OneDrive Linux GUI](https://github.com/bpozdena/OneDriveGUI)
 
   **Methods**
-  >  A multishell diffusion scheme was used, and the b-values were 1,000 and 2,000 s/mm2. The number of diffusion sampling directions were 30 and 30, respectively. The in-plane resolution was 2 mm. The slice thickness was 2 mm. The b-table was checked by an automatic quality control routine to ensure its accuracy (Schilling et al. MRI, 2019) . The diffusion data were reconstructed using generalized q-sampling imaging (Yeh et al., IEEE TMI, ;29(9):1626-35, 2010) with a diffusion sampling length ratio of 1.25.
+  >  A multishell diffusion scheme was used, and the b-values were 1,000 and 2,000 s/mm2. The number of diffusion sampling directions were 30 and 30, respectively. The in-plane resolution was 2 mm. The slice thickness was 2 mm. The b-table was checked by an automatic quality control routine to ensure its accuracy (Schilling et al. MRI, 2019) . The diffusion data were reconstructed using generalized q-sampling imaging (Yeh et al., IEEE TMI, ;29(9):1626-35, 2010) with a diffusion sampling length ratio of 1.25. This analysis used Bridges-2 at Pittsburgh Supercomputer Center through allocation CIS200026 from the Advanced Cyberinfrastructure Coordination Ecosystem: Services & Support (ACCESS) program (Boerner TJ, Deems S, Furlani TR, Knuth SL, Towns J. Access: Advancing innovation: Nsf’s advanced cyberinfrastructure coordination ecosystem: Services & support. InPractice and Experience in Advanced Research Computing 2023 Jul 23 pp. 173-176).
 
 - SRC files
 
