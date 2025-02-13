@@ -30,6 +30,7 @@ Download OneDrive data using [OneDrive Linux GUI](https://github.com/bpozdena/On
 
 > A deterministic fiber tracking algorithm (Yeh et al., PLoS ONE 8(11): e80713, 2013) was used with augmented tracking strategies (Yeh, Neuroimage, 2020 Dec;223:117329) to improve reproducibility. The anatomy prior of a tractography atlas (Yeh et al., Neuroimage 178, 57-68, 2018) was used to map Arcuate_Fasciculus_L  with a distance tolerance of 16 (mm) in the ICBM152 space. An ROA was placed at track tolerance region (36,47,33) . The track-to-voxel ratio was set to 2. The anisotropy threshold was randomly selected. The angular threshold was randomly selected from 15 degrees to 90 degrees. The step size was randomly selected from 0.5 voxel to 1.5 voxels. Tracks with length shorter than 30 or longer than 300 mm were discarded. Topology-informed pruning (Yeh et al. Neurotherapeutics, 16(1), 52-58, 2019) was applied to the tractography with 32 iteration(s) to remove false connections. Shape analysis (Yeh, Neuroimage, 2020 Dec;223:117329) was conducted to derive shape metrics for tractography.
 
+> This analysis used Bridges-2 at Pittsburgh Supercomputer Center through allocation CIS200026 from the Advanced Cyberinfrastructure Coordination Ecosystem: Services & Support (ACCESS) program (Boerner TJ, Deems S, Furlani TR, Knuth SL, Towns J. Access: Advancing innovation: Nsf’s advanced cyberinfrastructure coordination ecosystem: Services & support. InPractice and Experience in Advanced Research Computing 2023 Jul 23 pp. 173-176).
 
 # Script
 
