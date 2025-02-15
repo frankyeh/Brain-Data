@@ -2,16 +2,12 @@
 
 ![image](https://github.com/user-attachments/assets/455a71b7-dc1b-4960-b2ba-401b6f70c1a9)
 
-The Fiber Data Hub is an innovative, cloud-based resource providing immediate access to over 37,000 preprocessed brain fiber datasets derived from diffusion MRI studies. Designed to support and accelerate tractography research, the hub hosts data from major neuroimaging projects, including the Human Connectome Project, Adolescent Brain Cognitive Development (ABCD) study, and all OpenNeuro repositories. By storing only processed fiber orientations and diffusion metrics, the Fiber Data Hub reduces data size by 50- to 100-fold compared to raw diffusion MRI files, allowing researchers to access high-quality, ready-to-use brain fiber data instantly.
+The Fiber Data Hub is a cloud-based resource providing immediate access to over 37,000 preprocessed brain fiber datasets derived from diffusion MRI studies. Designed to support and accelerate tractography research, the hub hosts data from major neuroimaging projects, including the Human Connectome Project, Adolescent Brain Cognitive Development (ABCD) study, and all OpenNeuro repositories. 
 
-
-# Integrated with DSI Studio
-
-<img src="https://github.com/user-attachments/assets/55a16e70-09f5-4428-86bb-833e0faa84f9" width="600"/>
-
-To make data access and analysis as seamless as possible, the Fiber Data Hub is fully integrated with DSI Studio, a comprehensive diffusion MRI and tractography software. Through DSI Studio’s graphical interface, researchers can directly download, inspect, and analyze data from the hub without additional preprocessing, saving time and computational resources. This integration allows researchers to jump-start tractography analyses using advanced tracking methods available in DSI Studio, including deterministic, probabilistic, differential, and correlational tracking.
 
 # Flexible Storage and Accessibility
+
+The Fiber Data Hub stores processed fiber orientations and diffusion metrics. This approach reduces data size by 50- to 100-fold compared to raw diffusion MRI files, allowing researchers to access high-quality, ready-to-use brain fiber data instantly.
 
 Currently active repositories in Fiber Data Hub:
 
@@ -30,6 +26,12 @@ Currently active repositories in Fiber Data Hub:
 - [Duke CIVM (human)](https://github.com/duke-civm/human/releases)
 
 The Fiber Data Hub utilizes a versatile storage framework, incorporating multiple decentralized storage locations on GitHub repositories to ensure reliable data access and allow for future expansion. As new studies and datasets become available, the hub’s storage can easily scale to accommodate them, offering an ever-growing resource for the neuroimaging community. Additionally, a centralized web portal at brain.labsolver.org provides alternative access to the hub’s resources, giving researchers flexible options for data retrieval.
+
+# Integrated with DSI Studio
+
+<img src="https://github.com/user-attachments/assets/55a16e70-09f5-4428-86bb-833e0faa84f9" width="600"/>
+
+To make data access and analysis as seamless as possible, the Fiber Data Hub is fully integrated with DSI Studio, a comprehensive diffusion MRI and tractography software. Through DSI Studio’s graphical interface, researchers can directly download, inspect, and analyze data from the hub without additional preprocessing, saving time and computational resources. This integration allows researchers to jump-start tractography analyses using advanced tracking methods available in DSI Studio, including deterministic, probabilistic, differential, and correlational tracking.
 
 # Empowering the Neuroscience Community
 
