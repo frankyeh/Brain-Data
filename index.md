@@ -1,6 +1,6 @@
 # Fiber Data Hub
 
-<img src="https://github.com/user-attachments/assets/455a71b7-dc1b-4960-b2ba-401b6f70c1a9" width="100%"/>
+<img src="https://github.com/user-attachments/assets/455a71b7-dc1b-4960-b2ba-401b6f70c1a9" width="1024"/>
 
 The Fiber Data Hub is a cloud-based resource providing immediate access to over 37,000 preprocessed brain fiber datasets derived from diffusion MRI studies. Designed to support and accelerate tractography research, the hub hosts data from major neuroimaging projects, including the Human Connectome Project, Adolescent Brain Cognitive Development (ABCD) study, and all OpenNeuro repositories. 
 
