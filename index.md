@@ -25,6 +25,9 @@ Currently active repositories in Fiber Data Hub:
 - [Duke CIVM (mouse)](https://github.com/duke-civm/mouse/releases)
 - [Duke CIVM (human)](https://github.com/duke-civm/human/releases)
 
+<img src="https://github.com/user-attachments/assets/8f06b701-e1c2-43d4-a45e-37061af2f404" width="1024"/>
+
+
 The Fiber Data Hub utilizes a versatile storage framework, incorporating multiple decentralized storage locations on GitHub repositories to ensure reliable data access and allow for future expansion. As new studies and datasets become available, the hub’s storage can easily scale to accommodate them, offering an ever-growing resource for the neuroimaging community. Additionally, a centralized web portal at brain.labsolver.org provides alternative access to the hub’s resources, giving researchers flexible options for data retrieval.
 
 # Integrated with DSI Studio
