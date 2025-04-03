@@ -14,11 +14,9 @@ The Fiber Data Hub stores processed fiber orientations and diffusion metrics. Th
 
 **If you would like to suggest a dataset, please feel free to reach out to me (frank.yeh@gmail.com). We will preprocess the data and distribute them**
 
-- [HCP lifespan](https://github.com/data-hcp/lifespan/releases)
-- [HCP disease](https://github.com/data-hcp/disease/releases)
+- [HCP-lifespan](https://github.com/data-hcp/lifespan/releases)
+- [HCP-disease](https://github.com/data-hcp/disease/releases)
 - [ABCD](https://github.com/data-abcd/abcd/releases)
-- [ABCD-2yr](https://github.com/data-abcd/abcd-2yr/releases)
-- [ABCD-4yr](https://github.com/data-abcd/abcd-4yr/releases)
 - [OpenNeuro](https://github.com/data-openneuro/brain/releases)
 - [OpenNeuro-disease](https://github.com/data-openneuro/disease/releases)
 - [OpenNeuro-spine](https://github.com/data-openneuro/spine/releases)
