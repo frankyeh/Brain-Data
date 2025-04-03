@@ -14,17 +14,18 @@ The Fiber Data Hub stores processed fiber orientations and diffusion metrics. Th
 
 **If you would like to suggest a dataset, please feel free to reach out to me (frank.yeh@gmail.com). We will preprocess the data and distribute them**
 
-- [HCP lifespan studies](https://github.com/data-hcp/lifespan/releases)
-- [HCP disease studies](https://github.com/data-hcp/disease/releases)
-- [ABCD studies (baseline)](https://github.com/data-abcd/abcd/releases)
-- [ABCD studies (2yr)](https://github.com/data-abcd/abcd-2yr/releases)
-- [ABCD studies (4yr)](https://github.com/data-abcd/abcd-4yr/releases)
-- [OpenNeuro repositories (diseases)](https://github.com/data-openneuro/brain/releases)
-- [OpenNeuro repositories (brain)](https://github.com/data-openneuro/disease/releases)
-- [OpenNeuro repositories (spine)](https://github.com/data-openneuro/spine/releases)
-- [OpenNeuro repositories (animal)](https://github.com/data-openneuro/animal/releases)
-- [Major brain studies](https://github.com/labsolver/brain/releases)
-- [Major brain disease studies](https://github.com/labsolver/disease/releases)
+- [HCP lifespan](https://github.com/data-hcp/lifespan/releases)
+- [HCP disease](https://github.com/data-hcp/disease/releases)
+- [ABCD](https://github.com/data-abcd/abcd/releases)
+- [ABCD-2yr](https://github.com/data-abcd/abcd-2yr/releases)
+- [ABCD-4yr](https://github.com/data-abcd/abcd-4yr/releases)
+- [OpenNeuro](https://github.com/data-openneuro/brain/releases)
+- [OpenNeuro-disease](https://github.com/data-openneuro/disease/releases)
+- [OpenNeuro-spine](https://github.com/data-openneuro/spine/releases)
+- [OpenNeuro-animal](https://github.com/data-openneuro/animal/releases)
+- [Other major studies](https://github.com/labsolver/brain/releases)
+- [Other major studies-disease](https://github.com/labsolver/disease/releases)
+- [Other major studies-animal](https://github.com/labsolver/animal/releases)
 
 <img src="https://github.com/user-attachments/assets/8f06b701-e1c2-43d4-a45e-37061af2f404" width="1024"/>
 
