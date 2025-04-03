@@ -22,8 +22,6 @@ Currently active repositories in Fiber Data Hub:
 - [OpenNeuro repositories (animal)](https://github.com/data-openneuro/animal/releases)
 - [Major brain studies](https://github.com/labsolver/brain/releases)
 - [Major brain disease studies](https://github.com/labsolver/disease/releases)
-- [Duke CIVM (mouse)](https://github.com/duke-civm/mouse/releases)
-- [Duke CIVM (human)](https://github.com/duke-civm/human/releases)
 
 <img src="https://github.com/user-attachments/assets/8f06b701-e1c2-43d4-a45e-37061af2f404" width="1024"/>
 
