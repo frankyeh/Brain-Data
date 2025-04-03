@@ -9,10 +9,13 @@ The Fiber Data Hub is a cloud-based resource providing immediate access to over 
 
 The Fiber Data Hub stores processed fiber orientations and diffusion metrics. This approach reduces data size by 50- to 100-fold compared to raw diffusion MRI files, allowing researchers to access high-quality, ready-to-use brain fiber data instantly.
 
-Currently active repositories in Fiber Data Hub:
+
+# Currently active repositories in the Fiber Data Hub:
+
+**If you would like to suggest a dataset, please feel free to reach out to me (frank.yeh@gmail.com). We will preprocess the data and distribute them**
 
 - [HCP lifespan studies](https://github.com/data-hcp/lifespan/releases)
-- [HCP diease studies](https://github.com/data-hcp/disease/releases)
+- [HCP disease studies](https://github.com/data-hcp/disease/releases)
 - [ABCD studies (baseline)](https://github.com/data-abcd/abcd/releases)
 - [ABCD studies (2yr)](https://github.com/data-abcd/abcd-2yr/releases)
 - [ABCD studies (4yr)](https://github.com/data-abcd/abcd-4yr/releases)
