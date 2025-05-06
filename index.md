@@ -27,9 +27,9 @@ The Fiber Data Hub stores processed fiber orientations and diffusion metrics. Th
 
 # Example Code to Access Data
 
-### List all data repository (owner/repo/tag/)
+### List all data repository (owner/repo/tag/) 
 
-<a href=\"https://colab.research.google.com/github/frankyeh/Brain-Data/blob/gh-pages/list_repo.ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>
+<a href="https://colab.research.google.com/github/frankyeh/Brain-Data/blob/gh-pages/list_repo.ipynb" ><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 ```python
 import requests
