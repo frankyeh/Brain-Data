@@ -14,8 +14,6 @@ The Fiber Data Hub stores processed fiber orientations and diffusion metrics. Th
 
 **If you would like to suggest a dataset, please feel free to reach out to me (frank.yeh@gmail.com). We will preprocess the data and distribute them**
 
-
-
 - [HCP-lifespan](https://github.com/data-hcp/lifespan/releases)
 - [HCP-disease](https://github.com/data-hcp/disease/releases)
 - [ABCD](https://github.com/data-abcd/abcd/releases)
@@ -29,10 +27,26 @@ The Fiber Data Hub stores processed fiber orientations and diffusion metrics. Th
 
 # Example Code to Access Data
 
-Available repo: data-hcp, data-abcd, openneuro, labsolver
+### List all data repository (account/repo/tag/)
+
+```
+import requests
+accounts = ["data-hcp","data-abcd","data-openneuro","labsolver"]
+def fetch_tree(account, indent=""):
+    repos = requests.get(f"https://api.github.com/users/{account}/repos").json()
+    print(f"{indent}{account}/")
+    for repo in repos:
+        print(f"{indent}  {repo['name']}/")
+        tags = requests.get(f"https://api.github.com/repos/{account}/{repo['name']}/tags").json()
+        for tag in tags:
+            if tag:
+                print(f"{indent}    {tag['name']}")
+for account in accounts:
+    fetch_tree(account)
+```
 
 
-### Download FIB Files from HCP-YA
+### Download fib files from repository data-hcp/lifespan/hcp-ya
 
 ```
 import requests, os, re; 
@@ -54,7 +68,7 @@ try:
 except Exception as e: print(f"Error fetching/processing assets: {e}")
 ```
 
-### Search Data in the Fiber Data Hub
+### Search data using the QC report
 
 ```
 import requests, io, pandas as pd
