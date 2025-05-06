@@ -38,3 +38,34 @@ To make data access and analysis as seamless as possible, the Fiber Data Hub is 
 # Empowering the Neuroscience Community
 
 By consolidating curated and preprocessed fiber datasets from prominent research studies, the Fiber Data Hub enables researchers worldwide to explore brain connectivity without the need for resource-intensive data preparation. Whether studying neurodevelopment, neurological disorders, or population-level brain structure, the Fiber Data Hub offers an invaluable foundation for accelerating discoveries in neuroscience.
+
+# Example python code to search datasets in the Fiber Data Hub
+
+
+```
+import requests, io, pandas as pd
+
+# Config: repo/sub_repo/scan_name. "" disables filter.
+repo, sub_repo, scan_name = "data-hcp", "lifespan", ""
+
+# Fetch assets (minimal error handling)
+try: assets = requests.get("https://api.github.com/repos/frankyeh/FiberDataHub/releases/tags/qc-data").json().get("assets", [])
+except Exception as e: print(f"Err fetching assets: {e}"); assets = []
+
+# Process assets & collect data (errors stop script)
+all_data = []
+for a in assets:
+    name = a["name"]
+    # Filename check (sub_repo optional)
+    if name.startswith(repo) and (not sub_repo or sub_repo in name) and name.endswith(".tsv"):
+        # Download, read, filter, and append conditionally
+        resp = requests.get(a["browser_download_url"])
+        resp.raise_for_status() # Stops if download fails
+        # Read, check, filter, and append if results found (requires Python 3.8+)
+        if not (df := pd.read_csv(io.StringIO(resp.text), sep="\t", dtype=str)).empty and len(df.columns) > 0:
+            filtered_df = df[df.iloc[:, 0].str.contains(scan_name, case=False, na=False)] if scan_name else df
+            if not filtered_df.empty: all_data.append(filtered_df)
+# Combine and save results
+if all_data: pd.concat(all_data, ignore_index=True).to_csv("result_data.tsv", sep='\t', index=False); print("Saved result_data.tsv")
+else: print("No data found.")
+```
