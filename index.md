@@ -29,7 +29,7 @@ The Fiber Data Hub stores processed fiber orientations and diffusion metrics. Th
 
 ### List all data repository (owner/repo/tag/) 
 
-<a href="https://colab.research.google.com/github/frankyeh/Brain-Data/blob/gh-pages/list_repo.ipynb" ><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+<a href="https://colab.research.google.com/github/frankyeh/Brain-Data/blob/gh-pages/list_repo.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 ```python
 import requests
@@ -48,7 +48,7 @@ if __name__ == "__main__":
 
 ### Download fib files from repository data-hcp/lifespan/hcp-ya
 
-<a href="https://colab.research.google.com/github/frankyeh/Brain-Data/blob/gh-pages/download_data.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+<a href="https://colab.research.google.com/github/frankyeh/Brain-Data/blob/gh-pages/download_data.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 ```python
 import requests, os, re; 
@@ -71,7 +71,7 @@ except Exception as e: print(f"Error fetching/processing assets: {e}")
 
 ### Search data using the QC report
 
-<a href="https://colab.research.google.com/github/frankyeh/Brain-Data/blob/gh-pages/search_qc.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+<a href="https://colab.research.google.com/github/frankyeh/Brain-Data/blob/gh-pages/search_qc.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 ```python
 import requests, io, pandas as pd
