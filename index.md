@@ -39,8 +39,7 @@ To make data access and analysis as seamless as possible, the Fiber Data Hub is 
 
 By consolidating curated and preprocessed fiber datasets from prominent research studies, the Fiber Data Hub enables researchers worldwide to explore brain connectivity without the need for resource-intensive data preparation. Whether studying neurodevelopment, neurological disorders, or population-level brain structure, the Fiber Data Hub offers an invaluable foundation for accelerating discoveries in neuroscience.
 
-# Example python code to search datasets in the Fiber Data Hub
-
+# Example Code to Search Data in the Fiber Data Hub
 
 ```
 import requests, io, pandas as pd
