@@ -69,28 +69,18 @@ except Exception as e: print(f"Error fetching/processing assets: {e}")
 
 ```
 import requests, io, pandas as pd
-
-# Config: repo/sub_repo/scan_name. "" disables filter.
-repo, sub_repo, scan_name = "data-hcp", "lifespan", ""
-
-# Fetch assets (minimal error handling)
+owner, repo, scan_name = "data-hcp", "lifespan", ""
 try: assets = requests.get("https://api.github.com/repos/frankyeh/FiberDataHub/releases/tags/qc-data").json().get("assets", [])
 except Exception as e: print(f"Err fetching assets: {e}"); assets = []
-
-# Process assets & collect data (errors stop script)
 all_data = []
 for a in assets:
     name = a["name"]
-    # Filename check (sub_repo optional)
-    if name.startswith(repo) and (not sub_repo or sub_repo in name) and name.endswith(".tsv"):
-        # Download, read, filter, and append conditionally
+    if name.startswith(owner) and (not repo or repo in name) and name.endswith(".tsv"):
         resp = requests.get(a["browser_download_url"])
         resp.raise_for_status() # Stops if download fails
-        # Read, check, filter, and append if results found (requires Python 3.8+)
         if not (df := pd.read_csv(io.StringIO(resp.text), sep="\t", dtype=str)).empty and len(df.columns) > 0:
             filtered_df = df[df.iloc[:, 0].str.contains(scan_name, case=False, na=False)] if scan_name else df
             if not filtered_df.empty: all_data.append(filtered_df)
-# Combine and save results
 if all_data: pd.concat(all_data, ignore_index=True).to_csv("result_data.tsv", sep='\t', index=False); print("Saved result_data.tsv")
 else: print("No data found.")
 ```
