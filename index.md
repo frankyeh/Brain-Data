@@ -31,8 +31,8 @@ The Fiber Data Hub stores processed fiber orientations and diffusion metrics. Th
 
 ```
 import requests
-accounts = ["data-hcp","data-abcd","data-openneuro","labsolver"]
-def fetch_tree(account, indent=""):
+owners = ["data-hcp","data-abcd","data-openneuro","labsolver"]
+def fetch_tree(owners, indent=""):
     repos = requests.get(f"https://api.github.com/users/{account}/repos").json()
     print(f"{indent}{account}/")
     for repo in repos:
@@ -41,8 +41,8 @@ def fetch_tree(account, indent=""):
         for tag in tags:
             if tag:
                 print(f"{indent}    {tag['name']}")
-for account in accounts:
-    fetch_tree(account)
+for owner in owners:
+    fetch_tree(owners)
 ```
 
 
