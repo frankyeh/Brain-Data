@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FiberDataHub Results</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <style>
+        body { font-family: sans-serif; margin: 20px; }
+        table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        tr:nth-child(even) { background-color: #f9f9f9; }
+        #loading { font-style: italic; color: #666; }
+        .error { color: red; }
+    </style>
+</head>
+<body>
+
+    <h1>FiberDataHub Data Results</h1>
+
+    <div id="loading">Loading data...</div>
+    <div id="results">
+        </div>
+    <div id="error-message" class="error"></div>
+
+    <script>
+        // --- Configuration ---
+        const repoName = "frankyeh/FiberDataHub";
+        const tagName = "qc-data";
+        const apiUrl = `https://api.github.com/repos/${repoName}/releases/tags/${tagName}`;
+
+        // Config for filtering assets (like Python script)
+        const assetRepoPrefix = "data-hcp";
+        const assetSubRepoContains = "lifespan"; // Use "" to disable sub-repo filter
+        const assetExtension = ".tsv";
+
+        // Config for filtering data rows within TSV (like Python script scan_name)
+        const scanNameFilter = ""; // Use "" to disable filtering rows by the first column
+
+        // --- Helper function to parse TSV text ---
+        function parseTsv(tsvText) {
+            // Use Papaparse to parse TSV.
+            // header: true treats the first row as headers and returns objects.
+            // delimiter: '\t' specifies tab separation.
+            // dynamicTyping: false ensures all values are treated as strings.
+            const result = Papa.parse(tsvText, {
+                delimiter: '\t',
+                header: true,
+                dynamicTyping: false,
+                skipEmptyLines: true // Good practice to skip empty lines
+            });
+
+            if (result.errors.length > 0) {
+                console.error("Papaparse errors:", result.errors);
+                // Depending on strictness, you might want to throw an error here
+            }
+
+            return result.data; // Returns array of objects
+        }
+
+        // --- Main function to fetch, process, and display data ---
+        async function fetchAndDisplayData() {
+            const loadingDiv = document.getElementById('loading');
+            const resultsDiv = document.getElementById('results');
+            const errorDiv = document.getElementById('error-message');
+            loadingDiv.style.display = 'block'; // Show loading message
+            errorDiv.textContent = ''; // Clear previous errors
+            resultsDiv.innerHTML = ''; // Clear previous results
+
+            try {
+                // 1. Fetch release assets
+                const response = await fetch(apiUrl);
+                if (!response.ok) {
+                    throw new Error(`GitHub API responded with status ${response.status}`);
+                }
+                const releaseData = await response.json();
+                const assets = releaseData.assets || [];
+
+                if (assets.length === 0) {
+                    resultsDiv.innerHTML = '<p>No assets found for this release.</p>';
+                    loadingDiv.style.display = 'none';
+                    return;
+                }
+
+                // 2. Filter assets based on configuration
+                const filteredAssets = assets.filter(asset => {
+                    const name = asset.name;
+                    const meetsPrefix = name.startsWith(assetRepoPrefix);
+                    const meetsSubRepo = assetSubRepoContains === "" || name.includes(assetSubRepoContains);
+                    const meetsExtension = name.endsWith(assetExtension);
+                    return meetsPrefix && meetsSubRepo && meetsExtension;
+                });
+
+                if (filteredAssets.length === 0) {
+                    resultsDiv.innerHTML = '<p>No matching TSV assets found.</p>';
+                    loadingDiv.style.display = 'none';
+                    return;
+                }
+
+                // 3. Fetch and process each filtered TSV asset
+                const dataPromises = filteredAssets.map(async asset => {
+                    console.log(`Workspaceing: ${asset.name}`);
+                    const assetResponse = await fetch(asset.browser_download_url);
+                    if (!assetResponse.ok) {
+                         console.warn(`Failed to download ${asset.name}: Status ${assetResponse.status}`);
+                         return null; // Skip this file
+                    }
+                    const tsvText = await assetResponse.text();
+
+                    // Parse the TSV text
+                    const parsedData = parseTsv(tsvText);
+
+                    // Filter rows by scanName (case-insensitive, first column)
+                    if (scanNameFilter) {
+                         // Check if parsed data has columns and the first column key exists
+                         const firstColumnHeader = parsedData.length > 0 ? Object.keys(parsedData[0])[0] : null;
+
+                         if (firstColumnHeader) {
+                              return parsedData.filter(row =>
+                                   row[firstColumnHeader] && // Ensure the cell is not null/undefined
+                                   typeof row[firstColumnHeader] === 'string' && // Ensure it's a string
+                                   row[firstColumnHeader].toLowerCase().includes(scanNameFilter.toLowerCase())
+                              );
+                         } else {
+                              console.warn(`Skipping scan_name filter for ${asset.name} as first column header not found.`);
+                              return parsedData; // Return unfiltered if no first column
+                         }
+                    } else {
+                         return parsedData; // Return all data if no filter
+                    }
+                });
+
+                // Wait for all fetches and parsing to complete
+                const results = await Promise.all(dataPromises);
+
+                // Combine data from all files (filter out null results from failed downloads)
+                const combinedData = results.filter(data => data !== null).flat(); // .flat() combines arrays
+
+                loadingDiv.style.display = 'none'; // Hide loading message
+
+                if (combinedData.length === 0) {
+                    resultsDiv.innerHTML = '<p>No data found after processing assets.</p>';
+                    return;
+                }
+
+                // 4. Display data in an HTML table
+                const table = document.createElement('table');
+                const thead = table.createTHead();
+                const tbody = table.createTBody();
+
+                // Assume all files have the same headers and use the first row's keys for headers
+                const headers = Object.keys(combinedData[0]);
+                const headerRow = thead.insertRow();
+                headers.forEach(headerText => {
+                    const th = document.createElement('th');
+                    th.textContent = headerText;
+                    headerRow.appendChild(th);
+                });
+
+                // Add data rows
+                combinedData.forEach(rowData => {
+                    const row = tbody.insertRow();
+                    headers.forEach(header => {
+                        const cell = row.insertCell();
+                        cell.textContent = rowData[header] || ''; // Use '' for undefined/null data
+                    });
+                });
+
+                resultsDiv.appendChild(table); // Add the table to the results div
+
+            } catch (error) {
+                loadingDiv.style.display = 'none'; // Hide loading message
+                errorDiv.textContent = `Error fetching or processing data: ${error.message}`;
+                console.error(error);
+            }
+        }
+
+        // Run the function when the page loads
+        window.onload = fetchAndDisplayData;
+
+    </script>
+
+</body>
+</html>
