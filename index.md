@@ -31,18 +31,16 @@ The Fiber Data Hub stores processed fiber orientations and diffusion metrics. Th
 
 ```
 import requests
-owners = ["data-hcp","data-abcd","data-openneuro","data-others"]
-def fetch_tree(owners, indent=""):
-    repos = requests.get(f"https://api.github.com/users/{account}/repos").json()
-    print(f"{indent}{account}/")
+owners = ["data-hcp", "data-abcd", "data-openneuro", "data-others"]
+def ft(owner, indent=""):
+    repos = requests.get(f"https://api.github.com/users/{owner}/repos").json()
+    print(f"{indent}{owner}/")
     for repo in repos:
         print(f"{indent}  {repo['name']}/")
-        tags = requests.get(f"https://api.github.com/repos/{account}/{repo['name']}/tags").json()
-        for tag in tags:
-            if tag:
-                print(f"{indent}    {tag['name']}")
-for owner in owners:
-    fetch_tree(owners)
+        tags = requests.get(f"https://api.github.com/repos/{owner}/{repo['name']}/tags").json()
+        [print(f"{indent}    {tag['name']}") for tag in tags if tag]
+if __name__ == "__main__":
+    [ft(owner) for owner in owners]
 ```
 
 
@@ -53,7 +51,6 @@ import requests, os, re;
 owner, repo, tag = "data-hcp", "lifespan", "hcp-ya"; # Define repo details
 pattern = r".*\.fz$"; # select all .fz files 
 api_url = f"https://api.github.com/repos/{owner}/{repo}/releases/tags/{tag}"; # API endpoint
-
 def dl(u, p):
     try:
         r = requests.get(u, stream=True); r.raise_for_status(); s = int(r.headers.get('content-length', 0)); d = 0;
