@@ -14,16 +14,16 @@ The Fiber Data Hub stores processed fiber orientations and diffusion metrics. Th
 
 **If you would like to suggest a dataset, please feel free to reach out to me (frank.yeh@gmail.com). We will preprocess the data and distribute them**
 
-- [hcp-lifespan](https://github.com/data-hcp/lifespan/releases)
-- [hcp-disease](https://github.com/data-hcp/disease/releases)
-- [abcd](https://github.com/data-abcd/abcd/releases)
-- [openneuro](https://github.com/data-openneuro/brain/releases)
-- [openneuro-disease](https://github.com/data-openneuro/disease/releases)
-- [openneuro-spine](https://github.com/data-openneuro/spine/releases)
-- [openneuro-animal](https://github.com/data-openneuro/animal/releases)
-- [others](https://github.com/data-others/brain/releases)
-- [others-disease](https://github.com/data-others/disease/releases)
-- [others-animal](https://github.com/data-others/animal/releases)
+- [data-hcp/lifespan](https://github.com/data-hcp/lifespan/releases)
+- [data-hcp/disease](https://github.com/data-hcp/disease/releases)
+- [data-abcd/abcd](https://github.com/data-abcd/abcd/releases)
+- [data-openneuro/brain](https://github.com/data-openneuro/brain/releases)
+- [data-openneuro/disease](https://github.com/data-openneuro/disease/releases)
+- [data-openneuro/spine](https://github.com/data-openneuro/spine/releases)
+- [data-openneuro/animal](https://github.com/data-openneuro/animal/releases)
+- [data-others/brain](https://github.com/data-others/brain/releases)
+- [data-others/disease](https://github.com/data-others/disease/releases)
+- [data-others/animal](https://github.com/data-others/animal/releases)
 
 # Example Code to Access Data
 
