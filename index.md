@@ -29,7 +29,9 @@ The Fiber Data Hub stores processed fiber orientations and diffusion metrics. Th
 
 ### List all data repository (owner/repo/tag/)
 
-```
+<a href=\"https://colab.research.google.com/github/frankyeh/Brain-Data/blob/gh-pages/list_repo.ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>
+
+```python
 import requests
 owners = ["data-hcp", "data-abcd", "data-openneuro", "data-others"]
 def ft(owner, indent=""):
@@ -46,7 +48,7 @@ if __name__ == "__main__":
 
 ### Download fib files from repository data-hcp/lifespan/hcp-ya
 
-```
+```python
 import requests, os, re; 
 owner, repo, tag = "data-hcp", "lifespan", "hcp-ya"; # Define repo details
 pattern = r".*\.fz$"; # select all .fz files 
@@ -67,7 +69,7 @@ except Exception as e: print(f"Error fetching/processing assets: {e}")
 
 ### Search data using the QC report
 
-```
+```python
 import requests, io, pandas as pd
 owner, repo, scan_name = "data-hcp", "lifespan", ""
 try: assets = requests.get("https://api.github.com/repos/frankyeh/FiberDataHub/releases/tags/qc-data").json().get("assets", [])
