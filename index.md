@@ -14,6 +14,8 @@ The Fiber Data Hub stores processed fiber orientations and diffusion metrics. Th
 
 **If you would like to suggest a dataset, please feel free to reach out to me (frank.yeh@gmail.com). We will preprocess the data and distribute them**
 
+
+
 - [HCP-lifespan](https://github.com/data-hcp/lifespan/releases)
 - [HCP-disease](https://github.com/data-hcp/disease/releases)
 - [ABCD](https://github.com/data-abcd/abcd/releases)
@@ -25,21 +27,34 @@ The Fiber Data Hub stores processed fiber orientations and diffusion metrics. Th
 - [Other major studies-disease](https://github.com/labsolver/disease/releases)
 - [Other major studies-animal](https://github.com/labsolver/animal/releases)
 
-<img src="https://github.com/frankyeh/FiberDataHub/releases/download/qc-chart/qc_plots.png" width="100%"/>
+# Example Code to Access Data
 
-The Fiber Data Hub utilizes a versatile storage framework, incorporating multiple decentralized storage locations on GitHub repositories to ensure reliable data access and allow for future expansion. As new studies and datasets become available, the hub’s storage can easily scale to accommodate them, offering an ever-growing resource for the neuroimaging community. Additionally, a centralized web portal at brain.labsolver.org provides alternative access to the hub’s resources, giving researchers flexible options for data retrieval.
+Available repo: data-hcp, data-abcd, openneuro, labsolver
 
-# Integrated with DSI Studio
 
-<img src="https://github.com/user-attachments/assets/55a16e70-09f5-4428-86bb-833e0faa84f9" width="600"/>
+### Download FIB Files from HCP-YA
 
-To make data access and analysis as seamless as possible, the Fiber Data Hub is fully integrated with DSI Studio, a comprehensive diffusion MRI and tractography software. Through DSI Studio’s graphical interface, researchers can directly download, inspect, and analyze data from the hub without additional preprocessing, saving time and computational resources. This integration allows researchers to jump-start tractography analyses using advanced tracking methods available in DSI Studio, including deterministic, probabilistic, differential, and correlational tracking.
+```
+import requests, os, re; 
+owner, repo, tag = "data-hcp", "lifespan", "hcp-ya"; # Define repo details
+pattern = r".*\.fz$"; # select all .fz files 
+api_url = f"https://api.github.com/repos/{owner}/{repo}/releases/tags/{tag}"; # API endpoint
 
-# Empowering the Neuroscience Community
+def dl(u, p):
+    try:
+        r = requests.get(u, stream=True); r.raise_for_status(); s = int(r.headers.get('content-length', 0)); d = 0;
+        with open(p, 'wb') as f:
+            for c in r.iter_content(1024): f.write(c); d += len(c);
+            print(f"\rDownloaded {os.path.basename(p)}: {(d/s)*100:.2f}%", end='');
+        print("\nDone")
+    except Exception as e: print(f"Error: {e}")
+try:
+    assets = requests.get(api_url).json().get('assets', []);
+    [dl(asset['browser_download_url'], os.path.join(os.getcwd(), asset['name'])) for asset in assets if re.match(pattern, asset['name'])]
+except Exception as e: print(f"Error fetching/processing assets: {e}")
+```
 
-By consolidating curated and preprocessed fiber datasets from prominent research studies, the Fiber Data Hub enables researchers worldwide to explore brain connectivity without the need for resource-intensive data preparation. Whether studying neurodevelopment, neurological disorders, or population-level brain structure, the Fiber Data Hub offers an invaluable foundation for accelerating discoveries in neuroscience.
-
-# Example Code to Search Data in the Fiber Data Hub
+### Search Data in the Fiber Data Hub
 
 ```
 import requests, io, pandas as pd
@@ -68,3 +83,20 @@ for a in assets:
 if all_data: pd.concat(all_data, ignore_index=True).to_csv("result_data.tsv", sep='\t', index=False); print("Saved result_data.tsv")
 else: print("No data found.")
 ```
+
+
+The Fiber Data Hub utilizes a versatile storage framework, incorporating multiple decentralized storage locations on GitHub repositories to ensure reliable data access and allow for future expansion. As new studies and datasets become available, the hub’s storage can easily scale to accommodate them, offering an ever-growing resource for the neuroimaging community. Additionally, a centralized web portal at brain.labsolver.org provides alternative access to the hub’s resources, giving researchers flexible options for data retrieval.
+
+# Integrated with DSI Studio
+
+<img src="https://github.com/user-attachments/assets/55a16e70-09f5-4428-86bb-833e0faa84f9" width="600"/>
+
+To make data access and analysis as seamless as possible, the Fiber Data Hub is fully integrated with DSI Studio, a comprehensive diffusion MRI and tractography software. Through DSI Studio’s graphical interface, researchers can directly download, inspect, and analyze data from the hub without additional preprocessing, saving time and computational resources. This integration allows researchers to jump-start tractography analyses using advanced tracking methods available in DSI Studio, including deterministic, probabilistic, differential, and correlational tracking.
+
+# Empowering the Neuroscience Community
+
+By consolidating curated and preprocessed fiber datasets from prominent research studies, the Fiber Data Hub enables researchers worldwide to explore brain connectivity without the need for resource-intensive data preparation. Whether studying neurodevelopment, neurological disorders, or population-level brain structure, the Fiber Data Hub offers an invaluable foundation for accelerating discoveries in neuroscience.
+
+# Quality Control of All Datasets
+
+<img src="https://github.com/frankyeh/FiberDataHub/releases/download/qc-chart/qc_plots.png" width="100%"/>
