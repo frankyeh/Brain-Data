@@ -21,17 +21,17 @@ The Fiber Data Hub stores processed fiber orientations and diffusion metrics. Th
 - [openneuro-disease](https://github.com/data-openneuro/disease/releases)
 - [openneuro-spine](https://github.com/data-openneuro/spine/releases)
 - [openneuro-animal](https://github.com/data-openneuro/animal/releases)
-- [others](https://github.com/labsolver/brain/releases)
-- [others-disease](https://github.com/labsolver/disease/releases)
-- [others-animal](https://github.com/labsolver/animal/releases)
+- [others](https://github.com/data-others/brain/releases)
+- [others-disease](https://github.com/data-others/disease/releases)
+- [others-animal](https://github.com/data-others/animal/releases)
 
 # Example Code to Access Data
 
-### List all data repository (account/repo/tag/)
+### List all data repository (owner/repo/tag/)
 
 ```
 import requests
-owners = ["data-hcp","data-abcd","data-openneuro","labsolver"]
+owners = ["data-hcp","data-abcd","data-openneuro","data-others"]
 def fetch_tree(owners, indent=""):
     repos = requests.get(f"https://api.github.com/users/{account}/repos").json()
     print(f"{indent}{account}/")
