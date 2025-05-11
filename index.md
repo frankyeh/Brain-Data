@@ -22,6 +22,7 @@ The Fiber Data Hub stores processed fiber orientations and diffusion metrics. Th
 - [data-openneuro/spine](https://github.com/data-openneuro/spine/releases)
 - [data-openneuro/animal](https://github.com/data-openneuro/animal/releases)
 - [data-indi/corr](https://github.com/data-indi/corr/releases)
+- [data-indi/pro](https://github.com/data-indi/corr/releases)
 - [data-others/brain](https://github.com/data-others/brain/releases)
 - [data-others/disease](https://github.com/data-others/disease/releases)
 - [data-others/animal](https://github.com/data-others/animal/releases)
