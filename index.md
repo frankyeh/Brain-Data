@@ -35,7 +35,7 @@ The Fiber Data Hub stores processed fiber orientations and diffusion metrics. Th
 
 ```python
 import requests
-owners = ["data-hcp", "data-abcd", "data-openneuro", "data-others"]
+owners = ["data-hcp", "data-abcd", "data-openneuro", "data-indi", "data-others"]
 def ft(owner, indent=""):
     repos = requests.get(f"https://api.github.com/users/{owner}/repos").json()
     print(f"{indent}{owner}/")
