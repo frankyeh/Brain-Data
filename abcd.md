@@ -26,9 +26,13 @@ The [NDA](https://nda.nih.gov/) agreement prohibits me from sharing raw MRI data
 
 **0. Steps used to download the data from NDA**
 
-(1) Create a data package at https://nda.nih.gov/ selecting all diffusion-weighted MRI from the ABCD dataset.
-(2) Create miNDAR and access SQL developer to retrieve S3 links (Amazon Web Services).
-(3) Use Python script provided under NDA Tools to download all the data: (https://github.com/NDAR/nda-data-access-example-code/tree/main/example)
+1. Create a data package at https://nda.nih.gov/ selecting all diffusion-weighted MRI from the ABCD dataset.
+2. On the cluster, install nda-tools https://github.com/NDAR/nda-tools
+
+   pip install nda-tools
+   
+4. get your nda account/password (this is not the one you used to login NDA website) from the NDA website's profile page
+5. run commandcmd -dp <packageid> -d .
 
 
 **1. Create source files**
