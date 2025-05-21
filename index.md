@@ -21,7 +21,8 @@ The **Fiber Data Hub** is a cloud-based platform designed to openly distribute p
 - [data-others/brain](https://github.com/data-others/brain/releases)
 - [data-others/disease](https://github.com/data-others/disease/releases)
 - [data-others/animal](https://github.com/data-others/animal/releases)
-- [data-restricted/lifespan (requires NDA agreement)](https://github.com/data-restricted/lifespan/releases)
+- [data-hcp/lifespan-restricted (requires NDA agreement)](https://github.com/data-hcp/lifespan-restricted/releases)
+- [data-hcp/disease-restricted (requires NDA agreement)](https://github.com/data-hcp/disease-restricted/releases)
 
 # Example Code to Access Data
 
