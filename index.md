@@ -8,25 +8,42 @@ The **Fiber Data Hub** is a cloud-based platform designed to openly distribute p
 
 The **Fiber Data Hub** provides compact file formats to reduce storage size. These files can be converted back to standard NIfTI format using **DSI Studio** or [Python scripts](https://dsi-studio.labsolver.org/doc/cli_data.html).
 
-## 🧠 Fib Files (`*.fz`)
+### 🧠 Fib Files (`*.fz`)
 
 * Stores **voxel-wise fiber orientation** (i.e., fixels), **DTI metrics** (e.g., anisotropy, diffusivity), and **GQI metrics** (e.g., QA, ISO).
 * `gqi.fz`: data in **native space**
 * `qsdr.fz`: data in **MNI space**
 
-## 📦 SRC Files (`*.sz`)
+### 📦 SRC Files (`*.sz`)
 
 * Stores **4D DWI volumes** (after eddy/topup correction)
 * Includes the **b-table**
 
-## 📊 Database Files (`*.dz`)
+### 📊 Database Files (`*.dz`)
 
 * Stores **group-level DTI/GQI metrics** across subjects in **MNI space**
 * Uses the **HCP-1065 fiber orientation** template for alignment
 
-## ✅ QC Files (`qc.tsv`)
+### ✅ QC Files (`qc.tsv`)
 
 * Tab-separated file with **quality control metrics** derived from `.sz` files
+
+### Example command line to convert files into NIFTI format
+
+1. export diffusion metrics as NIFTI files from FIB files
+
+```
+dsi_studio --action=exp --source=subject.gqi.fz --export=dti_fa,md,rd,qa,iso
+dsi_studio --action=exp --source=*.gqi.fz --export=dti_fa,md,rd,qa,iso
+```
+
+2. convert SRC files to 4D NIFTI files and bval/bvec
+
+```
+dsi_studio --action=rec --source=subject.sz --save_nii=subject_dwi.nii.gz
+dsi_studio --action=rec --source=*.sz --save_nii=subject_dwi.nii.gz
+```
+
 
 # Currently active repositories in the Fiber Data Hub:
 
