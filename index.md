@@ -4,6 +4,30 @@
 
 The **Fiber Data Hub** is a cloud-based platform designed to openly distribute processed fiber data derived from diffusion MRI, enabling scalable and reproducible research in brain connectivity. Currently, the Hub hosts over **40,000 processed fiber datasets**, providing comprehensive fiber information such as fiber orientation, anisotropy, diffusivities, and advanced diffusion metrics. These datasets originate from major neuroimaging initiatives, including the **Human Connectome Project (HCP)**, the **Adolescent Brain Cognitive Development (ABCD) Study**, **OpenNeuro**, and the **International Neuroimaging Data-sharing Initiative (INDI)**. By offering standardized and compact fiber data, the Hub significantly reduces computational demands, simplifies analytical workflows, and avoids redundant preprocessing. Users can explore data through an intuitive web interface featuring advanced metadata-driven search and built-in quality control measures, promoting collaboration, ensuring consistency, and supporting reproducible neuroscience research.
 
+# 📁 File Formats
+
+The **Fiber Data Hub** provides compact file formats to reduce storage size. These files can be converted back to standard NIfTI format using **DSI Studio** or [Python scripts](https://dsi-studio.labsolver.org/doc/cli_data.html).
+
+## 🧠 Fib Files (`*.fz`)
+
+* Stores **voxel-wise fiber orientation** (i.e., fixels), **DTI metrics** (e.g., anisotropy, diffusivity), and **GQI metrics** (e.g., QA, ISO).
+* `gqi.fz`: data in **native space**
+* `qsdr.fz`: data in **MNI space**
+
+## 📦 SRC Files (`*.sz`)
+
+* Stores **4D DWI volumes** (after eddy/topup correction)
+* Includes the **b-table**
+
+## 📊 Database Files (`*.dz`)
+
+* Stores **group-level DTI/GQI metrics** across subjects in **MNI space**
+* Uses the **HCP-1065 fiber orientation** template for alignment
+
+## ✅ QC Files (`qc.tsv`)
+
+* Tab-separated file with **quality control metrics** derived from `.sz` files
+
 # Currently active repositories in the Fiber Data Hub:
 
 **If you would like to suggest a dataset, please feel free to reach out to me (frank.yeh@gmail.com). We will preprocess the data and distribute them**
@@ -21,8 +45,10 @@ The **Fiber Data Hub** is a cloud-based platform designed to openly distribute p
 - [data-others/brain](https://github.com/data-others/brain/releases)
 - [data-others/disease](https://github.com/data-others/disease/releases)
 - [data-others/animal](https://github.com/data-others/animal/releases)
-- [data-hcp/lifespan-restricted (needs NDA-DUA)](https://github.com/data-hcp/lifespan-restricted/releases)
-- [data-hcp/disease-restricted (needs NDA-DUA)](https://github.com/data-hcp/disease-restricted/releases)
+- [data-hcp/lifespan-restricted (needs NDA-DUA)](https://github.com/data-hcp/lifespan-restricted/releases): This repository provides SRC files and requires NDA DUA agreement. Once you send me the agreement, I can share you the data.
+- [data-hcp/disease-restricted (needs NDA-DUA)](https://github.com/data-hcp/disease-restricted/releases): This repository provides SRC files and requires NDA DUA agreement. Once you send me the agreement, I can share you the data.
+
+
 
 # Example Code to Access Data
 
