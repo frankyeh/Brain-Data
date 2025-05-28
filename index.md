@@ -4,7 +4,11 @@
 
 The **Fiber Data Hub** is a cloud-based platform designed to openly distribute processed fiber data derived from diffusion MRI, enabling scalable and reproducible research in brain connectivity. Currently, the Hub hosts over **40,000 processed fiber datasets**, providing comprehensive fiber information such as fiber orientation, anisotropy, diffusivities, and advanced diffusion metrics. These datasets originate from major neuroimaging initiatives, including the **Human Connectome Project (HCP)**, the **Adolescent Brain Cognitive Development (ABCD) Study**, **OpenNeuro**, and the **International Neuroimaging Data-sharing Initiative (INDI)**. By offering standardized and compact fiber data, the Hub significantly reduces computational demands, simplifies analytical workflows, and avoids redundant preprocessing. Users can explore data through an intuitive web interface featuring advanced metadata-driven search and built-in quality control measures, promoting collaboration, ensuring consistency, and supporting reproducible neuroscience research.
 
-# 📁 File Formats
+By consolidating curated and preprocessed fiber datasets from prominent research studies, the Fiber Data Hub enables researchers worldwide to explore brain connectivity without the need for resource-intensive data preparation. Whether studying neurodevelopment, neurological disorders, or population-level brain structure, the Fiber Data Hub offers an invaluable foundation for accelerating discoveries in neuroscience.
+
+---
+
+## 📁 File Formats
 
 The **Fiber Data Hub** provides compact file formats to reduce storage size. These files can be converted back to standard NIfTI format using **DSI Studio** or [Python scripts](https://dsi-studio.labsolver.org/doc/cli_data.html).
 
@@ -44,8 +48,9 @@ dsi_studio --action=rec --source=subject.sz --save_nii=subject_dwi.nii.gz
 dsi_studio --action=rec --source=*.sz --save_nii=subject_dwi.nii.gz
 ```
 
+---
 
-# Currently active repositories in the Fiber Data Hub:
+## Repository List
 
 **If you would like to suggest a dataset, please feel free to reach out to me (frank.yeh@gmail.com). We will preprocess the data and distribute them**
 
@@ -65,9 +70,9 @@ dsi_studio --action=rec --source=*.sz --save_nii=subject_dwi.nii.gz
 - [data-hcp/lifespan-restricted (needs NDA-DUA)](https://github.com/data-hcp/lifespan-restricted/releases): This repository provides SRC files and requires NDA DUA agreement. Once you send me the agreement, I can share you the data.
 - [data-hcp/disease-restricted (needs NDA-DUA)](https://github.com/data-hcp/disease-restricted/releases): This repository provides SRC files and requires NDA DUA agreement. Once you send me the agreement, I can share you the data.
 
+---
 
-
-# Example Code to Access Data
+## Example Code
 
 ### List all data repository (owner/repo/tag/) 
 
@@ -136,16 +141,12 @@ else: print("No data found.")
 
 The Fiber Data Hub utilizes a versatile storage framework, incorporating multiple decentralized storage locations on GitHub repositories to ensure reliable data access and allow for future expansion. As new studies and datasets become available, the hub’s storage can easily scale to accommodate them, offering an ever-growing resource for the neuroimaging community. Additionally, a centralized web portal at brain.labsolver.org provides alternative access to the hub’s resources, giving researchers flexible options for data retrieval.
 
-# Integrated with DSI Studio
+## Access from DSI Studio
 
 <img src="https://github.com/user-attachments/assets/55a16e70-09f5-4428-86bb-833e0faa84f9" width="600"/>
 
 To make data access and analysis as seamless as possible, the Fiber Data Hub is fully integrated with DSI Studio, a comprehensive diffusion MRI and tractography software. Through DSI Studio’s graphical interface, researchers can directly download, inspect, and analyze data from the hub without additional preprocessing, saving time and computational resources. This integration allows researchers to jump-start tractography analyses using advanced tracking methods available in DSI Studio, including deterministic, probabilistic, differential, and correlational tracking.
 
-# Empowering the Neuroscience Community
-
-By consolidating curated and preprocessed fiber datasets from prominent research studies, the Fiber Data Hub enables researchers worldwide to explore brain connectivity without the need for resource-intensive data preparation. Whether studying neurodevelopment, neurological disorders, or population-level brain structure, the Fiber Data Hub offers an invaluable foundation for accelerating discoveries in neuroscience.
-
-# Quality Control of All Datasets
+## Quality Control of All Datasets
 
 <img src="https://github.com/frankyeh/FiberDataHub/releases/download/qc-chart/qc_plots.png" width="100%"/>
