@@ -57,6 +57,7 @@ dsi_studio --action=rec --source=*.sz --save_nii=subject_dwi.nii.gz
 - [data-hcp/lifespan](https://github.com/data-hcp/lifespan/releases)
 - [data-hcp/disease](https://github.com/data-hcp/disease/releases)
 - [data-nih/abcd](https://github.com/data-nih/abcd/releases)
+- [data-nih/nda](https://github.com/data-nih/nda/releases)
 - [data-nih/tcia](https://github.com/data-nih/tcia/releases)
 - [data-openneuro/brain](https://github.com/data-openneuro/brain/releases)
 - [data-openneuro/disease](https://github.com/data-openneuro/disease/releases)
@@ -68,8 +69,12 @@ dsi_studio --action=rec --source=*.sz --save_nii=subject_dwi.nii.gz
 - [data-others/brain](https://github.com/data-others/brain/releases)
 - [data-others/disease](https://github.com/data-others/disease/releases)
 - [data-others/animal](https://github.com/data-others/animal/releases)
-- [data-hcp/lifespan-restricted (needs NDA-DUA)](https://github.com/data-hcp/lifespan-restricted/releases): This repository provides SRC files and requires NDA DUA agreement. Once you send me the agreement, I can share you the data.
-- [data-hcp/disease-restricted (needs NDA-DUA)](https://github.com/data-hcp/disease-restricted/releases): This repository provides SRC files and requires NDA DUA agreement. Once you send me the agreement, I can share you the data.
+
+To access the following restricted data (.sz, T1w...etc), please email me your signed NDA data use agreement. Once I receive your signed agreement, I will add you to the user list, enabling you to access the data.
+
+- [data-hcp/lifespan-restricted (needs NDA-DUA)](https://github.com/data-hcp/lifespan-restricted/releases)
+- [data-hcp/disease-restricted (needs NDA-DUA)](https://github.com/data-hcp/disease-restricted/releases)
+- [data-nih/nda-restricted (needs NDA-DUA)](https://github.com/data-nih/nda/releases)
 
 ---
 
