@@ -74,7 +74,7 @@ To access the following restricted data (.sz, T1w...etc), please email me your s
 
 - [data-hcp/lifespan-restricted (needs NDA-DUA)](https://github.com/data-hcp/lifespan-restricted/releases)
 - [data-hcp/disease-restricted (needs NDA-DUA)](https://github.com/data-hcp/disease-restricted/releases)
-- [data-nih/nda-restricted (needs NDA-DUA)](https://github.com/data-nih/nda/releases)
+- [data-nih/nda-restricted (needs NDA-DUA)](https://github.com/data-nih/nda-restricted/releases)
 
 ---
 
