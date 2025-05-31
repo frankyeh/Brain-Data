@@ -56,7 +56,7 @@ dsi_studio --action=rec --source=*.sz --save_nii=subject_dwi.nii.gz
 
 - [data-hcp/lifespan](https://github.com/data-hcp/lifespan/releases)
 - [data-hcp/disease](https://github.com/data-hcp/disease/releases)
-- [data-abcd/abcd](https://github.com/data-abcd/abcd/releases)
+- [data-nih/abcd](https://github.com/data-nih/abcd/releases)
 - [data-openneuro/brain](https://github.com/data-openneuro/brain/releases)
 - [data-openneuro/disease](https://github.com/data-openneuro/disease/releases)
 - [data-openneuro/spine](https://github.com/data-openneuro/spine/releases)
@@ -80,7 +80,7 @@ dsi_studio --action=rec --source=*.sz --save_nii=subject_dwi.nii.gz
 
 ```python
 import requests
-owners = ["data-hcp", "data-abcd", "data-openneuro", "data-indi", "data-others"]
+owners = ["data-hcp", "data-nih", "data-openneuro", "data-indi", "data-others"]
 def ft(owner, indent=""):
     repos = requests.get(f"https://api.github.com/users/{owner}/repos").json()
     print(f"{indent}{owner}/")
