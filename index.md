@@ -57,6 +57,7 @@ dsi_studio --action=rec --source=*.sz --save_nii=subject_dwi.nii.gz
 - [data-hcp/lifespan](https://github.com/data-hcp/lifespan/releases)
 - [data-hcp/disease](https://github.com/data-hcp/disease/releases)
 - [data-nih/abcd](https://github.com/data-nih/abcd/releases)
+- [data-nih/tcia](https://github.com/data-nih/tcia/releases)
 - [data-openneuro/brain](https://github.com/data-openneuro/brain/releases)
 - [data-openneuro/disease](https://github.com/data-openneuro/disease/releases)
 - [data-openneuro/spine](https://github.com/data-openneuro/spine/releases)
