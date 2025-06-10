@@ -76,10 +76,7 @@ To access the following restricted data (.sz, T1w...etc), please email me your s
 - [data-hcp/disease-restricted (needs NDA-DUA)](https://github.com/data-hcp/disease-restricted/releases)
 - [data-nih/nda-restricted (needs NDA-DUA)](https://github.com/data-nih/nda-restricted/releases)
 
----
-
-## Step3 to Request Restricted Access
-
+### How to Request Restricted Access
 
 1. update DSI Studio to a version released after June 2025.
 2. launch DSI Studio. When you see the login page, please right-click on the [Registry Entity]. Select [Select All], and then choose [Copy].
@@ -89,6 +86,7 @@ To access the following restricted data (.sz, T1w...etc), please email me your s
 3. Email your registry entity to frank.yeh@gmail.com and attached your NDA aggreement
 4. We will setup your accesss and inform you. Once you restart DSI Studio, you will have access to the restricted folder.
 
+---
 
 ## Example Code
 
