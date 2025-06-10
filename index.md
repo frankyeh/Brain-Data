@@ -78,6 +78,18 @@ To access the following restricted data (.sz, T1w...etc), please email me your s
 
 ---
 
+## Step3 to Request Restricted Access
+
+
+1. update DSI Studio to a version released after June 2025.
+2. launch DSI Studio. When you see the login page, please right-click on the [Registry Entity]. Select [Select All], and then choose [Copy].
+
+![image](https://github.com/user-attachments/assets/3f47933c-4701-47f1-8ecf-e666d9af2126)
+
+3. Email your registry entity to frank.yeh@gmail.com and attached your NDA aggreement
+4. We will setup your accesss and inform you. Once you restart DSI Studio, you will have access to the restricted folder.
+
+
 ## Example Code
 
 ### List all data repository (owner/repo/tag/) 
