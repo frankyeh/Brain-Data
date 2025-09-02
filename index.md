@@ -91,6 +91,7 @@ To access the following restricted data (.sz, T1w...etc), please email me your s
 
 3. Email your registry entity to frank.yeh@gmail.com and attached your NDA aggreement
 4. We will setup your accesss and inform you. Once you restart DSI Studio, you will have access to the restricted folder.
+5. If your registry entity changes, please notify me so that I can update it in the data server.
 
 ---
 
