@@ -79,6 +79,7 @@ dsi_studio --action=rec --source=*.sz --save_nii=subject_dwi.nii.gz
 To access the following restricted data (.sz, T1w...etc), please email me your signed NDA data use agreement. Once I receive your signed agreement, I will add you to the user list, enabling you to access the data.
 
 - [data-restricted/hcp-lifespan (needs NDA-DUA)](https://github.com/data-restricted/hcp-lifespan/releases)
+- [data-restricted/abcd (needs NDA-DUA)](https://github.com/data-restricted/abcd/releases)
 - [data-restricted/hcp-disease (needs NDA-DUA)](https://github.com/data-restricted/hcp-disease/releases)
 - [data-restricted/nda (needs NDA-DUA)](https://github.com/data-restricted/nda/releases)
 
