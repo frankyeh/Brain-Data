@@ -95,6 +95,13 @@ To access the following restricted data (.sz, T1w...etc), please email me your s
 5. If your registry entity changes, please notify me so that I can update it in the data server.
 
 ---
+## Download Command
+
+example:  download [OWNDER]/[REPO]/[TAG] = data-hcp/lifespan/hcp-ya-retest
+
+```
+curl -s https://api.github.com/repos/data-hcp/lifespan/releases/tags/hcp-ya-retest | jq -r '.assets[].browser_download_url' | xargs -n1 -P4 curl -LO
+```
 
 ## Example Code
 
