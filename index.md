@@ -1,4 +1,4 @@
-# Fiber Data Hub: A Data Hub for Diffusion MRI Data, Tractography, and Associated Structural Images for Accelarating Brain Research
+# Fiber Data Hub: Tractography, Diffusion MRI, and Structural Images for Brain Research
 
 <img src="https://github.com/frankyeh/FiberDataHub/releases/download/qc-chart/qc_counts_combined.png" width="100%"/>
 
