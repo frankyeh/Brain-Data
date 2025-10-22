@@ -73,6 +73,7 @@ dsi_studio --action=rec --source=*.sz --save_nii=subject_dwi.nii.gz
 - [data-indi/pro](https://github.com/data-indi/pro/releases)
 - [data-indi/retro](https://github.com/data-indi/retro/releases)
 - [data-others/brain](https://github.com/data-others/brain/releases)
+- [data-others/brain2](https://github.com/data-others/brain2/releases)
 - [data-others/disease](https://github.com/data-others/disease/releases)
 - [data-others/animal](https://github.com/data-others/animal/releases)
 
