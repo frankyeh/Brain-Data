@@ -53,9 +53,9 @@
           c[i].addEventListener("click", function(){
           this.classList.toggle("active");
           this.nextElementSibling.style.maxHeight = (this.nextElementSibling.style.maxHeight) ? null : "500px";});
-      {% if page.url contains 'gui' %}c[0].click();{% endif %}
-      {% if page.url contains 'menu' %}c[1].click();{% endif %}
-      {% if page.url contains 'cli' %}c[2].click();{% endif %}
+      {% if page.url contains 'data-indi/corr' %}c[0].click();{% endif %}
+      {% if page.url contains 'data-indi/pro' %}c[1].click();{% endif %}
+      {% if page.url contains 'data-indi/retro' %}c[2].click();{% endif %}
       </script>  
     </header>
     
