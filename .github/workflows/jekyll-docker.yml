@@ -1,0 +1,179 @@
+name: Sync release mds
+
+on:
+  workflow_dispatch:
+
+jobs:
+  sync-md-files:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout current repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Fetch *.md from target accounts and build summary
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python << 'PY'
+          import os, pathlib, requests
+          
+          TOKEN = os.environ["GITHUB_TOKEN"]
+          HEADERS = {
+              "Accept": "application/vnd.github+json",
+              "Authorization": f"Bearer {TOKEN}",
+          }
+          BASE = "https://api.github.com"
+          ACCOUNTS = ["data-hcp", "data-nih", "data-openneuro", "data-indi", "data-others"]
+          
+          session = requests.Session()
+          session.headers.update(HEADERS)
+          
+          def get_all(url, params=None):
+              out = []
+              while url:
+                  r = session.get(url, params=params)
+                  r.raise_for_status()
+                  out.extend(r.json())
+                  # pagination
+                  url = r.links.get("next", {}).get("url")
+                  params = None
+              return out
+          
+          summary = {}
+          
+          root = pathlib.Path("mds")
+          root.mkdir(exist_ok=True)
+          
+          for account in ACCOUNTS:
+              print("Account:", account)
+              summary.setdefault(account, {})
+          
+              # list repos
+              url = f"{BASE}/users/{account}/repos"
+              repos = get_all(url, params={"per_page": 100})
+              for repo in repos:
+                  repo_name = repo["name"]
+                  default_branch = repo.get("default_branch") or "main"
+                  print("  Repo:", repo_name)
+                  repo_map = summary[account].setdefault(repo_name, [])
+          
+                  # list root contents
+                  contents_url = f"{BASE}/repos/{account}/{repo_name}/contents"
+                  params = {"ref": default_branch}
+                  try:
+                      r = session.get(contents_url, params=params)
+                      if r.status_code == 404:
+                          continue
+                      r.raise_for_status()
+                      items = r.json()
+                      if not isinstance(items, list):
+                          continue
+                  except requests.HTTPError as e:
+                      print("   ! skip contents error:", e)
+                      continue
+          
+                  # map tag -> title using releases
+                  rel_url = f"{BASE}/repos/{account}/{repo_name}/releases"
+                  try:
+                      releases = get_all(rel_url, params={"per_page": 100})
+                      title_by_tag = {
+                          (rel.get("tag_name") or ""): (rel.get("name") or rel.get("tag_name") or "")
+                          for rel in releases
+                      }
+                  except requests.HTTPError:
+                      title_by_tag = {}
+          
+                  out_dir = root / account / repo_name
+                  out_dir.mkdir(parents=True, exist_ok=True)
+          
+                  for item in items:
+                      if item.get("type") != "file":
+                          continue
+                      name = item.get("name") or ""
+                      if not name.endswith(".md"):
+                          continue
+                      if name.lower() == "readme.md":
+                          continue
+          
+                      download_url = item.get("download_url")
+                      if not download_url:
+                          continue
+          
+                      # release tag = filename without .md
+                      tag = name[:-3]
+                      title = title_by_tag.get(tag, tag)
+          
+                      # download content
+                      try:
+                          resp = session.get(download_url)
+                          resp.raise_for_status()
+                          text = resp.text
+                      except requests.HTTPError as e:
+                          print("   ! skip file error:", name, e)
+                          continue
+          
+                      # write to mds/account/repo/tag.md
+                      out_file = out_dir / f"{tag}.md"
+                      out_file.write_text(text, encoding="utf-8")
+                      repo_map.append((tag, title))
+          
+          # build summary.md at root
+          lines = []
+          lines.append("# Summary\n")
+          
+          for account in sorted(summary.keys()):
+              repos = summary[account]
+              if not any(repos.values()):
+                  continue
+              lines.append(f"## {account}\n")
+              for repo_name in sorted(repos.keys()):
+                  entries = repos[repo_name]
+                  if not entries:
+                      continue
+                  lines.append(f"### {repo_name}\n")
+                  # remove duplicates and sort by tag
+                  seen = set()
+                  uniq = []
+                  for tag, title in entries:
+                      key = (tag, title)
+                      if key not in seen:
+                          seen.add(key)
+                          uniq.append(key)
+                  for tag, title in sorted(uniq, key=lambda x: x[0]):
+                      link = f"/mds/{account}/{repo_name}/{tag}.html"
+                      # release title (tag): [link](link)
+                      lines.append(f"- {title} ({tag}): [{link}]({link})")
+                  lines.append("")  # blank line between repos
+          
+          summary_path = pathlib.Path("summary.md")
+          summary_path.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
+          
+          PY
+
+      - name: Commit and push changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add mds summary.md || true
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+
+          git commit -m "Sync mds and summary from data-* repos"
+          git push
