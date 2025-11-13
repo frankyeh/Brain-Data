@@ -1,76 +1,90 @@
-### **Consortium for Reliability and Reproducibility (CoRR) initiative – Mind Research Network (MRN)**
+# **Mind Research Network (MRN) Repeat Resting Sample**
+This dataset was collected at the **Mind Research Network (MRN), Albuquerque, New Mexico, USA**, to examine the test–retest reliability of resting-state fMRI and diffusion MRI over a four-month interval. It includes repeated scans from healthy adults and provides a valuable benchmark for assessing stability of intrinsic connectivity and structural measures across sessions.
 
-**Repeat Resting-State fMRI Sample**
+The study recruited **56 healthy participants**, each undergoing **two scan sessions** approximately four months apart. For each subject, two **anatomical scans**, two **resting-state fMRI scans**, and two **diffusion tensor imaging (DTI)** datasets are available.  
+During resting-state scans, participants were instructed to **keep their eyes open** and fixate on a crosshair while remaining still. The verbal instruction was:  
+> “We are about to begin the rest task. For this task you will be asked to lie still and keep your eyes focused on the crosshairs while the machine is on. Do you have any questions?”  
 
-
----
-
-### **License and Data Privacy**
-
-This dataset is part of the **Consortium for Reliability and Reproducibility (CoRR)** initiative, which promotes open data sharing to advance the study of brain function and connectivity.
-
-> *The CoRR Project data sharing effort provides the research community with open access to datasets contributed by labs from around the world. All datasets in the CoRR repository are entirely anonymized in compliance with HIPAA protocols. This includes the removal of personal identifiers from headers and support files, as well as defacing of structural images. Each participant is assigned a randomized seven-digit ID. Upon receipt by CoRR staff, headers are further processed to ensure no identifying information remains. All phenotypic data are reviewed to remove personally identifying variables. For clinical datasets, categorical diagnoses and severity measures (if available) are provided, along with any physiological data that does not compromise privacy. Datasets are included in the repository only after written permission is granted by contributing investigators, allowing unrestricted public use without limitations.*
-
-**Source:** [MRN Dataset on CoRR/NITRC](https://fcon_1000.projects.nitrc.org/indi/CoRR/html/mrn_1.html)
+This dataset supports studies on **intra-individual variability**, **test–retest reproducibility**, and **methodological effects** in resting-state network analysis and diffusion imaging.
 
 ---
 
-### **Principal Investigators**
+## Overview
 
-* **Andrew R. Mayer**, Mind Research Network, Albuquerque, NM, USA
-* **Vince D. Calhoun**, Mind Research Network, Albuquerque, NM, USA
-
-### **Funding Support**
-
-* U.S. Department of Energy (The Mind Research Network), Grant No. DE-FG02-99ER62764
-* National Institutes of Health, Grant Nos. R24-HD050836, R21-NS064464-01A1, 3 R21 NS064464-01S1
-* National Center for Research Resources (Center on Neural Mechanisms of Schizophrenia), Grant No. P20 RR021938
-
----
-
-### **Sample Overview**
-
-The MRN Repeat Resting-State Sample includes **112 scans from 56 healthy participants**, each completing **two sessions spaced four months apart**. Each subject has:
-
-* 2 anatomical scans
-* 2 resting-state fMRI scans
-* 2 DTI scans
-
-During the resting-state scans, participants were instructed to remain still with eyes open and focus on a central fixation cross. The verbal instruction was:
-
-> *“We are about to begin the rest task. For this task you will be asked to lie still and keep your eyes focused on the crosshairs while the machine is on. Do you have any questions?”*
-
-Note: **Not all subjects have complete test-retest data**.
-
-**Scan Parameters:**
-[View Detailed Scan Parameters (PDF)](https://fcon_1000.projects.nitrc.org/indi/CoRR/html/_static/scan_parameters/MRN_scantable.pdf)
+- **Dataset name:** MRN – Repeat Resting Sample  
+- **Institution:** Mind Research Network (MRN), Albuquerque, NM, USA  
+- **Principal Investigators:** Andrew R. Mayer, Vince D. Calhoun  
+- **DOI:** [10.15387/fcp_indi.corr.mrn1](http://dx.doi.org/10.15387/fcp_indi.corr.mrn1)  
+- **Sample:** 56 healthy adults (112 total scan sessions)  
+- **Design:** Two sessions, 4 months apart  
+- **Modalities:** T1-weighted anatomical MRI, resting-state fMRI, and DTI  
+- **Condition:** Eyes open, fixation cross during rest scan  
 
 ---
 
-### **Publications Using This Dataset**
+## Investigators
 
-1. Mayer AR, Mannell MV, Ling J, Gasparovic C, Yeo RA. Functional connectivity in mild traumatic brain injury. *Human Brain Mapping*, 2011; 32(11):1825–1835.
-   [https://doi.org/10.1002/hbm.21151](https://doi.org/10.1002/hbm.21151)
+**Principal Investigators**  
+- *Andrew R. Mayer*, Mind Research Network, Albuquerque, NM, USA  
+- *Vince D. Calhoun*, Mind Research Network, Albuquerque, NM, USA  
 
-2. Franco AR, Mannell MV, Calhoun VD, Mayer AR. Impact of analysis methods on the reproducibility and reliability of resting-state networks. *Brain Connectivity*, 2013; 3(4):363–374.
-   [https://doi.org/10.1089/brain.2012.0134](https://doi.org/10.1089/brain.2012.0134)
+**Funding**  
+- U.S. Department of Energy (DE-FG02-99ER62764)  
+- National Institutes of Health (R24-HD050836, R21-NS064464-01A1, 3R21-NS064464-01S1)  
+- NCRR Center on Neural Mechanisms of Schizophrenia (P20 RR021938)  
 
 ---
 
-### **Data Access**
+## Publications Using This Dataset
 
-To download datasets from CoRR via NITRC:
+- **Mayer AR, Mannell MV, Ling J, Gasparovic C, Yeo RA.**  
+  *Functional connectivity in mild traumatic brain injury.*  
+  *Human Brain Mapping* 32(11):1825–1835, 2011.  
+  [https://doi.org/10.1002/hbm.21151](https://doi.org/10.1002/hbm.21151)
 
-1. Log into NITRC and register with the [1000 Functional Connectomes Project / INDI](https://www.nitrc.org/projects/fcon_1000).
-2. A permission error will occur if you are not logged in and properly registered.
-3. Don’t have an account? [Register here](https://www.nitrc.org/account/register.php).
+- **Franco AR, Mannell MV, Calhoun VD, Mayer AR.**  
+  *Impact of analysis methods on the reproducibility and reliability of resting-state networks.*  
+  *Brain Connectivity* 3(4):363–374, 2013.  
+  [https://doi.org/10.1089/brain.2012.0134](https://doi.org/10.1089/brain.2012.0134)
 
-**Available Downloads:**
+---
 
-* MRN\_0027010\_0027048
-* MRN\_0027049\_0027419
-* MRN\_Phenotypic\_Data
+## Downloads
 
-**DOI:** [10.15387/fcp\_indi.corr.mrn1](http://dx.doi.org/10.15387/fcp_indi.corr.mrn1)
+Data are hosted via the **NITRC** portal.  
+Users must log in and register with the **INDI group** to access files.
+
+| Data Type | Description | Access |
+|------------|--------------|--------|
+| Imaging Data | MRN_0027010 – MRN_0027419 | [NITRC Download Page](https://www.nitrc.org/frs/?group_id=284) *(login required)* |
+| Phenotypic Data | Participant demographics and metadata | [MRN_Phenotypic_Data](http://dx.doi.org/10.15387/fcp_indi.corr.mrn1) |
+
+---
+
+## License and Citation
+
+Use of this dataset is governed by the **INDI / CoRR Data Use Agreement**.  
+Please review and comply with:  
+[http://fcon_1000.projects.nitrc.org/indi/corr/html/data_citation.html](http://fcon_1000.projects.nitrc.org/indi/corr/html/data_citation.html)
+
+**Please cite and acknowledge:**
+
+> Mayer A.R., Calhoun V.D., et al. *Mind Research Network (MRN) Repeat Resting Sample.*  
+> Mind Research Network, Albuquerque, NM, USA.  
+> DOI: [10.15387/fcp_indi.corr.mrn1](http://dx.doi.org/10.15387/fcp_indi.corr.mrn1)
+
+---
+
+## Source
+
+- Dataset page:  
+  [http://fcon_1000.projects.nitrc.org/indi/CoRR/html/mrn1.html](http://fcon_1000.projects.nitrc.org/indi/CoRR/html/mrn1.html)  
+- INDI / 1000 Functional Connectomes Project:  
+  [https://www.nitrc.org/projects/fcon_1000/](https://www.nitrc.org/projects/fcon_1000/)
+
+---
+
+© 2014 The INDI Team. Prepared for redistribution under **data-indi/mrn** by the **Pittsburgh Fiber Data Hub**.
+
 ## Release Link
 https://github.com/data-indi/corr/releases/tag/mrn

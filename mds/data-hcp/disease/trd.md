@@ -1,8 +1,8 @@
-### **Perturbation of the Treatment-Resistant Depression (TRD) Connectome by Fast-Acting Therapies**
+# **Perturbation of the Treatment-Resistant Depression (TRD) Connectome by Fast-Acting Therapies**
 
 ---
 
-# License
+## License
 
 The FIB files are shared under the [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). If you use these data, please acknowledge the contribution of ACCESS resources: CIS200026 & MED230052.
 
@@ -73,5 +73,6 @@ This study leverages the infrastructure and scientific advancements of the HCP t
 ---
 
 Would you like me to add a Funding and Publications section, or prepare this for a final document compilation?
+
 ## Release Link
 https://github.com/data-hcp/disease/releases/tag/trd

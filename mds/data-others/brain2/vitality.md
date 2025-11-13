@@ -1,5 +1,4 @@
-
-## License  
+# License
 Creative Commons Attribution 4.0 International (CC BY 4.0)
 
 ## Source  
@@ -58,6 +57,7 @@ These datasets are currently being converted and analyzed and are **not yet incl
 - **sub-020**: No SWI images  
 - **sub-025**: Presence of an arachnoid cyst  
 - **sub-027**: Did not complete protocol  
-- **sub-030, sub-032, sub-033, sub-039**: Dropouts  
+- **sub-030, sub-032, sub-033, sub-039**: Dropouts
+
 ## Release Link
 https://github.com/data-others/brain2/releases/tag/vitality

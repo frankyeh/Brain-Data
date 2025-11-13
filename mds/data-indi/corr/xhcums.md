@@ -1,83 +1,67 @@
-### **Consortium for Reliability and Reproducibility (CoRR) initiative – Xuanwu Hospital, Capital University of Medical Sciences (XHCUMS)**
+# **Xuanwu Hospital, Capital University of Medical Sciences (XHCUMS) – 6-Month Test–Retest Dataset**
+This dataset, collected at **Xuanwu Hospital, Capital Medical University (Beijing, China)**, is part of the **Consortium for Reliability and Reproducibility (CoRR)** within the 1000 Functional Connectomes Project. It includes longitudinal MRI data from 24 healthy adults who served as the control group in a stroke recovery study. Each participant was scanned five times at six-month intervals, providing high-quality test–retest data for structural, diffusion, and resting-state functional MRI analyses.
 
-**6-Month Test-Retest in Adults: Control Group from a Stroke Study**
+This dataset was designed to evaluate the **reliability of MRI measures over time** in a cohort of healthy adults.  
+Each participant underwent **five scanning sessions** spaced six months apart. The consistent acquisition and longitudinal design make the dataset ideal for assessing reproducibility in morphometry, functional connectivity, and diffusion metrics.
 
+During resting-state fMRI, subjects viewed a blank screen and were instructed to **keep their eyes closed**, **relax**, and **minimize movement**.
 
----
-
-### **License and Data Privacy**
-
-This dataset is part of the **Consortium for Reliability and Reproducibility (CoRR)** initiative, which promotes open data sharing to advance the study of brain function and connectivity.
-
-> *The CoRR Project data sharing effort provides the research community with open access to datasets contributed by labs from around the world. All datasets in the CoRR repository are entirely anonymized in compliance with HIPAA protocols. This includes the removal of personal identifiers from headers and support files, as well as defacing of structural images. Each participant is assigned a randomized seven-digit ID. Upon receipt by CoRR staff, headers are further processed to ensure no identifying information remains. All phenotypic data are reviewed to remove personally identifying variables. For clinical datasets, categorical diagnoses and severity measures (if available) are provided, along with any physiological data that does not compromise privacy. Datasets are included in the repository only after written permission is granted by contributing investigators, allowing unrestricted public use without limitations.*
-
-**Source:** [XHCUMS Dataset on CoRR/NITRC](https://fcon_1000.projects.nitrc.org/indi/CoRR/html/xhcums_1.html)
 
 ---
 
-### **Principal Investigator**
+## Overview
 
-* **Kuncheng Li**, Department of Radiology, Xuanwu Hospital, Capital Medical University, Xicheng, Beijing 100053, China
-
-### **Co-Investigator**
-
-* **Jie Lu**, Department of Radiology, Xuanwu Hospital, Capital Medical University, Xicheng, Beijing 100053, China
-
-### **Acknowledgements**
-
-* Miao Zhang
-* Yanxiang Cao
-* Dongdong Rong
-* Cheng Zhao
-
-(All affiliated with the Department of Radiology, Xuanwu Hospital, Capital Medical University)
+- **Dataset name:** XHCUMS (Xuanwu Hospital, Capital Medical University)
+- **Location:** Beijing, China  
+- **DOI:** [10.15387/fcp_indi.corr.xhcums1](http://dx.doi.org/10.15387/fcp_indi.corr.xhcums1)
+- **Sample:** 24 healthy adults (5 sessions per subject, 6-month interval)
+- **Modalities:** T1-weighted, resting-state fMRI (EPI), and diffusion MRI (DTI)
+- **Condition:** Eyes closed, resting-state, no task stimulation
 
 ---
 
-### **Sample Overview**
+## Investigators
 
-This dataset includes **24 healthy adult participants** who served as the **control group** in a longitudinal study on brain structure and function during stroke recovery. Each participant underwent **five scan sessions** spaced **six months apart**. Three brain imaging modalities were acquired at each session:
+**Principal Investigator**  
+- *Kuncheng Li*, Department of Radiology, Xuanwu Hospital, Capital Medical University, Beijing, China  
 
-* T1-weighted anatomical
-* Resting-state EPI
-* DTI
+**Co-Investigator**  
+- *Jie Lu*, Department of Radiology, Xuanwu Hospital, Capital Medical University, Beijing, China  
 
-During resting-state scans, participants viewed a **blank screen** and were instructed to keep their **eyes closed**, **relax**, and **move as little as possible**.
-
-**Scan Parameters:**
-[View Detailed Scan Parameters (PDF)](https://fcon_1000.projects.nitrc.org/indi/CoRR/html/_static/scan_parameters/XHCUMS_scantable.pdf)
-
----
-
-### **Publications Using This Dataset**
-
-Lu J, Liu H, Zhang M, Wang D, Cao Y, Ma Q, Rong D, Wang X, Buckner RL, Li K.
-*Focal Pontine Lesions Provide Evidence That Intrinsic Functional Connectivity Reflects Polysynaptic Anatomical Pathways.*
-*Journal of Neuroscience*, 2011; 31(42): 15065–15071.
-[https://doi.org/10.1523/JNEUROSCI.2364-11.2011](https://doi.org/10.1523/JNEUROSCI.2364-11.2011)
+**Acknowledgements**  
+Miao Zhang, Yanxiang Cao, Dongdong Rong, Cheng Zhao  
+Department of Radiology, Xuanwu Hospital, Capital Medical University, Beijing, China  
 
 ---
 
-### **Data Access**
+## Scan Parameters
 
-To download datasets from CoRR via NITRC:
+Each session contains:
+- **Anatomical (T1):** high-resolution structural images  
+- **Resting-state fMRI (EPI):** intrinsic functional connectivity  
+- **Diffusion MRI (DTI):** 3D diffusion-weighted acquisition for white-matter mapping  
 
-1. Log into NITRC and register with the [1000 Functional Connectomes Project / INDI](https://www.nitrc.org/projects/fcon_1000).
-2. A permission error will occur if you are not logged in and properly registered.
-3. Don’t have an account? [Register here](https://www.nitrc.org/account/register.php).
+Full acquisition parameters are available in the original CoRR documentation.
 
-**Available Downloads:**
+---
 
-* XHCUMS\_0025982
-* XHCUMS\_0025983\_0025986
-* XHCUMS\_0025987\_0025991
-* XHCUMS\_0025992\_0025996
-* XHCUMS\_0025997\_0025600
-* XHCUMS\_0026001\_0026004
-* XHCUMS\_0026005\_0026006
-* XHCUMS\_Phenotypic\_Data
+## Publications
 
-**DOI:** [10.15387/fcp\_indi.corr.xhcums1](http://dx.doi.org/10.15387/fcp_indi.corr.xhcums1)
+Lu J, Liu H, Zhang M, Wang D, Cao Y, Ma Q, Rong D, Wang X, Buckner RL, Li K.  
+**Focal Pontine Lesions Provide Evidence That Intrinsic Functional Connectivity Reflects Polysynaptic Anatomical Pathways.**  
+*Journal of Neuroscience* 2011; 31(42): 15065–15071.  
+[https://doi.org/10.1523/JNEUROSCI.3323-11.2011](https://doi.org/10.1523/JNEUROSCI.3323-11.2011)
+
+---
+
+## Downloads
+
+Access is provided through the **NITRC** portal.  
+You must be logged in and registered with the **INDI group** to download the data.
+
+| Data Type | Description | Access |
+|------------|--------------|--------|
+| MRI Data | XHCUMS_0025982 – XHCUMS_0026006 | [NITRC Download Page](https://www.n)
 
 ## Release Link
 https://github.com/data-indi/corr/releases/tag/xhcums

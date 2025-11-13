@@ -1,4 +1,4 @@
-
+# **High‑Quality Diffusion‑Weighted Imaging of Parkinson’s Disease**
 A curated dataset and analysis pipelines for a cross‑sectional Parkinson’s disease (PD) study, designed to support reproducible research in diffusion MRI.
 
 ---
@@ -20,7 +20,7 @@ The diffusion‑weighted images (DWI) were acquired with:
 - **120 unique gradient directions**  
 - **b = 1000 and b = 2500 s/mm²**  
 - **Isotropic 2.4 mm³ voxels**  
-- **Twice‑refocused spin‑echo sequence** to minimize eddy‑current distortions  
+- **Twice‑refocused spin‑echo sequence** to minimize eddy‑current distortions
 
 ## Release Link
 https://github.com/data-others/disease/releases/tag/liege-pd

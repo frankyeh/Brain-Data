@@ -1,10 +1,5 @@
-### **SIMON Dataset – Single Individual Volunteer for Multiple Observations across Networks**
-
+# **SIMON Dataset – Single Individual Volunteer for Multiple Observations across Networks**
 ![](https://fcon_1000.projects.nitrc.org/indi/pro/_static/logo_simon.png)
-
----
-
-### **Project Overview**
 
 The **SIMON Dataset** is a unique longitudinal neuroimaging dataset from a **single healthy ambidextrous male**, aged **29 to 46 years**, who participated in **73 imaging sessions** across multiple sites and scanner models. This dataset serves as a valuable resource for studying cross-site and cross-protocol variability in neuroimaging data and includes a wide variety of imaging modalities.
 

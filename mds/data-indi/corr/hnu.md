@@ -1,80 +1,89 @@
-### **Consortium for Reliability and Reproducibility (CoRR) initiative – Hangzhou Normal University (HNU)**
+# **Hangzhou Normal University (HNU) – One-Month Test–Retest Reliability and Dynamical Resting-State Study**
+This dataset was collected at the **Center for Cognition and Brain Disorders, Hangzhou Normal University**, as part of the **Consortium for Reliability and Reproducibility (CoRR)**. It provides one of the most comprehensive short-term test–retest MRI resources available, featuring multimodal imaging data from 30 healthy adults scanned repeatedly over a one-month period. Each participant underwent ten imaging sessions spaced three days apart, enabling analysis of both **temporal stability** and **dynamic fluctuations** in resting-state brain activity.
 
-**One-Month Test-Retest Reliability and Dynamical Resting-State Study**
-
-
----
-
-### **License and Data Privacy**
-
-This dataset is part of the **Consortium for Reliability and Reproducibility (CoRR)** initiative, which promotes open data sharing to advance the study of brain function and connectivity.
-
-> *The CoRR Project data sharing effort provides the research community with open access to datasets contributed by labs from around the world. All datasets in the CoRR repository are entirely anonymized in compliance with HIPAA protocols. This includes the removal of personal identifiers from headers and support files, as well as defacing of structural images. Each participant is assigned a randomized seven-digit ID. Upon receipt by CoRR staff, headers are further processed to ensure no identifying information remains. All phenotypic data are reviewed to remove personally identifying variables. For clinical datasets, categorical diagnoses and severity measures (if available) are provided, along with any physiological data that does not compromise privacy. Datasets are included in the repository only after written permission is granted by contributing investigators, allowing unrestricted public use without limitations.*
-
-**Source:** [HNU Dataset on CoRR/NITRC](https://fcon_1000.projects.nitrc.org/indi/CoRR/html/hnu_1.html)
+Five imaging modalities were acquired at each session — **EPI**, **ASL**, **T1-weighted**, **DTI**, and **T2-weighted** MRI. During functional scans, participants were instructed to keep their eyes open, fixate on a cross, relax, and minimize motion while avoiding intentional cognitive activity such as breath counting or meditation.  
+This dataset serves as a benchmark for studying **intra-subject variability**, **test–retest reliability**, and **dynamic functional connectivity** over time.
 
 ---
 
-### **Principal Investigators**
+## Overview
 
-* **Xu-Chu Weng**, Center for Cognition and Brain Disorders, Hangzhou Normal University, Gongshu, Hangzhou, Zhejiang 310036, China
-* **Xi-Nian Zuo**, Key Laboratory of Behavioral Science and Magnetic Resonance Imaging Research Center, Institute of Psychology, Chinese Academy of Sciences, Beijing; Faculty of Psychology, Southwest University, Chongqing, China
-
-### **Acknowledgements**
-
-* **Bing Chen**, Hangzhou Normal University
-* **Qiu Ge**, Hangzhou Normal University
-
-(All affiliated with the Center for Cognition and Brain Disorders, Hangzhou Normal University)
-
-### **Funding Support**
-
-* National Natural Science Foundation of China (Grants: 31070905, 31371134)
-* National Social Science Foundation of China (Grant: 11AZD119)
+- **Dataset name:** HNU – One-Month Test–Retest Reliability and Dynamical Resting-State Study  
+- **Institution:** Hangzhou Normal University, Hangzhou, Zhejiang, China  
+- **DOI:** [10.15387/fcp_indi.corr.hnu1](http://dx.doi.org/10.15387/fcp_indi.corr.hnu1)  
+- **Sample:** 30 healthy adults  
+- **Sessions:** 10 sessions per participant, spaced 3 days apart  
+- **Modalities:** EPI, ASL, T1-weighted, DTI, and T2-weighted MRI  
+- **Condition:** Eyes open, fixation cross, rest (no task)  
 
 ---
 
-### **Sample Overview**
+## Investigators
 
-This dataset includes **30 healthy adult participants**, each undergoing **ten MRI scan sessions over one month**, spaced every three days. Each session includes five imaging modalities:
+**Principal Investigators**  
+- *Xu-Chu Weng*, Center for Cognition and Brain Disorders, Hangzhou Normal University, Hangzhou, China  
+- *Xi-Nian Zuo*, Key Laboratory of Behavioral Science and MRI Research Center, Institute of Psychology, Chinese Academy of Sciences, Beijing, China; Faculty of Psychology, Southwest University, Chongqing, China  
 
-* EPI
-* ASL
-* T1-weighted
-* DTI
-* T2-weighted
+**Acknowledgments**  
+- Bing Chen, Center for Cognition and Brain Disorders, Hangzhou Normal University, Hangzhou, China  
+- Qiu Ge, Center for Cognition and Brain Disorders, Hangzhou Normal University, Hangzhou, China  
 
-During functional scans, participants viewed a fixation cross with instructions to stay still, relax, and **not engage in meditation or breath control**.
-
-**Scan Parameters:**
-[View Detailed Scan Parameters (PDF)](https://fcon_1000.projects.nitrc.org/indi/CoRR/html/_static/scan_parameters/HNU_1_scantable.pdf)
+**Funding**  
+- National Natural Science Foundation of China (31070905, 31371134)  
+- National Social Science Foundation of China (11AZD119)  
 
 ---
 
-### **Data Access**
+## Scan Parameters
 
-To download datasets from CoRR via NITRC:
+Each subject underwent imaging with the following modalities:
 
-1. Log into NITRC and register with the [1000 Functional Connectomes Project / INDI](https://www.nitrc.org/projects/fcon_1000).
-2. A permission error will occur if you are not logged in and properly registered.
-3. Don’t have an account? [Register here](https://www.nitrc.org/account/register.php).
+| Modality | Description |
+|-----------|--------------|
+| **EPI** | Resting-state functional MRI (BOLD) |
+| **ASL** | Arterial spin labeling for cerebral blood flow |
+| **T1-weighted MRI** | High-resolution anatomical scan |
+| **DTI** | Diffusion tensor imaging for white matter structure |
+| **T2-weighted MRI** | Structural contrast for gray/white matter delineation |
 
-**Available Downloads:**
+---
 
-* HNU\_1\_0025427\_0025429
-* HNU\_1\_0025430\_0025432
-* HNU\_1\_0025433\_0025435
-* HNU\_1\_0025436\_0025438
-* HNU\_1\_0025439\_0025441
-* HNU\_1\_0025442\_0025444
-* HNU\_1\_0025445\_0025447
-* HNU\_1\_0025448\_0025449
-* HNU\_1\_0025450
-* HNU\_1\_0025451\_0025453
-* HNU\_1\_0025454\_0025456
-* HNU\_1\_Phenotypic\_Data
+## Downloads
 
-**DOI:** [10.15387/fcp\_indi.corr.hnu1](http://dx.doi.org/10.15387/fcp_indi.corr.hnu1)
+Data are available via the **NITRC** portal.  
+Users must log in and register with the **INDI group** before accessing.
+
+| Data Type | Description | Access |
+|------------|--------------|--------|
+| Imaging Data | HNU_1_0025427 – HNU_1_0025456 | [NITRC Download Page](https://www.nitrc.org/frs/?group_id=284) *(login required)* |
+| Phenotypic Data | Participant demographics and session metadata | [HNU_1_Phenotypic_Data](http://dx.doi.org/10.15387/fcp_indi.corr.hnu1) |
+
+---
+
+## License and Citation
+
+Use of this dataset is governed by the **INDI / CoRR Data Use Agreement**.  
+Please review and comply with:  
+[http://fcon_1000.projects.nitrc.org/indi/corr/html/data_citation.html](http://fcon_1000.projects.nitrc.org/indi/corr/html/data_citation.html)
+
+**Please cite and acknowledge:**
+
+> Weng X.-C., Zuo X.-N., et al. *Hangzhou Normal University (HNU) – One-Month Test–Retest Reliability and Dynamical Resting-State Study.*  
+> Center for Cognition and Brain Disorders, Hangzhou Normal University, Hangzhou, China.  
+> DOI: [10.15387/fcp_indi.corr.hnu1](http://dx.doi.org/10.15387/fcp_indi.corr.hnu1)
+
+---
+
+## Source
+
+- Dataset page:  
+  [http://fcon_1000.projects.nitrc.org/indi/CoRR/html/hnu1.html](http://fcon_1000.projects.nitrc.org/indi/CoRR/html/hnu1.html)  
+- INDI / 1000 Functional Connectomes Project:  
+  [https://www.nitrc.org/projects/fcon_1000/](https://www.nitrc.org/projects/fcon_1000/)
+
+---
+
+© 2014 The INDI Team. Prepared for redistribution under **data-indi/hnu1** by the **Pittsburgh Fiber Data Hub**.
 
 ## Release Link
 https://github.com/data-indi/corr/releases/tag/hnu

@@ -1,10 +1,5 @@
-### **Beijing Normal University – Enhanced Sample**
-
+# **Beijing Normal University – Enhanced Sample**
 ![](https://fcon_1000.projects.nitrc.org/indi/pro/_static/logo_bnu.png)
-
----
-
-### **Project Overview**
 
 This dataset includes data from **180 healthy control participants** recruited from the community (student) population at **Beijing Normal University, China**. Compared to the earlier **Beijing\_Zang dataset** from the 1000 Functional Connectomes Classic collection, this release features:
 

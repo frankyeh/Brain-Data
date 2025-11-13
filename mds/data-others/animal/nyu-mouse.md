@@ -1,4 +1,4 @@
-
+# **In Vivo Diffusion MRI of Optic Pathways in 18 Healthy Mice**
 This dataset contains **manganese-enhanced T1-weighted** and **diffusion-weighted MRI** of the optic pathways in **18 healthy C57BL/6 female mice**.  
 The study investigates **white matter organization and manganese transport** in the mouse visual system using in vivo high-field MRI.  
 Raw Bruker files and a subset of NIfTI-converted images are included to support both reprocessing and immediate analysis.
@@ -75,6 +75,7 @@ Special thanks to **Orin Mishkit, Zakia Ben Youss Gironda, Orlando Aristizabal,*
 
 ## Keywords  
 
-Mouse MRI • Diffusion MRI • MEMRI • Optic Pathways • Visual System • MRtrix3 • ANTs • Preclinical Imaging • Bruker BioSpec • Multi-shell DWI • 7 Tesla MRI  
+Mouse MRI • Diffusion MRI • MEMRI • Optic Pathways • Visual System • MRtrix3 • ANTs • Preclinical Imaging • Bruker BioSpec • Multi-shell DWI • 7 Tesla MRI
+
 ## Release Link
 https://github.com/data-others/animal/releases/tag/nyu-mouse

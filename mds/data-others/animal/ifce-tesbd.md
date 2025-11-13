@@ -1,4 +1,4 @@
-
+# **The Turone Equine Social Brain Dataset (TESBD)**
 The **Turone Equine Social Brain Dataset (TESBD)** is part of the **EQUISOBRAIN** project, funded by the **European Union’s Horizon 2020 Marie Skłodowska-Curie Actions (MSCA)** (project number **101033271**) and by the **Institut Français du Cheval et de l'Équitation (IFCE)**.  
 It provides the first open-access **multimodal MRI dataset** of the **equine brain**, aimed at understanding the **neurobiological basis of social competences** in domestic horses (*Equus caballus*).  
 
@@ -79,6 +79,7 @@ Potential applications include:
 
 ## Keywords  
 
-Equine Brain • MRI • fMRI • Diffusion MRI • BIDS • Social Cognition • Animal Neuroscience • Equisobrain • Connectome • Horse MRI • Comparative Neuroanatomy  
+Equine Brain • MRI • fMRI • Diffusion MRI • BIDS • Social Cognition • Animal Neuroscience • Equisobrain • Connectome • Horse MRI • Comparative Neuroanatomy
+
 ## Release Link
 https://github.com/data-others/animal/releases/tag/ifce-tesbd

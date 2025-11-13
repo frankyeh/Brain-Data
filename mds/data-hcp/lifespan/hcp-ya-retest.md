@@ -11,10 +11,11 @@ The HCP-YA study is a subset of the larger HCP project. It focuses on mapping th
 - Identify biomarkers: Discover potential biomarkers for neurological and psychiatric disorders that often emerge during young adulthood.
 
 
-# License
+## License
 
 The data are shared under the WU-Minn HCP open access data use term (4) at <https://www.humanconnectome.org/study/hcp-young-adult/document/wu-minn-hcp-consortium-open-access-data-use-terms>
 
 Please acknowledge the source to the WU-Minn HCP.
+
 ## Release Link
 https://github.com/data-hcp/lifespan/releases/tag/hcp-ya-retest

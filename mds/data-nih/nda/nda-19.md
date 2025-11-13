@@ -1,5 +1,4 @@
-### **Longitudinal MRI Study of Infants at Risk for Autism**
-
+# **Longitudinal MRI Study of Infants at Risk for Autism**
 **Collection ID:** 19
 
 ---

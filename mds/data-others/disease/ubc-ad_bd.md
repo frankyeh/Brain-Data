@@ -1,4 +1,4 @@
-
+# **Alzheimer's Disease vs Bipolar Disorder vs Healthy Control MRI Data and Processed Results**
 This dataset contains **structural and diffusion MRI data** together with **derived FA, TBSS, and VBM results** for patients diagnosed with **Alzheimer’s Disease (AD)**, **Bipolar Disorder (BD)**, and **healthy controls (HC)**.  
 It includes corresponding **clinical and biomarker information** organized in structured `.csv` files, supporting both **neuroimaging** and **clinical correlation** studies.
 
@@ -81,5 +81,6 @@ This dataset supports research in **neurodegenerative and affective disorder dif
 ## Keywords
 
 MRI • Diffusion MRI • FA • TBSS • VBM • Alzheimer’s Disease • Bipolar Disorder • Healthy Control • FSL • SPM • Neurodegeneration • White Matter Integrity • Biomarkers
+
 ## Release Link
 https://github.com/data-others/disease/releases/tag/ubc-ad_bd

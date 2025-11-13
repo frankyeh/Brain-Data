@@ -1,4 +1,4 @@
-
+# **EDEN2020 Human Brain MRI Datasets for Healthy Volunteers**
 This dataset provides **high-resolution multimodal MRI data** from **15 healthy adult volunteers** acquired on a **3T scanner** at the **Neuroradiology Unit and CERMAC (Center of Excellence for High Field Magnetic Resonance), Vita-Salute San Raffaele University, and IRCCS San Raffaele Scientific Institute** in Milan, Italy.  
 The dataset was collected as part of the **EDEN2020 (Enhanced Delivery Ecosystem for Neurosurgery on 2020)** project, funded by the **European Commission (Grant 688279)**, to advance imaging-guided neurosurgical research.
 
@@ -77,5 +77,6 @@ It provides essential test data for developing and benchmarking tools in **neuro
 ## Keywords
 
 MRI • HARDI • DTI • NODDI • Tractography • Brain • Neurosurgery • White Matter • High-Resolution MRI • EDEN2020
+
 ## Release Link
 https://github.com/data-others/brain2/releases/tag/vssru-eden2020

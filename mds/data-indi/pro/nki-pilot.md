@@ -1,113 +1,129 @@
-### **Enhanced Nathan Kline Institute-Rockland Sample (NKI-RS)**
+# **Enhanced Nathan Kline Institute–Rockland Sample (NKI-RS) – Multiband Imaging Test–Retest Pilot Dataset**
+The **Enhanced NKI-Rockland Sample (NKI-RS)** represents an expanded, community-based neuroimaging initiative designed to map **brain development, maturation, and aging** across the human lifespan (ages 6–85 years). Building upon the original NKI-RS project, this enhanced version combines **state-of-the-art multiband imaging**, **deep phenotyping**, and **open-access data sharing** to provide one of the most comprehensive resources for studying individual differences in brain structure and function.
 
-**Multiband Imaging Test-Retest Pilot Dataset**
+The **Multiband Imaging Test–Retest Pilot Dataset** served as the preliminary phase for the enhanced NKI-RS project. It was specifically designed to evaluate the **reliability and reproducibility** of advanced multiband resting-state fMRI (R-fMRI) and diffusion tensor imaging (DTI) protocols before their implementation in the full-scale 1,000-participant study. Participants were primarily drawn from the original NKI-RS cohort, with corresponding psychiatric and phenotypic data available (individuals were not excluded for clinical history).
 
----
-
-### **Project Overview**
-
-The **Enhanced NKI-RS** builds upon the initial NKI-RS effort to create a **large cross-sectional neuroimaging dataset** spanning **ages 6 to 85 years**. This initiative, funded by the **NIMH (PI: Michael Milham)**, aims to characterize **1,000 community-ascertained participants** using cutting-edge multiband imaging techniques, diffusion tensor imaging (DTI), genetics, and an expanded deep phenotyping protocol.
-
-Designed as an **open-access community resource**, the dataset enables researchers to test existing hypotheses and generate new ones through data exploration. Imaging datasets are shared weekly through the Neuroimaging Tools and Resources Clearinghouse (NITRC), and genetic data will be made available via the NIMH Genetics Repository.
+The pilot dataset includes **repeated R-fMRI and DTI sessions**, as well as **task-based calibration scans** for assessing image quality, vascular reactivity, and motion effects:
+- **Visual checkerboard stimulation** (contrast-to-noise calibration)  
+- **Breath-holding task** (vascular responsiveness)  
+- **Eye-movement calibration** (motion-related artifact detection)
 
 ---
 
-### **Key Features**
+## Overview
 
-#### **Imaging Advancements**
-
-* Use of state-of-the-art **Multiband Echo Planar Imaging (EPI)**, enabling rapid full-brain coverage.
-* Multiband sequences developed at the **Center for Magnetic Resonance Research (CMRR), University of Minnesota**, under the Human Connectome Project.
-* Two advanced resting-state fMRI sequences:
-
-  * **TR = 645 ms**, 3 mm isotropic voxels, 10-minute scan (optimal temporal resolution)
-  * **TR = 1400 ms**, 2 mm isotropic voxels, 10-minute scan (optimal spatial resolution)
-* Standard EPI sequence:
-
-  * **TR = 2500 ms**, 3 mm isotropic voxels, 5-minute scan
-* **DTI Sequence:** 137 directions, 2 mm isotropic voxels
-
-#### **Phenotyping Enhancements**
-
-* Broad assessment of **psychiatric, cognitive, and behavioral variables** across the lifespan.
-* Selection of measures informed by experts and aligned with initiatives such as:
-
-  * Brain Genomics Superstruct Project
-  * Human Connectome Project
-  * Brain Behavior Laboratory at the University of Pennsylvania
-* Expanded assessments administered over **two separate days** to minimize participant fatigue.
-
-#### **Neuroinformatics Infrastructure**
-
-* Adoption of the **COllaborative Informatics and Neuroimaging Suite (COINS)** for web-based phenotypic data management.
-* Integrated search capabilities for both phenotypic and imaging data.
-
-#### **Community Representation**
-
-* Recruitment modeled after epidemiological studies to ensure **representative sampling across geographic, socioeconomic, ethnic, and racial demographics**.
-* Sampling based on zip-code level representation from **Rockland County, NY**, reflective of U.S. population demographics.
+- **Dataset name:** Enhanced NKI-RS – Multiband Imaging Test–Retest Pilot Dataset  
+- **Institution:** Nathan Kline Institute for Psychiatric Research (NKI), Orangeburg, NY, USA  
+- **Principal Investigator:** Michael Milham  
+- **DOI:** [10.15387/fcp_indi.corr.nki1](http://dx.doi.org/10.15387/fcp_indi.corr.nki1)  
+- **Sample:** Adults from the original NKI-RS cohort  
+- **Modalities:** R-fMRI, multiband R-fMRI, DTI, task-based fMRI (checkerboard, breath-hold, eye-movement)  
+- **Purpose:** Evaluate test–retest reliability of multiband imaging protocols  
 
 ---
 
-### **Multiband Test-Retest Pilot Dataset**
+## Imaging Protocol
 
-Prior to the full launch of the Enhanced NKI-RS, a pilot dataset was collected to assess the **reliability of multiband R-fMRI and DTI scans**. This dataset includes participants from the initial NKI-RS, along with associated psychiatric assessments.
+**Repeated scans (test–retest):**
+| Sequence | TR | Voxel Size | Duration | Purpose |
+|-----------|----|-------------|-----------|----------|
+| R-mfMRI | 645 ms | 3 mm isotropic | 10 min | High temporal resolution |
+| R-mfMRI | 1400 ms | 2 mm isotropic | 10 min | High spatial resolution |
+| R-fMRI | 2500 ms | 3 mm isotropic | 5 min | Standard EPI reference |
+| DTI | 137 directions | 2 mm isotropic | — | White matter microstructure |
 
-**In addition to R-fMRI and DTI, the following were included:**
+**Single-acquisition scans:**
+| Task | TR | Voxel Size | Duration |
+|------|----|-------------|-----------|
+| Visual Checkerboard | 645 ms / 1400 ms | 3 mm / 2 mm | 2.5 min |
+| Eye-Movement Calibration | 645 ms / 1400 ms | 3 mm / 2 mm | 2.5 min |
+| Breath Holding | 1400 ms | 2 mm isotropic | 10 min |
 
-* **Visual Checkerboard Stimulation fMRI** (for quality control metrics)
-* **Breath Holding Task** (for vascular responsiveness evaluation)
-* **Eye Movement Calibration Scans** (to assess motion artifacts in multiband sequences)
-
----
-
-### **Available Imaging Data**
-
-#### **Repeated Scans:**
-
-* R-mfMRI (TR = 645 ms, 3 mm isotropic, 10 min)
-* R-mfMRI (TR = 1400 ms, 2 mm isotropic, 10 min)
-* R-fMRI (TR = 2500 ms, 3 mm isotropic, 5 min)
-* DTI (137 directions, 2 mm isotropic)
-
-#### **Single Acquisition Scans:**
-
-* Visual Checkerboard Stimulation
-
-  * TR = 645 ms (3 mm isotropic, 2.5 min)
-  * TR = 1400 ms (2 mm isotropic, 2.5 min)
-* Eye Movement Calibration
-
-  * TR = 645 ms (3 mm isotropic, 2.5 min)
-  * TR = 1400 ms (2 mm isotropic, 2.5 min)
-* Breath Holding (TR = 1400 ms, 2 mm isotropic, 10 min)
-
-**Stimulus Files and Execution Scripts:**
-
-* Visual Checkerboard Stimulation
-* Eye Movement Calibration
-* Breath Holding
-* Stimulus Execution Scripts (compatible with Vision Egg)
+Each task includes **stimulus design files** and **execution scripts** (Vision Egg format) to reproduce acquisition conditions.
 
 ---
 
-### **Important Considerations for Multiband Imaging Analysis**
+## Important Notes for Multiband Data Users
 
-* Short TRs increase temporal degrees of freedom but alter effective temporal autocorrelation; corrections must be applied in statistical analyses.
-* Spatial smoothness may become non-stationary, affecting cluster-based inference methods.
-* Slice timing correction requires custom handling due to simultaneous multi-slice acquisition.
+- The **short TR** in multiband fMRI increases temporal resolution but changes **temporal autocorrelation** properties, which must be corrected during analysis.  
+- **Spatial smoothness** can vary non-uniformly; standard Gaussian Random Field–based cluster corrections may be unsuitable.  
+- **Slice timing correction** requires custom timing information due to simultaneous multi-slice excitation.  
 
----
-
-### **Disclaimer**
-
-All available data are shared **as-is**. Users are responsible for performing their own quality assessments prior to analysis.
+Researchers should consult preprocessing recommendations from **Christian Beckmann** and **Steve Smith (HCP collaboration)** when analyzing these data.
 
 ---
 
-### **Usage Agreement**
+## Phenotyping and Data Infrastructure
 
-Data is shared under a **Creative Commons License: Attribution – Non-Commercial**.
+The enhanced NKI-RS includes extensive behavioral, cognitive, and clinical phenotyping, coordinated through the **COllaborative Informatics and Neuroimaging Suite (COINS)** platform. This system integrates all phenotypic and imaging data into a unified, queryable database.  
+To ensure representative sampling, the project employs **community-ascertained recruitment** from Rockland County, NY, using demographic stratification to mirror U.S. census distributions.
+
+---
+
+## Downloads
+
+Data are distributed via the **Neuroimaging Tools and Resources Clearinghouse (NITRC)**.
+
+| Data Type | Description | Access |
+|------------|--------------|--------|
+| Imaging Data | Multiband R-fMRI, DTI, and task-based scans | [NITRC Download Page](https://www.nitrc.org/frs/?group_id=284) *(login required)* |
+| Phenotypic Data | Demographic, psychiatric, and cognitive measures | Included in dataset package |
+
+---
+
+## Usage Agreement
+
+This dataset is made available under the **Creative Commons Attribution–NonCommercial License (CC BY-NC)**.  
+Users may share and adapt the material for non-commercial research with proper attribution.
+
+**Disclaimer:**  
+All scans are provided as-is. It is the user’s responsibility to perform appropriate quality control and determine inclusion for analysis.
+
+---
+
+## Funding and Acknowledgments
+
+**Primary Funding:**  
+- NIMH BRAINS R01MH094639-01 (PI Milham)  
+- New York State Office of Mental Health and Research Foundation for Mental Hygiene  
+- Child Mind Institute (1FDN2012-1)  
+- Center for the Developing Brain, Child Mind Institute  
+- NIMH R01MH081218, R01MH083246, R21MH084126  
+- NKI Center for Advanced Brain Imaging (CABI)  
+- Brain Research Foundation, Chicago  
+- Stavros Niarchos Foundation  
+
+**Core Team Leadership:**  
+Michael Milham, Bennett Leventhal, F. Xavier Castellanos, Kate Nooner, Russ Tobe, Stan Colcombe  
+
+**Technical & Imaging Support:**  
+Cathy Hu, Raj Sangoi, Steve Zavitz, Cameron Craddock, Qingyang Li, Brian Cheung, Ranjit Khanuja, David Lewis, Chao-Gan Yan  
+
+**Collaborations:**  
+Special thanks to **CMRR, University of Minnesota** (Kamil Ugurbil, Eddie Auerbach, Junquian Gordon Xu, Steen Moeller) for providing multiband EPI sequences and reconstruction algorithms.  
+
+---
+
+## Citation
+
+> Milham M., Colcombe S., Castellanos F.X., et al.  
+> *Enhanced Nathan Kline Institute–Rockland Sample (NKI-RS) – Multiband Imaging Test–Retest Pilot Dataset.*  
+> Nathan Kline Institute for Psychiatric Research, Orangeburg, NY, USA.  
+> DOI: [10.15387/fcp_indi.corr.nki1](http://dx.doi.org/10.15387/fcp_indi.corr.nki1)
+
+---
+
+## Source
+
+- Dataset page:  
+  [http://fcon_1000.projects.nitrc.org/indi/enhanced/nki_rs.html](http://fcon_1000.projects.nitrc.org/indi/enhanced/nki_rs.html)  
+- INDI / 1000 Functional Connectomes Project:  
+  [https://www.nitrc.org/projects/fcon_1000/](https://www.nitrc.org/projects/fcon_1000/)
+
+---
+
+© Nathan Kline Institute for Psychiatric Research.  
+Prepared for redistribution under **data-indi/nki-rs** by the **Pittsburgh Fiber Data Hub**.
 
 ## Release Link
 https://github.com/data-indi/pro/releases/tag/nki-pilot

@@ -1,4 +1,4 @@
-
+# **Test-Retest Cross-Scanner Multi-Modal Brain MRI of Healthy Subjects — B-Q Minded Brain Study**
 The **B-Q Minded Brain Study (TRCSMM)** dataset provides **test–retest cross-scanner multi-modal MRI** data from healthy volunteers.  
 It was created as part of the **B-Q MINDED** project — an international research effort on **quantitative MRI (qMRI)** coordinated by **Prof. Dr. Jan Sijbers** at the University of Antwerp.  
 The study aims to evaluate and harmonize qMRI metrics across scanners to improve **data comparability and robustness** in multi-center neuroimaging research.  
@@ -63,5 +63,6 @@ It supports reproducibility research and algorithm development in quantitative n
 ## Keywords
 
 MRI • Diffusion MRI • Harmonization • Inter-scanner • Intra-scanner • Cross-scanner • Test–retest • Healthy Volunteers
+
 ## Release Link
 https://github.com/data-others/brain2/releases/tag/bqminded

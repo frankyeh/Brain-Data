@@ -1,3 +1,4 @@
+# **Brain and Spinal Cord Multi-Shell Diffusion MRI Dataset**
 This dataset provides **high-quality structural and diffusion-weighted MRI** data of both the **brain and cervical spinal cord** from **11 healthy participants**, with **test–retest sessions** in 6 of them.  
 It is organized in compliance with the **Brain Imaging Data Structure (BIDS v1.9.0)** and supports integrated analyses of the brain and spinal cord within the same imaging framework.
 
@@ -64,5 +65,6 @@ By including both structural and diffusion data for the brain and cord in the sa
 ## Keywords
 
 Diffusion MRI • Multi-shell • Brain • Spinal Cord • SANDI • SMT • NODDI • Microstructure • BIDS • White Matter • Test–Retest
+
 ## Release Link
 https://github.com/data-others/brain2/releases/tag/vu-brain-cord

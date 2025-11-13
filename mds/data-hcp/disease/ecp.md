@@ -1,4 +1,4 @@
-### **Epilepsy Connectome Project (ECP)**
+# **Epilepsy Connectome Project (ECP)**
 
 ---
 
@@ -85,7 +85,6 @@ For inquiries, please contact the investigators directly.
 ### **Keywords**
 
 *Epilepsy, Medically Refractory Epilepsy, Temporal Lobe Epilepsy (TLE), Idiopathic TLE, Structural and Functional Connectivity, Magnetoencephalography (MEG)*
-
 
 ## Release Link
 https://github.com/data-hcp/disease/releases/tag/ecp

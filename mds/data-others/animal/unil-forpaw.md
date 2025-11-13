@@ -1,4 +1,4 @@
-
+# **Forepaw Electrical Stimulation: MD and MK Time-Dependence vs. BOLD-fMRI**
 This dataset includes diffusion MRI and BOLD-fMRI data acquired from **female Wistar rats (N = 10)** subjected to **forepaw electrical stimulation** under ultra-high-field MRI.  
 The experiment was conducted to investigate how neural activity modulates **mean diffusivity (MD)** and **mean kurtosis (MK)** over multiple diffusion times, and how these changes relate to **BOLD-fMRI activation**.
 
@@ -90,6 +90,7 @@ Signals were labeled as *contralateral* or *ipsilateral* based on expected somat
 
 ## Keywords  
 
-Rat fMRI • Diffusion Kurtosis • MD Time-Dependence • Functional MRI • Forepaw Stimulation • BOLD • Fast Kurtosis Imaging • 14.1 Tesla MRI • Bruker BioSpin • Weizmann Institute  
+Rat fMRI • Diffusion Kurtosis • MD Time-Dependence • Functional MRI • Forepaw Stimulation • BOLD • Fast Kurtosis Imaging • 14.1 Tesla MRI • Bruker BioSpin • Weizmann Institute
+
 ## Release Link
 https://github.com/data-others/animal/releases/tag/unil-forpaw

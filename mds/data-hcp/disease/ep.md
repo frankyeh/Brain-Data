@@ -1,8 +1,8 @@
-### **Human Connectome Project for Early Psychosis**
+# **Human Connectome Project for Early Psychosis**
 
 ---
 
-# License
+## License
 
 The FIB files are shared under the [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). If you use these data, please acknowledge the contribution of ACCESS resources: CIS200026 & MED230052.
 

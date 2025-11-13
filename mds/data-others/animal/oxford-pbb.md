@@ -1,4 +1,4 @@
-
+# **Primate Brain Bank MRI**
 This dataset provides **structural and diffusion MRI data** of **seven non-human primate species** from the *Primate Brain Bank* at the Netherlands Institute for Neuroscience (Amsterdam).  
 It includes **raw data**, **surface reconstructions** generated using FreeSurfer, and **connectome reconstructions** generated with CATO. The dataset supports comparative neuroanatomy and connectomics research across primate species.
 
@@ -69,5 +69,6 @@ It enables quantitative analyses linking **diffusion tractography**, **sulcal mo
 ## Keywords  
 
 Primate • Diffusion MRI • Tractography • Connectome • FreeSurfer • CATO • Comparative Anatomy • Non-Human Primate • Evolutionary Neuroscience • Sulcal Morphology
+
 ## Release Link
 https://github.com/data-others/animal/releases/tag/oxford-pbb

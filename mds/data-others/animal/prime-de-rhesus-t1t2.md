@@ -1,3 +1,4 @@
+# **PRIMatE Data Exchange (T1W/T2W)**
 PRIME-DE serves as an open-science resource to support the mapping of the nonhuman primate connectome. Leveraging in vivo magnetic resonance imaging (MRI), it facilitates the study of brain organization and function, contributing to advancements in translational and comparative neuroscience.
 
 The initiative aggregates functional, diffusion, and morphometric MRI datasets from labs worldwide, enabling the scientific community to explore organizational principles of the nonhuman primate brain and its functional interactions.

@@ -1,73 +1,90 @@
-### **Consortium for Reliability and Reproducibility (CoRR) initiative – Institute of Psychology, Chinese Academy of Sciences (IPCAS)**
+# **Institute of Psychology, Chinese Academy of Sciences (IPCAS) – Time Perception and Estimation Sample**
+This dataset was collected at the **Institute of Psychology, Chinese Academy of Sciences (IPCAS)** in Beijing, China, as part of the **Consortium for Reliability and Reproducibility (CoRR)**. It includes resting-state fMRI, anatomical MRI, and diffusion tensor imaging (DTI) data from 30 participants who underwent two scan sessions one week apart. The study was designed to investigate neural mechanisms of **time perception and estimation**, providing a valuable longitudinal dataset for assessing test–retest reliability of multimodal MRI measures.
 
-**Time Perception and Estimation Sample**
-
----
-
-### **License and Data Privacy**
-
-This dataset is part of the **Consortium for Reliability and Reproducibility (CoRR)** initiative, which promotes open data sharing to advance the study of brain function and connectivity.
-
-> *The CoRR Project data sharing effort provides the research community with open access to datasets contributed by labs from around the world. All datasets in the CoRR repository are entirely anonymized in compliance with HIPAA protocols. This includes the removal of personal identifiers from headers and support files, as well as defacing of structural images. Each participant is assigned a randomized seven-digit ID. Upon receipt by CoRR staff, headers are further processed to ensure no identifying information remains. All phenotypic data are reviewed to remove personally identifying variables. For clinical datasets, categorical diagnoses and severity measures (if available) are provided, along with any physiological data that does not compromise privacy. Datasets are included in the repository only after written permission is granted by contributing investigators, allowing unrestricted public use without limitations.*
-
-**Source:** [IPCAS Dataset on CoRR/NITRC](https://fcon_1000.projects.nitrc.org/indi/CoRR/html/ipcas_1.html)
+Participants were instructed to rest while maintaining visual fixation on a central cross throughout the resting-state scans. Each subject completed **two sessions spaced one week apart**, allowing analysis of short-term reliability in brain structure and function.
 
 ---
 
-### **Principal Investigator**
+## Overview
 
-* **Xiaolan Fu**, State Key Laboratory of Brain and Cognitive Science, and Key Laboratory of Behavioral Science and Magnetic Resonance Imaging Research Center, Institute of Psychology, Chinese Academy of Sciences, Chaoyang, Beijing, China
-
-### **Co-Investigator**
-
-* **Ke Zhao**, Key Laboratory of Behavioral Science and Magnetic Resonance Imaging Research Center, Institute of Psychology, Chinese Academy of Sciences, Chaoyang, Beijing, China
-
-### **Acknowledgements**
-
-* **Chen Jie**, Department of Psychology, Liaoning Normal University
-
-### **Funding Support**
-
-* 973 Program (Grant No. 2011CB302201, PI: XLF)
-* National Natural Science Foundation of China (Grant No. 61075042, PI: XLF)
+- **Dataset name:** IPCAS 1 – Time Perception and Estimation Sample  
+- **Institution:** Institute of Psychology, Chinese Academy of Sciences (IPCAS), Beijing, China  
+- **Principal Investigator:** Xiaolan Fu  
+- **Co-Investigator:** Ke Zhao  
+- **DOI:** [10.15387/fcp_indi.corr.ipcas1](http://dx.doi.org/10.15387/fcp_indi.corr.ipcas1)  
+- **Sample:** 30 healthy adults  
+- **Sessions:** 2 (one week apart)  
+- **Modalities:** Resting-state fMRI, T1-weighted anatomical MRI, and DTI  
+- **Condition:** Eyes open, fixation cross during rest  
 
 ---
 
-### **Sample Overview**
+## Investigators
 
-This dataset includes resting-state fMRI, anatomical MRI, and DTI scans for **30 participants**, collected across **two scan sessions spaced one week apart**. During the resting-state scan, subjects viewed a fixation cross and were instructed to relax while maintaining focus on the cross.
+**Principal Investigator**  
+- *Xiaolan Fu*  
+  State Key Laboratory of Brain and Cognitive Science,  
+  Institute of Psychology, Chinese Academy of Sciences, Beijing, China  
 
-**Scan Parameters:**
-[View Detailed Scan Parameters (PDF)](https://fcon_1000.projects.nitrc.org/indi/CoRR/html/_static/scan_parameters/IPCAS_1_scantable.pdf)
+**Co-Investigator**  
+- *Ke Zhao*  
+  Key Laboratory of Behavioral Science and MRI Research Center,  
+  Institute of Psychology, Chinese Academy of Sciences, Beijing, China  
 
----
+**Acknowledgment**  
+- Chen Jie, Department of Psychology, Liaoning Normal University  
 
-### **Publications Using This Dataset**
-
-Zhao, K., Yan, W. J., Chen, Y. H., Zuo, X. N., & Fu, X. (2013). Amygdala volume predicts inter-individual differences in fearful face recognition. *PLOS ONE*, 8(8), e74096.
-[View article](https://doi.org/10.1371/journal.pone.0074096)
-
----
-
-### **Data Access**
-
-To download datasets from CoRR via NITRC:
-
-1. Log into NITRC and register with the [1000 Functional Connectomes Project / INDI](https://www.nitrc.org/projects/fcon_1000).
-2. A permission error will occur if you are not logged in and properly registered.
-3. Don’t have an account? [Register here](https://www.nitrc.org/account/register.php).
-
-**Available Downloads:**
-
-* IPCAS\_1\_0025485\_0025497
-* IPCAS\_1\_0025498\_0025510
-* IPCAS\_1\_0025511\_0025514
-* IPCAS\_1\_Phenotypic\_Data
-
-**DOI:** [10.15387/fcp\_indi.corr.ipcas1](http://dx.doi.org/10.15387/fcp_indi.corr.ipcas1)
+**Funding**  
+- 973 Program (2011CB302201, XLF)  
+- National Natural Science Foundation of China (61075042, XLF)  
 
 ---
 
+## Publications Using This Dataset
+
+- **Zhao, K., Yan, W. J., Chen, Y. H., Zuo, X. N., & Fu, X. (2013).**  
+  *Amygdala volume predicts inter-individual differences in fearful face recognition.*  
+  *PLoS ONE*, 8(8), e74096.  
+  [https://doi.org/10.1371/journal.pone.0074096](https://doi.org/10.1371/journal.pone.0074096)
+
+---
+
+## Downloads
+
+Data are hosted via the **NITRC** portal.  
+Users must log in and be registered with the **INDI group** to access files.
+
+| Data Type | Description | Access |
+|------------|--------------|--------|
+| Imaging Data | IPCAS_1_0025485 – IPCAS_1_0025514 | [NITRC Download Page](https://www.nitrc.org/frs/?group_id=284) *(login required)* |
+| Phenotypic Data | Participant demographics and behavioral metadata | [IPCAS_1_Phenotypic_Data](http://dx.doi.org/10.15387/fcp_indi.corr.ipcas1) |
+
+---
+
+## License and Citation
+
+Use of this dataset is governed by the **INDI / CoRR Data Use Agreement**.  
+Please review and comply with:  
+[http://fcon_1000.projects.nitrc.org/indi/corr/html/data_citation.html](http://fcon_1000.projects.nitrc.org/indi/corr/html/data_citation.html)
+
+**Please cite and acknowledge:**
+
+> Fu X., Zhao K., et al. *Institute of Psychology, Chinese Academy of Sciences (IPCAS 1) – Time Perception and Estimation Sample.*  
+> Institute of Psychology, Chinese Academy of Sciences, Beijing, China.  
+> DOI: [10.15387/fcp_indi.corr.ipcas1](http://dx.doi.org/10.15387/fcp_indi.corr.ipcas1)
+
+---
+
+## Source
+
+- Dataset page:  
+  [http://fcon_1000.projects.nitrc.org/indi/CoRR/html/ipcas1.html](http://fcon_1000.projects.nitrc.org/indi/CoRR/html/ipcas1.html)  
+- INDI / 1000 Functional Connectomes Project:  
+  [https://www.nitrc.org/projects/fcon_1000/](https://www.nitrc.org/projects/fcon_1000/)
+
+---
+
+© 2014 The INDI Team. Prepared for redistribution under **data-indi/ipcas1** by the **Pittsburgh Fiber Data Hub**.
 
 ## Release Link
 https://github.com/data-indi/corr/releases/tag/ipcas

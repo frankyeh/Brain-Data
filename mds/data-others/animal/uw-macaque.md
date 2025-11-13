@@ -1,4 +1,4 @@
-
+# **Validation of Diffusion Tensor Imaging Measures of Nigrostriatal Neurons in Macaques**
 This dataset provides **in vivo diffusion MRI (DTI)**, together with companion **PET**, **behavioral**, and **post‑mortem histology** data from **16 non‑human primates (macaques)** subjected to **unilateral MPTP lesions** of the nigrostriatal pathway. It supports validation of diffusion‑based markers of **dopaminergic neuron integrity** against gold‑standard histological and neurochemical measures.
 
 ---
@@ -67,5 +67,6 @@ Public domain (Dryad)
 ## Keywords
 
 Diffusion MRI • DTI • Nigrostriatal • MPTP • Macaque • Dopamine • TH immunostaining • PET • Parkinson’s disease • Non‑human primate • Validation
+
 ## Release Link
 https://github.com/data-others/animal/releases/tag/uw-macaque

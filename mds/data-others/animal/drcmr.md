@@ -1,8 +1,9 @@
+# **The Danish Research Centre for Magnetic Resonance (DRCMR) Data**
 source: https://www.drcmr.dk/axon-morphology-dataset
 
 This dataset was used to extract and analyze the 3D morphologies of axons, against the backdrop of the complex white matter environment, including axons, cells, blood vessels and vacuoles.
 
-# Agreement 
+## Agreement 
 Please make sure to cite the following:
 
 ```
@@ -11,7 +12,7 @@ XNH data and methods: M. Andersson et al. Axon morphology is modulated by the lo
 MRI data and methods: T. B. Dyrby, L. V. Sogaard, M. G. Hall, M. Ptito, D. C. Alexander, Contrast and stability of the axon diameter index from microstructure imaging with diffusion MRI. Magn. Reson. Med. 70, 711–721 (2013).
 ```
 
-# Data
+## Data
 
 The data can be downloaded from here:
 
@@ -25,7 +26,7 @@ The data package is divided into two main sections: “Diffusion MRI datasets”
 
 The XNH volumes are available in two versions – full resolution and a convenience format. The latter version is processed, downsampled and stored in NIfTI format (.nii) to keep data sizes manageable and easily accessible in standard medical viewers.
 
-# Diffusion MRI datasets
+## Diffusion MRI datasets
 
 This directory includes the sub-directories:
 
@@ -51,13 +52,14 @@ This directory contains X-ray Nano-Holotomography volumes of the monkey brain sp
 
 This directory contains X-ray Nano-Holotomography volumes of four overlapping regions of the monkey brain splenium, and the segmentation of cell clusters, blood vessels and vacuoles from the "extended" volume.
 
-# Methods
+## Methods
 Further details can be found in the "Methods" section of the article. In case of questions, please contact one of the corresponding authors, and we will be happy to assist you.
 
-# Corresponding authors
+## Corresponding authors
 Mariam Andersson and Tim B. Dyrby
 
-# Funding
+## Funding
 The Capital Region Research Foundation and the Swedish Research Council.
+
 ## Release Link
 https://github.com/data-others/animal/releases/tag/drcmr

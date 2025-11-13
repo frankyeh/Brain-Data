@@ -1,4 +1,4 @@
-
+# **Ex vivo Mesoscale Human Temporal Lobe Dataset**
 This dataset provides **mesoscale-resolution diffusion MRI and tractography data** of the **human temporal lobe**, focusing on the **hippocampus and fimbria** connectivity at an unprecedented level of anatomical detail.  
 The high-resolution acquisition enables visualization of intra-hippocampal lamellae, interlamellar and translamellar fibers, and connectivity patterns between hippocampal subfields and major white matter bundles.
 
@@ -69,5 +69,6 @@ It contributes to understanding:
 ## Keywords
 
 Hippocampus • Diffusion MRI • Tractography • Connectome • Fimbria • Mesoscale • Subfields • Ex vivo • Temporal lobe • Neuroanatomy
+
 ## Release Link
 https://github.com/data-others/brain2/releases/tag/pitt-hippo

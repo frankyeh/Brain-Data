@@ -1,4 +1,4 @@
-
+# **Use of Anisotropy, 3D Segmented Atlas, and Computational Analysis to Identify Gray Matter Subcortical Lesions Common to Concussive Injury from Different Cortical Sites (Rat)**
 This dataset provides **diffusion tensor MRI (DTI)** and supporting materials for a **fluid‑percussion traumatic brain injury (TBI) rat model** comparing **rostral vs. caudal** cortical concussions. Using a **3D segmented and annotated rat brain atlas** (~150 regions), the study quantifies **indices of anisotropy (IA)** across >20,000 voxels to detect **gray‑matter microarchitectural disturbances** in subcortical nuclei.
 
 Findings highlight convergent injury patterns in the **central nucleus of the amygdala**, **laterodorsal thalamus**, and **hippocampal complex**, with immunohistochemistry confirming **neuroinflammation** in these sites.
@@ -61,5 +61,6 @@ Public domain (Dryad)
 ## Keywords
 
 Traumatic Brain Injury • DTI • Index of Anisotropy • Rat • 3D Segmented Atlas • Amygdala • Thalamus • Hippocampus • Neuroinflammation • Concussion • Fluid Percussion
+
 ## Release Link
 https://github.com/data-others/animal/releases/tag/ne-rat-tbi

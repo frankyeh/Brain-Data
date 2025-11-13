@@ -1,4 +1,4 @@
-
+# **3T Diffusion MRI Inter-Site Reproducibility Dataset for Cerebral Small Vessel Disease**
 This dataset provides **multi-site diffusion MRI data** from **10 patients** diagnosed with the genetically defined small vessel disease **CADASIL**, scanned on two different 3 T Siemens MRI scanners (**Magnetom Prisma** and **Magnetom Skyra**) within 24 hours.  
 It enables evaluation of **inter-scanner reproducibility** of diffusion metrics in cerebral small vessel disease (SVD) and supports harmonization studies for **multi-center neuroimaging trials**.
 
@@ -96,6 +96,7 @@ It is particularly relevant for researchers working on:
 
 ## Keywords  
 
-Diffusion MRI • DTI • CADASIL • Small Vessel Disease • Inter-site Reproducibility • Siemens Prisma • Siemens Skyra • BIDS • FSL • MRtrix • Neurology 2020  
+Diffusion MRI • DTI • CADASIL • Small Vessel Disease • Inter-site Reproducibility • Siemens Prisma • Siemens Skyra • BIDS • FSL • MRtrix • Neurology 2020
+
 ## Release Link
 https://github.com/data-others/disease/releases/tag/isd-svd

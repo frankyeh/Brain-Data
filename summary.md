@@ -25,20 +25,20 @@
 
 ### corr
 
-- [Consortium for Reliability and Reproducibility (CoRR) initiative – Beijing Normal University (BNU) (bnu):](/mds/data-indi/corr/bnu.html)
-- [Consortium for Reliability and Reproducibility (CoRR) initiative – Hangzhou Normal University (HNU) (hnu):](/mds/data-indi/corr/hnu.html)
-- [Consortium for Reliability and Reproducibility (CoRR) initiative – Institute of Psychology, Chinese Academy of Sciences (IPCAS) (ipcas):](/mds/data-indi/corr/ipcas.html)
-- [Consortium for Reliability and Reproducibility (CoRR) initiative – Mind Research Network (MRN) (mrn):](/mds/data-indi/corr/mrn.html)
-- [Consortium for Reliability and Reproducibility (CoRR) initiative – Nathan Kline Institute (NKI) (nki):](/mds/data-indi/corr/nki.html)
-- [Consortium for Reliability and Reproducibility (CoRR) initiative – Southwest University (SWU) (swu):](/mds/data-indi/corr/swu.html)
-- [Consortium for Reliability and Reproducibility (CoRR) initiative – Xuanwu Hospital, Capital University of Medical Sciences (XHCUMS) (xhcums):](/mds/data-indi/corr/xhcums.html)
+- [Beijing Normal University (BNU) – Connectivity-Based Brain Imaging Research Database (C-BIRD) (bnu):](/mds/data-indi/corr/bnu.html)
+- [Hangzhou Normal University (HNU) – One-Month Test–Retest Reliability and Dynamical Resting-State Study (hnu):](/mds/data-indi/corr/hnu.html)
+- [Institute of Psychology, Chinese Academy of Sciences (IPCAS) – Time Perception and Estimation Sample (ipcas):](/mds/data-indi/corr/ipcas.html)
+- [Mind Research Network (MRN) Repeat Resting Sample (mrn):](/mds/data-indi/corr/mrn.html)
+- [Nathan Kline Institute (NKI) Test–Retest Multiband fMRI and DTI Dataset (nki):](/mds/data-indi/corr/nki.html)
+- [Southwest Universit (SWU) Training Effects for Attention Blink Task (swu):](/mds/data-indi/corr/swu.html)
+- [Xuanwu Hospital, Capital University of Medical Sciences (XHCUMS) – 6-Month Test–Retest Dataset (xhcums):](/mds/data-indi/corr/xhcums.html)
 
 ### pro
 
-- [Beijing Normal University (Short TR Sample) (bnu):](/mds/data-indi/pro/bnu.html)
+- [Beijing Normal University – Short TR Sample (bnu):](/mds/data-indi/pro/bnu.html)
 - [Nathan Kline Institute (NKI) / Rockland Sample (nki):](/mds/data-indi/pro/nki.html)
-- [Enhanced Nathan Kline Institute-Rockland Sample (NKI-RS) (nki-pilot):](/mds/data-indi/pro/nki-pilot.html)
-- [NYU Institute for Pediatric Neuroscience (IPN) Sample (nyu):](/mds/data-indi/pro/nyu.html)
+- [Enhanced Nathan Kline Institute–Rockland Sample (NKI-RS) – Multiband Imaging Test–Retest Pilot Dataset (nki-pilot):](/mds/data-indi/pro/nki-pilot.html)
+- [NYU Institute for Pediatric Neuroscience (IPN) – Adult Resting-State and Diffusion MRI Dataset (nyu):](/mds/data-indi/pro/nyu.html)
 
 ### retro
 
@@ -67,8 +67,8 @@
 
 ### tcia
 
-- [UCSF Preoperative Diffuse Glioma MRI Dataset (UCSF-PDGM) (ucsf-pdgm):](/mds/data-nih/tcia/ucsf-pdgm.html)
-- [The University of Pennsylvania glioblastoma (UPenn-GBM) cohort: advanced MRI, clinical, genomics, & radiomics (upenn-gbm):](/mds/data-nih/tcia/upenn-gbm.html)
+- [UCSF-PDGM – University of California San Francisco Preoperative Diffuse Glioma MRI (ucsf-pdgm):](/mds/data-nih/tcia/ucsf-pdgm.html)
+- [UPENN-GBM – Multi-parametric MRI for De Novo Glioblastoma (University of Pennsylvania Health System) (upenn-gbm):](/mds/data-nih/tcia/upenn-gbm.html)
 
 ## data-openneuro
 
@@ -229,19 +229,19 @@
 
 ### brain
 
-- [cam-can (cam-can):](/mds/data-others/brain/cam-can.html)
-- [hbn (hbn):](/mds/data-others/brain/hbn.html)
-- [ixi-guys (ixi-guys):](/mds/data-others/brain/ixi-guys.html)
-- [ixi-hh (ixi-hh):](/mds/data-others/brain/ixi-hh.html)
-- [ixi-iop (ixi-iop):](/mds/data-others/brain/ixi-iop.html)
-- [mit-casl (mit-casl):](/mds/data-others/brain/mit-casl.html)
-- [mmrr (mmrr):](/mds/data-others/brain/mmrr.html)
-- [nki-rockland (nki-rockland):](/mds/data-others/brain/nki-rockland.html)
-- [ntu90 (ntu90):](/mds/data-others/brain/ntu90.html)
-- [penthera (penthera):](/mds/data-others/brain/penthera.html)
-- [stark-aging (stark-aging):](/mds/data-others/brain/stark-aging.html)
-- [swu-slim (swu-slim):](/mds/data-others/brain/swu-slim.html)
-- [ucsf-noddi (ucsf-noddi):](/mds/data-others/brain/ucsf-noddi.html)
+- [The Cambridge Centre for Ageing and Neuroscience (Cam-CAN) (cam-can):](/mds/data-others/brain/cam-can.html)
+- [The Healthy Brain Network (HBN) dataset (hbn):](/mds/data-others/brain/hbn.html)
+- [IXI Dataset (Guy's Hospital) (ixi-guys):](/mds/data-others/brain/ixi-guys.html)
+- [IXI Dataset (Hammersmith Hospital) (ixi-hh):](/mds/data-others/brain/ixi-hh.html)
+- [IXI Dataset (Institute of Psychiatry) (ixi-iop):](/mds/data-others/brain/ixi-iop.html)
+- [DTI Predicts Mandarin Learning (mit-casl):](/mds/data-others/brain/mit-casl.html)
+- [Multi-Modal MRI Reproducibility Resource (mmrr):](/mds/data-others/brain/mmrr.html)
+- [The NKI Rockland Sample (nki-rockland):](/mds/data-others/brain/nki-rockland.html)
+- [NTU 90 (ntu90):](/mds/data-others/brain/ntu90.html)
+- [Penthera 3T (penthera):](/mds/data-others/brain/penthera.html)
+- [Stark Cross-Sectional Aging Dataset (stark-aging):](/mds/data-others/brain/stark-aging.html)
+- [Southwest University Longitudinal Imaging Multimodal (SLIM) Brain Data Repository: A Long-term Test-Retest Sample of Young Healthy Adults in Southwest China (swu-slim):](/mds/data-others/brain/swu-slim.html)
+- [NODDI Lifespan dMRI (Chang & Mukherjee, 2015) (ucsf-noddi):](/mds/data-others/brain/ucsf-noddi.html)
 
 ### brain2
 

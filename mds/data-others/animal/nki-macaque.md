@@ -1,4 +1,4 @@
-
+# **NKI Translational Neuroscience Laboratory Macaque MRI Dataset**
 This dataset contains **whole-brain MRI data** from **three rhesus macaques**, acquired at the **Nathan Kline Institute (NKI) Translational Neuroscience Laboratory**.  
 It includes **functional MRI (fMRI)** with **contrast-enhanced (MION)** echo planar imaging, **T1- and T2-weighted structural scans**, and **diffusion-weighted imaging (DWI)** for each subject.
 
@@ -61,5 +61,6 @@ It enables validation of **non-human primate connectomics** and supports methodo
 ## Keywords
 
 fMRI • Macaque • Resting-State • Somatosensory Stimulation • DTI • Non-Human Primate • MION • Diffusion MRI • Comparative Neuroscience
+
 ## Release Link
 https://github.com/data-others/animal/releases/tag/nki-macaque

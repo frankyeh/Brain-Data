@@ -1,3 +1,4 @@
+# **The MPI-Leipzig Mind-Brain-Body dataset**
 The MPI-Leipzig Mind-Brain-Body dataset contains MRI and behavioral data from 318 participants. Datasets for all participants include at least a structural quantitative T1-weighted image and a single 15-minute eyes-open resting-state fMRI session.
  
 The participants took part in one or two extended protocols: Leipzig Mind-Brain_BodyInteractions (LEMON) and Neuroanatomy & Connectivity Protocol (N&C). The data from LEMON protocol is included in the ‘ses-01’ subfolder; the data from N&C protocol in ‘ses-02’ subfolder.
@@ -9,7 +10,7 @@ Forty-five participants have complete imaging data: quantitative T1-weighted, T2
 
 Extensive behavioral data was acquired in both protocols. They include trait and state questionnaires, as well as behavioral tasks. Here we only list the tasks and more extensive descriptions are available in the manuscripts.
 
-# LEMON QUESTIONNAIRES/TASKS
+## LEMON QUESTIONNAIRES/TASKS
 Cognitive Test Battery
 California Verbal Learning Test (CVLT)
 Testbatterie zur Aufmerksamkeitsprüfung (TAP: Alertness, Incompatibility, Working Memory)
@@ -55,7 +56,7 @@ Screening for Clinically Relevant Symptoms (HAM-D, BSL-23)
 Screening for Alcohol Abuse (AUDIT)    
 Screening for Substance Abuse
 
-# N&C QUESTIONNAIRES
+## N&C QUESTIONNAIRES
 Adult Self Report (ASR)
 Goldsmiths Musical Sophistication Index (Gold-MSI)
 Internet Addiction Test (IAT)
@@ -87,7 +88,7 @@ Creative achievement questionnaire (CAQ)
 Five facets of mindfulness (FFMQ)
 Metacognition (MCQ-30)
 
-# N&C TASKS
+## N&C TASKS
 Conjunctive continuous performance task (CCPT)
 Emotional task switching (ETS)
 Adaptive visual and auditory oddball target detection task (Oddball)
@@ -95,5 +96,6 @@ Alternative uses task (AUT)
 Remote associates test (RAT)
 Synesthesia color picker test (SYN)
 Test of creative imagery abilities (TCIA)
+
 ## Release Link
 https://github.com/data-indi/retro/releases/tag/mpi-lemon

@@ -1,4 +1,4 @@
-
+# **Diffusion Weighted MR Imaging of Post-Mortem Rat Brain to Allow Reconstruction of the Cortical Connectome**
 This dataset provides **diffusion-weighted MRI (dMRI)** and **high-resolution 3D structural MRI** of **post-mortem rat brains**, enabling detailed reconstruction of the **cortical connectome**.  
 It accompanies the publication by *Sinke et al. (2018)* and includes 10 perfusion-fixed Wistar rat brains scanned at ultra-high field (9.4 T).  
 The dataset contains raw dMRI and balanced SSFP data, along with derived diffusion metrics and anatomical references for connectome analysis.
@@ -88,5 +88,6 @@ It enables validation of diffusion tractography and modeling of cortical connect
 ## Keywords
 
 MRI • Diffusion MRI • Rat Brain • Post-mortem • Cortical Connectome • High-field MRI • Ex-vivo Imaging • Tractography
+
 ## Release Link
 https://github.com/data-others/animal/releases/tag/utrecht-rat

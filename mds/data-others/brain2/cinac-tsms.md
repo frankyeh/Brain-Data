@@ -1,4 +1,4 @@
-
+# **Functional and Structural MRI Data Following Transcranial Static Magnetic Stimulation Over the Motor Cortex**
 This dataset provides **multiecho resting-state fMRI**, **diffusion-weighted imaging (DWI)**, and **high-resolution structural T1-weighted MRI** data from **right-handed healthy participants**.  
 Each subject participated in two experimental sessions involving **real** and **sham transcranial static-magnetic-field stimulation (tSMS)** over the **right motor cortex (hand area)**.  
 The study employs a **double-blind randomized crossover design**, enabling direct comparison between stimulation conditions.
@@ -109,5 +109,6 @@ Rescaling formula:
 ## Keywords
 
 MRI • fMRI • Multi-Echo • Resting-State • Diffusion MRI • DWI • Motor Cortex • tSMS • Transcranial Static Magnetic Field • Non-Invasive Brain Stimulation • NIBS • CMRR • Phase Correction
+
 ## Release Link
 https://github.com/data-others/brain2/releases/tag/cinac-tsms
