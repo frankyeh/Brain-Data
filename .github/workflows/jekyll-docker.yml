@@ -127,6 +127,7 @@ jobs:
                       out_file = out_dir / f"{tag}.md"
                       out_file.write_text(text, encoding="utf-8")
                       repo_map.append((tag, title))
+                      print("adding ", tag, ":", title)
           
           # build summary.md at root
           lines = []
