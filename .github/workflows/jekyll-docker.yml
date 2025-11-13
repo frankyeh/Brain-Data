@@ -153,7 +153,7 @@ jobs:
                   for tag, title in sorted(uniq, key=lambda x: x[0]):
                       link = f"/mds/{account}/{repo_name}/{tag}.html"
                       # release title (tag): [link](link)
-                      lines.append(f"- {title} ({tag}): [{link}]({link})")
+                      lines.append(f"- [{title} ({tag}):]({link})")
                   lines.append("")  # blank line between repos
           
           summary_path = pathlib.Path("summary.md")
