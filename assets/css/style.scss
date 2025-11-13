@@ -15,7 +15,10 @@ header {
   padding-top:20px
 }
 
-
+.content, .content h4 {
+margin: 0;
+padding: 0;
+}
 
 
 button { padding: 0px;}
@@ -26,7 +29,7 @@ button { padding: 0px;}
   padding-top: 0px;
   padding-bottom: 0px;
   border: none;
-  font-size: 1.0em;
+  font-size: 1.2em;
   font-weight: bold;
   text-align: left;
   color: #393939;
