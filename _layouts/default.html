@@ -30,6 +30,15 @@
       <h3>Individual dMRI (Patient)</h3>
       <h4><a href="/upenn_gbm.html">UPennGBM(n=531)</a></h4>
       <h3><a href="https://dsi-studio.labsolver.org">DSI Studio</a></h3>   
+
+      <h3>data-indi</h3>
+      <button type="button" class="collapsible">corr</button>
+      <div class="content"> <h4><a href="/mds/data-indi/corr/bnu.html">BNU – C-BIRD (bnu)</a></h4> <h4><a href="/mds/data-indi/corr/hnu.html">HNU – One-Month Test–Retest (hnu)</a></h4> <h4><a href="/mds/data-indi/corr/ipcas.html">IPCAS – Time Perception Dataset (ipcas)</a></h4> <h4><a href="/mds/data-indi/corr/mrn.html">MRN Repeat Resting Sample (mrn)</a></h4> <h4><a href="/mds/data-indi/corr/nki.html">NKI Test–Retest Multiband (nki)</a></h4> <h4><a href="/mds/data-indi/corr/swu.html">SWU Attention Blink (swu)</a></h4> <h4><a href="/mds/data-indi/corr/xhcums.html">XHCUMS 6-Month Test–Retest (xhcums)</a></h4> </div>
+      <button type="button" class="collapsible">pro</button>
+      <div class="content"> <h4><a href="/mds/data-indi/pro/bnu.html">BNU – Short TR (bnu)</a></h4> <h4><a href="/mds/data-indi/pro/nki.html">NKI / Rockland Sample (nki)</a></h4> <h4><a href="/mds/data-indi/pro/nki-pilot.html">NKI-RS Multiband Pilot (nki-pilot)</a></h4> <h4><a href="/mds/data-indi/pro/nyu.html">NYU IPN Adult Resting + DWI (nyu)</a></h4> </div>
+      <button type="button" class="collapsible">retro</button>
+      <div class="content"> <h4><a href="/mds/data-indi/retro/bnu-en.html">BNU – Enhanced Sample (bnu-en)</a></h4> <h4><a href="/mds/data-indi/retro/bnu-eoec.html">BNU – EO/EC Sample (bnu-eoec)</a></h4> <h4><a href="/mds/data-indi/retro/mpi-lemon.html">MPI-LEMON</a></h4> <h4><a href="/mds/data-indi/retro/simon.html">SIMON Dataset</a></h4> </div>
+        
       <h3>User Supports</h3>
       <h4><a href="https://groups.google.com/g/dsi-studio?pli=1">Discussion Forum</a></h4>
       <p>Fang-Cheng (Frank) Yeh<br>
@@ -38,8 +47,18 @@
       <p>E-mail: frank.yeh@gmail.com</p>
       <p></p>
       <a href="https://github.com/frankyeh/Brain-Data">.</a>
+      <script>
+      var c = document.getElementsByClassName("collapsible");
+      for (var i = 0; i < c.length; i++) 
+          c[i].addEventListener("click", function(){
+          this.classList.toggle("active");
+          this.nextElementSibling.style.maxHeight = (this.nextElementSibling.style.maxHeight) ? null : "500px";});
+      {% if page.url contains 'gui' %}c[0].click();{% endif %}
+      {% if page.url contains 'menu' %}c[1].click();{% endif %}
+      {% if page.url contains 'cli' %}c[2].click();{% endif %}
+      </script>  
     </header>
-
+    
     <main id="content" class="main-content" role="main" >
       {{ content }}
       <footer class="site-footer">
