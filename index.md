@@ -84,6 +84,31 @@ To access the following restricted data (.sz, T1w...etc), please email me your s
 - [data-restricted/hcp-disease (needs NDA-DUA)](https://github.com/data-restricted/hcp-disease/releases)
 - [data-restricted/nda (needs NDA-DUA)](https://github.com/data-restricted/nda/releases)
 
+---
+
+### Download using Command Line (Linux / macOS — bash)
+
+Example: download data-hcp/lifespan/hcp-ya
+```bash
+curl -s https://api.github.com/repos/data-hcp/lifespan/releases/tags/hcp-ya | jq -r '.assets[].browser_download_url' | xargs -n1 -P4 curl -LO
+```
+
+### Download using Command Line  (Windows PowerShell 5.x)
+
+In File Explorer you can go to a folder, click in the address bar, type `powershell` and press **Enter** to open PowerShell directly in that folder.
+Example: download data-hcp/lifespan/hcp-ya
+```powershell
+(Invoke-RestMethod "https://api.github.com/repos/data-hcp/lifespan/releases/tags/hcp-ya").assets | ForEach-Object { Invoke-WebRequest $_.browser_download_url -OutFile (Split-Path $_.browser_download_url -Leaf) }
+```
+
+### Download using DSI Studio
+
+<img src="https://github.com/user-attachments/assets/55a16e70-09f5-4428-86bb-833e0faa84f9" width="600"/>
+
+To make data access and analysis as seamless as possible, the Fiber Data Hub is fully integrated with DSI Studio, a comprehensive diffusion MRI and tractography software. Through DSI Studio’s graphical interface, researchers can directly download, inspect, and analyze data from the hub without additional preprocessing, saving time and computational resources. This integration allows researchers to jump-start tractography analyses using advanced tracking methods available in DSI Studio, including deterministic, probabilistic, differential, and correlational tracking.
+
+---
+
 ### How to Request Restricted Access
 
 1. update DSI Studio to a version released after June 2025.
@@ -97,26 +122,8 @@ To access the following restricted data (.sz, T1w...etc), please email me your s
 
 ---
 
-### **Download Command (Linux / macOS — bash)**
 
-Example: download data-hcp/lifespan/hcp-ya
-```bash
-curl -s https://api.github.com/repos/data-hcp/lifespan/releases/tags/hcp-ya | jq -r '.assets[].browser_download_url' | xargs -n1 -P4 curl -LO
-```
-
-### **Download Command (Windows PowerShell 5.x)**
-
-In File Explorer you can go to a folder, click in the address bar, type `powershell` and press **Enter** to open PowerShell directly in that folder.
-Example: download data-hcp/lifespan/hcp-ya
-```powershell
-(Invoke-RestMethod "https://api.github.com/repos/data-hcp/lifespan/releases/tags/hcp-ya").assets | ForEach-Object { Invoke-WebRequest $_.browser_download_url -OutFile (Split-Path $_.browser_download_url -Leaf) }
-```
-
-
----
-
-
-## Example Code
+## Example Python Code
 
 ### List all data repository (owner/repo/tag/) 
 
@@ -185,12 +192,6 @@ else: print("No data found.")
 
 The Fiber Data Hub utilizes a versatile storage framework, incorporating multiple decentralized storage locations on GitHub repositories to ensure reliable data access and allow for future expansion. As new studies and datasets become available, the hub’s storage can easily scale to accommodate them, offering an ever-growing resource for the neuroimaging community. Additionally, a centralized web portal at brain.labsolver.org provides alternative access to the hub’s resources, giving researchers flexible options for data retrieval.
 
-## Access from DSI Studio
 
-<img src="https://github.com/user-attachments/assets/55a16e70-09f5-4428-86bb-833e0faa84f9" width="600"/>
 
-To make data access and analysis as seamless as possible, the Fiber Data Hub is fully integrated with DSI Studio, a comprehensive diffusion MRI and tractography software. Through DSI Studio’s graphical interface, researchers can directly download, inspect, and analyze data from the hub without additional preprocessing, saving time and computational resources. This integration allows researchers to jump-start tractography analyses using advanced tracking methods available in DSI Studio, including deterministic, probabilistic, differential, and correlational tracking.
 
-## Quality Control of All Datasets
-
-<img src="https://github.com/frankyeh/FiberDataHub/releases/download/qc-chart/qc_plots.png" width="100%"/>
