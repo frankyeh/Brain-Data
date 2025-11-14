@@ -17,7 +17,7 @@
 <body>
   <h2>Fiber Data Hub – QC TSV Search</h2>
 
-  <div id="status">Contacting GitHub API…</div>
+  <div id="status">Loading qc_compact.tsv…</div>
 
   <div class="filters">
     <div>
@@ -49,74 +49,52 @@
     <button id="btnFilter">Apply filter</button>
     <button id="btnClear">Clear</button>
   </div>
+
   <div id="matchSummary" style="margin-top:1em;"></div>
   <div id="results"></div>
 
   <script>
-    const RELEASE_API =
-      "https://api.github.com/repos/frankyeh/FiberDataHub/releases/tags/qc-data"
-
     let allRows = []
     let headers = []
-
-    const numCols = {
-      "max b-value": 1,
-      "DWI contrast": 1,
-      "neighboring DWI correlation": 1,
-      "neighboring DWI correlation(masked)": 1,
-      "#bad slices": 1,
-      "outlier": 1
-    }
 
     const toNumber = x => {
       const v = parseFloat(x)
       return Number.isNaN(v) ? null : v
     }
 
-    async function fetchTSVAssets() {
-      const res = await fetch(RELEASE_API)
-      if (!res.ok)
-        throw new Error("GitHub API error " + res.status + ": " + (await res.text()))
-      const rel = await res.json()
-      const assets = rel.assets || []
-      const tsvAssets = assets.filter(a =>
-        a.name.toLowerCase().endsWith(".tsv")
-      )
-      if (!tsvAssets.length)
-        throw new Error("No .tsv assets found in qc-data release.")
-      return tsvAssets.map(a => a.browser_download_url)
-    }
-
-    async function loadAllTSV(urls) {
+    async function loadCompactTSV() {
       const status = document.getElementById("status")
-      status.textContent = `Loading ${urls.length} TSV file(s)…`
-      for (const url of urls) {
-        const r = await fetch(url)
-        if (!r.ok) throw new Error("Failed to load " + url)
-        const text = await r.text()
+      try {
+        const res = await fetch("qc_compact.tsv")
+        if (!res.ok) throw new Error("Failed to load qc_compact.tsv")
+        const text = await res.text()
         const lines = text.split(/\r?\n/).filter(l => l.trim().length)
-        if (!lines.length) continue
+        if (!lines.length) {
+          status.textContent = "qc_compact.tsv is empty."
+          return
+        }
 
-        const h = lines[0].split("\t")
-        if (!headers.length) headers = h
-
+        headers = lines[0].split("\t")
         for (let i = 1; i < lines.length; i++) {
           const cols = lines[i].split("\t")
           const row = {}
           headers.forEach((name, idx) => row[name] = cols[idx] ?? "")
-          row._file = url.split("/").pop()
+          row._sourcePath = row["source_path"] || ""
           allRows.push(row)
         }
+
+        status.textContent = `Loaded ${allRows.length} rows from qc_compact.tsv.`
+        renderTable(allRows)
+        renderMatchSummary(allRows)
+      } catch (e) {
+        status.textContent = "Error: " + e.message
       }
-      status.textContent =
-        `Loaded ${allRows.length} rows from ${urls.length} TSV file(s).`
-      renderTable(allRows)
     }
 
     function applyFilter() {
       const resText = document.getElementById("f_resolution").value.trim().toLowerCase()
       const dwiText = document.getElementById("f_dwicount").value.trim().toLowerCase()
-    
+
       const bmin = toNumber(document.getElementById("f_bmin").value)
       const bmax = toNumber(document.getElementById("f_bmax").value)
       const cmin = toNumber(document.getElementById("f_cmin").value)
@@ -125,7 +103,7 @@
       const nmax = toNumber(document.getElementById("f_nmax").value)
       const mmin = toNumber(document.getElementById("f_mmin").value)
       const mmax = toNumber(document.getElementById("f_mmax").value)
-    
+
       const rows = allRows.filter(row => {
         const res = (row["resolution"] || "").toLowerCase()
         const dwc = (row["dwi count(b0/dwi)"] || "").toLowerCase()
@@ -133,10 +111,10 @@
         const dwiC = toNumber(row["DWI contrast"])
         const nCorr = toNumber(row["neighboring DWI correlation"])
         const mCorr = toNumber(row["neighboring DWI correlation(masked)"])
-    
+
         if (resText && !res.includes(resText)) return false
         if (dwiText && !dwc.includes(dwiText)) return false
-    
+
         if (bmin != null && (bval == null || bval < bmin)) return false
         if (bmax != null && (bval == null || bval > bmax)) return false
         if (cmin != null && (dwiC == null || dwiC < cmin)) return false
@@ -145,22 +123,46 @@
         if (nmax != null && (nCorr == null || nCorr > nmax)) return false
         if (mmin != null && (mCorr == null || mCorr < mmin)) return false
         if (mmax != null && (mCorr == null || mCorr > mmax)) return false
-    
+
         return true
       })
-    
+
       renderTable(rows)
-      renderMatchSummary(rows)   // ⬅ NEW summary
+      renderMatchSummary(rows)
       document.getElementById("status").textContent =
         `Showing ${rows.length} / ${allRows.length} rows.`
     }
 
-
     function clearFilter() {
       document.querySelectorAll("input[id^='f_']").forEach(i => i.value = "")
       renderTable(allRows)
+      renderMatchSummary(allRows)
       document.getElementById("status").textContent =
         `Showing ${allRows.length} / ${allRows.length} rows.`
+    }
+
+    function renderMatchSummary(rows) {
+      const container = document.getElementById("matchSummary")
+      if (!container) return
+
+      if (!rows.length) {
+        container.innerHTML = "<p>No matches.</p>"
+        return
+      }
+
+      const counts = {}
+      for (const r of rows) {
+        const base = r._sourcePath || "unknown"
+        counts[base] = (counts[base] || 0) + 1
+      }
+
+      let html = "<h3>Matched Datasets</h3><ul>"
+      for (const [fname, n] of Object.entries(counts)) {
+        html += `<li><b>${fname}</b> — ${n} rows</li>`
+      }
+      html += "</ul>"
+
+      container.innerHTML = html
     }
 
     function renderTable(rows) {
@@ -169,65 +171,37 @@
         div.innerHTML = "<p>No rows.</p>"
         return
       }
-    
-      const cols = ["_file", ...headers]
+
+      const cols = ["_sourcePath", "file name", "resolution",
+                    "dwi count(b0/dwi)", "max b-value", "DWI contrast",
+                    "neighboring DWI correlation",
+                    "neighboring DWI correlation(masked)"]
+
       let html = "<table><thead><tr>"
-      cols.forEach(c => html += `<th>${c}</th>`)
+      cols.forEach(c => html += `<th>${c === "_sourcePath" ? "source path" : c}</th>`)
       html += "</tr></thead><tbody>"
-    
+
       for (const row of rows) {
         html += "<tr>"
-        cols.forEach(c => html += `<td>${row[c] ?? ""}</td>`)
+        cols.forEach(c => {
+          const val = c === "_sourcePath" ? row._sourcePath : (row[c] ?? "")
+          html += `<td>${val}</td>`
+        })
         html += "</tr>"
       }
-    
+
       html += "</tbody></table>"
       div.innerHTML = html
     }
 
-
     document.getElementById("btnFilter").onclick = applyFilter
     document.getElementById("btnClear").onclick = clearFilter
     document.addEventListener("keydown", e => {
-      if (e.key === "Enter" && e.target.id.startsWith("f_")) applyFilter()
+      if (e.key === "Enter" && e.target.id && e.target.id.startsWith("f_"))
+        applyFilter()
     })
 
-    ;(async () => {
-      try {
-        const urls = await fetchTSVAssets()
-        document.getElementById("status").textContent =
-          `Found ${urls.length} TSV asset(s).`
-        await loadAllTSV(urls)
-      } catch (e) {
-        document.getElementById("status").textContent = "Error: " + e.message
-      }
-    })()
-
-    function renderMatchSummary(rows) {
-      const container = document.getElementById("matchSummary")
-      if (!container) return
-    
-      if (!rows.length) {
-        container.innerHTML = "<p>No matches.</p>"
-        return
-      }
-    
-      // Count per TSV file
-      const counts = {}
-      for (const r of rows) {
-        const base = r._file.replace(/\.tsv$/i, "")
-        counts[base] = (counts[base] || 0) + 1
-      }
-    
-      // Build HTML
-      let html = "<h3>Matched Files</h3><ul>"
-      for (const [fname, n] of Object.entries(counts)) {
-        html += `<li><b>${fname}</b> — ${n} rows</li>`
-      }
-      html += "</ul>"
-    
-      container.innerHTML = html
-    }
+    loadCompactTSV()
   </script>
 </body>
 </html>
