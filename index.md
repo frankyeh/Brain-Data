@@ -14,29 +14,17 @@ By consolidating curated and preprocessed fiber datasets from prominent research
 
 ---
 
-## 📁 File Formats
+### File Formats
 
 The **Fiber Data Hub** provides compact file formats to reduce storage size. These files can be converted back to standard NIfTI format using **DSI Studio** or [Python scripts](https://dsi-studio.labsolver.org/doc/cli_data.html).
 
-### 🧠 Fib Files (`*.fz`)
+| Type | Extension | Contents | Notes |
+|------|-----------|----------|--------|
+| **Fib Files** | `*.fz` | Voxel-wise fiber orientation (fixels), DTI metrics (anisotropy, diffusivity), GQI metrics (QA, ISO) | **gqi.fz:** native space<br>**qsdr.fz:** MNI space |
+| **SRC Files** | `*.sz` | 4D DWI volumes (after eddy/topup), includes b-table | Used as preprocessing input |
+| **Database Files** | `*.dz` | Group-level DTI/GQI metrics in MNI space | Uses HCP-1065 fiber-orientation template |
+| **QC Files** | `qc.tsv` | Quality-control metrics derived from `.sz` files | Tab-separated table |
 
-* Stores **voxel-wise fiber orientation** (i.e., fixels), **DTI metrics** (e.g., anisotropy, diffusivity), and **GQI metrics** (e.g., QA, ISO).
-* `gqi.fz`: data in **native space**
-* `qsdr.fz`: data in **MNI space**
-
-### 📦 SRC Files (`*.sz`)
-
-* Stores **4D DWI volumes** (after eddy/topup correction)
-* Includes the **b-table**
-
-### 📊 Database Files (`*.dz`)
-
-* Stores **group-level DTI/GQI metrics** across subjects in **MNI space**
-* Uses the **HCP-1065 fiber orientation** template for alignment
-
-### ✅ QC Files (`qc.tsv`)
-
-* Tab-separated file with **quality control metrics** derived from `.sz` files
 
 ### Example command line to convert files into NIFTI format
 
