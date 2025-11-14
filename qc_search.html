@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Fiber Data Hub – QC TSV Search</title>
+  <style>
+    body { font-family: sans-serif; max-width: 1200px; margin: 1em auto; }
+    input { padding: 3px 5px; margin: 2px 4px; font-size: 13px; }
+    label { font-size: 13px; }
+    button { padding: 3px 8px; margin: 4px; }
+    table { border-collapse: collapse; margin-top: 1em; width: 100%; font-size: 12px; }
+    th, td { border: 1px solid #ccc; padding: 3px 5px; white-space: nowrap; }
+    th { position: sticky; top: 0; background: #f8f8f8; }
+    .filters { border: 1px solid #ddd; padding: 6px; margin-top: 0.5em; }
+  </style>
+</head>
+<body>
+  <h2>Fiber Data Hub – QC TSV Search</h2>
+
+  <div id="status">Contacting GitHub API…</div>
+
+  <div class="filters">
+    <div>
+      <label>resolution:</label>
+      <input id="f_resolution" placeholder="e.g. 1.5 1.5 1.5">
+      <label>dwi count(b0/dwi):</label>
+      <input id="f_dwicount" placeholder="e.g. 28/370">
+    </div>
+    <div>
+      <label>max b-value:</label>
+      <input id="f_bmin" placeholder="min">
+      <input id="f_bmax" placeholder="max">
+    </div>
+    <div>
+      <label>DWI contrast:</label>
+      <input id="f_cmin" placeholder="min">
+      <input id="f_cmax" placeholder="max">
+    </div>
+    <div>
+      <label>neighboring corr:</label>
+      <input id="f_nmin" placeholder="min">
+      <input id="f_nmax" placeholder="max">
+    </div>
+    <div>
+      <label>neighboring corr (masked):</label>
+      <input id="f_mmin" placeholder="min">
+      <input id="f_mmax" placeholder="max">
+    </div>
+    <button id="btnFilter">Apply filter</button>
+    <button id="btnClear">Clear</button>
+  </div>
+  <div id="matchSummary" style="margin-top:1em;"></div>
+  <div id="results"></div>
+
+  <script>
+    const RELEASE_API =
+      "https://api.github.com/repos/frankyeh/FiberDataHub/releases/tags/qc-data"
+
+    let allRows = []
+    let headers = []
+
+    const numCols = {
+      "max b-value": 1,
+      "DWI contrast": 1,
+      "neighboring DWI correlation": 1,
+      "neighboring DWI correlation(masked)": 1,
+      "#bad slices": 1,
+      "outlier": 1
+    }
+
+    const toNumber = x => {
+      const v = parseFloat(x)
+      return Number.isNaN(v) ? null : v
+    }
+
+    async function fetchTSVAssets() {
+      const res = await fetch(RELEASE_API)
+      if (!res.ok)
+        throw new Error("GitHub API error " + res.status + ": " + (await res.text()))
+      const rel = await res.json()
+      const assets = rel.assets || []
+      const tsvAssets = assets.filter(a =>
+        a.name.toLowerCase().endsWith(".tsv")
+      )
+      if (!tsvAssets.length)
+        throw new Error("No .tsv assets found in qc-data release.")
+      return tsvAssets.map(a => a.browser_download_url)
+    }
+
+    async function loadAllTSV(urls) {
+      const status = document.getElementById("status")
+      status.textContent = `Loading ${urls.length} TSV file(s)…`
+      for (const url of urls) {
+        const r = await fetch(url)
+        if (!r.ok) throw new Error("Failed to load " + url)
+        const text = await r.text()
+        const lines = text.split(/\r?\n/).filter(l => l.trim().length)
+        if (!lines.length) continue
+
+        const h = lines[0].split("\t")
+        if (!headers.length) headers = h
+
+        for (let i = 1; i < lines.length; i++) {
+          const cols = lines[i].split("\t")
+          const row = {}
+          headers.forEach((name, idx) => row[name] = cols[idx] ?? "")
+          row._file = url.split("/").pop()
+          allRows.push(row)
+        }
+      }
+      status.textContent =
+        `Loaded ${allRows.length} rows from ${urls.length} TSV file(s).`
+      renderTable(allRows)
+    }
+
+    function applyFilter() {
+      const resText = document.getElementById("f_resolution").value.trim().toLowerCase()
+      const dwiText = document.getElementById("f_dwicount").value.trim().toLowerCase()
+    
+      const bmin = toNumber(document.getElementById("f_bmin").value)
+      const bmax = toNumber(document.getElementById("f_bmax").value)
+      const cmin = toNumber(document.getElementById("f_cmin").value)
+      const cmax = toNumber(document.getElementById("f_cmax").value)
+      const nmin = toNumber(document.getElementById("f_nmin").value)
+      const nmax = toNumber(document.getElementById("f_nmax").value)
+      const mmin = toNumber(document.getElementById("f_mmin").value)
+      const mmax = toNumber(document.getElementById("f_mmax").value)
+    
+      const rows = allRows.filter(row => {
+        const res = (row["resolution"] || "").toLowerCase()
+        const dwc = (row["dwi count(b0/dwi)"] || "").toLowerCase()
+        const bval = toNumber(row["max b-value"])
+        const dwiC = toNumber(row["DWI contrast"])
+        const nCorr = toNumber(row["neighboring DWI correlation"])
+        const mCorr = toNumber(row["neighboring DWI correlation(masked)"])
+    
+        if (resText && !res.includes(resText)) return false
+        if (dwiText && !dwc.includes(dwiText)) return false
+    
+        if (bmin != null && (bval == null || bval < bmin)) return false
+        if (bmax != null && (bval == null || bval > bmax)) return false
+        if (cmin != null && (dwiC == null || dwiC < cmin)) return false
+        if (cmax != null && (dwiC == null || dwiC > cmax)) return false
+        if (nmin != null && (nCorr == null || nCorr < nmin)) return false
+        if (nmax != null && (nCorr == null || nCorr > nmax)) return false
+        if (mmin != null && (mCorr == null || mCorr < mmin)) return false
+        if (mmax != null && (mCorr == null || mCorr > mmax)) return false
+    
+        return true
+      })
+    
+      renderTable(rows)
+      renderMatchSummary(rows)   // ⬅ NEW summary
+      document.getElementById("status").textContent =
+        `Showing ${rows.length} / ${allRows.length} rows.`
+    }
+
+
+    function clearFilter() {
+      document.querySelectorAll("input[id^='f_']").forEach(i => i.value = "")
+      renderTable(allRows)
+      document.getElementById("status").textContent =
+        `Showing ${allRows.length} / ${allRows.length} rows.`
+    }
+
+    function renderTable(rows) {
+      const div = document.getElementById("results")
+      if (!rows.length) {
+        div.innerHTML = "<p>No rows.</p>"
+        return
+      }
+    
+      const cols = ["_file", ...headers]
+      let html = "<table><thead><tr>"
+      cols.forEach(c => html += `<th>${c}</th>`)
+      html += "</tr></thead><tbody>"
+    
+      for (const row of rows) {
+        html += "<tr>"
+        cols.forEach(c => html += `<td>${row[c] ?? ""}</td>`)
+        html += "</tr>"
+      }
+    
+      html += "</tbody></table>"
+      div.innerHTML = html
+    }
+
+
+    document.getElementById("btnFilter").onclick = applyFilter
+    document.getElementById("btnClear").onclick = clearFilter
+    document.addEventListener("keydown", e => {
+      if (e.key === "Enter" && e.target.id.startsWith("f_")) applyFilter()
+    })
+
+    ;(async () => {
+      try {
+        const urls = await fetchTSVAssets()
+        document.getElementById("status").textContent =
+          `Found ${urls.length} TSV asset(s).`
+        await loadAllTSV(urls)
+      } catch (e) {
+        document.getElementById("status").textContent = "Error: " + e.message
+      }
+    })()
+
+    function renderMatchSummary(rows) {
+      const container = document.getElementById("matchSummary")
+      if (!container) return
+    
+      if (!rows.length) {
+        container.innerHTML = "<p>No matches.</p>"
+        return
+      }
+    
+      // Count per TSV file
+      const counts = {}
+      for (const r of rows) {
+        const base = r._file.replace(/\.tsv$/i, "")
+        counts[base] = (counts[base] || 0) + 1
+      }
+    
+      // Build HTML
+      let html = "<h3>Matched Files</h3><ul>"
+      for (const [fname, n] of Object.entries(counts)) {
+        html += `<li><b>${fname}</b> — ${n} rows</li>`
+      }
+      html += "</ul>"
+    
+      container.innerHTML = html
+    }
+  </script>
+</body>
+</html>
