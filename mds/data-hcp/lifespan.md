@@ -1,145 +1,267 @@
-# Human Connectome Project (HCP) — Lifespan Studies
+# **Human Connectome Project (HCP) — Lifespan Studies**
 
-`data-hcp/lifespan`
+The **Human Connectome Project (HCP)** has expanded from its original young-adult study into a family of **lifespan datasets** spanning prenatal development through late adulthood. All datasets use HCP-style acquisition and processing principles to provide a coherent, cross-age resource for studying human brain connectivity across development, maturation, and aging.
 
-The **Human Connectome Project (HCP)** has expanded from its original young-adult initiative to a set of coordinated **lifespan studies** that map human brain connectivity from the prenatal stage through late adulthood. These efforts use HCP-style acquisition and processing pipelines to create a coherent, cross-age resource for studying brain development, maturation, and aging.
+This repository provides curated, tractography-ready **derived diffusion MRI datasets** (FIB, QSDR, GQI, SRC when permitted, QC tables).  
+**Raw MRI data are not hosted here** and must be obtained through ConnectomeDB, NDA, or dHCP under each dataset’s data-use agreement.
 
-This repository provides curated, tractography-ready derivatives (FIB files, QSDR reconstructions, SRC files when allowed, and QC tables) for multiple HCP Lifespan datasets.
-Raw MRI data remain hosted at ConnectomeDB, NDA, or dHCP servers and must be accessed under the original data-use agreements.
+## **Overview**
 
----
+The HCP Lifespan initiative aims to:
 
-## Table of Contents
+- Map **connectivity trajectories** from the prenatal period through 100+ years  
+- Maintain **HCP-level acquisition quality** using age-appropriate MRI protocols  
+- Enable **cross-sectional and longitudinal** modeling of brain development  
+- Support **genetics, behavior, multimodal imaging**, and lifespan integration  
+- Provide harmonized derivatives to accelerate reproducible neuroscience  
 
-* [Overview](#overview)
-* [Included Datasets](#included-datasets)
-
-  * [HCP Young Adult (HCP-YA)](#hcp-young-adult-hcp-ya)
-  * [HCP Development (HCP-D)](#hcp-development-hcp-d)
-  * [HCP Aging (HCP-A)](#hcp-aging-hcp-a)
-  * [Developing Human Connectome Project (dHCP)](#developing-human-connectome-project-dhcp)
-  * [Baby Connectome Project (BCP)](#baby-connectome-project-bcp)
-* [Licenses](#licenses)
-* [Citations](#citations)
-* [Disclaimer](#disclaimer)
+This repository distributes **DSI Studio–ready diffusion derivatives** to reduce preprocessing load and standardize tractography workflows.
 
 ---
 
-## Overview
+## **How to Run Download Commands**
 
-The HCP Lifespan collections aim to:
+### **Linux / macOS (bash)**
 
-* **Characterize brain connectivity trajectories** from prenatal life to 100+ years
-* **Provide age-appropriate acquisition protocols** while maintaining HCP-level data quality
-* **Enable cross-sectional and longitudinal analyses** of structural, functional, and diffusion MRI
-* **Support genetics, behavior, and multimodal integration** across development and aging
+1. Open a terminal.
+2. `cd` into the folder where you want to save the data.
+3. Copy–paste the **bash** command blocks below.
 
-This repository distributes **derived diffusion MRI files** that can be used directly in DSI Studio for tractography, connectometry, group averaging, and reproducible pipeline development.
+You will need `curl` and `jq` installed, for example:
+
+```bash
+sudo apt-get install curl jq        # Ubuntu/Debian
+brew install curl jq                # macOS with Homebrew
+````
+
+### **Windows (PowerShell 5.x)**
+
+On Windows 10/11, **Windows PowerShell 5.x** is installed by default.
+
+To open PowerShell in a target folder:
+
+1. Open **File Explorer** and navigate to the folder where you want to download the data.
+2. Click the **address bar**, type `powershell`, and press **Enter**.
+3. PowerShell will open with the current directory set to that folder.
+
+Then copy–paste the **PowerShell** one-line commands from each dataset section below.
 
 ---
 
-## Included Datasets
+## **Included HCP Datasets**
 
-### HCP Young Adult (HCP-YA)
+---
 
-High-quality dMRI and structural MRI from healthy adults (ages 22–35).
-The releases here include DSI Studio–compatible **SRC**, **GQI FIB**, and **QSDR FIB** files constructed from the minimally processed WU-Minn HCP dMRI data.
+## **HCP Young Adult (HCP-YA)**
+
+High-quality multishell diffusion MRI from healthy adults (ages 22–35).
+
+**Highlights**
 
 * Ages: 22–35
-* Acquisition: Multishell (b = 1000 / 2000 / 3000 s/mm²)
-* Derivatives: SRC, FIB (native), FIB (MNI), demographics
-* License: WU-Minn HCP Open Access Data Terms
+* Acquisition: b = 1000 / 2000 / 3000 s/mm² multishell
+* Derivatives: SRC, GQI FIB, QSDR FIB, demographics
+* License: WU-Minn HCP Open Access
 * Source: [https://www.humanconnectome.org/study/hcp-young-adult](https://www.humanconnectome.org/study/hcp-young-adult)
 
+### **Download (Linux / macOS — bash)**
+
+```bash
+curl -s https://api.github.com/repos/data-hcp/lifespan/releases/tags/hcp-ya | jq -r '.assets[].browser_download_url' | xargs -n1 -P4 curl -LO
+```
+
+### **Download (Windows PowerShell 5.x)**
+
+In File Explorer you can go to a folder, click in the address bar, type `powershell` and press **Enter** to open PowerShell directly in that folder.
+
+```powershell
+(Invoke-RestMethod "https://api.github.com/repos/data-hcp/lifespan/releases/tags/hcp-ya").assets | ForEach-Object { Invoke-WebRequest $_.browser_download_url -OutFile (Split-Path $_.browser_download_url -Leaf) }
+```
+
 ---
 
-### HCP Development (HCP-D)
+## **HCP Young Adult Retest (HCP-YA-Retest)**
 
-Children, adolescents, and young adults (ages 5–21).
-Raw MRI access is restricted by NDA; this repository shares **derived diffusion measures, FIB files, and tractography**, which are permitted.
+A scan–rescan subset of HCP-YA for reproducibility and reliability studies.
+
+**Highlights**
+
+* Same protocol as HCP-YA
+* Designed for test–retest analysis, harmonization benchmarks
+* Includes SRC, GQI, QSDR, QC
+
+### **Download (Linux / macOS — bash)**
+
+```bash
+curl -s https://api.github.com/repos/data-hcp/lifespan/releases/tags/hcp-ya-retest | jq -r '.assets[].browser_download_url' | xargs -n1 -P4 curl -LO
+```
+
+### **Download (Windows PowerShell 5.x)**
+
+In File Explorer you can go to a folder, click in the address bar, type `powershell` and press **Enter** to open PowerShell directly in that folder.
+
+```powershell
+(Invoke-RestMethod "https://api.github.com/repos/data-hcp/lifespan/releases/tags/hcp-ya-retest").assets | ForEach-Object { Invoke-WebRequest $_.browser_download_url -OutFile (Split-Path $_.browser_download_url -Leaf) }
+```
+
+---
+
+## **HCP Development (HCP-D)**
+
+Participants ages 5–21 scanned with HCP developmental protocols.
+Raw MRI data are under **NDA restricted access**; only derived files can be shared.
+
+**Highlights**
 
 * Ages: 5–21
-* Design: 1,300+ participants (planned), developmental cohort
-* Derivatives shared: FIB, tractography, QC tables
-* License: CC BY-SA 4.0 (for derived files)
-* Raw data: Access through NDA (Data Use Agreement required)
+* Large developmental cohort
+* Derivatives: FIB, tractography, QC
+* License (derived files here): CC BY-SA 4.0
+* Raw data: NDA (DUA required)
+
+### **Download (Linux / macOS — bash)**
+
+```bash
+curl -s https://api.github.com/repos/data-hcp/lifespan/releases/tags/hcp-d | jq -r '.assets[].browser_download_url' | xargs -n1 -P4 curl -LO
+```
+
+### **Download (Windows PowerShell 5.x)**
+
+In File Explorer you can go to a folder, click in the address bar, type `powershell` and press **Enter** to open PowerShell directly in that folder.
+
+```powershell
+(Invoke-RestMethod "https://api.github.com/repos/data-hcp/lifespan/releases/tags/hcp-d").assets | ForEach-Object { Invoke-WebRequest $_.browser_download_url -OutFile (Split-Path $_.browser_download_url -Leaf) }
+```
 
 ---
 
-### HCP Aging (HCP-A)
+## **HCP Aging (HCP-A)**
 
-Healthy aging cohort (ages 36–100+).
-As with HCP-D, only derivatives allowed under NDA are included.
+Adults ages 36–100+ scanned using protocols optimized for aging.
+
+**Highlights**
 
 * Ages: 36–100+
-* Design: 1,500+ participants (planned)
-* Derivatives shared: FIB, tractography, QC tables
-* License: CC BY-SA 4.0 (for derived files)
-* Raw data: Access through NDA
+* Multimodal MRI
+* Derivatives: FIB, tractography, QC
+* License (derived files here): CC BY-SA 4.0
+* Raw data: NDA
+
+### **Download (Linux / macOS — bash)**
+
+```bash
+curl -s https://api.github.com/repos/data-hcp/lifespan/releases/tags/hcp-a | jq -r '.assets[].browser_download_url' | xargs -n1 -P4 curl -LO
+```
+
+### **Download (Windows PowerShell 5.x)**
+
+In File Explorer you can go to a folder, click in the address bar, type `powershell` and press **Enter** to open PowerShell directly in that folder.
+
+```powershell
+(Invoke-RestMethod "https://api.github.com/repos/data-hcp/lifespan/releases/tags/hcp-a").assets | ForEach-Object { Invoke-WebRequest $_.browser_download_url -OutFile (Split-Path $_.browser_download_url -Leaf) }
+```
 
 ---
 
-### Developing Human Connectome Project (dHCP)
+## **Developing Human Connectome Project (dHCP & dHCP-Retest)**
 
-Neonatal and preterm brain imaging (20–44 weeks post-conception).
-The derivatives here include preprocessed **SRC**, **GQI/QSDR FIB**, **scan–rescan pairs**, and connectometry databases.
+Neonatal and preterm brain imaging, 20–44 weeks post-conception.
+
+**Highlights**
 
 * Ages: 20–44 weeks post-conception
-* Modalities: T2w, dMRI (multishell), behavioral metadata
-* Derivatives: 642 SRC files, 642 FIB files, 164 scan–rescan datasets
+* Modalities: T2-weighted, multishell dMRI
+* Derivatives: hundreds of SRC and FIB datasets
+* Additional scan–rescan subset: **dHCP-Retest**
 * License: dHCP Data Sharing Agreement
 * Source: dHCP Release 3
 
----
+### **Download (dHCP — Linux / macOS — bash)**
 
-### Baby Connectome Project (BCP)
+```bash
+curl -s https://api.github.com/repos/data-hcp/lifespan/releases/tags/dhcp | jq -r '.assets[].browser_download_url' | xargs -n1 -P4 curl -LO
+```
 
-Infancy to early childhood (0–5 years).
-This repository summarizes the study and hosts allowed derivative files.
+### **Download (dHCP — Windows PowerShell 5.x)**
 
-* Ages: 0–5 years
-* Design: Sequential accelerated longitudinal (n=500 planned)
-* Modalities: Structural MRI, resting-state fMRI, dMRI
-* Derivatives: FIB, QC tables (where permitted)
-* Raw data: Access via original BCP data portal
-* License: Per BCP data-use agreement
+In File Explorer you can go to a folder, click in the address bar, type `powershell` and press **Enter** to open PowerShell directly in that folder.
 
----
+```powershell
+(Invoke-RestMethod "https://api.github.com/repos/data-hcp/lifespan/releases/tags/dhcp").assets | ForEach-Object { Invoke-WebRequest $_.browser_download_url -OutFile (Split-Path $_.browser_download_url -Leaf) }
+```
 
-## Licenses
+### **Download (dHCP-Retest — Linux / macOS — bash)**
 
-Different lifespan studies use different data-use policies:
+```bash
+curl -s https://api.github.com/repos/data-hcp/lifespan/releases/tags/dhcp-retest | jq -r '.assets[].browser_download_url' | xargs -n1 -P4 curl -LO
+```
 
-* **WU-Minn HCP-YA:**
-  WU-Minn Open Access Data Use Terms
-* **HCP-D / HCP-A:**
-  Raw data restricted under *NDA*. Derived data in this repo are shared under **CC BY-SA 4.0**.
-* **dHCP:**
-  Distributed under the **dHCP Data Sharing Agreement**.
-* **BCP:**
-  Follow original BCP data-use terms.
+### **Download (dHCP-Retest — Windows PowerShell 5.x)**
 
-Each release folder includes a license statement specific to that dataset.
+In File Explorer you can go to a folder, click in the address bar, type `powershell` and press **Enter** to open PowerShell directly in that folder.
+
+```powershell
+(Invoke-RestMethod "https://api.github.com/repos/data-hcp/lifespan/releases/tags/dhcp-retest").assets | ForEach-Object { Invoke-WebRequest $_.browser_download_url -OutFile (Split-Path $_.browser_download_url -Leaf) }
+```
 
 ---
 
-## Citations
+## **Baby Connectome Project (BCP)**
 
-When using any dataset:
+Infancy through age 5, imaged using infant-optimized HCP-style protocols.
 
-1. Cite the **original HCP / Lifespan / dHCP / BCP publication and DOI**.
-2. Cite the **WU-Minn HCP**, **CCF**, or **NDA** resource as required.
-3. If using derivatives provided here, please add:
+**Highlights**
 
-> “Derived diffusion MRI files were prepared by the Pittsburgh Fiber Data Hub (`data-hcp/lifespan`).”
+* Ages: 0–5
+* Longitudinal accelerated design
+* Modalities: structural MRI, resting-state fMRI, dMRI
+* Derivatives (when permitted): FIB, QC
+* Raw data: BCP access portal
+* License: BCP data-use agreement (DUA)
+
+### **Download (Linux / macOS — bash)**
+
+```bash
+curl -s https://api.github.com/repos/data-hcp/lifespan/releases/tags/bcp | jq -r '.assets[].browser_download_url' | xargs -n1 -P4 curl -LO
+```
+
+### **Download (Windows PowerShell 5.x)**
+
+In File Explorer you can go to a folder, click in the address bar, type `powershell` and press **Enter** to open PowerShell directly in that folder.
+
+```powershell
+(Invoke-RestMethod "https://api.github.com/repos/data-hcp/lifespan/releases/tags/bcp").assets | ForEach-Object { Invoke-WebRequest $_.browser_download_url -OutFile (Split-Path $_.browser_download_url -Leaf) }
+```
 
 ---
 
-## Disclaimer
+## **Licenses**
 
-* This repository does **not** host raw MRI data.
-* Users must comply with **NDA**, **HCP**, and **dHCP** data-use constraints.
-* Derivatives provided here are intended to accelerate research but may not capture all information available in full raw datasets.
-* Quality varies by site, cohort, and age group; users should perform independent QC before analysis.
+Each dataset follows its source policy:
 
-If you'd like, I can also generate **dataset-specific README templates** for each release (HCP-D, HCP-A, dHCP, BCP, HCP-YA) in the same clean format — or create an auto-generated summary table for your GitHub Actions.
+* **HCP-YA:** WU-Minn Open Access
+* **HCP-D / HCP-A:** NDA-restricted (derived files here = CC BY-SA 4.0)
+* **dHCP / dHCP-Retest:** dHCP Data Sharing Agreement
+* **BCP:** BCP data-use agreement
+
+Dataset folders include the appropriate license text where applicable.
+
+---
+
+## **Citations**
+
+When using these datasets:
+
+1. Cite the **original HCP / Lifespan / dHCP / BCP** publications and DOIs.
+2. Cite ConnectomeDB, NDA, dHCP, or BCP portals as required by their policies.
+3. If using derivatives from this repository, please add:
+
+> “Derived diffusion MRI datasets were prepared by the Pittsburgh Fiber Data Hub (`data-hcp/lifespan`).”
+
+---
+
+## **Disclaimer**
+
+* This repository **does not** contain raw MRI data.
+* Users must comply with all original dataset regulations and data-use agreements.
+* Derivatives aim to accelerate research but should still undergo independent QC and validation.

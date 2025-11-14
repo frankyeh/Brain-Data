@@ -1,178 +1,241 @@
-# INDI Prospective Studies — data-indi/pro
+# INDI Prospective Studies
 
-Curated, ready-to-use subsets of **INDI (International Neuroimaging Data-sharing Initiative)** prospective releases, prepared for the Pittsburgh Fiber Data Hub. This repository aggregates links, metadata, and selected derived artifacts (e.g., QC tables, tractography-ready files) to simplify reuse in methods and replication studies.
+Curated, ready-to-use subsets of **INDI (International Neuroimaging Data-sharing Initiative)** prospective releases, prepared for the **Pittsburgh Fiber Data Hub**. This repository aggregates links, metadata, and selected derived artifacts (e.g., QC tables, tractography-ready files) to simplify reuse in methods and replication studies.
 
-> **Access note:** These datasets are hosted on external portals (mostly NITRC). Most downloads require a free account and joining the **1000 Functional Connectomes Project (FCP/INDI)** group. Please review each dataset’s license and acknowledgments before use.
-
----
-
-## Table of contents
-
-* [What’s included](#whats-included)
-* [Releases](#releases)
-
-  * [NYU IPN — Adult Resting-State & DTI](#nyu-ipn--adult-resting-state--dti)
-  * [Enhanced NKI-RS — Multiband Test–Retest Pilot](#enhanced-nki-rs--multiband-testretest-pilot)
-  * [NKI / Rockland Sample](#nki--rockland-sample)
-  * [Beijing Normal University — Short TR Sample](#beijing-normal-university--short-tr-sample)
-* [How to cite](#how-to-cite)
-* [Licensing](#licensing)
-* [Known overlaps / deduplication](#known-overlaps--deduplication)
-* [Disclaimer](#disclaimer)
-* [Contact](#contact)
+> **Access note:** Source data are hosted on external portals (mostly **NITRC**). Most downloads require a free account and joining the **1000 Functional Connectomes Project (FCP/INDI)** group. Please review each dataset’s license and acknowledgments before use.
 
 ---
 
-## What’s included
+## What this repository provides
 
-* **Release pages** describing each dataset (scope, modalities, phenotypes, acknowledgments).
-* **Pointers to upstream downloads** (NITRC / project pages).
-* When available, **helper assets** (e.g., `participants.tsv`, `qc.tsv`, FIB/FZ/SZ derivatives) to speed up analysis.
+For each dataset mirrored under `data-indi/pro`, this repository aims to provide:
+
+* A short **dataset overview** (scope, modalities, phenotyping, design).
+* **Pointers** to upstream NITRC / INDI project pages.
+* When available, helper artifacts such as:
+
+  * `participants.tsv`
+  * `qc.tsv`
+  * Tractography-ready derivatives (`*.gqi.fz`, `*.qsdr.fz`, `.sz`, `.dti.dz`, `.gqi.dz`)
+
+All raw imaging data remain hosted by **INDI / NITRC** and are subject to the corresponding **data use agreements**.
 
 ---
 
-## Releases
+## NYU IPN — Adult Resting-State & DTI
 
-### NYU IPN — Adult Resting-State & DTI
-
-**Dataset:** *NYU Institute for Pediatric Neuroscience (IPN) – Adult Resting-State and Diffusion MRI Dataset*
-**Institution:** NYU School of Medicine (Phyllis Green & Randolph Cōwen IPN)
+**Dataset:** NYU Institute for Pediatric Neuroscience (IPN) – Adult Resting-State and Diffusion MRI
+**Institution:** Phyllis Green & Randolph Cōwen IPN, NYU School of Medicine
 **Sample:** 49 psychiatrically screened, neurotypical adults (adult subset of a larger 6–55y project)
-**Modalities:** 6-min R-fMRI (1–2 runs/session, Rest_1 before Rest_2), T1-MPRAGE, two 64-direction DTI scans
-**Phenotypes:** Age, gender, IQ (WASI verbal/performance/composite)
-**License:** CC BY-NC
+**Modalities:**
 
-**Access:** Data are hosted via NITRC under the 1000 Functional Connectomes Project.
+* 6-min resting-state fMRI (1–2 runs per session; Rest_1 always before Rest_2)
+* High-resolution T1-weighted MPRAGE (defaced)
+* Two 64-direction DTI scans per participant
 
-* *Imaging:* `NYU.001.001.LiteNIFTI.part1–3` (login required)
-* *Phenotypes:* Included within the NITRC package
-  **Source:** Project page — [http://fcon_1000.projects.nitrc.org/indi/retro/nyu_ipn.html](http://fcon_1000.projects.nitrc.org/indi/retro/nyu_ipn.html)
+**Phenotypes:** Age, gender, IQ (WASI verbal / performance / composite)
+**License:** Creative Commons Attribution–NonCommercial (CC BY-NC)
 
-**Acknowledgment to include:**
+The current release represents the adult portion of a larger normative connectivity project. Most subjects have two R-fMRI runs within one visit (< 1 hour apart), making this useful for:
 
-> “Financial support for the data used in this project was partially provided by grants from the NIMH (R01MH083246), Autism Speaks, the Stavros Niarchos Foundation, the Leon Levy Foundation, and the endowment provided by Phyllis Green and Randolph Cōwen.”
+* Short-interval **test–retest** of resting-state measures
+* Structure–function analyses combining DTI and R-fMRI
+* Method development for motion handling and reliability
 
-**Duplication warning:** Some participants also appear in **NewYork_a** (FCP classic) and **NYU_Cocaine** (INDI retrospective). Avoid combining without deduplication.
+> ⚠️ Some participants also appear in **NewYork_a** (FCP classic) and **NYU_Cocaine** (INDI retrospective). De-duplicate before pooling.
+
+**Upstream source:**
+Project page — [http://fcon_1000.projects.nitrc.org/indi/retro/nyu_ipn.html](http://fcon_1000.projects.nitrc.org/indi/retro/nyu_ipn.html)
+
+### Download (Linux / macOS — bash)
+
+```bash
+curl -s https://api.github.com/repos/data-indi/pro/releases/tags/nyu | jq -r '.assets[].browser_download_url' | xargs -n1 -P4 curl -LO
+```
+
+### Download (Windows PowerShell 5.x)
+
+```powershell
+(Invoke-RestMethod "https://api.github.com/repos/data-indi/pro/releases/tags/nyu").assets | ForEach-Object { Invoke-WebRequest $_.browser_download_url -OutFile (Split-Path $_.browser_download_url -Leaf) }
+```
 
 ---
 
-### Enhanced NKI-RS — Multiband Test–Retest Pilot
+## Enhanced NKI-RS — Multiband Test–Retest Pilot
 
-**Dataset:** *Enhanced Nathan Kline Institute–Rockland Sample (NKI-RS) – Multiband Imaging Test–Retest Pilot*
-**Institution:** Nathan Kline Institute, Orangeburg, NY, USA
+**Dataset:** Enhanced Nathan Kline Institute–Rockland Sample (NKI-RS) – Multiband Imaging Test–Retest Pilot
+**Institution:** Nathan S. Kline Institute for Psychiatric Research (NKI), Orangeburg, NY, USA
 **PI:** Michael Milham
 **DOI:** `10.15387/fcp_indi.corr.nki1`
-**Purpose:** Evaluate test–retest reliability of **multiband** R-fMRI/DTI prior to full 1,000-participant rollout
-**Modalities:** R-fMRI (multi-TR, multiband), DTI (137 dirs), task fMRI (checkerboard, breath-hold, eye-movement)
-**Phenotyping:** Drawn from original NKI-RS cohort (clinical history not exclusionary)
+**Sample:** Adults drawn from the original NKI-RS cohort (not excluding clinical history)
 
-**Key sequences (test–retest):**
+**Purpose:**
+Pilot phase to evaluate the **reliability** and **reproducibility** of advanced multiband R-fMRI and high-direction DTI protocols prior to the full 1,000-participant enhanced NKI-RS rollout.
 
-* R-mfMRI **TR 645 ms**, 3 mm iso, 10 min (high temporal resolution)
-* R-mfMRI **TR 1400 ms**, 2 mm iso, 10 min (high spatial resolution)
-* R-fMRI **TR 2500 ms**, 3 mm iso, 5 min (standard)
-* DTI **137 dirs**, 2 mm iso
+**Key multiband / test–retest sequences:**
 
-**Tasks:** visual checkerboard, eye-movement calibration, breath-holding (includes stimulus design/execution scripts).
+* R-mfMRI: **TR 645 ms**, 3 mm iso, 10 min (high temporal resolution)
+* R-mfMRI: **TR 1400 ms**, 2 mm iso, 10 min (high spatial resolution)
+* R-fMRI: **TR 2500 ms**, 3 mm iso, 5 min (standard reference)
+* DTI: **137 directions**, 2 mm iso
 
-**Multiband notes:**
+**Tasks:** Visual checkerboard, eye-movement calibration, breath-hold (with stimulus design scripts).
 
-* Short TR alters temporal autocorrelation; adjust preprocessing accordingly.
-* Spatial smoothness may be non-uniform; GRF cluster corrections may be unsuitable.
-* Use correct slice-timing for SMS acquisitions (custom timing files).
+This dataset is well suited for:
 
-**Access:** NITRC (login required).
-**Source:** [http://fcon_1000.projects.nitrc.org/indi/enhanced/nki_rs.html](http://fcon_1000.projects.nitrc.org/indi/enhanced/nki_rs.html)
+* Comparing different **TRs** and sampling regimes
+* Evaluating **multiband preprocessing** strategies
+* Multimodal test–retest analyses across R-fMRI and DTI
 
-**Included assets (this repo, when present):**
+**Upstream source:**
+Enhanced NKI-RS page — [http://fcon_1000.projects.nitrc.org/indi/enhanced/nki_rs.html](http://fcon_1000.projects.nitrc.org/indi/enhanced/nki_rs.html)
 
+**Typical assets in this repo:**
+
+* `nki-pilot.dti.dz`, `nki-pilot.gqi.dz`
 * `participants.tsv`, `qc.tsv`
-* Example derivatives: `*.gqi.fz`, `*.qsdr.fz`, `*.sz`
+* Subject-level `*_dwi.*.fz` and `*_T1w.nii.gz`
 
-**Funding (abbrev.):** NIMH BRAINS R01MH094639-01, NYS OMH/RFMH, Child Mind Institute, CABI, NIMH R01MH081218/083246/ R21MH084126, Brain Research Foundation, Stavros Niarchos Foundation.
-**Core team:** Milham, Leventhal, Castellanos, Nooner, Tobe, Colcombe; technical support incl. Hu, Sangoi, Zavitz, Craddock, Li, Cheung, Khanuja, Lewis, Yan; CMRR collaboration for multiband EPI (Ugurbil, Auerbach, Xu, Moeller).
+### Download (Linux / macOS — bash)
 
-**Citation:**
-Milham M., Colcombe S., Castellanos F.X., *et al.* **Enhanced NKI-RS – Multiband Imaging Test–Retest Pilot**. Nathan Kline Institute. DOI: 10.15387/fcp_indi.corr.nki1.
+```bash
+curl -s https://api.github.com/repos/data-indi/pro/releases/tags/nki-pilot | jq -r '.assets[].browser_download_url' | xargs -n1 -P4 curl -LO
+```
+
+### Download (Windows PowerShell 5.x)
+
+```powershell
+(Invoke-RestMethod "https://api.github.com/repos/data-indi/pro/releases/tags/nki-pilot").assets | ForEach-Object { Invoke-WebRequest $_.browser_download_url -OutFile (Split-Path $_.browser_download_url -Leaf) }
+```
 
 ---
 
-### NKI / Rockland Sample
+## NKI / Rockland Sample
 
-**Dataset:** *Nathan Kline Institute (NKI) / Rockland Sample*
+**Dataset:** Nathan Kline Institute (NKI) / Rockland Sample
 **Institution:** NKI, Orangeburg, NY, USA
-**PIs:** F. X. Castellanos, Bennett Leventhal, Michael Milham
+**PIs:** F. Xavier Castellanos, Bennett Leventhal, Michael Milham
 **Coordinator:** Kate Nooner
-**Sample:** Ages 4–85, community-ascertained; **prospective** weekly releases with randomized delay
-**Modalities:** 10-min R-fMRI; DTI (6-dir and 64-dir 2 mm iso); high-res and short-seq MPRAGE; T2; extensive phenotyping
-**Protocol:** Aligned with Brain Genomics Superstruct Project to aid cross-site comparability
+**Sample:** Community-ascertained 4–85-year-olds, prospectively released; **207** participants total
 
-**Release cadence (historical):** 5–10 new individuals/week; **total 207** datasets; completed **Aug 15, 2011**.
-**Access:** NITRC (DICOM/NIfTI/Lite variants; login required).
-**Source:** [http://fcon_1000.projects.nitrc.org/indi/enhanced/nki_rs.html](http://fcon_1000.projects.nitrc.org/indi/enhanced/nki_rs.html)
+The NKI/Rockland Sample is a large, phenotypically rich resource for **lifespan** and **psychiatric** connectomics, with deep behavioral and clinical characterization.
 
-**Funding (abbrev.):** NYS OMH, RFMH, NIH P50 MH086385-S1, NKI CABI, Brain Research Foundation, Stavros Niarchos Foundation.
-**Team members (abbrev.):** Benedict, Biswal, Coffey, Colcombe, Guilfoyle, Gutman, Koplewicz, Hoptman, Javitt, Maayan, Mennes, Nooner, Pomara.
+**Core imaging protocol per participant:**
+
+* 10-min resting-state fMRI (R-fMRI)
+* 6-direction DTI
+* 64-direction DTI (2 mm iso)
+* High-resolution MPRAGE (structural T1)
+* Short-sequence MPRAGE
+* T2-weighted structural scan
+
+All participants undergo semi-structured psychiatric interviews plus a comprehensive neuropsychological and behavioral battery, enabling:
+
+* Brain–behavior modeling across the lifespan
+* Dimensional analyses of psychopathology
+* Method development in large, heterogeneous samples
+
+**Upstream source:**
+Enhanced NKI-RS main page — [http://fcon_1000.projects.nitrc.org/indi/enhanced/nki_rs.html](http://fcon_1000.projects.nitrc.org/indi/enhanced/nki_rs.html)
+
+**This repo:**
+Provides selected derivatives (when available) and helper tables to simplify working with the NKI/Rockland releases.
+
+### Download (Linux / macOS — bash)
+
+```bash
+curl -s https://api.github.com/repos/data-indi/pro/releases/tags/nki | jq -r '.assets[].browser_download_url' | xargs -n1 -P4 curl -LO
+```
+
+### Download (Windows PowerShell 5.x)
+
+```powershell
+(Invoke-RestMethod "https://api.github.com/repos/data-indi/pro/releases/tags/nki").assets | ForEach-Object { Invoke-WebRequest $_.browser_download_url -OutFile (Split-Path $_.browser_download_url -Leaf) }
+```
 
 ---
 
-### Beijing Normal University — Short TR Sample
+## Beijing Normal University — Short TR Sample
 
-**Dataset:** *Beijing Normal University – Short TR Sample*
-**Institution:** State Key Laboratory of Cognitive Neuroscience and Learning, BNU, Beijing
+**Dataset:** Beijing Normal University – Short TR Sample
+**Institution:** State Key Laboratory of Cognitive Neuroscience and Learning, Beijing Normal University, Beijing, China
 **Sample:** 28 healthy college-aged volunteers
-**Design:** Within-subject **paired TR** comparison in R-fMRI (TR = 0.4 s vs 2.0 s) plus T1 and 64-dir DTI
-**License:** CC BY-NC
+**Design:** Within-subject comparison of **two TR conditions** in R-fMRI
 
-**Imaging:**
+**Imaging protocol:**
 
-* R-fMRI **TR 2.0 s** — 8 min, **240** volumes
-* R-fMRI **TR 0.4 s** — 8 min, **1200** volumes
-* T1-MPRAGE (defaced), DTI **64 dirs** (2 mm iso)
+* Resting-state fMRI (long TR): **TR = 2.0 s**, 8 min, 240 volumes
+* Resting-state fMRI (short TR): **TR = 0.4 s**, 8 min, 1200 volumes
+* T1-weighted MPRAGE (defaced)
+* 64-direction DTI (2 mm iso)
 * Demographics: age, sex
 
-**Access:** NITRC under FCP/INDI (login required).
-**Source:** [http://fcon_1000.projects.nitrc.org/indi/retro/BeijingShortTR.html](http://fcon_1000.projects.nitrc.org/indi/retro/BeijingShortTR.html)
+Participants completed both R-fMRI TR conditions in a single session, supporting:
 
-**Acknowledgment to include:**
+* Direct comparison of **short vs long TR** for connectivity measures
+* Evaluation of temporal sampling effects, SNR, and reliability
+* Combined structure/function analyses with DTI
 
-> “Financial support for the data used in this project was provided by the National Natural Science Foundation of China (30770594) and the National High Technology Program of China (863) (2008AA02Z405).”
+**Upstream source:**
+Project page — [http://fcon_1000.projects.nitrc.org/indi/retro/BeijingShortTR.html](http://fcon_1000.projects.nitrc.org/indi/retro/BeijingShortTR.html)
+
+**Note:** Data were released in multiple LiteNIFTI batches (BeijingShortTR.001.001 – BeijingShortTR.009.001) totaling 28 subjects.
+
+### Download (Linux / macOS — bash)
+
+```bash
+curl -s https://api.github.com/repos/data-indi/pro/releases/tags/bnu | jq -r '.assets[].browser_download_url' | xargs -n1 -P4 curl -LO
+```
+
+### Download (Windows PowerShell 5.x)
+
+```powershell
+(Invoke-RestMethod "https://api.github.com/repos/data-indi/pro/releases/tags/bnu").assets | ForEach-Object { Invoke-WebRequest $_.browser_download_url -OutFile (Split-Path $_.browser_download_url -Leaf) }
+```
 
 ---
 
 ## How to cite
 
-Please cite the **original dataset** (and DOI when provided) and acknowledge **funding statements** listed above. When using derivatives or helper assets from this repository, add:
+For any analysis using these data:
 
-> “Processed artifacts and curation were prepared by the Pittsburgh Fiber Data Hub (data-indi/pro).”
+1. **Cite the original dataset** (and DOI where provided), plus key publications from each project.
+2. Include required **funding acknowledgments** from the upstream project pages.
+3. When you use derivatives or helper files from this repository, please add:
+
+> “Processed artifacts and curation were prepared by the Pittsburgh Fiber Data Hub (`data-indi/pro`).”
 
 ---
 
 ## Licensing
 
-Unless noted otherwise on the upstream project pages, these datasets are released under **Creative Commons Attribution–NonCommercial (CC BY-NC)**.
-You may share and adapt for **non-commercial research** with proper attribution. Check each dataset’s page for any additional terms.
+Unless otherwise specified on the upstream pages, these datasets are distributed under **Creative Commons Attribution–NonCommercial (CC BY-NC)**:
+
+* You may **share** and **adapt** the material for **non-commercial research**, with proper attribution.
+* Always check each dataset’s NITRC / INDI page for **dataset-specific conditions** or additional restrictions.
 
 ---
 
 ## Known overlaps / deduplication
 
-* **NYU IPN (Adult subset)** contains participants who also appear in **NewYork_a (FCP classic)** and **NYU_Cocaine** retrospective releases. De-duplicate before pooling samples.
+* **NYU IPN (adult subset)** contains participants who also appear in **NewYork_a** (FCP classic) and **NYU_Cocaine** (INDI retrospective).
+
+  * If you combine these datasets, perform **subject-level deduplication** to avoid double-counting individuals.
+
+Similar overlaps may exist between the NKI/Rockland Sample and related NKI multiband test–retest datasets; check subject IDs if pooling.
 
 ---
 
 ## Disclaimer
 
-* Datasets are provided **as-is** by their originating institutions.
-* Users are responsible for **quality control**, motion assessment, and choosing appropriate preprocessing (especially for **multiband** and **short-TR** data).
+* All data originate from **independent sites** and are redistributed **as-is**.
+* Acquisition parameters, scanner models, and instructions (eyes open/closed, fixation, etc.) vary across datasets.
+* Users are responsible for:
+
+  * Performing appropriate **quality control** (e.g., motion, artifacts).
+  * Choosing preprocessing pipelines suitable for **multiband** and **short-TR** acquisitions.
+  * Respecting all **data use agreements** and **licensing terms**.
 
 ---
 
-## Contact
-
-For questions about curation/derivatives in this repo: open an **Issue** on GitHub.
-For access problems or upstream metadata, contact the **INDI / NITRC** project maintainers via their portals.
-
----
-
-**Repository:** `data-indi/pro` — INDI Prospective Data Sharing Samples.
+**Repository:** `data-indi/pro` — INDI Prospective Data Sharing Samples curated by the Pittsburgh Fiber Data Hub.
