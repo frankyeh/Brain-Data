@@ -66,7 +66,6 @@ jobs:
               return out
           
           def fetch_readme(account, repo, ref=None):
-              # GitHub resolves README automatically (README, Readme.md, etc.)
               url = f"{BASE}/repos/{account}/{repo}/readme"
               params = {"ref": ref} if ref else None
           
@@ -76,16 +75,14 @@ jobs:
               r.raise_for_status()
               data = r.json()
           
-              # Prefer direct raw download url
               if data.get("download_url"):
                   raw = session.get(data["download_url"], timeout=30)
                   raw.raise_for_status()
                   return raw.text
           
-              # Fallback to base64 content
+              # fallback to base64 API content
               content = data.get("content", "")
-              encoding = data.get("encoding", "")
-              if encoding == "base64":
+              if data.get("encoding") == "base64":
                   try:
                       return base64.b64decode(content).decode("utf-8", errors="replace")
                   except Exception:
@@ -93,12 +90,13 @@ jobs:
           
               return None
           
+          root = pathlib.Path("mds")
+          root.mkdir(exist_ok=True)
+          
           for account in ACCOUNTS:
               print("Account:", account)
           
-              # list repos under this account
-              repos_url = f"{BASE}/users/{account}/repos"
-              repos = get_all(repos_url, params={"per_page": 100})
+              repos = get_all(f"{BASE}/users/{account}/repos", params={"per_page": 100})
           
               for r in repos:
                   repo = r["name"]
@@ -107,26 +105,22 @@ jobs:
                   print(f"  Repo: {account}/{repo}")
           
                   try:
-                      readme_text = fetch_readme(account, repo, ref=default_branch)
-                      if not readme_text:
-                          print(f"   - No README found, skipping")
+                      text = fetch_readme(account, repo, ref=default_branch)
+                      if not text:
+                          print("   - No README found")
                           continue
           
-                      # Save to: mds/account/repo/README.md
-                      out_dir = pathlib.Path("mds") / account / repo
+                      # Save as: mds/account/repo.md
+                      out_dir = root / account
                       out_dir.mkdir(parents=True, exist_ok=True)
           
-                      out_file = out_dir / "README.md"
-                      out_file.write_text(readme_text, encoding="utf-8")
+                      out_file = out_dir / f"{repo}.md"
+                      out_file.write_text(text, encoding="utf-8")
           
-                      print(f"   + Saved to mds/{account}/{repo}/README.md")
+                      print(f"   + Saved mds/{account}/{repo}.md")
           
-                  except ChunkedEncodingError as e:
-                      print(f"   ! Chunked error {e}, skipping")
-                  except requests.HTTPError as e:
-                      print(f"   ! HTTP error {e}, skipping")
                   except Exception as e:
-                      print(f"   ! Unexpected error: {e}, skipping")
+                      print(f"   ! Error fetching {account}/{repo}: {e}")
           
           PY
 
