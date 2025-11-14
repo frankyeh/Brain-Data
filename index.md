@@ -96,13 +96,25 @@ To access the following restricted data (.sz, T1w...etc), please email me your s
 5. If your registry entity changes, please notify me so that I can update it in the data server.
 
 ---
-## Download Command
 
-example:  download [OWNDER]/[REPO]/[TAG] = data-hcp/lifespan/hcp-ya-retest
+### **Download Command (Linux / macOS — bash)**
 
+Example: download data-hcp/lifespan/hcp-ya
+```bash
+curl -s https://api.github.com/repos/data-hcp/lifespan/releases/tags/hcp-ya | jq -r '.assets[].browser_download_url' | xargs -n1 -P4 curl -LO
 ```
-curl -s https://api.github.com/repos/data-hcp/lifespan/releases/tags/hcp-ya-retest | jq -r '.assets[].browser_download_url' | xargs -n1 -P4 curl -LO
+
+### **Download Command (Windows PowerShell 5.x)**
+
+In File Explorer you can go to a folder, click in the address bar, type `powershell` and press **Enter** to open PowerShell directly in that folder.
+Example: download data-hcp/lifespan/hcp-ya
+```powershell
+(Invoke-RestMethod "https://api.github.com/repos/data-hcp/lifespan/releases/tags/hcp-ya").assets | ForEach-Object { Invoke-WebRequest $_.browser_download_url -OutFile (Split-Path $_.browser_download_url -Leaf) }
 ```
+
+
+---
+
 
 ## Example Code
 
