@@ -57,7 +57,6 @@ dsi_studio --action=rec --source=*.sz --save_nii=subject_dwi.nii.gz
 - [data-openneuro/brain2 (>ds005000)](https://github.com/data-openneuro/brain2/releases)
 - [data-openneuro/disease (<ds005000)](https://github.com/data-openneuro/disease/releases)
 - [data-openneuro/disease2 (>ds005000)](https://github.com/data-openneuro/disease2/releases)
-- [data-openneuro/spine](https://github.com/data-openneuro/spine/releases)
 - [data-openneuro/animal](https://github.com/data-openneuro/animal/releases)
 - [data-indi/corr](https://github.com/data-indi/corr/releases)
 - [data-indi/pro](https://github.com/data-indi/pro/releases)
