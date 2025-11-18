@@ -43,4 +43,9 @@ curl -s https://api.github.com/repos/data-openneuro/disease/releases/tags/ds0018
 | ds004962/ | 28 | [MRI dataset evaluating the effect of head down tilt 15° on cerebral perfusion in acute ischemic experimental stroke](https://openneuro.org/datasets/ds004962/) | 
 | ds005236/ | 59 | [Effects of environmental enrichment on brain microstructure in C58 mice (adult cohort)](https://openneuro.org/datasets/ds005236/) | 
 | ds005402/ | 34 | [MPTP mouse](https://openneuro.org/datasets/ds005402/) | 
+| ds005186/ | 16 | [Effects of environmental enrichment on brain microstructure in C58 mice (juvenile cohort)](https://openneuro.org/datasets/ds005186/) | 
+| ds005431/ | 42 | [Animal Brain Collection Project](https://openneuro.org/datasets/ds005431/) | 
+| ds006670/ | 3 | [Adulthood in vivo MRI of C57BL6J mice: T1w, RARE T2w, PDw, MTw, DWI](https://openneuro.org/datasets/ds006670/) | 
+| ds006663/ | 3 | [Longitudinal in vivo MRI of C57BL6J mice: T1w, RARE T2w, PDw, MTw, DWI, BOLD rsfMRI](https://openneuro.org/datasets/ds006663/) | 
+
 
