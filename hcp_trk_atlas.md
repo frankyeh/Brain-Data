@@ -18,6 +18,7 @@ The population-based tractography atlases and associated tract-to-region connect
 | [Tract-to-region connectome (Brodmann and Kleist parcellation)](https://github.com/data-others/atlas/releases/download/hcp1065/tract_to_region_connectome_BM_KL.xlsx) | Excel | Tract-to-region connectome was derived using Brodmann and Kleist parcellations.
 | [Scripts](https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-022-32595-4/MediaObjects/41467_2022_32595_MOESM4_ESM.zip) |  |  Scripts to generate figures in the Yeh Nat. Comm. 2022 paper |
 | [Abbreviations](https://github.com/data-others/atlas/releases/download/hcp1065/abbreviation2.xlsx) | Excel | |  
+| [1065 subjects tracts in NIFTI files](https://github.com/data-others/atlas/releases/download/hcp1065/1065_subject_tract_in_nifti.zip) | ZIP (.nii.gz) | |  
 
 # HCP1065 Population-Averaged Tractography Atlas (Yeh, 2022)
 
