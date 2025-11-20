@@ -12,12 +12,12 @@ The population-based tractography atlases and associated tract-to-region connect
 
 | Data | Format  | Note    |
 |----|-----|-----|
-| [HCP-1065 probabilistic tract atlas (volume)](https://github.com/frankyeh/data-atlas/releases/download/hcp1065/hcp1065_prob_coverage_nifti.zip) | NIFTI | The voxel probability of tracts. This probabilistic tractography atlas was aggregated from 1065 subject's tractogram in the ICBM 2009a Nonlinear Asymmetric space. Automatic fiber tracking and augmented fiber tracking (Yeh 2020) were used to map white matter pathways in HCP young adult subjects. These NIFTI volumes record the population probability of each white matter tract aggregated from the tractography of 1065 subjects. |
-| [HCP-1065 probabilistic tract atlas figures](https://github.com/frankyeh/data-atlas/releases/download/hcp1065/hcp1065_prob_coverage_jpg.zip) | TIF | The voxel probability of tracts|
-| [Tract-to-region connectome (HCP-MMP parcellation)](https://github.com/frankyeh/data-atlas/releases/download/hcp1065/tract_to_region_connectome_MMP.xlsx) | Excel | Tract-to-region connectome was derived using HCP-MMP parcellations.
-| [Tract-to-region connectome (Brodmann and Kleist parcellation)](https://github.com/frankyeh/data-atlas/releases/download/hcp1065/tract_to_region_connectome_BM_KL.xlsx) | Excel | Tract-to-region connectome was derived using Brodmann and Kleist parcellations.
+| [HCP-1065 probabilistic tract atlas (volume)](https://github.com/data-others/atlas/releases/download/hcp1065/hcp1065_prob_coverage_nifti.zip) | NIFTI | The voxel probability of tracts. This probabilistic tractography atlas was aggregated from 1065 subject's tractogram in the ICBM 2009a Nonlinear Asymmetric space. Automatic fiber tracking and augmented fiber tracking (Yeh 2020) were used to map white matter pathways in HCP young adult subjects. These NIFTI volumes record the population probability of each white matter tract aggregated from the tractography of 1065 subjects. |
+| [HCP-1065 probabilistic tract atlas figures](https://github.com/data-others/atlas/releases/download/hcp1065/hcp1065_prob_coverage_jpg.zip) | TIF | The voxel probability of tracts|
+| [Tract-to-region connectome (HCP-MMP parcellation)](https://github.com/data-others/atlas/releases/download/hcp1065/tract_to_region_connectome_MMP.xlsx) | Excel | Tract-to-region connectome was derived using HCP-MMP parcellations.
+| [Tract-to-region connectome (Brodmann and Kleist parcellation)](https://github.com/data-others/atlas/releases/download/hcp1065/tract_to_region_connectome_BM_KL.xlsx) | Excel | Tract-to-region connectome was derived using Brodmann and Kleist parcellations.
 | [Scripts](https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-022-32595-4/MediaObjects/41467_2022_32595_MOESM4_ESM.zip) |  |  Scripts to generate figures in the Yeh Nat. Comm. 2022 paper |
-| [Abbreviations](https://github.com/frankyeh/data-atlas/releases/download/hcp1065/abbreviation2.xlsx) | Excel | |  
+| [Abbreviations](https://github.com/data-others/atlas/releases/download/hcp1065/abbreviation2.xlsx) | Excel | |  
 
 # HCP1065 Population-Averaged Tractography Atlas (Yeh, 2022)
 
@@ -37,10 +37,10 @@ The HCP1065 Yeh 2022 atlas further provides subcomponents for the cingulum, SLF,
 
 | Data | Format  | Note    |
 |----|-----|-----|
-| [HCP1065 Population-averaged tractography atlas (streamlines)](https://github.com/frankyeh/data-atlas/releases/download/hcp1065/hcp1065_avg_tracts_tt.zip) | TT | To view these tract files, please download the HCP-1065 template fib file and open it in DSI Studio at [Step T3 Fiber Tracking]. The *.tt.gz files can be loaded using [Tracts][Open Tracts]. The ICBM152 images can be loaded using [Edit][Insert T1W/T2W].|
-| [HCP1065 Population-averaged tractography atlas (streamlines)](https://github.com/frankyeh/data-atlas/releases/download/hcp1065/hcp1065_avg_tracts_trk.zip) | TRK | |
-| [HCP1065 Population-averaged tractography atlas (volume)](https://github.com/frankyeh/data-atlas/releases/download/hcp1065/hcp1065_avg_tracts_nifti.zip) | NIFTI | |
-| [Tract Abbreviations](https://github.com/frankyeh/data-atlas/releases/download/hcp1065/abbreviation.xlsx) | Excel | |
+| [HCP1065 Population-averaged tractography atlas (streamlines)](https://github.com/data-others/atlas/releases/download/hcp1065/hcp1065_avg_tracts_tt.zip) | TT | To view these tract files, please download the HCP-1065 template fib file and open it in DSI Studio at [Step T3 Fiber Tracking]. The *.tt.gz files can be loaded using [Tracts][Open Tracts]. The ICBM152 images can be loaded using [Edit][Insert T1W/T2W].|
+| [HCP1065 Population-averaged tractography atlas (streamlines)](https://github.com/data-others/atlas/releases/download/hcp1065/hcp1065_avg_tracts_trk.zip) | TRK | |
+| [HCP1065 Population-averaged tractography atlas (volume)](https://github.com/data-others/atlas/releases/download/hcp1065/hcp1065_avg_tracts_nifti.zip) | NIFTI | |
+| [Tract Abbreviations](https://github.com/data-others/atlas/releases/download/hcp1065/abbreviation.xlsx) | Excel | |
 
 # HCP842 Population-Averaged Tractography Atlas (Yeh, 2018) 
 
