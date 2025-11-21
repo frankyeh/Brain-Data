@@ -32,7 +32,6 @@ curl -s https://api.github.com/repos/data-openneuro/disease/releases/tags/ds0018
 |-----------------|-----------------------|-------------------------------|
 | ds001875 | 9 | [TheVirtualBrain Macaque MRI](https://openneuro.org/datasets/ds001875/) | 
 | ds002307 | 19 | [individual_dMRI_fMRI](https://openneuro.org/datasets/ds002307/) | 
-| ds002374 | 1 | [3AM straight reproducibility phantoms](https://openneuro.org/datasets/ds002374/) | 
 | ds003027 | 36 | [plp_nf1_dMRI_fMRI](https://openneuro.org/datasets/ds003027/) | 
 | ds003959/ | 12 | [Soma and Neurite Density MRI (SANDI) of the in-vivo mouse brain](https://openneuro.org/datasets/ds003959/) | 
 | ds003989/ | 3 | [Structural, diffusion and rs-functional MRI data in Macaque Monkeys](https://openneuro.org/datasets/ds003989/) | 
