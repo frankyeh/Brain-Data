@@ -60,6 +60,7 @@ dsi_studio --action=rec --source=*.sz --save_nii=subject_dwi.nii.gz
 - [data-openneuro/animal](https://github.com/data-openneuro/animal/releases)
 - [data-openneuro/others (ex-vivo, phantom)](https://github.com/data-openneuro/others/releases)
 - [data-indi/brain](https://github.com/data-indi/brain/releases)
+- [data-indi/disease](https://github.com/data-indi/disease/releases)
 - [data-others/brain](https://github.com/data-others/brain/releases)
 - [data-others/brain2](https://github.com/data-others/brain2/releases)
 - [data-others/disease](https://github.com/data-others/disease/releases)
