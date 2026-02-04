@@ -9,7 +9,7 @@ Yeh, Fang-Cheng. “DSI Studio: An Integrated Tractography Platform and Fiber Da
 Reference: [pdf](https://rdcu.be/exECv), [pubmed](https://pubmed.ncbi.nlm.nih.gov/40707713/)
 
 
-<img width="3584" height="1072" alt="image" src="https://github.com/user-attachments/assets/e5b8156e-ac24-49ae-9259-cd73fe0a6b83" />
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/e5b8156e-ac24-49ae-9259-cd73fe0a6b83" />
 
 
 The **Fiber Data Hub** is a cloud-based platform for openly sharing processed **fiber data** derived from diffusion MRI, built to support scalable and reproducible research in brain connectivity. The Hub currently hosts over **50,000** fiber datasets, each derived from an underlying DWI scan, from major neuroimaging initiatives including the Human Connectome Project (HCP), the Adolescent Brain Cognitive Development (ABCD) Study, OpenNeuro, and the International Neuroimaging Data-sharing Initiative (INDI).
