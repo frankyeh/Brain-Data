@@ -1,5 +1,7 @@
 # Downloading AABC from BALSA via command line (HPC / cluster)
 
+## **Supply this instruction to yout ChatGPT and Germini to help you with the details.**
+
 ## 1) Confirm Aspera CLI is available on your cluster
 You need the IBM Aspera command-line client (`ascp`). On some clusters it is provided as a module.
 
@@ -51,7 +53,7 @@ chmod 600 ~/.ssh/aspera_tokenauth_id_rsa
 The key is encrypted; Aspera Connect provides the passphrase to `ascp` at runtime via the environment variable `ASPERA_SCP_PASS`.
 
 1. Start an AABC download on Windows so `ascp.exe` is actively running.
-2. Open Sysinternals **Process Explorer**.
+2. Download and open Microsoft Sysinternals **Process Explorer**. (Google to find it)
 3. Locate the running `ascp.exe` process.
 4. Open its **Properties** → **Environment** tab.
 5. Find `ASPERA_SCP_PASS` and copy its value.
