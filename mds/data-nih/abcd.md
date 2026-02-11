@@ -22,10 +22,9 @@ Using cutting-edge neuroimaging and deep phenotyping, ABCD examines how real-wor
 
 The results are intended to inform **families, educators, clinicians, and policymakers** with practical knowledge to support youth well-being and success.
 
-This repository provides **derived diffusion MRI FIB files** for **ABCD sites 01–22**, processed into tractography-ready derivatives for use in **DSI Studio** and related tools.
+This repository provides **derived diffusion metrics** and **fiber orientations** for **ABCD sites 01–22** (per approval from NDA Program Lead [(NDA Help Desk Request #259338)](http://ndar.zendesk.com/hc/requests/259338)), processed into tractography-ready derivatives for use in **DSI Studio** and related tools.
 
-> **Raw ABCD data are *not* redistributed here.**  
-> Access to original data (DICOM / NIfTI / full phenotypes) must follow ABCD’s NDA-based data-sharing policies.
+> **Raw ABCD data are *not* redistributed here.**  Access to original data (DICOM / NIfTI / full phenotypes) must follow ABCD’s NDA-based data-sharing policies.
 
 ---
 
