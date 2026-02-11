@@ -72,7 +72,11 @@ curl -s https://api.github.com/repos/data-hcp/lifespan/releases/tags/hcp-ya-rete
 ## **HCP Development (HCP-D)**
 
 Participants ages 5–21 scanned with HCP developmental protocols.
-Raw MRI data are under **NDA restricted access**; only derived files can be shared.
+
+This repository provides **derived diffusion metrics** and **fiber orientations** (per approval from NDA Program Lead [(NDA Help Desk Request #259338)](http://ndar.zendesk.com/hc/requests/259338)), processed into tractography-ready derivatives for use in **DSI Studio** and related tools.
+
+> **The original HCP-D data are *not* redistributed here.**  Access to the original data (DICOM / NIfTI / full phenotypes) must follow NDA data-sharing policies.
+
 
 **Highlights**
 
@@ -102,11 +106,15 @@ Adults ages 36–100+ scanned using protocols optimized for aging.
 
 **Highlights**
 
+This repository provides **derived diffusion metrics** and **fiber orientations** (per approval from NDA Program Lead [(NDA Help Desk Request #259338)](http://ndar.zendesk.com/hc/requests/259338)), processed into tractography-ready derivatives for use in **DSI Studio** and related tools.
+
+> **The original HCP-A data are *not* redistributed here.**  Access to the original data (DICOM / NIfTI / full phenotypes) must follow NDA data-sharing policies.
+
+
 * Ages: 36–100+
 * Multimodal MRI
 * Derivatives: FIB, tractography, QC
 * License (derived files here): CC BY-SA 4.0
-* Raw data: NDA
 
 ### **Download (Linux / macOS — bash)**
 
@@ -167,12 +175,14 @@ Infancy through age 5, imaged using infant-optimized HCP-style protocols.
 
 **Highlights**
 
+This repository provides **derived diffusion metrics** and **fiber orientations** (per approval from NDA Program Lead [(NDA Help Desk Request #259338)](http://ndar.zendesk.com/hc/requests/259338)), processed into tractography-ready derivatives for use in **DSI Studio** and related tools.
+
+> **The original BCP data are *not* redistributed here.**  Access to the original data (DICOM / NIfTI / full phenotypes) must follow NDA data-sharing policies.
+
 * Ages: 0–5
 * Longitudinal accelerated design
 * Modalities: structural MRI, resting-state fMRI, dMRI
 * Derivatives (when permitted): FIB, QC
-* Raw data: BCP access portal
-* License: BCP data-use agreement (DUA)
 
 ### **Download (Linux / macOS — bash)**
 
