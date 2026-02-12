@@ -75,87 +75,109 @@ For large downloads, avoid running on the login node. Use `sbatch` (or an intera
 ### A) Save this as `download_tags.sh`
 ```bash
 #!/usr/bin/env bash
-# Aspera Download Script (token + cookie + passphrase + tags64)
-# Usage:
-#   ./download_tags.sh payload.txt /path/to/download_dir
-#
-# Assumptions:
-#   - tokenauth key:  $HOME/.ssh/aspera_tokenauth_id_rsa
-#   - passphrase:     $HOME/.ssh/aspera_pass
-#   - payload.txt is a fresh BALSA transfer payload
+#SBATCH -J aspera_verbose
+#SBATCH -N 1
+#SBATCH -n 1
+#SBATCH -t 72:00:00
+#SBATCH -p RM
+#SBATCH --array=0-15
+
+# Usage: sbatch download_tags.sh payload.txt /path/to/download_dir
 
 set -euo pipefail
-
 module load aspera-connect/3.11.0.5
 
-PAYLOAD="${1:?Usage: $0 payload.txt [/path/to/download_dir]}"
+PAYLOAD="${1:?Usage: $0 payload.txt dest}"
 DEST="${2:-$PWD}"
-mkdir -p "$DEST" "$DEST/log"
+mkdir -p "$DEST/log"
 
-ASPERA_KEY="$HOME/.ssh/aspera_tokenauth_id_rsa"
-[[ -f "$ASPERA_KEY" ]] || { echo "ERROR: missing key: $ASPERA_KEY" >&2; exit 1; }
-chmod 600 "$ASPERA_KEY" 2>/dev/null || true
+# --- ID Setup ---
+ID=${SLURM_ARRAY_TASK_ID:-0}
+ASP_SESSION=$(( ID + 1 ))
+ASP_TOTAL=${SLURM_ARRAY_TASK_COUNT:-16}
 
-[[ -f "$HOME/.ssh/aspera_pass" ]] || { echo "ERROR: missing passphrase file: ~/.ssh/aspera_pass" >&2; exit 1; }
+# --- Key Setup ---
+KEY="$HOME/.ssh/aspera_tokenauth_id_rsa"
+[[ -f "$KEY" ]] || { echo "ERROR: Key not found at $KEY"; exit 1; }
 export ASPERA_SCP_PASS="$(< ~/.ssh/aspera_pass)"
 
-python3 - "$PAYLOAD" <<'PY'
-import json, base64, uuid, sys, pathlib
+echo "[Job $ID] Initializing Session $ASP_SESSION of $ASP_TOTAL..."
 
-p = pathlib.Path(sys.argv[1])
-d = json.loads(p.read_text())
-ts = d["transfer_specs"][0]["transfer_spec"] if "transfer_specs" in d else d
+# --- Python: Hash Payload & Generate List (if needed) ---
+eval "$(python3 - "$PAYLOAD" "$ID" <<'PY'
+import json, base64, uuid, sys, pathlib, hashlib, os
 
-host   = ts["remote_host"]
-user   = ts["remote_user"]
-token  = ts.get("token","")
-cookie = ts.get("cookie","")
-cipher = ts.get("cipher","aes-128").replace("-","")  # aes-128 -> aes128
-ssh_p  = int(ts.get("ssh_port",33001))
-fasp_p = int(ts.get("fasp_port",ssh_p))
-sshfp  = ts.get("sshfp","")
+src = pathlib.Path(sys.argv[1])
+my_id = int(sys.argv[2])
+d = json.loads(src.read_text())
 
-tags64 = base64.b64encode(
-  json.dumps({"aspera":{"xfer_id":str(uuid.uuid4()),"xfer_retry":0}}).encode()
-).decode()
+# 1. Parse JSON
+if "transfer_specs" in d:
+    raw = d["transfer_specs"][0]
+    ts = raw.get("transfer_spec", raw)
+else:
+    ts = d
 
-open("file_list.txt","w").write("".join(
-  item["source"] + "\n" for item in ts.get("paths",[]) if "source" in item
-))
+# 2. Calculate Unique Hash for this Transfer Spec
+spec_str = json.dumps(ts, sort_keys=True).encode("utf-8")
+spec_hash = hashlib.md5(spec_str).hexdigest()[:8]
+list_filename = f"file_list_{spec_hash}.txt"
 
-with open("vars.sh","w") as f:
-  f.write(f'export ASPERA_SCP_TOKEN={token!r}\n')
-  if cookie: f.write(f'export ASPERA_SCP_COOKIE={cookie!r}\n')
-  f.write(f'ASPERA_HOST={host!r}\nASPERA_USER={user!r}\nASPERA_CIPHER={cipher!r}\n')
-  f.write(f'ASPERA_SSH_PORT={ssh_p}\nASPERA_FASP_PORT={fasp_p}\n')
-  f.write(f'ASPERA_SSHFP={sshfp!r}\nASPERA_TAGS64={tags64!r}\n')
+# 3. Leader Logic (Job 0): Generate file ONLY if missing
+if my_id == 0:
+    if not os.path.exists(list_filename):
+        paths = [p["source"] for p in ts.get("paths",[]) if "source" in p]
+        
+        # Write to temp and atomic rename to prevent race conditions
+        tmp_name = f"{list_filename}.tmp"
+        with open(tmp_name, "w") as f:
+            f.write("\n".join(paths))
+        os.rename(tmp_name, list_filename)
+        print(f"echo '[Job 0] Generated new list: {list_filename}';")
+    else:
+        print(f"echo '[Job 0] Found existing list: {list_filename}';")
+
+# 4. Output Variables for Bash
+tags = base64.b64encode(json.dumps({"aspera":{"xfer_id":str(uuid.uuid4()),"xfer_retry":0}}).encode()).decode()
+
+print(f'export FILE_LIST={list_filename!r}')
+print(f'export ASPERA_SCP_TOKEN={ts.get("token","")!r}')
+if "cookie" in ts: print(f'export ASPERA_SCP_COOKIE={ts["cookie"]!r}')
+print(f'HOST={ts["remote_host"]!r}')
+print(f'USER={ts["remote_user"]!r}')
+print(f'CIPHER={ts.get("cipher","aes-128").replace("-","")!r}')
+print(f'SSH_P={ts.get("ssh_port",33001)}')
+print(f'FASP_P={ts.get("fasp_port",33001)}')
+print(f'TAGS={tags!r}')
+print(f'SSHFP={ts.get("sshfp","")!r}')
 PY
+)"
 
-source vars.sh
-[[ -s file_list.txt ]] || { echo "ERROR: file_list.txt is empty (no paths in payload)" >&2; exit 2; }
+# --- Wait for Leader (if needed) ---
+while [[ ! -f "$FILE_LIST" ]]; do
+    echo "[Job $ID] Waiting for $FILE_LIST..."
+    sleep 2
+done
 
-echo "Token set? $([[ -n "${ASPERA_SCP_TOKEN:-}" ]] && echo yes || echo no)"
-echo "Cookie set? $([[ -n "${ASPERA_SCP_COOKIE:-}" ]] && echo yes || echo no)"
-echo "Pass set?  $([[ -n "${ASPERA_SCP_PASS:-}"  ]] && echo yes || echo no)"
-echo "Host/User: $ASPERA_USER@$ASPERA_HOST"
-echo "Dest:      $DEST"
-echo
+# --- Run Aspera (Verbose Mode) ---
+# -DD = Enable Verbose Debug Logging (Level 2)
+# -L  = Log Directory
+echo "[Job $ID] Starting Aspera with verbose logging..."
 
-ascp -q --mode=recv \
-  --user="$ASPERA_USER" --host="$ASPERA_HOST" \
-  -P "$ASPERA_SSH_PORT" -O "$ASPERA_FASP_PORT" \
-  -c "$ASPERA_CIPHER" -k 2 --policy=fair \
-  --precalculate-job-size \
-  --file-manifest=text --file-manifest-path="$DEST/file-manifest" \
-  --tags64="$ASPERA_TAGS64" \
-  ${ASPERA_SSHFP:+--check-sshfp="$ASPERA_SSHFP"} \
-  -i "$ASPERA_KEY" \
-  --file-list=file_list.txt \
+ascp -T -l 1G -DD --mode=recv \
+  --user="$USER" --host="$HOST" \
+  -P "$SSH_P" -O "$FASP_P" \
+  -C "${ASP_SESSION}:${ASP_TOTAL}" \
+  --multi-session-threshold=0 \
+  -c "$CIPHER" -k 2 --policy=fair \
+  --tags64="$TAGS" \
+  ${SSHFP:+--check-sshfp="$SSHFP"} \
+  -i "$KEY" \
+  --file-list="$FILE_LIST" \
   -L "$DEST/log" \
   "$DEST"
 
-rm -f vars.sh
-echo "Done."
+echo "[Job $ID] Session $ASP_SESSION finished."
 ```
 
 Make it private/executable:
@@ -164,30 +186,11 @@ chmod 700 download_tags.sh
 ```
 
 ### B) Submit as a SLURM job (recommended)
-Save as `aspera_download.sbatch`:
 
-```bash
-#!/usr/bin/env bash
-#SBATCH -J aspera_dl
-#SBATCH -N 1
-#SBATCH -n 1
-#SBATCH -t 12:00:00
-#SBATCH -p RM
-#SBATCH -o aspera_dl.%j.out
-#SBATCH -e aspera_dl.%j.err
-
-set -euo pipefail
-cd "$SLURM_SUBMIT_DIR"
-
-DEST="/scratch/$USER/AABC"
-mkdir -p "$DEST"
-
-./download_tags.sh payload.txt "$DEST"
-```
 
 Submit:
 ```bash
-sbatch aspera_download.sbatch
+sbatch download_tags.sh payload.txt /path/to/download_dir
 ```
 
 ---
