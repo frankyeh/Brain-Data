@@ -80,6 +80,7 @@ To access the following restricted data (.sz, T1w...etc), please email me your s
 - [data-restricted/abcd (needs NDA-DUA)](https://github.com/data-restricted/abcd/releases)
 - [data-restricted/hcp-disease (needs NDA-DUA)](https://github.com/data-restricted/hcp-disease/releases)
 - [data-restricted/nda (needs NDA-DUA)](https://github.com/data-restricted/nda/releases)
+- [data-restricted/aabc (needs AABC)](https://github.com/data-restricted/aabc/releases)
 
 ---
 
@@ -108,8 +109,9 @@ To make data access and analysis as seamless as possible, the Fiber Data Hub is 
 
 ### How to Request Restricted Access
 
-1. update DSI Studio to a version released after June 2025.
-2. launch DSI Studio. When you see the login page, please right-click on the [Registry Entity]. Select [Select All], and then choose [Copy].
+1. apply for agreement. For most restricted access, you need to apply for agreement from [NDA](https://nda.nih.gov/).
+2. update DSI Studio to a version released after June 2025.
+3. launch DSI Studio. When you see the login page, please right-click on the [Registry Entity]. Select [Select All], and then choose [Copy].
 
 ![image](https://github.com/user-attachments/assets/3f47933c-4701-47f1-8ecf-e666d9af2126)
 
