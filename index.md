@@ -74,7 +74,7 @@ dsi_studio --action=rec --source=*.sz --save_nii=subject_dwi.nii.gz
 - [data-others/disease](https://github.com/data-others/disease/releases)
 - [data-others/animal](https://github.com/data-others/animal/releases)
 
-The following are only accessible to collaborators with NDA-DUA, as per the NDA agreement term #4.
+The following are private repositories only avilable to collaborators with NDA-DUA, as per the NDA agreement term #4.
 
 - [data-restricted/hcp-lifespan (needs NDA-DUA)](https://github.com/data-restricted/hcp-lifespan/releases)
 - [data-restricted/abcd (needs NDA-DUA)](https://github.com/data-restricted/abcd/releases)
@@ -107,9 +107,9 @@ To make data access and analysis as seamless as possible, the Fiber Data Hub is 
 
 ---
 
-### How to Request Restricted Access
+### Restricted Access (Collaborators Only)
 
-1. apply for agreement. For most restricted access, you need to apply for agreement from [NDA](https://nda.nih.gov/).
+1. Apply for NDA agreement at [NDA](https://nda.nih.gov/).
 2. update DSI Studio to a version released after June 2025.
 3. launch DSI Studio. When you see the login page, please right-click on the [Registry Entity]. Select [Select All], and then choose [Copy].
 
