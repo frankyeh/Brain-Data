@@ -74,7 +74,7 @@ dsi_studio --action=rec --source=*.sz --save_nii=subject_dwi.nii.gz
 - [data-others/disease](https://github.com/data-others/disease/releases)
 - [data-others/animal](https://github.com/data-others/animal/releases)
 
-To access the following restricted data (.sz, T1w...etc), please email me your signed NDA data use agreement. Once I receive your signed agreement, I will add you to the user list, enabling you to access the data.
+The following are only accessible to collaborators with NDA-DUA, as per the NDA agreement term #4.
 
 - [data-restricted/hcp-lifespan (needs NDA-DUA)](https://github.com/data-restricted/hcp-lifespan/releases)
 - [data-restricted/abcd (needs NDA-DUA)](https://github.com/data-restricted/abcd/releases)
