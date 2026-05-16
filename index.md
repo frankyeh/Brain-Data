@@ -2,11 +2,9 @@
 
 <img src="https://github.com/frankyeh/FiberDataHub/releases/download/qc-chart/qc_counts_combined.png" width="100%"/>
 
-
-```
-Yeh, Fang-Cheng. “DSI Studio: An Integrated Tractography Platform and Fiber Data Hub for Accelerating Brain Research.” Nature Methods, July 2025, https://doi.org/10.1038/s41592-025-02762-8. 
-```
-Reference: [pdf](https://rdcu.be/exECv), [pubmed](https://pubmed.ncbi.nlm.nih.gov/40707713/)
+> Yeh, Fang-Cheng. “DSI Studio: An Integrated Tractography Platform and Fiber Data Hub for Accelerating Brain Research.” Nature Methods, July 2025, https://doi.org/10.1038/s41592-025-02762-8.
+> 
+> Reference: [pdf](https://rdcu.be/exECv), [pubmed](https://pubmed.ncbi.nlm.nih.gov/40707713/)
 
 
 <img width="1024" alt="image" src="https://github.com/user-attachments/assets/e5b8156e-ac24-49ae-9259-cd73fe0a6b83" />
