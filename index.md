@@ -67,6 +67,7 @@ dsi_studio --action=rec --source=*.sz --save_nii=subject_dwi.nii.gz
 - [data-indi/brain](https://github.com/data-indi/brain/releases)
 - [data-indi/disease](https://github.com/data-indi/disease/releases)
 - [data-indi/animal](https://github.com/data-indi/animal/releases)
+- [data-dandi/brain](https://github.com/data-dandi/brain/releases)
 - [data-dandi/animal](https://github.com/data-dandi/animal/releases)
 - [data-others/brain (before 2020)](https://github.com/data-others/brain/releases)
 - [data-others/brain2 (after 2020)](https://github.com/data-others/brain2/releases)
