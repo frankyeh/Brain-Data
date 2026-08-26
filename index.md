@@ -10,7 +10,7 @@
 <img width="1024" alt="image" src="https://github.com/user-attachments/assets/e5b8156e-ac24-49ae-9259-cd73fe0a6b83" />
 
 
-The **Fiber Data Hub** is a cloud-based platform for openly sharing processed **fiber data** derived from diffusion MRI, built to support scalable and reproducible research in brain connectivity. The Hub currently hosts over **50,000** fiber datasets, each derived from an underlying DWI scan, from major neuroimaging initiatives including the Human Connectome Project (HCP), the Adolescent Brain Cognitive Development (ABCD) Study, OpenNeuro, and the International Neuroimaging Data-sharing Initiative (INDI).
+The **Fiber Data Hub** is a cloud-based platform for openly sharing processed **fiber data** derived from diffusion MRI, built to support scalable and reproducible research in brain connectivity. The Hub currently hosts over **50,000** fiber datasets, each derived from an underlying DWI scan, from major neuroimaging initiatives including OpenNeuro and the International Neuroimaging Data-sharing Initiative (INDI).
 
 Instead of redistributing full raw DWI, the Hub provides compact, standardized **fiber data**—the minimal information needed to run fiber tracking—such as fiber orientation, anisotropy, diffusivities, and other diffusion-derived metrics. A key advantage is size: these derivatives are typically ~50–100× smaller than the original DWI. For example, a compressed HCP DWI dataset is about ~500 MB per subject, while the corresponding **fiber data** at the same resolution is usually ~5–10 MB, making large-scale distribution and access far more practical.
 
