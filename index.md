@@ -55,8 +55,6 @@ dsi_studio --action=rec --source=*.sz --save_nii=subject_dwi.nii.gz
 
 - [data-hcp/lifespan](https://github.com/data-hcp/lifespan/releases)
 - [data-hcp/disease](https://github.com/data-hcp/disease/releases)
-- [data-nih/abcd](https://github.com/data-nih/abcd/releases)
-- [data-nih/nda](https://github.com/data-nih/nda/releases)
 - [data-nih/tcia (brain tumors)](https://github.com/data-nih/tcia/releases)
 - [data-openneuro/brain (<ds005000)](https://github.com/data-openneuro/brain/releases) 
 - [data-openneuro/brain2 (>ds005000)](https://github.com/data-openneuro/brain2/releases)
