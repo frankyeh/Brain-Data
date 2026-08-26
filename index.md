@@ -72,14 +72,6 @@ dsi_studio --action=rec --source=*.sz --save_nii=subject_dwi.nii.gz
 - [data-others/disease](https://github.com/data-others/disease/releases)
 - [data-others/animal](https://github.com/data-others/animal/releases)
 
-The following are private repositories only avilable to collaborators with NDA-DUA, as per the NDA agreement term #4.
-
-- [data-restricted/hcp-lifespan (needs NDA-DUA)](https://github.com/data-restricted/hcp-lifespan/releases)
-- [data-restricted/abcd (needs NDA-DUA)](https://github.com/data-restricted/abcd/releases)
-- [data-restricted/hcp-disease (needs NDA-DUA)](https://github.com/data-restricted/hcp-disease/releases)
-- [data-restricted/nda (needs NDA-DUA)](https://github.com/data-restricted/nda/releases)
-- [data-restricted/aabc (needs AABC)](https://github.com/data-restricted/aabc/releases)
-
 ---
 
 ### Download using Command Line (Linux / macOS — bash)
