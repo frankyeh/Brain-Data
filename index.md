@@ -95,22 +95,6 @@ Example: download data-hcp/lifespan/hcp-ya
 
 To make data access and analysis as seamless as possible, the Fiber Data Hub is fully integrated with DSI Studio, a comprehensive diffusion MRI and tractography software. Through DSI Studio’s graphical interface, researchers can directly download, inspect, and analyze data from the hub without additional preprocessing, saving time and computational resources. This integration allows researchers to jump-start tractography analyses using advanced tracking methods available in DSI Studio, including deterministic, probabilistic, differential, and correlational tracking.
 
----
-
-### Restricted Access (Collaborators Only)
-
-1. Apply for NDA agreement at [NDA](https://nda.nih.gov/).
-2. update DSI Studio to a version released after June 2025.
-3. launch DSI Studio. When you see the login page, please right-click on the [Registry Entity]. Select [Select All], and then choose [Copy].
-
-![image](https://github.com/user-attachments/assets/3f47933c-4701-47f1-8ecf-e666d9af2126)
-
-3. Email your registry entity to frank.yeh@gmail.com and attached your NDA aggreement
-4. We will setup your accesss and inform you. Once you restart DSI Studio, you will have access to the restricted folder.
-5. If your registry entity changes, please notify me so that I can update it in the data server.
-
----
-
 
 ## Example Python Code
 
