@@ -71,6 +71,7 @@ dsi_studio --action=rec --source=*.sz --save_nii=subject_dwi.nii.gz
 - [data-others/brain2 (after 2020)](https://github.com/data-others/brain2/releases)
 - [data-others/disease](https://github.com/data-others/disease/releases)
 - [data-others/animal](https://github.com/data-others/animal/releases)
+- [data-others/atlas](https://github.com/data-others/atlas/releases)
 
 ---
 
