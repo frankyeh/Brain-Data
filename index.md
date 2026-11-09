@@ -105,7 +105,7 @@ To make data access and analysis as seamless as possible, the Fiber Data Hub is 
 
 ```python
 import requests
-owners = ["data-hcp", "data-nih", "data-openneuro", "data-indi", "data-others"]
+owners = ["data-hcp", "data-nih", "data-openneuro", "data-indi", "data-dandi", "data-others"]
 def ft(owner, indent=""):
     repos = requests.get(f"https://api.github.com/users/{owner}/repos").json()
     print(f"{indent}{owner}/")
