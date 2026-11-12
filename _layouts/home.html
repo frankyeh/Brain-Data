@@ -32,12 +32,24 @@ layout: default
       </div>
       <div class="release">Free and open · GitHub release assets · QC tables</div>
     </div>
-    <figure class="qc-front-figure" style="margin:0; min-width:0; border:1px solid var(--line); border-radius:16px; padding:14px; background:#fff;">
-      <picture>
-        <source media="(max-width: 600px)" srcset="https://github.com/frankyeh/FiberDataHub/releases/download/qc-chart/qc_counts_by_type_mobile.png">
-        <img src="https://github.com/frankyeh/FiberDataHub/releases/download/qc-chart/qc_counts_by_type.png" width="2400" height="960" alt="QC-passed diffusion MRI samples grouped into healthy human, patient or disease, and animal, phantom or other, with repository counts" decoding="async" fetchpriority="high" style="display:block; width:100%; height:auto;">
-      </picture>
-      <figcaption style="font-size:12px; color:var(--muted); margin-top:8px;">Live QC-data sample counts · <a href="/qc.html">View QC results</a>. Counts update separately from the 2025 paper.</figcaption>
+    <figure class="qc-front-figure" aria-labelledby="qc-types-heading">
+      <h2 id="qc-types-heading">QC-passed samples by type</h2>
+      <p class="qc-note">Available qc-data release · same scale for all three groups</p>
+      <div class="qc-types">
+        <div class="qc-type">
+          <div class="qc-type-label"><span>Healthy human</span><strong>26,305</strong></div>
+          <div class="qc-track" role="img" aria-label="Healthy human: 26,305 QC-passed samples"><span class="qc-bar healthy" style="width:100%"></span></div>
+        </div>
+        <div class="qc-type">
+          <div class="qc-type-label"><span>Patient / disease</span><strong>5,846</strong></div>
+          <div class="qc-track" role="img" aria-label="Patient or disease: 5,846 QC-passed samples"><span class="qc-bar patient" style="width:22.22%"></span></div>
+        </div>
+        <div class="qc-type">
+          <div class="qc-type-label"><span>Animal / phantom / other</span><strong>1,417</strong></div>
+          <div class="qc-track" role="img" aria-label="Animal, phantom or other: 1,417 QC-passed samples"><span class="qc-bar other" style="width:5.39%"></span></div>
+        </div>
+      </div>
+      <figcaption class="qc-foot"><strong>33,568 samples</strong> across 13 repository groups in the verified qc-data chart snapshot. <a href="/qc.html">Explore repository-level QC results →</a><br>Counts reflect available QC tables, not the 2025 paper's fixed snapshot.</figcaption>
     </figure>
   </section>
   <section class="stats two">
