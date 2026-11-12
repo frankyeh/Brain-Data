@@ -80,7 +80,48 @@ layout: default
       </ul>
     </div>
   </section>
+
+  <section class="research">
+    <div>
+      <h2>About the Hub</h2>
+      <p>The Fiber Data Hub shares processed <b style="color:#16181d">fiber data</b> derived from diffusion MRI: fiber orientations, anisotropy, diffusivities and other metrics needed for tractography, without redistributing raw DWI.</p>
+      <p>These derivatives are typically 50–100× smaller than the original scans, so large public datasets can be searched, quality-checked and analyzed without repeating preprocessing.</p>
+    </div>
+    <div class="cite-card">
+      <small>Nature Methods · July 2025</small>
+      <p>Yeh, F.-C. DSI Studio: An integrated tractography platform and Fiber Data Hub for accelerating brain research.</p>
+      <div class="links">
+        <a href="https://doi.org/10.1038/s41592-025-02762-8">doi:10.1038/s41592-025-02762-8</a>
+        <a href="https://rdcu.be/exECv">PDF</a>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/40707713/">PubMed</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="qc" id="qc">
+    <div class="head">
+      <h2>Quality control at a glance</h2>
+      <a href="/qc.html">Open QC results →</a>
+    </div>
+    <figure>
+      <img src="https://github.com/frankyeh/FiberDataHub/releases/download/qc-chart/qc_counts_combined.png" alt="QC counts by repository">
+      <figcaption>QC sample counts by repository, from the qc-chart release. The chart's totals reflect when it was generated.</figcaption>
+    </figure>
+  </section>
+
+  <section class="repos-sec" id="repos">
+{{ content }}
+  </section>
+
+  <section class="dl">
+    <div>
+      <h2>Download the data</h2>
+      <p>Command line, DSI Studio or Python, plus file formats and QC search examples.</p>
+    </div>
+    <div class="opts">
+      <a href="/download.html#download-using-command-line-linux--macos--bash">bash · PowerShell<small>command line</small></a>
+      <a href="/download.html#download-using-dsi-studio">DSI Studio<small>GUI</small></a>
+      <a href="/download.html#example-python-code">Python<small>QC search</small></a>
+    </div>
+  </section>
 </main>
-<article class="page">
-  {{ content }}
-</article>
