@@ -73,7 +73,7 @@
           <a href="/qc.html"{% if page.url == '/qc.html' %} class="on"{% endif %}>Quality control</a>
           <a href="/hcp_template.html"{% if page.url == '/hcp_template.html' %} class="on"{% endif %}>Templates</a>
           <a href="/hcp_trk_atlas.html"{% if page.url == '/hcp_trk_atlas.html' %} class="on"{% endif %}>Atlases</a>
-          <a href="/#download-using-dsi-studio">Download</a>
+          <a href="/download.html"{% if page.url == '/download.html' %} class="on"{% endif %}>Download</a>
           <div class="nav-dd sup-dd">
             <a class="nav-item" id="support" href="https://groups.google.com/g/dsi-studio?pli=1">Support<span class="caret">▾</span></a>
             <div class="sup-menu" id="sup-menu">
@@ -100,14 +100,14 @@
         <a href="/mds/data-openneuro/others.html">data-openneuro/others</a>
         <a href="/mds/data-indi/brain.html">data-indi/brain</a>
         <a href="/mds/data-indi/disease.html">data-indi/disease</a>
-        <a href="https://github.com/data-indi/animal/releases">data-indi/animal</a>
-        <a href="https://github.com/data-dandi/brain/releases">data-dandi/brain</a>
-        <a href="https://github.com/data-dandi/animal/releases">data-dandi/animal</a>
+        <a href="/mds/data-indi/animal.html">data-indi/animal</a>
+        <a href="/mds/data-dandi/brain.html">data-dandi/brain</a>
+        <a href="/mds/data-dandi/animal.html">data-dandi/animal</a>
         <a href="/mds/data-others/brain.html">data-others/brain</a>
         <a href="/mds/data-others/brain2.html">data-others/brain2</a>
         <a href="/mds/data-others/disease.html">data-others/disease</a>
         <a href="/mds/data-others/animal.html">data-others/animal</a>
-        <a href="https://github.com/data-others/atlas/releases">data-others/atlas</a>
+        <a href="/mds/data-others/atlas.html">data-others/atlas</a>
         <a href="/mds/data-nih/abcd.html">data-nih/abcd</a>
         <a href="/mds/data-nih/nda.html">data-nih/nda</a>
         <a href="/mds/data-openneuro/spine.html">data-openneuro/spine</a>
@@ -115,6 +115,7 @@
         <a href="/mds/data-indi/pro.html">data-indi/pro</a>
         <a href="/mds/data-indi/retro.html">data-indi/retro</a>
       </details>
+      <a href="/download.html">Download</a>
       <details>
         <summary>Quality control</summary>
         <a href="/qc.html">QC results</a>
@@ -188,16 +189,16 @@
         </div>
         <div>
           <h6>Data</h6>
-          <a href="/#repositories">Repositories</a>
+          <a href="/#repository-list">Repositories</a>
           <a href="/qc.html">QC results</a>
           <a href="/hcp_template.html">Templates</a>
           <a href="/hcp_trk_atlas.html">Atlases</a>
         </div>
         <div>
           <h6>Learn</h6>
-          <a href="/#file-formats">File formats</a>
-          <a href="/#download-using-dsi-studio">Download guide</a>
-          <a href="/#example-python-code">Python examples</a>
+          <a href="/download.html#file-formats">File formats</a>
+          <a href="/download.html">Download guide</a>
+          <a href="/download.html#example-python-code">Python examples</a>
           <a href="https://dsi-studio.labsolver.org/doc/cli_data.html">DSI Studio docs</a>
         </div>
         <div>
@@ -267,7 +268,7 @@
       var toc = document.getElementById("doc-toc");
       var art = document.querySelector(".doc article");
       if (toc && art) {
-        var hs = art.querySelectorAll("h2[id]");
+        var hs = art.querySelectorAll("h2[id], h3[id]");
         if (hs.length > 0) {
           var h6 = document.createElement("h6");
           h6.style.cssText = "margin:0 0 8px;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:#5b616e";
@@ -277,6 +278,7 @@
             var a = document.createElement("a");
             a.href = "#" + hs[i].id;
             a.textContent = hs[i].textContent;
+            if (hs[i].tagName === "H3") a.style.paddingLeft = "18px";
             if (i === 0) a.className = "cur";
             toc.appendChild(a);
           }
