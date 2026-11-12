@@ -259,3 +259,19 @@ p.sub { color: var(--muted); margin: 0 0 16px; }
 .stats.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .stats.two div { padding: 26px 0; }
 .stats.two b { font-size: 34px; }
+
+/* FDH hero: accessible, responsive HTML QC chart (no raster text or JavaScript). */
+.qc-front-figure { min-width:0; margin:0; padding:22px; border:1px solid var(--line); border-radius:16px; background:#fff; }
+.qc-front-figure h2 { font:600 24px/1.2 var(--serif); margin:0 0 4px; }
+.qc-front-figure .qc-note { color:var(--muted); font-size:13px; margin:0 0 16px; }
+.qc-front-figure .qc-types { display:grid; gap:18px; }
+.qc-front-figure .qc-type-label { display:flex; align-items:baseline; justify-content:space-between; gap:8px; font-size:14px; font-weight:600; }
+.qc-front-figure .qc-type-label strong { font:600 22px/1.1 var(--serif); font-variant-numeric:tabular-nums; white-space:nowrap; }
+.qc-front-figure .qc-track { height:16px; border-radius:5px; overflow:hidden; background:#edf0f4; margin-top:7px; }
+.qc-front-figure .qc-bar { display:block; height:100%; border-radius:5px; }
+.qc-front-figure .qc-bar.healthy { background:#2a78d6; }
+.qc-front-figure .qc-bar.patient { background:#eb6834; }
+.qc-front-figure .qc-bar.other { background:#168d68; }
+.qc-front-figure .qc-foot { margin:18px 0 0; padding-top:12px; border-top:1px solid var(--line); color:var(--muted); font-size:13px; line-height:1.5; }
+.qc-front-figure .qc-foot strong { color:var(--ink); font-variant-numeric:tabular-nums; }
+@media (max-width:820px) { .qc-front-figure { padding:18px; } .qc-front-figure h2 { font-size:23px; } }
