@@ -48,7 +48,10 @@ layout: default
         <h2 id="qc-hero-title" style="font:600 25px/1.2 var(--serif); margin:0;">Explore the Hub by dataset type</h2>
         <a href="/qc.html" style="font-size:14px;">Open QC results →</a>
       </div>
-      <img src="https://github.com/frankyeh/FiberDataHub/releases/download/qc-chart/qc_counts_by_type.png" alt="QC-passed sample counts by dataset type: healthy human, patient or disease, and animal, phantom or other, grouped by repository" width="2400" height="960" decoding="async" style="display:block; width:100%; height:auto; border-radius:8px;">
+      <picture>
+        <source media="(max-width: 600px)" srcset="https://github.com/frankyeh/FiberDataHub/releases/download/qc-chart/qc_counts_by_type_mobile.png">
+        <img src="https://github.com/frankyeh/FiberDataHub/releases/download/qc-chart/qc_counts_by_type.svg" alt="QC-passed sample counts by dataset type: healthy human, patient or disease, and animal, phantom or other, grouped by repository" width="2400" height="960" decoding="async" style="display:block; width:100%; height:auto; border-radius:8px;">
+      </picture>
       <figcaption style="font-size:13px; color:var(--muted); margin-top:10px;">QC-passed samples in the available qc-data release, grouped by dataset type. Counts reflect the chart generation date and may differ from the Nature Methods 2025 snapshot.</figcaption>
     </figure>
   </section>
