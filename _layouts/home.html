@@ -1,0 +1,127 @@
+---
+layout: default
+---
+<main class="wrap" id="content">
+  <section class="hero">
+    <div>
+      <a class="paper" href="https://doi.org/10.1038/s41592-025-02762-8"><b>Nature Methods 2025</b>Fiber Data Hub paper →</a>
+      <h1>50,000+ fiber datasets, ready to track.</h1>
+      <p class="lead">Processed diffusion MRI from OpenNeuro, INDI, HCP, TCIA and more, shared as compact fiber data, 50–100× smaller than raw DWI. Download with a browser, the command line, Python, or directly in DSI Studio.</p>
+      <div class="btns">
+        <a class="btn primary" href="#repositories">Browse repositories</a>
+        <a class="btn" href="/qc_search.html">Search by QC</a>
+        <a class="btn" href="#download-using-command-line-linux--macos--bash">Download guide</a>
+      </div>
+      <div class="release">Free and open · GitHub release assets · QC table for every dataset</div>
+    </div>
+    <div class="panel">
+      <h6>One subject, HCP example</h6>
+      <div class="row"><span>Raw DWI (compressed)</span><b>~500 MB</b></div>
+      <div class="row"><span>Fiber data <code>*.fz</code></span><b>~5–10 MB</b></div>
+      <div class="row"><span>SRC <code>*.sz</code> · 4D DWI + b-table</span><span>preprocessing input</span></div>
+      <div class="row"><span>Database <code>*.dz</code> · group metrics, MNI</span><span>connectometry</span></div>
+      <div class="row"><span>QC <code>qc.tsv</code></span><span>per-dataset quality</span></div>
+      <div class="row"><code>dsi_studio --action=exp --source=*.gqi.fz --export=dti_fa,qa</code></div>
+    </div>
+  </section>
+  <section class="stats">
+    <div><b>50,000+</b><span>fiber datasets</span></div>
+    <div><b>19</b><span>repositories in 6 organizations</span></div>
+    <div><b>50–100×</b><span>smaller than raw DWI</span></div>
+    <div><b>3</b><span>formats: .fz · .sz · .dz</span></div>
+  </section>
+  <section class="doors">
+    <div class="door">
+      <h3>Browse</h3>
+      <p>Every dataset lives in a GitHub repository, by source.</p>
+      <ul>
+        <li><a href="/mds/data-openneuro/brain.html">data-openneuro · data-indi</a></li>
+        <li><a href="/mds/data-hcp/lifespan.html">data-hcp · data-nih</a></li>
+        <li><a href="/mds/data-others/brain.html">data-dandi · data-others</a></li>
+        <li><a href="/repos.html">All repositories →</a></li>
+      </ul>
+    </div>
+    <div class="door">
+      <h3>Quality control</h3>
+      <p>Check a dataset before you download it.</p>
+      <ul>
+        <li><a href="/qc.html">QC results</a></li>
+        <li><a href="/qc_search.html">Search datasets using the QC report</a></li>
+        <li><a href="#file-formats">qc.tsv format</a></li>
+        <li><a href="#search-data-using-the-qc-report">Python: search by QC →</a></li>
+      </ul>
+    </div>
+    <div class="door">
+      <h3>Templates &amp; atlases</h3>
+      <p>Population references built from the Hub.</p>
+      <ul>
+        <li><a href="/hcp_template.html">HCP-1065 fiber templates</a></li>
+        <li><a href="/hcp_trk_atlas.html">Tractography atlas &amp; T2R connectome</a></li>
+        <li><a href="https://github.com/data-others/atlas/releases">data-others/atlas</a></li>
+        <li><a href="https://doi.org/10.1038/s41592-025-02762-8">Cite the Hub →</a></li>
+      </ul>
+    </div>
+  </section>
+  <h2 class="sec" id="repositories">Repositories</h2>
+  <p class="sub">Same links as today, grouped by organization. Each opens the dataset page; releases stay on GitHub.</p>
+  <section class="org">
+    <div class="door">
+      <h3>data-hcp</h3>
+      <p>2 repositories</p>
+      <ul>
+        <li><a href="/mds/data-hcp/lifespan.html">data-hcp/lifespan</a></li>
+        <li><a href="/mds/data-hcp/disease.html">data-hcp/disease</a></li>
+      </ul>
+    </div>
+    <div class="door">
+      <h3>data-nih</h3>
+      <p>1 repository</p>
+      <ul>
+        <li><a href="/mds/data-nih/tcia.html">data-nih/tcia (brain tumors)</a></li>
+      </ul>
+    </div>
+    <div class="door">
+      <h3>data-openneuro</h3>
+      <p>6 repositories</p>
+      <ul>
+        <li><a href="/mds/data-openneuro/brain.html">data-openneuro/brain</a></li>
+        <li><a href="/mds/data-openneuro/brain2.html">data-openneuro/brain2</a></li>
+        <li><a href="/mds/data-openneuro/disease.html">data-openneuro/disease</a></li>
+        <li><a href="/mds/data-openneuro/disease2.html">data-openneuro/disease2</a></li>
+        <li><a href="/mds/data-openneuro/animal.html">data-openneuro/animal</a></li>
+        <li><a href="/mds/data-openneuro/others.html">data-openneuro/others</a></li>
+      </ul>
+    </div>
+    <div class="door">
+      <h3>data-indi</h3>
+      <p>3 repositories</p>
+      <ul>
+        <li><a href="/mds/data-indi/brain.html">data-indi/brain</a></li>
+        <li><a href="/mds/data-indi/disease.html">data-indi/disease</a></li>
+        <li><a href="https://github.com/data-indi/animal/releases">data-indi/animal</a></li>
+      </ul>
+    </div>
+    <div class="door">
+      <h3>data-dandi</h3>
+      <p>2 repositories</p>
+      <ul>
+        <li><a href="https://github.com/data-dandi/brain/releases">data-dandi/brain</a></li>
+        <li><a href="https://github.com/data-dandi/animal/releases">data-dandi/animal</a></li>
+      </ul>
+    </div>
+    <div class="door">
+      <h3>data-others</h3>
+      <p>5 repositories</p>
+      <ul>
+        <li><a href="/mds/data-others/brain.html">data-others/brain</a></li>
+        <li><a href="/mds/data-others/brain2.html">data-others/brain2</a></li>
+        <li><a href="/mds/data-others/disease.html">data-others/disease</a></li>
+        <li><a href="/mds/data-others/animal.html">data-others/animal</a></li>
+        <li><a href="https://github.com/data-others/atlas/releases">data-others/atlas</a></li>
+      </ul>
+    </div>
+  </section>
+</main>
+<article class="page">
+  {{ content }}
+</article>

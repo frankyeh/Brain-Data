@@ -1,4 +1,11 @@
-theme: jekyll-theme-minimal
 title: Brain Image Data
 description: Brain image data
+url: https://brain.labsolver.org
+baseurl: ""
 google_analytics: G-XFQCVND7S6
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default

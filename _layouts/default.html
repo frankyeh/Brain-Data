@@ -8,55 +8,281 @@
     {% endif %}
 {% seo %}
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#157878">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    {% include head-custom.html %}
   </head>
   <body>
-    <header class="page-header" role="banner">
-      <img src="/images/customLogo.png" width="250">
-      <h3><a href="/index.html">Fiber Data Hub</a></h3>
-      <h3>Repositories</h3>
-      <ul>
-        <li><a href="/mds/data-hcp/lifespan.html">data-hcp/lifespan</a></li>
-        <li><a href="/mds/data-hcp/disease.html">data-hcp/disease</a></li>
-        <li><a href="/mds/data-nih/tcia.html">data-nih/tcia</a></li>
-
-        <li><a href="/mds/data-openneuro/brain.html">data-openneuro/brain</a></li>
-        <li><a href="/mds/data-openneuro/brain2.html">data-openneuro/brain2</a></li>
-        <li><a href="/mds/data-openneuro/disease.html">data-openneuro/disease</a></li>
-        <li><a href="/mds/data-openneuro/disease2.html">data-openneuro/disease2</a></li>
-        <li><a href="/mds/data-openneuro/animal.html">data-openneuro/animal</a></li>
-        <li><a href="/mds/data-openneuro/others.html">data-openneuro/others</a></li>
-
-        <li><a href="/mds/data-indi/brain.html">data-indi/brain</a></li>
-        <li><a href="/mds/data-indi/disease.html">data-indi/disease</a></li>
-
-        <li><a href="/mds/data-others/brain.html">data-others/brain</a></li>
-        <li><a href="/mds/data-others/brain2.html">data-others/brain2</a></li>
-        <li><a href="/mds/data-others/disease.html">data-others/disease</a></li>
-        <li><a href="/mds/data-others/animal.html">data-others/animal</a></li>
-        <br>
-        <li><a href="/qc.html">QC results</a></li>
-      </ul>
-      <h3><a href="/hcp_template.html">Group Templates</a></h3>
-      <h3><a href="/hcp_trk_atlas.html">Tractography Atlases</a></h3>
-      <h3><a href="https://www.reddit.com/r/dsistudio/">Discussion Forum (Reddit)</a></h3>
-      <h3><a href="https://groups.google.com/g/dsi-studio?pli=1">Discussion Forum (Google)</a></h3>
-      <h3><a href="https://dsi-studio.labsolver.org">DSI Studio</a></h3>
-      <p>Fang-Cheng (Frank) Yeh<br>
-          <a href="https://www.dropbox.com/s/ej2ujl6fmcvwx8f/Frank_CV.pdf?dl=0">CV</a>, <a href="http://scholar.google.com/citations?user=QdfsoJ4AAAAJ&hl=en">Google Citation</a>, <a href="https://www.webofscience.com/wos/author/record/101404">Researcher Profile</a><br>
-          <a href="https://twitter.com/intent/follow?screen_name=FangChengYeh"><img src="https://img.shields.io/twitter/follow/FangChengYeh?style=social&logo=twitter" alt="follow on Twitter"></a><a href="https://www.youtube.com/c/FrankYeh"><img src="https://img.shields.io/youtube/channel/subscribers/UCN6gohY_zeBpK6SwJ7hnz1Q?style=social"></a>
-      <p>E-mail: frank.yeh@gmail.com</p>
-      <p></p>
-      <a href="https://github.com/frankyeh/Brain-Data">.</a>
+    <a class="skip-link" href="#content">Skip to main content</a>
+{%- assign is_home = false -%}
+{%- if page.layout == 'home' or page.url == '/' or page.url == '/index.html' -%}
+  {%- assign is_home = true -%}
+{%- endif -%}
+{%- assign is_doc = false -%}
+{%- if is_home == false and page.url != '/404.html' -%}
+  {%- assign is_doc = true -%}
+{%- endif -%}
+{%- assign prev_item = nil -%}
+{%- assign next_item = nil -%}
+{%- assign last_seen = nil -%}
+{%- assign found_cur = false -%}
+{%- assign cur_group = 'Repositories' -%}
+{%- assign cur_nav_title = page.title -%}
+{%- if is_doc -%}
+  {%- for group in site.data.docs -%}
+    {%- for item in group.items -%}
+      {%- assign is_ext = false -%}
+      {%- if item.url contains 'http' or item.url == '/qc_search.html' -%}
+        {%- assign is_ext = true -%}
+      {%- endif -%}
+      {%- if is_ext == false -%}
+        {%- if found_cur and next_item == nil -%}
+          {%- assign next_item = item -%}
+        {%- endif -%}
+        {%- if item.url == page.url -%}
+          {%- assign cur_group = group.group -%}
+          {%- assign cur_nav_title = item.title -%}
+          {%- assign prev_item = last_seen -%}
+          {%- assign found_cur = true -%}
+        {%- endif -%}
+        {%- assign last_seen = item -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endfor -%}
+{%- endif -%}
+    <header class="topbar">
+      <div class="dec"></div>
+      <div class="bar">
+        <a class="brand" href="/"><img src="/images/customLogo.png" alt="" style="height:30px;vertical-align:middle"> <span class="brandtxt" style="vertical-align:middle">Fiber Data Hub</span></a>
+        <nav class="nav" aria-label="Primary">
+          <div class="nav-dd">
+            <a class="nav-item{% if page.url contains '/mds/' or page.url == '/repos.html' or page.url == '/summary.html' %} on{% endif %}" id="docs" href="/repos.html">Repositories<span class="caret">▾</span></a>
+            <div class="mega" id="mega">
+              <div class="mega-in cols-6">
+                {%- for group in site.data.docs -%}
+                {%- if group.org -%}
+                <div>
+                  <h6>{{ group.group }}</h6>
+                  {%- for item in group.items -%}
+                  <a href="{{ item.url }}"{% if item.url == page.url %} class="cur"{% endif %}>{{ item.short }}</a>
+                  {%- endfor -%}
+                </div>
+                {%- endif -%}
+                {%- endfor -%}
+              </div>
+            </div>
+          </div>
+          <a href="/qc.html"{% if page.url == '/qc.html' %} class="on"{% endif %}>Quality control</a>
+          <a href="/hcp_template.html"{% if page.url == '/hcp_template.html' %} class="on"{% endif %}>Templates</a>
+          <a href="/hcp_trk_atlas.html"{% if page.url == '/hcp_trk_atlas.html' %} class="on"{% endif %}>Atlases</a>
+          <a href="/#download-using-dsi-studio">Download</a>
+          <div class="nav-dd sup-dd">
+            <a class="nav-item" id="support" href="https://groups.google.com/g/dsi-studio?pli=1">Support<span class="caret">▾</span></a>
+            <div class="sup-menu" id="sup-menu">
+              <a href="https://www.reddit.com/r/dsistudio/">Forum (Reddit)</a>
+              <a href="https://groups.google.com/g/dsi-studio?pli=1">Forum (Google)</a>
+            </div>
+          </div>
+        </nav>
+        <a class="cta" href="https://dsi-studio.labsolver.org">DSI Studio ↗</a>
+        <a class="burger" id="burger" href="#sheet" aria-label="Menu">☰</a>
+      </div>
     </header>
-
-    <main id="content" class="main-content markdown-body" role="main">
-      {{ content }}
-      <footer class="site-footer">
-      </footer>
+    <nav class="sheet" id="sheet" aria-label="Mobile">
+      <details open>
+        <summary>Repositories</summary>
+        <a href="/mds/data-hcp/lifespan.html">data-hcp/lifespan</a>
+        <a href="/mds/data-hcp/disease.html">data-hcp/disease</a>
+        <a href="/mds/data-nih/tcia.html">data-nih/tcia</a>
+        <a href="/mds/data-openneuro/brain.html">data-openneuro/brain</a>
+        <a href="/mds/data-openneuro/brain2.html">data-openneuro/brain2</a>
+        <a href="/mds/data-openneuro/disease.html">data-openneuro/disease</a>
+        <a href="/mds/data-openneuro/disease2.html">data-openneuro/disease2</a>
+        <a href="/mds/data-openneuro/animal.html">data-openneuro/animal</a>
+        <a href="/mds/data-openneuro/others.html">data-openneuro/others</a>
+        <a href="/mds/data-indi/brain.html">data-indi/brain</a>
+        <a href="/mds/data-indi/disease.html">data-indi/disease</a>
+        <a href="https://github.com/data-indi/animal/releases">data-indi/animal</a>
+        <a href="https://github.com/data-dandi/brain/releases">data-dandi/brain</a>
+        <a href="https://github.com/data-dandi/animal/releases">data-dandi/animal</a>
+        <a href="/mds/data-others/brain.html">data-others/brain</a>
+        <a href="/mds/data-others/brain2.html">data-others/brain2</a>
+        <a href="/mds/data-others/disease.html">data-others/disease</a>
+        <a href="/mds/data-others/animal.html">data-others/animal</a>
+        <a href="https://github.com/data-others/atlas/releases">data-others/atlas</a>
+        <a href="/mds/data-nih/abcd.html">data-nih/abcd</a>
+        <a href="/mds/data-nih/nda.html">data-nih/nda</a>
+        <a href="/mds/data-openneuro/spine.html">data-openneuro/spine</a>
+        <a href="/mds/data-indi/corr.html">data-indi/corr</a>
+        <a href="/mds/data-indi/pro.html">data-indi/pro</a>
+        <a href="/mds/data-indi/retro.html">data-indi/retro</a>
+      </details>
+      <details>
+        <summary>Quality control</summary>
+        <a href="/qc.html">QC results</a>
+        <a href="/qc_search.html">Search by QC</a>
+      </details>
+      <details>
+        <summary>Templates &amp; atlases</summary>
+        <a href="/hcp_template.html">HCP-1065 templates</a>
+        <a href="/hcp_trk_atlas.html">Tractography atlas</a>
+      </details>
+      <details>
+        <summary>Support</summary>
+        <a href="https://www.reddit.com/r/dsistudio/">Forum (Reddit)</a>
+        <a href="https://groups.google.com/g/dsi-studio?pli=1">Forum (Google)</a>
+      </details>
+      <a class="cta" href="https://dsi-studio.labsolver.org">DSI Studio ↗</a>
+    </nav>
+{%- if is_home -%}
+{{ content }}
+{%- elsif is_doc -%}
+    <div class="doc">
+      <aside class="side" aria-label="Portal navigation">
+        {%- for group in site.data.docs -%}
+        {%- assign is_open = false -%}
+        {%- if group.group == cur_group -%}
+          {%- assign is_open = true -%}
+        {%- elsif found_cur == false and forloop.first -%}
+          {%- assign is_open = true -%}
+        {%- endif -%}
+        <details{% if is_open %} open{% endif %}>
+          <summary><h6>{{ group.group }} <span class="caret">▾</span></h6></summary>
+          {%- for item in group.items -%}
+          <a href="{{ item.url }}"{% if item.url == page.url %} class="cur" aria-current="page"{% endif %}>{{ item.title }}</a>
+          {%- endfor -%}
+        </details>
+        {%- endfor -%}
+      </aside>
+      <article id="content">
+        <a class="section-chip" id="section-chip" href="#sheet"><span>{{ cur_group }} › <b>{{ cur_nav_title }}</b></span><span>▾</span></a>
+        <div class="crumbs">Fiber Data Hub › {{ cur_group }}</div>
+        {{ content }}
+        <div class="pager">
+          {%- if prev_item -%}
+          <a href="{{ prev_item.url }}"><small>← Previous</small>{{ prev_item.title }}</a>
+          {%- else -%}
+          <span></span>
+          {%- endif -%}
+          {%- if next_item -%}
+          <a href="{{ next_item.url }}"><small>Next →</small>{{ next_item.title }}</a>
+          {%- else -%}
+          <span></span>
+          {%- endif -%}
+        </div>
+      </article>
+      <aside class="toc" id="doc-toc" aria-label="On this page"></aside>
+    </div>
+{%- else -%}
+    <main id="content">
+      <article class="page">
+        {{ content }}
+      </article>
     </main>
+{%- endif -%}
+    <footer class="foot">
+      <div class="foot-in">
+        <div>
+          <h6>Author</h6>
+          <p><b style="color:#16181d">Fang-Cheng (Frank) Yeh</b></p>
+          <p>E-mail: frank.yeh@gmail.com</p>
+          <p><a style="display:inline" href="https://www.dropbox.com/s/ej2ujl6fmcvwx8f/Frank_CV.pdf?dl=0">CV</a> · <a style="display:inline" href="https://scholar.google.com/citations?user=QdfsoJ4AAAAJ&amp;hl=en">Google Scholar</a> · <a style="display:inline" href="https://www.webofscience.com/wos/author/record/101404">Web of Science</a></p>
+        </div>
+        <div>
+          <h6>Data</h6>
+          <a href="/#repositories">Repositories</a>
+          <a href="/qc.html">QC results</a>
+          <a href="/hcp_template.html">Templates</a>
+          <a href="/hcp_trk_atlas.html">Atlases</a>
+        </div>
+        <div>
+          <h6>Learn</h6>
+          <a href="/#file-formats">File formats</a>
+          <a href="/#download-using-dsi-studio">Download guide</a>
+          <a href="/#example-python-code">Python examples</a>
+          <a href="https://dsi-studio.labsolver.org/doc/cli_data.html">DSI Studio docs</a>
+        </div>
+        <div>
+          <h6>Community</h6>
+          <a href="https://www.reddit.com/r/dsistudio/">Forum (Reddit)</a>
+          <a href="https://groups.google.com/g/dsi-studio?pli=1">Forum (Google)</a>
+          <a href="mailto:frank.yeh@gmail.com">Suggest a dataset</a>
+          <a href="https://www.youtube.com/c/FrankYeh">YouTube</a>
+        </div>
+      </div>
+      <div class="cite">Cite: Yeh F-C. DSI Studio: an integrated tractography platform and fiber data hub for accelerating brain research. <i>Nature Methods</i> (2025). doi:10.1038/s41592-025-02762-8 &nbsp;<a class="dot" href="https://github.com/frankyeh/Brain-Data">.</a></div>
+    </footer>
+    <script>
+    (function () {
+      var docs = document.getElementById("docs");
+      var mega = document.getElementById("mega");
+      var sup = document.getElementById("support");
+      var supMenu = document.getElementById("sup-menu");
+      var burger = document.getElementById("burger");
+      var chip = document.getElementById("section-chip");
+      var sheet = document.getElementById("sheet");
+
+      if (docs && mega) {
+        docs.addEventListener("click", function (e) {
+          e.preventDefault();
+          if (supMenu) supMenu.classList.remove("open");
+          mega.classList.toggle("open");
+        });
+      }
+      if (sup && supMenu) {
+        sup.addEventListener("click", function (e) {
+          e.preventDefault();
+          if (mega) mega.classList.remove("open");
+          supMenu.classList.toggle("open");
+        });
+      }
+      function toggleSheet(e) {
+        if (!sheet) return;
+        e.preventDefault();
+        var open = sheet.classList.toggle("open");
+        if (!open && location.hash === "#sheet" && history.replaceState) {
+          history.replaceState(null, "", location.pathname + location.search);
+        }
+      }
+      if (burger) burger.addEventListener("click", toggleSheet);
+      if (chip) chip.addEventListener("click", toggleSheet);
+
+      document.addEventListener("click", function (e) {
+        if (mega && docs && !mega.contains(e.target) && !docs.contains(e.target)) {
+          mega.classList.remove("open");
+        }
+        if (supMenu && sup && !supMenu.contains(e.target) && !sup.contains(e.target)) {
+          supMenu.classList.remove("open");
+        }
+      });
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") {
+          if (mega) mega.classList.remove("open");
+          if (supMenu) supMenu.classList.remove("open");
+          if (sheet) sheet.classList.remove("open");
+        }
+      });
+
+      if (location.search.indexOf("mega") !== -1 && mega) mega.classList.add("open");
+      if (location.search.indexOf("menu") !== -1 && sheet) sheet.classList.add("open");
+
+      var toc = document.getElementById("doc-toc");
+      var art = document.querySelector(".doc article");
+      if (toc && art) {
+        var hs = art.querySelectorAll("h2[id]");
+        if (hs.length > 0) {
+          var h6 = document.createElement("h6");
+          h6.style.cssText = "margin:0 0 8px;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:#5b616e";
+          h6.textContent = "On this page";
+          toc.appendChild(h6);
+          for (var i = 0; i < hs.length; i++) {
+            var a = document.createElement("a");
+            a.href = "#" + hs[i].id;
+            a.textContent = hs[i].textContent;
+            if (i === 0) a.className = "cur";
+            toc.appendChild(a);
+          }
+        }
+      }
+    })();
+    </script>
   </body>
 </html>
