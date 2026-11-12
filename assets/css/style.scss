@@ -254,3 +254,8 @@ p.sub { color: var(--muted); margin: 0 0 16px; }
   .qc figure { overflow-x: auto; -webkit-overflow-scrolling: touch; }
   .qc img { min-width: 900px; }
 }
+
+/* ---- two-item editorial stats strip */
+.stats.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.stats.two div { padding: 26px 0; }
+.stats.two b { font-size: 34px; }
