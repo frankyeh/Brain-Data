@@ -32,27 +32,12 @@ layout: default
       </div>
       <div class="release">Free and open · GitHub release assets · QC tables</div>
     </div>
-    <div class="panel">
-      <h6>One subject, HCP example</h6>
-      <div class="row"><span>Raw DWI (compressed)</span><b>~500 MB</b></div>
-      <div class="row"><span>Fiber data <code>*.fz</code></span><b>~5–10 MB</b></div>
-      <div class="row"><span>SRC <code>*.sz</code> · 4D DWI + b-table</span><span>preprocessing input</span></div>
-      <div class="row"><span>Database <code>*.dz</code> · group metrics, MNI</span><span>connectometry</span></div>
-      <div class="row"><span>QC <code>qc.tsv</code></span><span>per-dataset quality</span></div>
-      <div class="row"><code>dsi_studio --action=exp --source=*.gqi.fz --export=dti_fa,qa</code></div>
-    </div>
-  </section>
-  <section class="qc-hero" aria-labelledby="qc-hero-title" style="padding: 0 0 26px;">
-    <figure style="margin:0; padding:22px; border:1px solid var(--line); border-radius:16px; background:#fff;">
-      <div style="display:flex; justify-content:space-between; align-items:baseline; gap:12px; flex-wrap:wrap; margin-bottom:14px;">
-        <h2 id="qc-hero-title" style="font:600 25px/1.2 var(--serif); margin:0;">Explore the Hub by dataset type</h2>
-        <a href="/qc.html" style="font-size:14px;">Open QC results →</a>
-      </div>
+    <figure class="qc-front-figure" style="margin:0; min-width:0; border:1px solid var(--line); border-radius:16px; padding:14px; background:#fff;">
       <picture>
         <source media="(max-width: 600px)" srcset="https://github.com/frankyeh/FiberDataHub/releases/download/qc-chart/qc_counts_by_type_mobile.png">
-        <img src="https://github.com/frankyeh/FiberDataHub/releases/download/qc-chart/qc_counts_by_type.svg" alt="QC-passed sample counts by dataset type: healthy human, patient or disease, and animal, phantom or other, grouped by repository" width="2400" height="960" decoding="async" style="display:block; width:100%; height:auto; border-radius:8px;">
+        <img src="https://github.com/frankyeh/FiberDataHub/releases/download/qc-chart/qc_counts_by_type.svg" width="2400" height="960" alt="QC-passed diffusion MRI samples grouped into healthy human, patient or disease, and animal, phantom or other, with repository counts" decoding="async" fetchpriority="high" style="display:block; width:100%; height:auto;">
       </picture>
-      <figcaption style="font-size:13px; color:var(--muted); margin-top:10px;">QC-passed samples in the available qc-data release, grouped by dataset type. Counts reflect the chart generation date and may differ from the Nature Methods 2025 snapshot.</figcaption>
+      <figcaption style="font-size:12px; color:var(--muted); margin-top:8px;">Live QC-data sample counts · <a href="/qc.html">View QC results</a>. Counts update separately from the 2025 paper.</figcaption>
     </figure>
   </section>
   <section class="stats two">
