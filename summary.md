@@ -49,22 +49,6 @@
 
 ## data-nih
 
-### nda
-
-- [Fetal Programming of the Newborn and Infant Human Brain (nda-1890):](/mds/data-nih/nda/nda-1890.html)
-- [Longitudinal MRI Study of Infants at Risk for Autism (nda-19):](/mds/data-nih/nda/nda-19.html)
-- [Early Brain Development in Twins (nda-1974):](/mds/data-nih/nda/nda-1974.html)
-- [Multimodal Developmental Neurogenetics of Females with ASD (nda-2021):](/mds/data-nih/nda/nda-2021.html)
-- [2/3-Social Processes Initiative in Neurobiology of the Schizophrenia(s) (nda-2098):](/mds/data-nih/nda/nda-2098.html)
-- [A Multidimensional Investigation of Cognitive Control Deficits in Psychopathology (nda-2102):](/mds/data-nih/nda/nda-2102.html)
-- [Effects of Poverty on Affective Development: A Multi-Level, Longitudinal Study (nda-2106):](/mds/data-nih/nda/nda-2106.html)
-- [Taste Reward Circuits and Prediction Error Define Eating Disorder Psychopathology (nda-2138):](/mds/data-nih/nda/nda-2138.html)
-- [Integrity and Dynamic Processing Efficiency of Networks in ASD (nda-2285):](/mds/data-nih/nda/nda-2285.html)
-- [Cincinnati MR Imaging of Neurodevelopment (C-MIND) (nda-2329):](/mds/data-nih/nda/nda-2329.html)
-- [Integration of Neural Networks and Attachment in Human Infants (nda-2690):](/mds/data-nih/nda/nda-2690.html)
-- [Mechanisms Underlying Resilience to Neighborhood Disadvantage (nda-2818):](/mds/data-nih/nda/nda-2818.html)
-- [Longitudinal Neuroimaging and Neurocognitive Assessment of Risk and Protective Factors Across the Schizophrenia Spectrum (nda-3445):](/mds/data-nih/nda/nda-3445.html)
-
 ### tcia
 
 - [UCSF-PDGM – University of California San Francisco Preoperative Diffuse Glioma MRI (ucsf-pdgm):](/mds/data-nih/tcia/ucsf-pdgm.html)
