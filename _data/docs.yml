@@ -13,12 +13,6 @@
     - title: "data-nih/tcia"
       short: "tcia (brain tumors)"
       url: "/mds/data-nih/tcia.html"
-    - title: "data-nih/abcd"
-      short: "abcd"
-      url: "/mds/data-nih/abcd.html"
-    - title: "data-nih/nda"
-      short: "nda"
-      url: "/mds/data-nih/nda.html"
 - group: "data-openneuro"
   org: true
   items:
