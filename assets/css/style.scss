@@ -195,6 +195,7 @@ article hr { border: 0; border-top: 1px solid var(--line); margin: 28px 0; }
 .brand { display: flex; align-items: center; gap: 8px; }
 .brand:hover { text-decoration: none; }
 .mega-in.cols-6 { grid-template-columns: repeat(6, 1fr); gap: 20px; }
+.mega-in.cols-7 { grid-template-columns: repeat(7, 1fr); gap: 18px; }
 .brandtxt { font: 600 19px/1 var(--serif); color: var(--ink); }
 .panel { background: #0f1218; color: #d7dbe3; border-radius: 16px; padding: 24px; box-shadow: 0 30px 60px -30px rgba(0,0,0,.45); }
 .panel h6 { margin: 0 0 12px; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: #8b93a3; }

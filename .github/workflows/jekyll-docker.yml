@@ -43,6 +43,8 @@ jobs:
               "data-nih",
               "data-openneuro",
               "data-indi",
+              "data-dandi",
+              "data-nitrc",
               "data-others"
           ]
           

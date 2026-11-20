@@ -26,6 +26,7 @@ Public Fiber Data Hub data are distributed primarily as GitHub release assets in
 - `data-openneuro`
 - `data-indi`
 - `data-dandi`
+- `data-nitrc`
 - `data-others`
 
 The current repository list is maintained on https://brain.labsolver.org. Use the portal rather than assuming the list above is exhaustive.

@@ -19,6 +19,8 @@ layout: home
 - [data-indi/animal](https://github.com/data-indi/animal/releases)
 - [data-dandi/brain](https://github.com/data-dandi/brain/releases)
 - [data-dandi/animal](https://github.com/data-dandi/animal/releases)
+- [data-nitrc/brain](https://github.com/data-nitrc/brain/releases)
+- [data-nitrc/disease](https://github.com/data-nitrc/disease/releases)
 - [data-others/brain (before 2020)](https://github.com/data-others/brain/releases)
 - [data-others/brain2 (after 2020)](https://github.com/data-others/brain2/releases)
 - [data-others/disease](https://github.com/data-others/disease/releases)

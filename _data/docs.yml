@@ -67,6 +67,15 @@
     - title: "data-dandi/animal"
       short: "animal"
       url: "/mds/data-dandi/animal.html"
+- group: "data-nitrc"
+  org: true
+  items:
+    - title: "data-nitrc/brain"
+      short: "brain"
+      url: "/mds/data-nitrc/brain.html"
+    - title: "data-nitrc/disease"
+      short: "disease"
+      url: "/mds/data-nitrc/disease.html"
 - group: "data-others"
   org: true
   items:
